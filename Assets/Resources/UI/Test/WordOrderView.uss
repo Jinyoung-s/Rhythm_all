@@ -1,0 +1,244 @@
+/* 1. 최상위 컨테이너: 화면 전체 정중앙 정렬 */
+.root {
+    flex-direction: column;
+    /* 수직(세로) 중앙 정렬 */
+    justify-content: center; 
+    /* 수평(가로) 중앙 정렬 */
+    align-items: center; 
+    background-color: #0b0f14;
+    padding: 60px;
+    height: 100%;
+    width: 100%;
+}
+
+/* 2. 상단 진행 바: 카드와 같은 너비로 카드 상단에 고정 */
+.progress-container {
+    width: 960px;
+    height: 20px;
+    margin-bottom: 0;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #1a1f24;
+}
+
+.progress-bar .unity-progress-bar__container {
+    background-color: #1a1f24;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar .unity-progress-bar__progress {
+    background-color: #10b981;
+    border-radius: 10px;
+}
+
+/* 3. 컨테이너: 프로그레스바와 카드를 감싸는 컨테이너 */
+.container {
+    flex-direction: column;
+    align-items: center;
+    width: 960px;
+    max-width: 960px;
+}
+
+/* 4. 메인 카드: 고정된 너비로 설정 */
+.card {
+    flex-grow: 0;
+    position: relative;
+    width: 960px;
+    max-width: 960px;
+    padding: 80px 50px;
+    background-color: #111827;
+    border-radius: 0 0 40px 40px;
+    align-items: center;
+    justify-content: flex-start;
+    border-width: 2px;
+    border-color: #1f2937;
+}
+
+/* 4-1. 닫기 버튼: 카드 우측 상단에 고정 */
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: #1f2937;
+    color: #ffffff;
+    border-radius: 25px;
+    font-size: 70px;
+    border-width: 0;
+    padding: 0;
+    -unity-text-align: middle-center;
+    -unity-font-style: bold;
+}
+
+/* 5. 문제 텍스트 (한국어 가이드 등) */
+.question {
+    font-size: 64px;
+    font-weight: bold;
+    color: #ffffff;
+    -unity-text-align: middle-center;
+    margin-bottom: 60px;
+    white-space: normal;
+}
+
+/* 6. 빈칸(Blanks) 영역: 선택된 단어가 들어갈 자리 */
+.blanks {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    min-height: 140px;
+    margin-bottom: 80px;
+    width: 100%;
+    max-width: 860px;
+}
+
+.question-blank {
+    min-width: 160px;
+    height: 100px;
+    background-color: #1f2937;
+    border-radius: 20px;
+    border-bottom-width: 5px;
+    border-bottom-color: #374151;
+    margin: 10px;
+}
+
+/* 7. 단어 은행(Options): 사용자가 선택할 버튼들 */
+.options {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    width: 100%;
+    max-width: 860px;
+}
+
+.word-button {
+    padding: 30px 45px;
+    background-color: #1f2937;
+    color: #ffffff;
+    border-radius: 24px;
+    font-size: 44px;
+    font-weight: bold;
+    border-width: 0;
+    margin: 12px;
+    flex-shrink: 1;
+}
+
+/* 8. 미디어 컨트롤 (Play/Speak) */
+.play-button, .speak-button {
+    background-color: #10b981;
+    color: #ffffff;
+    border-radius: 20px;
+    font-size: 48px;
+    padding: 35px 70px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+/* 9. 하단 확인 버튼: 카드 외부 또는 하단에 배치 */
+.bottom-buttons {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    max-width: 960px;
+    margin-top: 80px;
+}
+
+.submit-button, .next-button {
+    background-color: #10b981;
+    color: #ffffff;
+    font-size: 56px;
+    font-weight: bold;
+    padding: 40px;
+    flex-grow: 1;
+    flex-basis: 0;
+    border-radius: 30px;
+    border-width: 0;
+}
+
+.next-button {
+    background-color: #374151;
+}
+
+/* 10. 상태 피드백 클래스 (C# 스크립트 대응) */
+.answer-button {
+    background-color: #0f172a;
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 20px 30px;
+    font-size: 44px;
+    font-weight: bold;
+}
+
+.correct {
+    background-color: #14532d;
+    border-width: 3px;
+    border-color: #10b981;
+}
+
+.incorrect {
+    background-color: #450a0a;
+    border-width: 3px;
+    border-color: #f30641;
+}
+
+.hidden {
+    display: none;
+}
+
+/* 11. 기타 요소들 */
+.result-label {
+    font-size: 32px;
+    color: #9ca3af;
+    margin-bottom: 20px;
+}
+
+.typing-input {
+    width: 80%;
+    font-size: 44px;
+    padding: 20px;
+    background-color: #1f2937;
+    color: #ffffff;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+/* Unity TextField의 실제 입력 영역 타겟팅 */
+.typing-input > .unity-text-field__input {
+    background-color: #1f2937;
+    color: #ffffff;
+    border-color: #374151;
+    padding: 20px;
+    border-radius: 20px;
+    -unity-text-align: middle-left;
+}
+
+/* 포커스 상태 */
+.typing-input:focus > .unity-text-field__input {
+    border-color: #10b981;
+    background-color: #1f2937;
+}
+
+.can-not-answer-container {
+    width: 100%;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.add-button {
+    background-color: #374151;
+    color: #ffffff;
+    font-size: 40px;
+    padding: 30px 60px;
+    border-radius: 20px;
+    border-width: 0;
+}

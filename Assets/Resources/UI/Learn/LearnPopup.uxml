@@ -1,0 +1,94 @@
+<engine:UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:engine="UnityEngine.UIElements"
+    xmlns:editor="UnityEditor.UIElements"
+    noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd"
+    editor-extension-mode="False">
+
+    <Style src="LearnPopup.uss" />
+
+    <!-- 전체 오버레이 -->
+    <engine:VisualElement name="popupContainer" class="popup-container">
+
+        <!-- 팝업 카드 -->
+        <engine:VisualElement name="learnPopup" class="learn-popup">
+
+            <!-- Header -->
+            <engine:Label name="popupTitle" text="Learn" class="popup-title" />
+
+            <!-- Header row with Progress and Save -->
+            <engine:VisualElement class="top-header-row">
+                <engine:Label name="progressLabel" text="" class="top-progress-label" />
+                <engine:Button name="saveSentenceButton" text="☆ Save" class="top-save-button" />
+            </engine:VisualElement>
+
+            <!-- 문장 영역 -->
+            <engine:VisualElement class="sentence-block">
+                <engine:Label name="sentenceLabel"
+                              text=""
+                              class="sentence-label" />
+
+                <engine:Label name="translationLabel"
+                              text=""
+                              class="translation-label" />
+            </engine:VisualElement>
+
+            <!-- 구분선 -->
+            <engine:VisualElement class="divider" />
+
+            <!-- 오디오 -->
+            <engine:Button name="playAudioButton"
+                           text="🔊 Listen"
+                           class="audio-button" />
+
+            <!-- 구분선 -->
+            <engine:VisualElement class="divider" />
+
+            <!-- 설명 토글 -->
+            <engine:Button name="toggleGrammarButton"
+                           text="ⓘ 표현 설명 보기"
+                           class="toggle-grammar-button" />
+
+            <engine:VisualElement name="grammarBox" class="grammar-box hidden">
+
+                <engine:Label name="grammarNoteLabel"
+                            class="grammar-text" />
+
+                <!-- 예문 스크롤 영역 -->
+                <engine:ScrollView name="examplesScrollView"
+                                class="examples-scroll"
+                                vertical-scroller-visibility="Auto"
+                                horizontal-scroller-visibility="Hidden">
+
+                    <engine:VisualElement name="examplesContainer"
+                                        class="examples-container" />
+
+                </engine:ScrollView>
+
+            </engine:VisualElement>   
+
+        <engine:VisualElement class="footer-row">
+
+            <engine:Button name="prevButton"
+                        text="PREV"
+                        class="footer-button secondary" />
+
+            <engine:Button name="closeButton"
+                        text="CLOSE"
+                        class="footer-button secondary" />
+                        
+            <engine:Button name="nextButton"
+                        text="NEXT"
+                        class="footer-button primary" />
+
+        </engine:VisualElement>                  
+
+        </engine:VisualElement>
+    </engine:VisualElement>
+
+    <engine:VisualElement name="translationBubble"
+                        class="translation-bubble hidden">
+        <engine:Label name="bubbleText"
+                    class="bubble-text" />
+    </engine:VisualElement>    
+</engine:UXML>

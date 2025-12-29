@@ -1,0 +1,79 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Resources/UI/Home/MusicPlayer.uss?fileID=7433441132597879392&amp;guid=c6c297ba80602c14c9ae0daf5729d0c7&amp;type=3#MusicPlayer" />
+    <ui:VisualElement name="PlayTabRoot" class="play-tab-root">
+        <ui:VisualElement class="play-header">
+            <ui:VisualElement class="header-actions">
+                <ui:Button name="SearchButton" double-click-selects-word="false" icon-image="project://database/Assets/Layer%20Lab/GUI%20Pro-FantasyRPG/ResourcesData/Sprites/Component/Icon_PictoIcons/Original/function_icon_search.png?fileID=2800000&amp;guid=825b2774470644f119f9dab0d88b1e44&amp;type=3#function_icon_search" selectable="true" class="header-icon-button" style="font-size: 60px;" />
+                <ui:Button name="FilterButton" icon-image="project://database/Assets/Layer%20Lab/GUI%20Pro-FantasyRPG/ResourcesData/Sprites/Component/Icon_PictoIcons/Original/function_icon_filter.png?fileID=2800000&amp;guid=f8b32b6efff7840a5b756f44d7507816&amp;type=3#function_icon_filter" class="header-icon-button" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:ScrollView name="SongListScroll" class="song-list-scroll">
+            <ui:VisualElement name="SongListContainer" class="song-list-container">
+                <ui:VisualElement class="song-card">
+                    <ui:VisualElement class="song-thumbnail" />
+                    <ui:VisualElement class="song-info">
+                        <ui:Label text="Shape of You" class="song-title" />
+                        <ui:Label text="Ed Sheeran" class="song-artist" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="VisualElement" class="song-action-area">
+                        <ui:Button name="Button" double-click-selects-word="false" icon-image="project://database/Assets/Layer%20Lab/GUI%20Pro-FantasyRPG/ResourcesData/Sprites/Component/Icon_PictoIcons/Original/function_icon_player_start.png?fileID=2800000&amp;guid=6540416ca6b9c4cec9160cce7b0cff6d&amp;type=3#function_icon_player_start" class="play-song-button" style="height: 82px; background-size: 100% 100%; border-left-color: rgb(29, 233, 182); border-right-color: rgb(29, 233, 182); border-top-color: rgb(29, 233, 182); border-bottom-color: rgb(29, 233, 182); border-top-width: 4px; border-right-width: 4px; border-bottom-width: 4px; border-left-width: 4px; width: 82px;" />
+                        <ui:Label name="Label" class="owned-check" style="background-image: url(&quot;project://database/Assets/Layer%20Lab/GUI%20Pro-FantasyRPG/ResourcesData/Sprites/Component/IconMisc/MenuIcon_Check_Disable.png?fileID=2800000&amp;guid=697f0daec80fc4534bd64044cfa2ee57&amp;type=3#MenuIcon_Check_Disable&quot;); background-size: 100% 100%; width: 72px; height: 72px;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement class="song-card">
+                    <ui:VisualElement class="song-thumbnail" />
+                    <ui:VisualElement class="song-info">
+                        <ui:Label text="Perfect" class="song-title" />
+                        <ui:Label text="Ed Sheeran" class="song-artist" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="song-action-area">
+                        <ui:Button text="♪500&#10;Buy" class="buy-button" style="height: 92px;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement class="song-card">
+                    <ui:VisualElement class="song-thumbnail" />
+                    <ui:VisualElement class="song-info">
+                        <ui:Label text="Hello" class="song-title" />
+                        <ui:Label text="Adele" class="song-artist" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="song-action-area">
+                        <ui:Button text="♪500&#10;Buy" class="buy-button" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement class="song-card">
+                    <ui:VisualElement class="song-thumbnail" />
+                    <ui:VisualElement class="song-info">
+                        <ui:Label text="Someone Like You" class="song-title" />
+                        <ui:Label text="Adele" class="song-artist" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="song-action-area">
+                        <ui:Button text="♪500&#10;Buy" class="buy-button" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement class="song-card">
+                    <ui:VisualElement class="song-thumbnail" />
+                    <ui:VisualElement class="song-info">
+                        <ui:Label text="Counting Stars" class="song-title" />
+                        <ui:Label text="OneRepublic" class="song-artist" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="song-action-area">
+                        <ui:Button text="♪500&#10;Buy" class="buy-button" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:ScrollView>
+        <ui:VisualElement name="MiniPlayer" class="mini-player">
+            <ui:VisualElement name="MiniPlayerContent" class="mini-player-content">
+                <ui:VisualElement name="MiniAlbumArt" class="mini-album-art" />
+                <ui:VisualElement class="mini-song-info">
+                    <ui:Label name="MiniSongTitle" text="Shape of You" class="mini-song-title" />
+                    <ui:Label name="MiniArtistName" text="Ed Sheeran" class="mini-artist-name" />
+                </ui:VisualElement>
+                <ui:VisualElement class="mini-controls">
+                    <ui:Button name="MiniPlayPauseButton" text="▶" class="mini-control-button" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="MiniPlayerTapArea" class="mini-player-tap-area" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

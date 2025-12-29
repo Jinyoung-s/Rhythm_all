@@ -1,0 +1,99 @@
+{
+    "songs": [
+        {
+            "chapterId": "beg_chap_001",
+            "title": "Shape of You",
+            "artist": "Ed Sheeran",
+            "difficulty": "Beginner",
+            "price": 500,
+            "duration": 225,
+            "isFree": true,
+            "isPurchased": false,
+            "purchaseDate": "",
+            "thumbnailPath": "Thumbnails/shape_of_you",
+            "fullAudioPath": "mp3/beg_chap_001/full",
+            "previewAudioPath": "mp3/beg_chap_001/preview",
+            "tags": [
+                "Pop",
+                "Easy"
+            ],
+            "description": "초보자를 위한 첫 번째 곡"
+        },
+        {
+            "chapterId": "beg_chap_002",
+            "title": "Perfect",
+            "artist": "Ed Sheeran",
+            "difficulty": "Beginner",
+            "price": 500,
+            "duration": 263,
+            "isFree": false,
+            "isPurchased": false,
+            "purchaseDate": "",
+            "thumbnailPath": "Thumbnails/perfect",
+            "fullAudioPath": "mp3/beg_chap_002/full",
+            "previewAudioPath": "mp3/beg_chap_002/preview",
+            "tags": [
+                "Ballad",
+                "Romantic"
+            ],
+            "description": "아름다운 발라드"
+        },
+        {
+            "chapterId": "elem_chap_001",
+            "title": "Hello",
+            "artist": "Adele",
+            "difficulty": "Elementary",
+            "price": 500,
+            "duration": 295,
+            "isFree": false,
+            "isPurchased": false,
+            "purchaseDate": "",
+            "thumbnailPath": "Thumbnails/hello",
+            "fullAudioPath": "mp3/elem_chap_001/full",
+            "previewAudioPath": "mp3/elem_chap_001/preview",
+            "tags": [
+                "Ballad",
+                "Soul"
+            ],
+            "description": "감성적인 발라드"
+        },
+        {
+            "chapterId": "elem_chap_002",
+            "title": "Someone Like You",
+            "artist": "Adele",
+            "difficulty": "Elementary",
+            "price": 500,
+            "duration": 285,
+            "isFree": false,
+            "isPurchased": false,
+            "purchaseDate": "",
+            "thumbnailPath": "Thumbnails/someone_like_you",
+            "fullAudioPath": "mp3/elem_chap_002/full",
+            "previewAudioPath": "mp3/elem_chap_002/preview",
+            "tags": [
+                "Ballad",
+                "Piano"
+            ],
+            "description": "피아노 발라드"
+        },
+        {
+            "chapterId": "int_chap_001",
+            "title": "Counting Stars",
+            "artist": "OneRepublic",
+            "difficulty": "Intermediate",
+            "price": 500,
+            "duration": 257,
+            "isFree": false,
+            "isPurchased": false,
+            "purchaseDate": "",
+            "thumbnailPath": "Thumbnails/counting_stars",
+            "fullAudioPath": "mp3/int_chap_001/full",
+            "previewAudioPath": "mp3/int_chap_001/preview",
+            "tags": [
+                "Pop",
+                "Rock"
+            ],
+            "description": "신나는 팝록"
+        }
+    ]
+}

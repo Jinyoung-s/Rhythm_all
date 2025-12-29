@@ -1,0 +1,58 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <Style src="CalibrationScreen.uss" />
+
+    <ui:VisualElement class="root">
+
+        <!-- Title -->
+        <ui:Label class="title" text="AUDIO CALIBRATION" />
+
+        <!-- Subtitle -->
+        <ui:Label class="subtitle" text="Adjust timing for perfect hits" />
+
+        <!-- Countdown -->
+        <ui:VisualElement class="countdown-container">
+
+            <ui:Label class="countdown-label" name="CountdownLabel" text="3" />
+
+            <ui:VisualElement class="tap-progress-row" name="TapProgressRow">
+                <ui:VisualElement class="tap-dot" name="Dot0" />
+                <ui:VisualElement class="tap-dot" name="Dot1" />
+                <ui:VisualElement class="tap-dot" name="Dot2" />
+                <ui:VisualElement class="tap-dot" name="Dot3" />
+                <ui:VisualElement class="tap-dot" name="Dot4" />
+                <ui:VisualElement class="tap-dot" name="Dot5" />
+                <ui:VisualElement class="tap-dot" name="Dot6" />
+                <ui:VisualElement class="tap-dot" name="Dot7" />
+                <ui:VisualElement class="tap-dot" name="Dot8" />
+                <ui:VisualElement class="tap-dot" name="Dot9" />
+            </ui:VisualElement>
+
+            <!-- ⭐ 탭 가능한 영역 추가 -->
+            <ui:VisualElement class="tap-area" name="TapArea">
+                <ui:Label class="tap-now" name="TapNowLabel" text="TAP NOW!" />
+            </ui:VisualElement>
+
+        </ui:VisualElement>
+
+        <!-- Offset Section -->
+        <ui:VisualElement class="offset-wrap">
+
+            <ui:VisualElement class="offset-row">
+                <ui:Button name="OffsetMinus" class="offset-button" text="−" />
+                <ui:Slider low-value="-600" high-value="600"  page-size="10" value="0" name="OffsetSlider" class="offset-slider" />
+                <ui:Button name="OffsetPlus" class="offset-button" text="+" />
+            </ui:VisualElement>
+
+            <ui:Label class="offset-label" name="OffsetLabel" text="Offset: +0 ms" />
+        </ui:VisualElement>
+
+        <!-- Buttons -->
+        <ui:VisualElement class="button-row">
+            <ui:Button name="StartTestButton" class="btn-primary" text="START TEST" />
+            <ui:Button name="ApplyButton" class="btn-secondary" text="APPLY OFFSET" />
+        </ui:VisualElement>
+
+        <ui:Label class="result-label" name="ResultLabel" text="" />
+
+    </ui:VisualElement>
+</ui:UXML>

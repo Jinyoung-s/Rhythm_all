@@ -1,0 +1,249 @@
+{
+  "Courses": [
+    {
+      "id": "beginner_01",
+      "name": "기초 생활 영어",
+      "description": "영어 학습의 기초를 다지고 기본적인 의사소통 능력을 개발합니다.",
+      "chapters": [
+        {
+          "id": "beg_chap_001",
+          "name": "인사와 소개",
+          "unlockedByDefault": true,
+          "nextChapterIds": ["beg_chap_002"],
+          "lessonCount": 5
+        },
+        {
+          "id": "beg_chap_002",
+          "name": "주변 사물 말하기",
+          "unlockedByDefault": false,
+          "nextChapterIds": ["beg_chap_003"],
+          "lessonCount": 6
+        },
+        {
+          "id": "beg_chap_003",
+          "name": "기본적인 행동 표현",
+          "unlockedByDefault": false,
+          "nextChapterIds": ["beg_chap_004"],
+          "lessonCount": 5
+        },
+        {
+          "id": "beg_chap_004",
+          "name": "기본적인 행동 표현1",
+          "unlockedByDefault": false,
+          "nextChapterIds": [],
+          "lessonCount": 6
+        }        
+      ]
+    },
+    {
+      "id": "foundation_01",
+      "name": "기본",
+      "description": "초급에서 배운 내용을 확장하고, 좀 더 복잡한 문장 구조와 실제적인 대화에 익숙해집니다. 새로운 도시에서의 적응기.",
+      "chapters": [
+        {
+          "id": "foun_chap_001",
+          "name": "새로운 시작 - 집 구하기",
+          "unlockedByDefault": true,
+          "nextChapterIds": ["foun_chap_002"],
+          "lessonCount": 7
+        },
+        {
+          "id": "foun_chap_002",
+          "name": "도시 탐험 - 길 찾기와 대중교통",
+          "unlockedByDefault": false,
+          "nextChapterIds": ["foun_chap_003"],
+          "lessonCount": 8
+        },
+        {
+          "id": "foun_chap_003",
+          "name": "맛있는 탐험 - 식당에서 주문하기",
+          "unlockedByDefault": false,
+          "nextChapterIds": ["foun_chap_004"],
+          "lessonCount": 10
+        },
+        {
+          "id": "foun_chap_004",
+          "name": "생활 필수품 쇼핑",
+          "unlockedByDefault": false,
+          "nextChapterIds": ["foun_chap_005"],
+          "lessonCount": 9
+        },
+        {
+          "id": "foun_chap_005",
+          "name": "새로운 친구 만들기",
+          "unlockedByDefault": false,
+          "nextChapterIds": ["foun_chap_006"],
+          "lessonCount": 8
+        },
+        {
+          "id": "foun_chap_006",
+          "name": "새로운 친구 만들기1",
+          "unlockedByDefault": false,
+          "nextChapterIds": ["foun_chap_007"],
+          "lessonCount": 9
+        },
+        {
+          "id": "foun_chap_007",
+          "name": "새로운 친구 만들기2",
+          "unlockedByDefault": false,
+          "nextChapterIds": ["foun_chap_008"],
+          "lessonCount": 9
+        },
+        {
+          "id": "foun_chap_008",
+          "name": "새로운 친구 만들기3",
+          "unlockedByDefault": false,
+          "nextChapterIds": [],
+          "lessonCount": 9
+        }                       
+      ]
+    },
+    {
+      "id": "intermediate_01",
+      "name": "중급",
+      "description": "다양한 상황에서 유창하게 의사소통하고, 좀 더 심화된 문법 지식을 습득합니다.",
+      "chapters": [
+        {
+          "id": "inter_chap_001",
+          "name": "의견 표현과 토론",
+          "unlockedByDefault": false,
+          "nextChapterIds": ["inter_chap_002"],
+          "lessonCount": 12
+        },
+        {
+          "id": "inter_chap_002",
+          "name": "문화와 전통 이해하기",
+          "unlockedByDefault": false,
+          "nextChapterIds": [],
+          "lessonCount": 10
+        }
+      ]
+    },
+    {
+      "id": "advanced_01",
+      "name": "고급",
+      "description": "원어민에 가까운 수준으로 영어를 구사하고, 복잡한 비즈니스 및 아카데믹 환경에서 영어를 활용합니다.",
+      "chapters": [
+        {
+          "id": "adv_chap_001",
+          "name": "비즈니스 미팅과 협상",
+          "unlockedByDefault": false,
+          "nextChapterIds": ["adv_chap_002"],
+          "lessonCount": 15
+        },
+        {
+          "id": "adv_chap_002",
+          "name": "학술 발표와 작문",
+          "unlockedByDefault": false,
+          "nextChapterIds": [],
+          "lessonCount": 14
+        }
+      ]
+    },
+    {
+      "id": "phrasal_verb_basics_plus",
+      "name": "구동사 기초편",
+      "description": "구동사의 리듬과 의미 감각을 단계별로 익히는 6챕터 완성 코스.",
+      "chapters": [
+        {
+          "id": "pvb_chap_001",
+          "name": "Forming the Habit",
+          "lessonCount": 5,
+          "unlockedByDefault": true,
+          "nextChapterIds": ["pvb_chap_002"]
+        },
+        {
+          "id": "pvb_chap_002",
+          "name": "Understanding the Logic",
+          "lessonCount": 6,
+          "unlockedByDefault": false,
+          "nextChapterIds": ["pvb_chap_003"]
+        },
+        {
+          "id": "pvb_chap_003",
+          "name": "Direction & Space",
+          "lessonCount": 6,
+          "unlockedByDefault": false,
+          "nextChapterIds": ["pvb_chap_004"]
+        },
+        {
+          "id": "pvb_chap_004",
+          "name": "Change & Result",
+          "lessonCount": 6,
+          "unlockedByDefault": false,
+          "nextChapterIds": ["pvb_chap_005"]
+        },
+        {
+          "id": "pvb_chap_005",
+          "name": "Daily Life Verbs",
+          "lessonCount": 7,
+          "unlockedByDefault": false,
+          "nextChapterIds": ["pvb_chap_006"]
+        },
+        {
+          "id": "pvb_chap_006",
+          "name": "Practice in Context",
+          "lessonCount": 6,
+          "unlockedByDefault": false,
+          "nextChapterIds": []
+        }
+      ]
+    },
+    {
+      "id": "phrasal_verb_core_plus",
+      "name": "구동사 기본편",
+      "description": "감정, 사고, 대화 속에서 구동사를 자유롭게 구사하는 7챕터 실전 코스.",
+      "chapters": [
+        {
+          "id": "pvc_chap_001",
+          "name": "Dealing with People",
+          "lessonCount": 7,
+          "unlockedByDefault": true,
+          "nextChapterIds": ["pvc_chap_002"]
+        },
+        {
+          "id": "pvc_chap_002",
+          "name": "Thinking and Deciding",
+          "lessonCount": 8,
+          "unlockedByDefault": false,
+          "nextChapterIds": ["pvc_chap_003"]
+        },
+        {
+          "id": "pvc_chap_003",
+          "name": "Handling Problems",
+          "lessonCount": 8,
+          "unlockedByDefault": false,
+          "nextChapterIds": ["pvc_chap_004"]
+        },
+        {
+          "id": "pvc_chap_004",
+          "name": "Subtle Communication",
+          "lessonCount": 8,
+          "unlockedByDefault": false,
+          "nextChapterIds": ["pvc_chap_005"]
+        },
+        {
+          "id": "pvc_chap_005",
+          "name": "Expression & Debate",
+          "lessonCount": 7,
+          "unlockedByDefault": false,
+          "nextChapterIds": ["pvc_chap_006"]
+        },
+        {
+          "id": "pvc_chap_006",
+          "name": "Emotion & Reflection",
+          "lessonCount": 8,
+          "unlockedByDefault": false,
+          "nextChapterIds": ["pvc_chap_007"]
+        },
+        {
+          "id": "pvc_chap_007",
+          "name": "Real Life Mastery",
+          "lessonCount": 7,
+          "unlockedByDefault": false,
+          "nextChapterIds": []
+        }
+      ]
+    }       
+  ]
+}

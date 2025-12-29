@@ -1,0 +1,21 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Resources/UI/Game/TopBar.uss?fileID=7433441132597879392&amp;guid=90bfab72a1274674089e554f65c08ddf&amp;type=3#TopBar" />
+    <ui:VisualElement name="top-bar">
+        <ui:VisualElement name="header-container">
+            <ui:VisualElement name="buttons-container" style="-unity-text-align: middle-left;">
+                <ui:Button name="btn-back" text="←" />
+                <ui:Button name="btn-pause" text="Ⅱ" />
+                <ui:Button name="btn-settings" style="-unity-text-align: middle-left; white-space: pre; top: 6px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="info-container">
+            <ui:VisualElement name="status-container">
+                <ui:Label name="score" text="Score: 0000000" />
+                <ui:Label name="life" text="❤️❤️❤️" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="life-bar-container" style="top: 40px; width: 100%;">
+            <ui:VisualElement name="life-bar-fill" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

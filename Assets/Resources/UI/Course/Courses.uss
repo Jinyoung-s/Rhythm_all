@@ -1,0 +1,310 @@
+.page {
+    background-color: rgb(13, 17, 23);
+    color: rgb(224, 224, 224);
+    flex-direction: column;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    padding-bottom: 160px;
+    min-height: 1920px;
+}
+
+.header {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.level-title {
+    font-size: 48px;
+    -unity-font-style: bold;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+
+.progress-text {
+    font-size: 28px;
+    color: rgb(176, 176, 176);
+    margin-bottom: 16px;
+}
+
+.top-info {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 16px;
+    background-color: rgba(50, 55, 75, 0.8);
+    border: 1px solid rgb(62, 92, 194);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative; /* scroll 영향 받지 않음 */
+    
+}
+
+.title-row {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.course-icon {
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+}
+
+.course-title {
+    font-size: 42px;
+    -unity-font-style: bold;
+    color: rgb(255, 255, 255);
+    flex-grow: 1; /* 제목이 가운데로 늘어남 */
+}
+
+.change-course-button {
+    font-size: 54px;
+    color: rgb(200, 230, 255);
+    background-color: rgba(60, 80, 110, 0.6);
+    border-radius: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-width: 1px;
+    border-color: rgb(80, 120, 180);
+    transition: background-color 0.2s;
+    -unity-font-definition: resource("Fonts/NotoSansKR-Regular");
+}
+
+.change-course-button:hover {
+    background-color: rgba(100, 140, 200, 0.8);
+}
+
+
+
+.course-title {
+    font-size: 52px;
+    -unity-font-style: bold;
+    color: rgb(255, 255, 255);
+    margin-bottom: 8px;
+    -unity-font-definition: resource("Fonts/NotoSansKR-Regular");
+}
+
+.course-description {
+    font-size: 42px;
+    color: rgb(176, 176, 176);
+    white-space: normal;
+    unity-text-align: upper-left;
+    -unity-font-definition: resource("Fonts/NotoSansKR-Regular");
+}
+
+
+.description-text {
+    font-size: 38px;
+    color: rgb(176, 176, 176);
+    margin-bottom: 16px;
+    unity-text-align: middle-center;
+    white-space: pre-wrap;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 24px;
+    background-color: rgb(68, 68, 92);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.chapter-scroll {
+    flex-grow: 1;
+    height: 100%;
+    padding-bottom: 20px;
+}
+
+.chapter-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.chapter-card {
+    width: 48%;
+    background-color: rgb(42, 42, 64);
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.chapter-card:active {
+    opacity: 0.9;
+}
+
+.chapter-number {
+    font-size: 72px;
+    -unity-font-style: bold;
+    color: rgb(74, 74, 110);
+    margin-bottom: 8px;
+}
+
+.chapter-title {
+    font-size: 44px;
+    -unity-font-style: bold;
+    color: rgb(224, 224, 224);
+    unity-text-align: middle-center;
+    margin-bottom: 12px;
+    flex-shrink: 0;
+    white-space: nowrap;
+    overflow: visible;
+    -unity-text-align: middle-center;
+    -unity-font-definition: resource("Fonts/NotoSansKR-Regular");
+}
+
+.chapter-status {
+    font-size: 46px;
+    color: rgb(136, 136, 160);
+    -unity-text-align: middle-center;
+    -unity-font-definition: resource("Fonts/NotoSansKR-Regular");
+}
+
+.completed {
+    background-color: rgb(51, 68, 51);
+    border-left-width: 6px;
+    border-right-width: 6px;
+    border-top-width: 6px;
+    border-bottom-width: 6px;
+    border-left-color: rgb(105, 240, 174);
+    border-right-color: rgb(105, 240, 174);
+    border-top-color: rgb(105, 240, 174);
+    border-bottom-color: rgb(105, 240, 174);
+}
+
+.completed .chapter-number {
+    color: rgb(105, 240, 174);
+}
+
+.completed .chapter-title {
+    color: rgb(255, 255, 255);
+}
+
+.completed .chapter-status {
+    color: rgb(105, 240, 174);
+}
+
+.in-progress {
+    border-left-width: 6px;
+    border-right-width: 6px;
+    border-top-width: 6px;
+    border-bottom-width: 6px;
+    border-left-color: rgb(255, 171, 64);
+    border-right-color: rgb(255, 171, 64);
+    border-top-color: rgb(255, 171, 64);
+    border-bottom-color: rgb(255, 171, 64);
+}
+
+.in-progress .chapter-number {
+    color: rgb(255, 171, 64);
+}
+
+.in-progress .chapter-status {
+    color: rgb(255, 171, 64);
+}
+
+.locked {
+    background-color: rgb(32, 32, 48);
+    opacity: 0.7;
+}
+
+.not-started {
+    border-left-width: 6px;
+    border-right-width: 6px;
+    border-top-width: 6px;
+    border-bottom-width: 6px;
+    border-left-color: rgb(64, 128, 255);
+    border-right-color: rgb(64, 128, 255);
+    border-top-color: rgb(64, 128, 255);
+    border-bottom-color: rgb(64, 128, 255);
+    background-color: rgb(36, 44, 70);
+}
+
+.not-started .chapter-number {
+    color: rgb(64, 128, 255);
+}
+
+.not-started .chapter-status {
+    color: rgb(128, 160, 255);
+}
+
+.not-started .chapter-title {
+    color: rgb(224, 224, 224);
+}
+
+.locked .chapter-number {
+    color: rgb(56, 56, 80);
+}
+
+.locked .chapter-title {
+    color: rgb(136, 136, 160);
+}
+
+.locked .chapter-status {
+    color: rgb(136, 136, 160);
+}
+
+.bottom-nav {
+    height: 130px;
+    background-color: rgb(42, 42, 64);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.nav-item {
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(136, 136, 160);
+    border-width: 0;
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: 4px;
+    margin-right: 4px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.nav-item:active {
+    opacity: 0.85;
+}
+
+.nav-item.active {
+    color: rgb(105, 240, 174);
+}
+
+.nav-icon {
+    font-size: 40px;
+    margin-bottom: 6px;
+    unity-text-align: middle-center;
+}
+
+.nav-text {
+    font-size: 24px;
+    -unity-font-style: bold;
+    unity-text-align: middle-center;
+}

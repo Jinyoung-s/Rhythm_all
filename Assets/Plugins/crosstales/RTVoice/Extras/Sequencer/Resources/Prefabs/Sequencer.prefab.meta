@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 728e82a80bb73d247a0b7be5ef9eee1d
+timeCreated: 1457513301
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 41068
+  packageName: RT-Voice PRO
+  packageVersion: 2024.1.1
+  assetPath: Assets/Plugins/crosstales/RTVoice/Extras/Sequencer/Resources/Prefabs/Sequencer.prefab
+  uploadId: 650789

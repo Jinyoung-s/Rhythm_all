@@ -1,0 +1,88 @@
+.popup-root {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.2s;
+    transition-property: opacity;
+    -unity-font-definition: resource('Fonts/NotoSansKR-Bold');
+}
+
+.popup-box {
+    width: 860px;
+    background-color: rgb(30, 30, 30);
+    border-radius: 40px;
+    padding: 60px;
+    flex-direction: column;
+    align-items: center;
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.title {
+    font-size: 54px;
+    -unity-font-style: bold;
+    -unity-font-definition: resource('Fonts/NotoSansKR-Bold');
+    color: white;
+    margin-bottom: 30px;
+    text-align: center;
+    unity-text-align: middle-center;
+}
+
+.message {
+    font-size: 38px;
+    color: rgb(176, 176, 184);
+    margin-bottom: 60px;
+    text-align: center;
+    white-space: normal;
+    width: 100%;
+    unity-text-align: middle-center;
+}
+
+.button-row {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    /* gap 대신 개별 마진으로 확실하게 간격 확보 */
+}
+
+.button-primary {
+    flex: 1;
+    margin-left: 0; /* 마진 제거 (혼자 있을 때 중앙 정렬을 위해) */
+    height: 120px;
+    border-radius: 20px;
+    color: white;
+    font-size: 42px;
+    -unity-font-style: bold;
+    -unity-font-definition: resource('Fonts/NotoSansKR-Bold');
+    background-image: url("project://database/Assets/Resources/buttonbg/gradient_pupple.png?fileID=21300000&guid=15a33b216992dcf45a6976ba9812a442&type=3#gradient_pupple");
+    border-width: 0;
+    unity-text-align: middle-center;
+}
+
+.button-secondary {
+    flex: 1;
+    margin-right: 40px; /* 오른쪽(프라이머리 버튼과의 사이)에만 간격 추가 */
+    height: 120px;
+    border-radius: 20px;
+    background-color: rgb(44, 44, 52);
+    border-width: 3px;
+    border-color: rgb(74, 74, 85);
+    color: white;
+    font-size: 42px;
+    -unity-font-style: bold;
+    -unity-font-definition: resource('Fonts/NotoSansKR-Bold');
+    unity-text-align: middle-center;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: flex;
+}

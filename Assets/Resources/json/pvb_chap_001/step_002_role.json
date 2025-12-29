@@ -1,0 +1,237 @@
+[
+  {
+    "word": "I",
+    "role": "subject",
+    "buttonBg": "neon_boder_blue"
+  },
+  {
+    "word": "wake",
+    "role": "verb",
+    "buttonBg": "neon_boder_red"
+  },
+  {
+    "word": "up",
+    "role": "other",
+    "buttonBg": "neon_boder_gray"
+  },
+  {
+    "word": "early",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "and",
+    "role": "conjunction",
+    "buttonBg": "neon_boder_white"
+  },
+  {
+    "word": "get",
+    "role": "verb",
+    "buttonBg": "neon_boder_red"
+  },
+  {
+    "word": "up",
+    "role": "other",
+    "buttonBg": "neon_boder_gray"
+  },
+  {
+    "word": "right",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "away",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "turn",
+    "role": "verb",
+    "buttonBg": "neon_boder_red"
+  },
+  {
+    "word": "off",
+    "role": "other",
+    "buttonBg": "neon_boder_gray"
+  },
+  {
+    "word": "the",
+    "role": "determiner",
+    "buttonBg": "neon_boder_yellow"
+  },
+  {
+    "word": "alarm",
+    "role": "object",
+    "buttonBg": "neon_boder_green"
+  },
+  {
+    "word": "start",
+    "role": "verb",
+    "buttonBg": "neon_boder_red"
+  },
+  {
+    "word": "my",
+    "role": "determiner",
+    "buttonBg": "neon_boder_yellow"
+  },
+  {
+    "word": "day",
+    "role": "object",
+    "buttonBg": "neon_boder_green"
+  },
+  {
+    "word": "pick",
+    "role": "verb",
+    "buttonBg": "neon_boder_red"
+  },
+  {
+    "word": "up",
+    "role": "other",
+    "buttonBg": "neon_boder_gray"
+  },
+  {
+    "word": "my",
+    "role": "determiner",
+    "buttonBg": "neon_boder_yellow"
+  },
+  {
+    "word": "phone",
+    "role": "object",
+    "buttonBg": "neon_boder_green"
+  },
+  {
+    "word": "to",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "check",
+    "role": "verb",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "the",
+    "role": "determiner",
+    "buttonBg": "neon_boder_yellow"
+  },
+  {
+    "word": "time",
+    "role": "object",
+    "buttonBg": "neon_boder_green"
+  },
+  {
+    "word": "Then",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "put",
+    "role": "verb",
+    "buttonBg": "neon_boder_red"
+  },
+  {
+    "word": "it",
+    "role": "object",
+    "buttonBg": "neon_boder_green"
+  },
+  {
+    "word": "down",
+    "role": "other",
+    "buttonBg": "neon_boder_gray"
+  },
+  {
+    "word": "clear",
+    "role": "verb",
+    "buttonBg": "neon_boder_red"
+  },
+  {
+    "word": "my",
+    "role": "determiner",
+    "buttonBg": "neon_boder_yellow"
+  },
+  {
+    "word": "mind",
+    "role": "object",
+    "buttonBg": "neon_boder_green"
+  },
+  {
+    "word": "my",
+    "role": "determiner",
+    "buttonBg": "neon_boder_yellow"
+  },
+  {
+    "word": "bag",
+    "role": "object",
+    "buttonBg": "neon_boder_green"
+  },
+  {
+    "word": "grab",
+    "role": "verb",
+    "buttonBg": "neon_boder_red"
+  },
+  {
+    "word": "my",
+    "role": "determiner",
+    "buttonBg": "neon_boder_yellow"
+  },
+  {
+    "word": "keys",
+    "role": "object",
+    "buttonBg": "neon_boder_green"
+  },
+  {
+    "word": "them",
+    "role": "object",
+    "buttonBg": "neon_boder_green"
+  },
+  {
+    "word": "when",
+    "role": "conjunction",
+    "buttonBg": "neon_boder_white"
+  },
+  {
+    "word": "don’t",
+    "role": "verb",
+    "buttonBg": "neon_boder_red"
+  },
+  {
+    "word": "need",
+    "role": "verb",
+    "buttonBg": "neon_boder_red"
+  },
+  {
+    "word": "pick",
+    "role": "verb",
+    "buttonBg": "neon_boder_red"
+  },
+  {
+    "word": "things",
+    "role": "object",
+    "buttonBg": "neon_boder_green"
+  },
+  {
+    "word": "up",
+    "role": "other",
+    "buttonBg": "neon_boder_gray"
+  },
+  {
+    "word": "need",
+    "role": "verb",
+    "buttonBg": "neon_boder_red"
+  },
+  {
+    "word": "they’re",
+    "role": "subject",
+    "buttonBg": "neon_boder_blue"
+  },
+  {
+    "word": "not",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "necessary",
+    "role": "complement",
+    "buttonBg": "neon_boder_violet"
+  }
+]

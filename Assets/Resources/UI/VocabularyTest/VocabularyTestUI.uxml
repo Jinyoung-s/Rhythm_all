@@ -1,0 +1,57 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xmlns:engine="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Resources/UI/VocabularyTest/VocabularyTestStyle.uss?fileID=7433441132597879392&amp;guid=87931b38a3f442345931aff089c94dc5&amp;type=3#VocabularyTestStyle" />
+    <ui:VisualElement class="wrapper">
+        <ui:VisualElement class="test-card">
+            <ui:VisualElement class="header">
+                <ui:Button name="BackButton" text="←" class="btn-icon" />
+                <ui:VisualElement class="progress-info">
+                    <ui:Label name="ProgressLabel" text="1 / 10" class="progress-text" />
+                    <ui:VisualElement class="progress-bar-container">
+                        <ui:VisualElement name="ProgressBar" class="progress-bar" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:Button name="SettingsButton" text="⚙" class="btn-icon" />
+            </ui:VisualElement>
+            <ui:VisualElement class="type-badge-container">
+                <ui:Label name="TypeBadge" text="듣고 고르기" class="type-badge" />
+            </ui:VisualElement>
+            <ui:VisualElement class="question-area">
+                <ui:VisualElement name="ListenMode" class="listen-mode">
+                    <ui:Button name="SpeakerButton" text="🔊" class="speaker-button" />
+                    <ui:Label text="단어를 듣고 올바른 단어를 선택하세요" class="instruction" style="font-size: 42px;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="ReadingMode" class="reading-mode">
+                    <ui:Label name="QuestionText" text="believe" class="question-text" />
+                    <ui:Label name="Instruction" text="의미를 선택하세요" class="instruction" />
+                </ui:VisualElement>
+                <ui:VisualElement name="TypingMode" class="typing-mode">
+                    <ui:Button name="TypingSpeakerButton" text="🔊" class="speaker-button-small" />
+                    <ui:Label text="들은 단어를 입력하세요" class="instruction" />
+                    <ui:TextField name="TypingInput" class="typing-input" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="OptionsContainer" class="options">
+                <ui:Button name="Option0" text="believe" class="option-btn" />
+                <ui:Button name="Option1" text="achieve" class="option-btn" />
+                <ui:Button name="Option2" text="receive" class="option-btn" />
+                <ui:Button name="Option3" text="deceive" class="option-btn" />
+            </ui:VisualElement>
+            <ui:VisualElement name="FeedbackPanel" class="feedback-panel correct">
+                <ui:Label name="FeedbackIcon" text="✓" class="feedback-icon" />
+                <ui:VisualElement class="feedback-content">
+                    <ui:Label name="FeedbackTitle" text="정답입니다!" class="feedback-title" />
+                    <ui:VisualElement class="word-detail">
+                        <ui:Label name="WordMain" text="believe" class="word-main" />
+                        <ui:Label name="WordPhonetic" text="/bɪˈliːv/" class="word-phonetic" />
+                        <ui:Label name="WordPOS" text="verb" class="word-pos" />
+                        <ui:Label name="WordMeaning" text="믿다, 신뢰하다" class="word-meaning" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement class="actions">
+                <ui:Button name="SubmitButton" text="확인" class="btn primary" />
+                <ui:Button name="NextButton" text="다음 문제 ▶" class="btn secondary" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

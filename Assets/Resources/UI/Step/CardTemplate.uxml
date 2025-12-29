@@ -1,0 +1,38 @@
+<engine:UXML xmlns:engine="UnityEngine.UIElements" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="CardTemplate" editor-extension-mode="False">
+    <Style src="CardList.uss" />
+
+    <engine:VisualElement name="cardRoot" class="card">
+        <engine:VisualElement name="cardMain" class="card-main">
+            <!-- 상단: 이미지 + 타이틀 -->
+            <engine:VisualElement class="top-row">
+                <engine:VisualElement class="cover-container">
+                    <engine:Image name="cover" scale-mode="ScaleAndCrop" class="cover" />
+                </engine:VisualElement>
+
+                <engine:VisualElement class="right-row">
+                    <engine:VisualElement class="progress-bar">
+                        <engine:VisualElement class="progress-step filled" />
+                        <engine:VisualElement class="progress-step" />
+                        <engine:VisualElement class="progress-step" />
+                    </engine:VisualElement>
+
+                    <engine:Label name="title" text="Chapter Title" class="title" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+
+            <!-- 하단: 버튼 영역 -->
+            <engine:VisualElement class="bottom-row">
+                <engine:VisualElement class="button-row">
+                    <engine:Button name="learnButton" text="Learn" class="step-button learn-button" />
+                    <engine:Button name="singAlongButton" text="Sing-Along" class="step-button sing-button" />
+                </engine:VisualElement>
+                <engine:VisualElement class="button-row">
+                    <engine:Button name="playButton1" text="Play Block" class="step-button play-button1" />
+                    <engine:Button name="playButton2" text="Play Line" class="step-button play-button2" />
+                    <engine:Button name="testButton" text="Test" class="step-button test-button" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+        </engine:VisualElement>
+
+    </engine:VisualElement>
+</engine:UXML>

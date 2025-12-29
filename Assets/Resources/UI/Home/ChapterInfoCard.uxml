@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ui:UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ui="UnityEngine.UIElements"
+    xmlns:uie="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd"
+>
+  <ui:Style src="ChapterInfoCard.uss" />
+  <ui:VisualElement class="info-card">
+    <ui:Label name="title" class="title" text="Chapter 3 - Everyday Conversations"/>
+    <ui:Label name="subtitle" class="subtitle" text="🔥 3-Day Streak"/>
+
+    <ui:ProgressBar name="progress-bar" class="progress" value="45" high-value="100" />
+
+    <ui:VisualElement class="stats">
+      <ui:Label name="sentences" text="15 Key Sentences"/>
+      <ui:Label name="tracks" text="3 Rhythm Tracks"/>
+    </ui:VisualElement>
+
+  </ui:VisualElement>    
+</ui:UXML>

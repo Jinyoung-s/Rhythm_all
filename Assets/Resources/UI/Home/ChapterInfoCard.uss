@@ -1,0 +1,88 @@
+/* 기본 카드 스타일 */
+.info-card {
+    position: absolute;
+    width: 420px;
+    padding: 18px;
+    border-radius: 16px;
+    background-color: #1A1F25;
+    color: #E0E6ED;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+    top: 550px;
+    left: 59%;
+    word-break: break-word;
+    white-space: normal;
+    overflow-wrap: anywhere;
+}
+
+/* 텍스트 스타일 */
+.title {
+    font-size: 47px;
+    word-break: break-word;
+    white-space: normal;
+    overflow-wrap: anywhere; 
+    -unity-font-style: bold;   
+}
+
+.subtitle {
+    color: #56CCF2;
+    font-size: 38px;
+}
+
+.progress {
+    height: 8px;
+    margin-top: 6px;
+}
+
+/* 통계 정보 */
+.stats {
+    flex-direction: column;
+    gap: 3px;
+    font-size: 32px;
+    color: #A0A8B8;
+}
+
+/* 버튼 영역 */
+.buttons {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+    font-size: 42px;
+}
+
+/* 버튼 스타일 */
+.btn-outline {
+    flex-grow: 1;
+    border-width: 1px;
+    border-color: #56CCF2;
+    color: #56CCF2;
+    background-color: transparent;
+    border-radius: 6px;
+    padding: 6px 10px;
+}
+
+.btn-outline:hover {
+    background-color: rgba(86,204,242,0.1);
+}
+
+.btn-primary {
+    flex-grow: 1;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 6px 10px;
+}
+
+.btn-primary:hover {
+    background-color: linear-gradient(90deg, #FF8C00, #FF5722);
+}
+
+.reward {
+    font-size: 42px;
+    color: #9BA4B5;
+    margin-top: 4px;
+}

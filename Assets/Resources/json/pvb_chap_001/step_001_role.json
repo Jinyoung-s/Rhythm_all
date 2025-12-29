@@ -1,0 +1,167 @@
+[
+    {
+        "word": "I",
+        "role": "subject",
+        "buttonBg": "neon_boder_blue"
+    },
+    {
+        "word": "wake",
+        "role": "verb",
+        "buttonBg": "neon_boder_red"
+    },
+    {
+        "word": "up",
+        "role": "modifier",
+        "buttonBg": "neon_boder_orange"
+    },
+    {
+        "word": "when",
+        "role": "conjunction",
+        "buttonBg": "neon_boder_white"
+    },
+    {
+        "word": "the",
+        "role": "modifier",
+        "buttonBg": "neon_boder_orange"
+    },
+    {
+        "word": "sun",
+        "role": "subject",
+        "buttonBg": "neon_boder_blue"
+    },
+    {
+        "word": "light",
+        "role": "object",
+        "buttonBg": "neon_boder_green"
+    },
+    {
+        "word": "is",
+        "role": "verb",
+        "buttonBg": "neon_boder_red"
+    },
+    {
+        "word": "my",
+        "role": "modifier",
+        "buttonBg": "neon_boder_orange"
+    },
+    {
+        "word": "face",
+        "role": "object",
+        "buttonBg": "neon_boder_green"
+    },
+    {
+        "word": "get",
+        "role": "verb",
+        "buttonBg": "neon_boder_red"
+    },
+    {
+        "word": "and",
+        "role": "conjunction",
+        "buttonBg": "neon_boder_white"
+    },
+    {
+        "word": "make",
+        "role": "verb",
+        "buttonBg": "neon_boder_red"
+    },
+    {
+        "word": "little",
+        "role": "modifier",
+        "buttonBg": "neon_boder_orange"
+    },
+    {
+        "word": "space",
+        "role": "object",
+        "buttonBg": "neon_boder_green"
+    },
+    {
+        "word": "turn",
+        "role": "verb",
+        "buttonBg": "neon_boder_red"
+    },
+    {
+        "word": "off",
+        "role": "modifier",
+        "buttonBg": "neon_boder_orange"
+    },
+    {
+        "word": "alarm",
+        "role": "object",
+        "buttonBg": "neon_boder_green"
+    },
+    {
+        "word": "beside",
+        "role": "modifier",
+        "buttonBg": "neon_boder_orange"
+    },
+    {
+        "word": "bed",
+        "role": "object",
+        "buttonBg": "neon_boder_green"
+    },
+    {
+        "word": "put",
+        "role": "verb",
+        "buttonBg": "neon_boder_red"
+    },
+    {
+        "word": "on",
+        "role": "modifier",
+        "buttonBg": "neon_boder_orange"
+    },
+    {
+        "word": "shirt",
+        "role": "object",
+        "buttonBg": "neon_boder_green"
+    },
+    {
+        "word": "blue",
+        "role": "complement",
+        "buttonBg": "neon_boder_violet"
+    },
+    {
+        "word": "red",
+        "role": "complement",
+        "buttonBg": "neon_boder_violet"
+    },
+    {
+        "word": "take",
+        "role": "verb",
+        "buttonBg": "neon_boder_red"
+    },
+    {
+        "word": "coat",
+        "role": "object",
+        "buttonBg": "neon_boder_green"
+    },
+    {
+        "word": "wind",
+        "role": "subject",
+        "buttonBg": "neon_boder_blue"
+    },
+    {
+        "word": "says",
+        "role": "verb",
+        "buttonBg": "neon_boder_red"
+    },
+    {
+        "word": "no",
+        "role": "object",
+        "buttonBg": "neon_boder_green"
+    },
+    {
+        "word": "sunlight",
+        "role": "subject",
+        "buttonBg": "neon_boder_blue"
+    },
+    {
+        "word": "hits",
+        "role": "verb",
+        "buttonBg": "neon_boder_red"
+    },
+    {
+        "word": "all",
+        "role": "modifier",
+        "buttonBg": "neon_boder_orange"
+    }
+]

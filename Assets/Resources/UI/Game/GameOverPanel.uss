@@ -1,0 +1,76 @@
+/* GameOverPanel.uss — 중앙 정렬 & UI Toolkit 호환 */
+
+#game-over-root {
+    width: 100%;
+    height: 100%;
+    display: none; /* 기본은 숨김 */
+    flex-direction: column;
+    justify-content: center;   /* ✅ 수직 중앙 */
+    align-items: center;       /* ✅ 수평 중앙 */
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 20px;
+}
+
+
+#Bigtitle {
+    color: white;
+    font-size: 72px;
+    unity-font-style: bold;
+    -unity-text-align: middle-center;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+#title {
+    color: white;
+    font-size: 56px;
+    unity-font-style: bold;
+    -unity-text-align: middle-center;
+    margin-bottom: 10px;
+}
+
+#subtitle {
+    color: rgb(180, 180, 180);
+    font-size: 48px;
+    -unity-text-align: middle-center;
+    margin-bottom: 30px;
+}
+
+#buttons {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#retry-btn,
+#next-btn {
+    width: 300px;
+    height: 80px;
+    border-radius: 16px;
+    font-size: 38px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: rgb(0, 207, 255);
+    color: white;
+}
+
+#retry-btn:pointerover,
+#next-btn:pointerover {
+    background-color: rgb(0, 180, 230);
+}

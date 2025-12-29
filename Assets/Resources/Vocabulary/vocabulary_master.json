@@ -1,0 +1,874 @@
+{
+  "words": [
+    {
+      "word": "wake",
+      "meaning": "깨다, 일어나다",
+      "partOfSpeech": "verb",
+      "example": "I wake up at seven."
+    },
+    {
+      "word": "early",
+      "meaning": "일찍, 이른",
+      "partOfSpeech": "adverb",
+      "example": "I wake up early."
+    },
+    {
+      "word": "turn",
+      "meaning": "돌리다, 회전하다",
+      "partOfSpeech": "verb",
+      "example": "Turn off the alarm."
+    },
+    {
+      "word": "alarm",
+      "meaning": "알람, 경보",
+      "partOfSpeech": "noun",
+      "example": "I turn off the alarm."
+    },
+    {
+      "word": "start",
+      "meaning": "시작하다",
+      "partOfSpeech": "verb",
+      "example": "Start your day."
+    },
+    {
+      "word": "day",
+      "meaning": "하루, 날",
+      "partOfSpeech": "noun",
+      "example": "Have a nice day."
+    },
+    {
+      "word": "pick",
+      "meaning": "고르다, 집어들다",
+      "partOfSpeech": "verb",
+      "example": "Pick up your phone."
+    },
+    {
+      "word": "phone",
+      "meaning": "전화기",
+      "partOfSpeech": "noun",
+      "example": "My phone is ringing."
+    },
+    {
+      "word": "check",
+      "meaning": "확인하다",
+      "partOfSpeech": "verb",
+      "example": "Check the time."
+    },
+    {
+      "word": "time",
+      "meaning": "시간",
+      "partOfSpeech": "noun",
+      "example": "What time is it?"
+    },
+    {
+      "word": "put",
+      "meaning": "놓다, 두다",
+      "partOfSpeech": "verb",
+      "example": "Put it down."
+    },
+    {
+      "word": "down",
+      "meaning": "아래로, 내려",
+      "partOfSpeech": "adverb",
+      "example": "Sit down, please."
+    },
+    {
+      "word": "clear",
+      "meaning": "치우다, 깨끗하게 하다",
+      "partOfSpeech": "verb",
+      "example": "Clear your mind."
+    },
+    {
+      "word": "mind",
+      "meaning": "마음, 정신",
+      "partOfSpeech": "noun",
+      "example": "Clear your mind."
+    },
+    {
+      "word": "bag",
+      "meaning": "가방",
+      "partOfSpeech": "noun",
+      "example": "My bag is heavy."
+    },
+    {
+      "word": "grab",
+      "meaning": "움켜잡다, 잡다",
+      "partOfSpeech": "verb",
+      "example": "Grab your keys."
+    },
+    {
+      "word": "keys",
+      "meaning": "열쇠 (복수)",
+      "partOfSpeech": "noun",
+      "example": "Where are my keys?"
+    },
+    {
+      "word": "need",
+      "meaning": "필요하다",
+      "partOfSpeech": "verb",
+      "example": "I need help."
+    },
+    {
+      "word": "things",
+      "meaning": "물건들, 것들",
+      "partOfSpeech": "noun",
+      "example": "I need many things."
+    },
+    {
+      "word": "necessary",
+      "meaning": "필요한",
+      "partOfSpeech": "adjective",
+      "example": "It's not necessary."
+    },
+    {
+      "word": "when",
+      "meaning": "~할 때",
+      "partOfSpeech": "conjunction",
+      "example": "When I wake up."
+    },
+    {
+      "word": "sunlight",
+      "meaning": "햇빛",
+      "partOfSpeech": "noun",
+      "example": "The sunlight is bright."
+    },
+    {
+      "word": "sun",
+      "meaning": "태양, 해",
+      "partOfSpeech": "noun",
+      "example": "The sun is shining."
+    },
+    {
+      "word": "light",
+      "meaning": "빛",
+      "partOfSpeech": "noun",
+      "example": "Turn on the light."
+    },
+    {
+      "word": "face",
+      "meaning": "얼굴",
+      "partOfSpeech": "noun",
+      "example": "Wash your face."
+    },
+    {
+      "word": "make",
+      "meaning": "만들다",
+      "partOfSpeech": "verb",
+      "example": "Make your bed."
+    },
+    {
+      "word": "little",
+      "meaning": "작은, 조금",
+      "partOfSpeech": "adjective",
+      "example": "A little space."
+    },
+    {
+      "word": "space",
+      "meaning": "공간",
+      "partOfSpeech": "noun",
+      "example": "I need more space."
+    },
+    {
+      "word": "beside",
+      "meaning": "옆에",
+      "partOfSpeech": "preposition",
+      "example": "Sit beside me."
+    },
+    {
+      "word": "bed",
+      "meaning": "침대",
+      "partOfSpeech": "noun",
+      "example": "Make your bed."
+    },
+    {
+      "word": "shirt",
+      "meaning": "셔츠",
+      "partOfSpeech": "noun",
+      "example": "Put on your shirt."
+    },
+    {
+      "word": "blue",
+      "meaning": "파란색",
+      "partOfSpeech": "adjective",
+      "example": "A blue shirt."
+    },
+    {
+      "word": "red",
+      "meaning": "빨간색",
+      "partOfSpeech": "adjective",
+      "example": "A red car."
+    },
+    {
+      "word": "take",
+      "meaning": "가져가다, 벗다",
+      "partOfSpeech": "verb",
+      "example": "Take off your coat."
+    },
+    {
+      "word": "coat",
+      "meaning": "코트, 외투",
+      "partOfSpeech": "noun",
+      "example": "Wear a coat."
+    },
+    {
+      "word": "wind",
+      "meaning": "바람",
+      "partOfSpeech": "noun",
+      "example": "The wind is strong."
+    },
+    {
+      "word": "says",
+      "meaning": "말한다 (say의 3인칭 단수)",
+      "partOfSpeech": "verb",
+      "example": "He says hello."
+    },
+    {
+      "word": "hits",
+      "meaning": "치다, 때리다 (hit의 3인칭 단수)",
+      "partOfSpeech": "verb",
+      "example": "The ball hits the wall."
+    },
+    {
+      "word": "away",
+      "meaning": "떨어져, 멀리",
+      "partOfSpeech": "adverb",
+      "example": "Go away."
+    },
+    {
+      "word": "right",
+      "meaning": "바로, 올바른",
+      "partOfSpeech": "adverb",
+      "example": "Right now."
+    },
+    {
+      "word": "morning",
+      "meaning": "아침",
+      "partOfSpeech": "noun",
+      "example": "Good morning!"
+    },
+    {
+      "word": "hello",
+      "meaning": "안녕하세요",
+      "partOfSpeech": "interjection",
+      "example": "Hello, how are you?"
+    },
+    {
+      "word": "goodbye",
+      "meaning": "안녕히 가세요",
+      "partOfSpeech": "interjection",
+      "example": "Goodbye, see you tomorrow!"
+    },
+    {
+      "word": "thank",
+      "meaning": "감사하다",
+      "partOfSpeech": "verb",
+      "example": "Thank you very much."
+    },
+    {
+      "word": "please",
+      "meaning": "부탁하다, ~해주세요",
+      "partOfSpeech": "verb",
+      "example": "Please help me."
+    },
+    {
+      "word": "water",
+      "meaning": "물",
+      "partOfSpeech": "noun",
+      "example": "I drink water every day."
+    },
+    {
+      "word": "food",
+      "meaning": "음식",
+      "partOfSpeech": "noun",
+      "example": "I like Korean food."
+    },
+    {
+      "word": "house",
+      "meaning": "집",
+      "partOfSpeech": "noun",
+      "example": "This is my house."
+    },
+    {
+      "word": "school",
+      "meaning": "학교",
+      "partOfSpeech": "noun",
+      "example": "I go to school every day."
+    },
+    {
+      "word": "friend",
+      "meaning": "친구",
+      "partOfSpeech": "noun",
+      "example": "She is my best friend."
+    },
+    {
+      "word": "love",
+      "meaning": "사랑하다",
+      "partOfSpeech": "verb",
+      "example": "I love my family."
+    },
+    {
+      "word": "eat",
+      "meaning": "먹다",
+      "partOfSpeech": "verb",
+      "example": "I like to eat apples."
+    },
+    {
+      "word": "drink",
+      "meaning": "마시다",
+      "partOfSpeech": "verb",
+      "example": "Drink some water."
+    },
+    {
+      "word": "sleep",
+      "meaning": "자다",
+      "partOfSpeech": "verb",
+      "example": "I sleep eight hours."
+    },
+    {
+      "word": "run",
+      "meaning": "달리다",
+      "partOfSpeech": "verb",
+      "example": "Run to the park."
+    },
+    {
+      "word": "walk",
+      "meaning": "걷다",
+      "partOfSpeech": "verb",
+      "example": "I walk to school."
+    },
+    {
+      "word": "study",
+      "meaning": "공부하다",
+      "partOfSpeech": "verb",
+      "example": "I study English every day."
+    },
+    {
+      "word": "read",
+      "meaning": "읽다",
+      "partOfSpeech": "verb",
+      "example": "Read this book."
+    },
+    {
+      "word": "write",
+      "meaning": "쓰다",
+      "partOfSpeech": "verb",
+      "example": "Write your name here."
+    },
+    {
+      "word": "watch",
+      "meaning": "보다, 지켜보다",
+      "partOfSpeech": "verb",
+      "example": "I watch TV at night."
+    },
+    {
+      "word": "listen",
+      "meaning": "듣다",
+      "partOfSpeech": "verb",
+      "example": "Listen to the music."
+    },
+    {
+      "word": "happy",
+      "meaning": "행복한",
+      "partOfSpeech": "adjective",
+      "example": "I am so happy today."
+    },
+    {
+      "word": "sad",
+      "meaning": "슬픈",
+      "partOfSpeech": "adjective",
+      "example": "Don't be sad."
+    },
+    {
+      "word": "angry",
+      "meaning": "화난",
+      "partOfSpeech": "adjective",
+      "example": "He looks very angry."
+    },
+    {
+      "word": "hungry",
+      "meaning": "배고픈",
+      "partOfSpeech": "adjective",
+      "example": "I am hungry for pizza."
+    },
+    {
+      "word": "thirsty",
+      "meaning": "목마른",
+      "partOfSpeech": "adjective",
+      "example": "I am thirsty for water."
+    },
+    {
+      "word": "tired",
+      "meaning": "피곤한",
+      "partOfSpeech": "adjective",
+      "example": "I am tired after work."
+    },
+    {
+      "word": "beautiful",
+      "meaning": "아름다운",
+      "partOfSpeech": "adjective",
+      "example": "The flowers are beautiful."
+    },
+    {
+      "word": "smart",
+      "meaning": "영리한, 똑똑한",
+      "partOfSpeech": "adjective",
+      "example": "She is a smart student."
+    },
+    {
+      "word": "strong",
+      "meaning": "강한",
+      "partOfSpeech": "adjective",
+      "example": "He is very strong."
+    },
+    {
+      "word": "weak",
+      "meaning": "약한",
+      "partOfSpeech": "adjective",
+      "example": "I feel weak today."
+    },
+    {
+      "word": "family",
+      "meaning": "가족",
+      "partOfSpeech": "noun",
+      "example": "I love my family."
+    },
+    {
+      "word": "father",
+      "meaning": "아버지",
+      "partOfSpeech": "noun",
+      "example": "My father is a teacher."
+    },
+    {
+      "word": "mother",
+      "meaning": "어머니",
+      "partOfSpeech": "noun",
+      "example": "My mother is a doctor."
+    },
+    {
+      "word": "brother",
+      "meaning": "형제, 남동생, 오빠",
+      "partOfSpeech": "noun",
+      "example": "I have one brother."
+    },
+    {
+      "word": "sister",
+      "meaning": "자매, 여동생, 언니",
+      "partOfSpeech": "noun",
+      "example": "My sister is a student."
+    },
+    {
+      "word": "teacher",
+      "meaning": "선생님",
+      "partOfSpeech": "noun",
+      "example": "She is my English teacher."
+    },
+    {
+      "word": "student",
+      "meaning": "학생",
+      "partOfSpeech": "noun",
+      "example": "The student is reading a book."
+    },
+    {
+      "word": "doctor",
+      "meaning": "의사",
+      "partOfSpeech": "noun",
+      "example": "I want to be a doctor."
+    },
+    {
+      "word": "nurse",
+      "meaning": "간호사",
+      "partOfSpeech": "noun",
+      "example": "The nurse is very kind."
+    },
+    {
+      "word": "police",
+      "meaning": "경찰",
+      "partOfSpeech": "noun",
+      "example": "Call the police!"
+    },
+    {
+      "word": "apple",
+      "meaning": "사과",
+      "partOfSpeech": "noun",
+      "example": "I eat an apple."
+    },
+    {
+      "word": "banana",
+      "meaning": "바나나",
+      "partOfSpeech": "noun",
+      "example": "Bananas are yellow."
+    },
+    {
+      "word": "orange",
+      "meaning": "오렌지",
+      "partOfSpeech": "noun",
+      "example": "I like orange juice."
+    },
+    {
+      "word": "bread",
+      "meaning": "빵",
+      "partOfSpeech": "noun",
+      "example": "I bought some bread."
+    },
+    {
+      "word": "milk",
+      "meaning": "우유",
+      "partOfSpeech": "noun",
+      "example": "Drink your milk."
+    },
+    {
+      "word": "coffee",
+      "meaning": "커피",
+      "partOfSpeech": "noun",
+      "example": "I need a cup of coffee."
+    },
+    {
+      "word": "tea",
+      "meaning": "차 (음료)",
+      "partOfSpeech": "noun",
+      "example": "Do you like green tea?"
+    },
+    {
+      "word": "pizza",
+      "meaning": "피자",
+      "partOfSpeech": "noun",
+      "example": "Let's order a pizza."
+    },
+    {
+      "word": "rice",
+      "meaning": "쌀, 밥",
+      "partOfSpeech": "noun",
+      "example": "I eat rice every meal."
+    },
+    {
+      "word": "meat",
+      "meaning": "고기",
+      "partOfSpeech": "noun",
+      "example": "I don't eat meat."
+    },
+    {
+      "word": "park",
+      "meaning": "공원",
+      "partOfSpeech": "noun",
+      "example": "Let's go to the park."
+    },
+    {
+      "word": "store",
+      "meaning": "상점, 가게",
+      "partOfSpeech": "noun",
+      "example": "I go to the grocery store."
+    },
+    {
+      "word": "hospital",
+      "meaning": "병원",
+      "partOfSpeech": "noun",
+      "example": "He is in the hospital."
+    },
+    {
+      "word": "library",
+      "meaning": "도서관",
+      "partOfSpeech": "noun",
+      "example": "The library is quiet."
+    },
+    {
+      "word": "city",
+      "meaning": "도시",
+      "partOfSpeech": "noun",
+      "example": "Seoul is a big city."
+    },
+    {
+      "word": "mountain",
+      "meaning": "산",
+      "partOfSpeech": "noun",
+      "example": "I want to climb the mountain."
+    },
+    {
+      "word": "river",
+      "meaning": "강",
+      "partOfSpeech": "noun",
+      "example": "The river is beautiful."
+    },
+    {
+      "word": "sea",
+      "meaning": "바다",
+      "partOfSpeech": "noun",
+      "example": "I like swimming in the sea."
+    },
+    {
+      "word": "sky",
+      "meaning": "하늘",
+      "partOfSpeech": "noun",
+      "example": "The sky is clear blue."
+    },
+    {
+      "word": "weather",
+      "meaning": "날씨",
+      "partOfSpeech": "noun",
+      "example": "The weather is nice today."
+    },
+    {
+      "word": "rain",
+      "meaning": "비",
+      "partOfSpeech": "noun",
+      "example": "I love the sound of rain."
+    },
+    {
+      "word": "snow",
+      "meaning": "눈",
+      "partOfSpeech": "noun",
+      "example": "It will snow tomorrow."
+    },
+    {
+      "word": "cloud",
+      "meaning": "구름",
+      "partOfSpeech": "noun",
+      "example": "There are white clouds."
+    },
+    {
+      "word": "flower",
+      "meaning": "꽃",
+      "partOfSpeech": "noun",
+      "example": "This flower is for you."
+    },
+    {
+      "word": "tree",
+      "meaning": "나무",
+      "partOfSpeech": "noun",
+      "example": "The tree is very tall."
+    },
+    {
+      "word": "bird",
+      "meaning": "새",
+      "partOfSpeech": "noun",
+      "example": "The birds are singing."
+    },
+    {
+      "word": "dog",
+      "meaning": "개",
+      "partOfSpeech": "noun",
+      "example": "I have a small dog."
+    },
+    {
+      "word": "cat",
+      "meaning": "고양이",
+      "partOfSpeech": "noun",
+      "example": "My cat is sleeping."
+    },
+    {
+      "word": "car",
+      "meaning": "자동차",
+      "partOfSpeech": "noun",
+      "example": "I drive a white car."
+    },
+    {
+      "word": "bus",
+      "meaning": "버스",
+      "partOfSpeech": "noun",
+      "example": "I wait for the bus."
+    },
+    {
+      "word": "train",
+      "meaning": "기차",
+      "partOfSpeech": "noun",
+      "example": "The train leaves at ten."
+    },
+    {
+      "word": "plane",
+      "meaning": "비행기",
+      "partOfSpeech": "noun",
+      "example": "The plane is very fast."
+    },
+    {
+      "word": "bike",
+      "meaning": "자전거",
+      "partOfSpeech": "noun",
+      "example": "I ride my bike."
+    },
+    {
+      "word": "book",
+      "meaning": "책",
+      "partOfSpeech": "noun",
+      "example": "Open your book to page ten."
+    },
+    {
+      "word": "pen",
+      "meaning": "펜",
+      "partOfSpeech": "noun",
+      "example": "Can I borrow your pen?"
+    },
+    {
+      "word": "pencil",
+      "meaning": "연필",
+      "partOfSpeech": "noun",
+      "example": "I need a pencil."
+    },
+    {
+      "word": "desk",
+      "meaning": "책상",
+      "partOfSpeech": "noun",
+      "example": "Put it on my desk."
+    },
+    {
+      "word": "chair",
+      "meaning": "의자",
+      "partOfSpeech": "noun",
+      "example": "Sit on the chair."
+    },
+    {
+      "word": "window",
+      "meaning": "창문",
+      "partOfSpeech": "noun",
+      "example": "Close the window, please."
+    },
+    {
+      "word": "door",
+      "meaning": "문",
+      "partOfSpeech": "noun",
+      "example": "Open the door."
+    },
+    {
+      "word": "computer",
+      "meaning": "컴퓨터",
+      "partOfSpeech": "noun",
+      "example": "I use my computer for work."
+    },
+    {
+      "word": "television",
+      "meaning": "텔레비전",
+      "partOfSpeech": "noun",
+      "example": "Turn off the television."
+    },
+    {
+      "word": "watch",
+      "meaning": "손목시계",
+      "partOfSpeech": "noun",
+      "example": "I lost my watch."
+    },
+    {
+      "word": "money",
+      "meaning": "돈",
+      "partOfSpeech": "noun",
+      "example": "I don't have much money."
+    },
+    {
+      "word": "color",
+      "meaning": "색깔",
+      "partOfSpeech": "noun",
+      "example": "What is your favorite color?"
+    },
+    {
+      "word": "yellow",
+      "meaning": "노란색",
+      "partOfSpeech": "adjective",
+      "example": "Sunflowers are yellow."
+    },
+    {
+      "word": "green",
+      "meaning": "초록색",
+      "partOfSpeech": "adjective",
+      "example": "The grass is green."
+    },
+    {
+      "word": "black",
+      "meaning": "검정색",
+      "partOfSpeech": "adjective",
+      "example": "I have a black bag."
+    },
+    {
+      "word": "white",
+      "meaning": "하얀색",
+      "partOfSpeech": "adjective",
+      "example": "The snow is white."
+    },
+    {
+      "word": "big",
+      "meaning": "큰",
+      "partOfSpeech": "adjective",
+      "example": "He lives in a big house."
+    },
+    {
+      "word": "small",
+      "meaning": "작은",
+      "partOfSpeech": "adjective",
+      "example": "A small bird is on the tree."
+    },
+    {
+      "word": "new",
+      "meaning": "새로운",
+      "partOfSpeech": "adjective",
+      "example": "I bought a new phone."
+    },
+    {
+      "word": "old",
+      "meaning": "오래된, 낡은",
+      "partOfSpeech": "adjective",
+      "example": "This is an old car."
+    },
+    {
+      "word": "fast",
+      "meaning": "빠른",
+      "partOfSpeech": "adjective",
+      "example": "He is a fast runner."
+    },
+    {
+      "word": "slow",
+      "meaning": "느린",
+      "partOfSpeech": "adjective",
+      "example": "The turtle is slow."
+    },
+    {
+      "word": "hot",
+      "meaning": "뜨거운, 더운",
+      "partOfSpeech": "adjective",
+      "example": "The soup is very hot."
+    },
+    {
+      "word": "cold",
+      "meaning": "차가운, 추운",
+      "partOfSpeech": "adjective",
+      "example": "I feel cold."
+    },
+    {
+      "word": "clean",
+      "meaning": "깨끗한",
+      "partOfSpeech": "adjective",
+      "example": "Keep your room clean."
+    },
+    {
+      "word": "dirty",
+      "meaning": "더러운",
+      "partOfSpeech": "adjective",
+      "example": "My shoes are dirty."
+    },
+    {
+      "word": "simple",
+      "meaning": "단순한, 간단한",
+      "partOfSpeech": "adjective",
+      "example": "It's a simple problem."
+    },
+    {
+      "word": "difficult",
+      "meaning": "어려운",
+      "partOfSpeech": "adjective",
+      "example": "The test was difficult."
+    },
+    {
+      "word": "easy",
+      "meaning": "쉬운",
+      "partOfSpeech": "adjective",
+      "example": "Learning English is easy."
+    },
+    {
+      "word": "bright",
+      "meaning": "발은",
+      "partOfSpeech": "adjective",
+      "example": "The stars are bright tonight."
+    },
+    {
+      "word": "dark",
+      "meaning": "어두운",
+      "partOfSpeech": "adjective",
+      "example": "It's getting dark outside."
+    }
+  ]
+}

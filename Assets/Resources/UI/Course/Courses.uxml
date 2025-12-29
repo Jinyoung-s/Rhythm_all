@@ -1,0 +1,47 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Resources/UI/Course/Courses.uss?fileID=7433441132597879392&amp;guid=6b9c3829aa216b246846fc60dc5e7d94&amp;type=3#Courses" />
+    <ui:VisualElement name="Page" class="page">
+        <ui:VisualElement name="Header" class="header">
+            <ui:Label name="LevelTitle" text="초급 (Beginner)" class="level-title" />
+            <ui:Label name="ProgressText" text="현재 진도: 1 / 5 챕터 완료" class="progress-text" />
+            <ui:ProgressBar name="LevelProgress" value="30" highValue="100" class="progress-bar" />
+        </ui:VisualElement>
+        <ui:VisualElement name="TopInfoContainer" class="top-info">
+            <ui:VisualElement name="TitleRow" class="title-row">
+                <ui:Image name="CourseIcon" image="project://database/Assets/Resources/Icons/icon_book_open.png" class="course-icon" style="background-image: url(&quot;project://database/Assets/Layer%20Lab/GUI%20Pro-FantasyRPG/ResourcesData/Sprites/Component/Icon_ItemIcons/NoShadow/Original/icon_book_1.png?fileID=21300000&amp;guid=cf960ce370afb4a9fb70d79e696fd6ef&amp;type=3#icon_book_1&quot;);" />
+                <ui:Label name="CourseTitle" text="기초 생활 영어" class="course-title" />
+                <ui:Button name="ChangeCourseButton" text="코스 변경" class="change-course-button" />
+            </ui:VisualElement>
+            <ui:Label name="CourseDescription" text="영어 학습의 기초를 다지고 기본적인 의사소통 능력을 개발합니다." class="course-description" />
+        </ui:VisualElement>
+        <ui:ScrollView name="ChapterScroll" mode="Vertical" class="chapter-scroll">
+            <ui:VisualElement name="ChapterGrid" class="chapter-grid">
+                <ui:VisualElement name="ChapterCard1" class="chapter-card completed">
+                    <ui:Label text="1" class="chapter-number" />
+                    <ui:Label text="기초 알파벳과 발음" class="chapter-title" />
+                    <ui:Label text="✓ 완료" class="chapter-status" style="-unity-font-definition: url(&apos;project://database/Assets/Fonts/NotoSansKR-Medium.ttf?fileID=12800000&amp;guid=fe97ab21c16624f4c94535c32dfe3aad&amp;type=3#NotoSansKR-Medium&apos;);" />
+                </ui:VisualElement>
+                <ui:VisualElement name="ChapterCard2" class="chapter-card in-progress">
+                    <ui:Label text="2" class="chapter-number" />
+                    <ui:Label text="일상 인사말과 소개" class="chapter-title" />
+                    <ui:Label text="● 진행 중 (40%)" class="chapter-status" />
+                </ui:VisualElement>
+                <ui:VisualElement name="ChapterCard3" class="chapter-card locked">
+                    <ui:Label text="3" class="chapter-number" />
+                    <ui:Label text="길 찾기 (Directions)" class="chapter-title" />
+                    <ui:Label text="🔒 잠금" class="chapter-status" />
+                </ui:VisualElement>
+                <ui:VisualElement name="ChapterCard4" class="chapter-card locked">
+                    <ui:Label text="4" class="chapter-number" />
+                    <ui:Label text="주문 및 식당 표현" class="chapter-title" />
+                    <ui:Label text="🔒 잠금" class="chapter-status" />
+                </ui:VisualElement>
+                <ui:VisualElement name="ChapterCard5" class="chapter-card locked">
+                    <ui:Label text="5" class="chapter-number" />
+                    <ui:Label text="쇼핑과 가격 묻기" class="chapter-title" />
+                    <ui:Label text="🔒 잠금" class="chapter-status" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:ScrollView>
+    </ui:VisualElement>
+</ui:UXML>

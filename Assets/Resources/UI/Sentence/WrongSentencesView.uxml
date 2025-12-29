@@ -1,0 +1,40 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Resources/UI/Sentence/WrongSentencesView.uss" />
+    
+    <!-- Full Screen Overlay -->
+    <ui:VisualElement name="WrongSentencesOverlay" class="overlay">
+        
+        <!-- Main Container -->
+        <ui:VisualElement name="WrongSentencesContainer" class="container">
+            
+            <!-- Header -->
+            <ui:VisualElement class="header">
+                <ui:Button name="BackButton" class="back-button">
+                    <ui:Label text="←" class="back-icon" />
+                </ui:Button>
+                <ui:Label text="Wrong Sentences" class="header-title" />
+                <ui:VisualElement class="header-spacer" />
+            </ui:VisualElement>
+            
+            <!-- Stats Bar -->
+            <ui:VisualElement name="StatsBar" class="stats-bar">
+                <ui:Label name="StatsLabel" text="0 sentences to review" class="stats-label" />
+            </ui:VisualElement>
+            
+            <!-- Content Area -->
+            <ui:ScrollView name="SentenceList" class="sentence-list">
+                <!-- Sentence items will be added here dynamically -->
+            </ui:ScrollView>
+            
+            <!-- Empty State -->
+            <ui:VisualElement name="EmptyState" class="empty-state">
+                <ui:Label text="🎉" class="empty-icon" />
+                <ui:Label text="No Wrong Sentences!" class="empty-title" />
+                <ui:Label text="완벽해요! 틀린 문장이 없습니다." class="empty-subtitle" />
+                <ui:Label text="테스트를 완료하면 틀린 문장이 여기에 나타납니다." class="empty-description" />
+            </ui:VisualElement>
+            
+        </ui:VisualElement>
+        
+    </ui:VisualElement>
+</ui:UXML>

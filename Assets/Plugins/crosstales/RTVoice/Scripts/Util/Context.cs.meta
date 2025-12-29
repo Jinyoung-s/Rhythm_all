@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 6acaf19dae39fc146b9c98ebb19c1c28
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 41068
+  packageName: RT-Voice PRO
+  packageVersion: 2024.1.1
+  assetPath: Assets/Plugins/crosstales/RTVoice/Scripts/Util/Context.cs
+  uploadId: 650789

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3c7f3bdf1dca69448bf8c3dc353b7032
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 41068
+  packageName: RT-Voice PRO
+  packageVersion: 2024.1.1
+  assetPath: Assets/Plugins/crosstales/RTVoice/Resources/Prefabs/GlobalCache.prefab
+  uploadId: 650789

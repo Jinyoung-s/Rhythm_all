@@ -1,0 +1,25 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Resources/UI/Game1/MenuDialog.uss?fileID=7433441132597879392&amp;guid=9776ba95eab237845a08819c72dfd31c&amp;type=3#MenuDialog" />
+    <ui:VisualElement name="MenuDialogRoot">
+        <ui:VisualElement name="MenuOverlay">
+            <ui:VisualElement name="MenuCard">
+                <ui:VisualElement name="MenuHeader">
+                    <ui:Label text="MENU" name="MenuTitle" />
+                    <ui:Button name="MenuCloseButton" text="✕" class="button-class" />
+                </ui:VisualElement>
+                <ui:Button name="BackButton" text="Back" class="button-class" />
+                <ui:VisualElement name="Divider1" />
+                <ui:Label text="Audio Sync" name="SyncLabel" />
+                <ui:VisualElement name="SyncRow">
+                    <ui:Button name="SyncMinusButton" text="-" class="button-class"  />
+                    <ui:SliderInt name="SyncSlider" lowValue="-600" highValue="600" value="0" low-value="-600" high-value="600" page-size="10" style="min-height: 40px;" />
+                    <ui:Button name="SyncPlusButton" text="+" class="button-class"  />
+                </ui:VisualElement>
+                <ui:Label name="SyncValueLabel" text="0 ms" />
+                <ui:VisualElement name="Divider2" />
+                <ui:Button name="SettingsButton" text="Calibration " class="button-class" />
+                <ui:Button name="ExitStepButton" text="Exit Step" class="button-class" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" editor-extension-mode="False">
+    <ui:Style src="VocabularyListView.uss" />
+    
+    <ui:VisualElement name="Overlay" class="screen-overlay">
+        <!-- Main Container -->
+        <ui:VisualElement name="Container" class="main-card">
+            
+            <!-- Header -->
+            <ui:VisualElement class="header-section">
+                <ui:Button name="CloseButton" text="←" class="back-button" />
+                <ui:Label text="My Vocabulary" class="header-title" />
+                <ui:VisualElement class="header-spacer" />
+            </ui:VisualElement>
+
+            <!-- Stats & Toggles (Two Rows) -->
+            <ui:VisualElement class="stats-section">
+                <!-- Row 1: Stats -->
+                <ui:VisualElement class="stats-row">
+                    <ui:Label name="TotalCountLabel" text="Total: 0" class="stat-text" />
+                    <ui:VisualElement class="stat-divider" />
+                    <ui:Label name="MasteredCountLabel" text="Mastered: 0" class="stat-text highlight-text" />
+                </ui:VisualElement>
+                
+                <!-- Row 2: Toggles (Left & Right) -->
+                <ui:VisualElement class="toggles-row">
+                    <ui:Toggle name="HideMasteredToggle" label="Hide Mastered" class="toggle-switch" value="false"/>
+                    <!-- Spacer -->
+                    <ui:VisualElement style="flex-grow: 1;" />
+                    <ui:Toggle name="ShowMeaningsToggle" label="Show Meanings" class="toggle-switch" value="true"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <!-- Scrollable List -->
+            <ui:ScrollView name="WordListScroll" class="word-scroll-view" show-vertical-scroller="true" />
+            
+            <!-- Pagination Controls -->
+            <ui:VisualElement name="PaginationContainer" class="pagination-container">
+                <ui:Button name="PrevPageButton" text="◀" class="page-button" />
+                <ui:Label name="PageInfoLabel" text="1 / 1" class="page-info" />
+                <ui:Button name="NextPageButton" text="▶" class="page-button" />
+            </ui:VisualElement>
+            
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

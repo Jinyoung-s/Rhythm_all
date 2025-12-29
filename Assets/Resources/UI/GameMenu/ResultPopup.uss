@@ -1,0 +1,107 @@
+.popup-root {
+    position: absolute;
+    left: 0; right: 0; top: 0; bottom: 0;
+    background-color: rgba(0,0,0,0.65);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-box {
+    width: 860px;
+    background-color: #1E1E1E;
+    border-radius: 40px;
+    padding: 60px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 54px;
+    -unity-font-style: bold;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.score-value {
+    font-size: 110px;
+    -unity-font-style: bold;
+    color: white;
+    margin-bottom: 70px;
+}
+
+.stats {
+    width: 100%;
+}
+
+.stat-row {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.stat-label {
+    font-size: 38px;
+    color: #B0B0B8;
+}
+
+.stat-value {
+    font-size: 38px;
+    color: white;
+}
+
+.divider {
+    border-bottom-width: 2px;
+    border-bottom-color: #3A3A3A;
+    margin: 18px 0;
+}
+
+.coin-row {
+    flex-direction: row;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.coin-icon {
+    width: 72px;
+    height: 72px;
+    background-image: url("icon_coins.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 16px;
+}
+
+.coin-value {
+    font-size: 54px;
+    color: white;
+}
+
+.button-row {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.button-primary {
+    flex: 1;
+    margin-right: 30px;
+    height: 120px;
+    border-radius: 16px;
+    color: white;
+    font-size: 42px;
+    -unity-font-style: bold;
+    background-image: url("project://database/Assets/Resources/buttonbg/gradient_pupple.png");
+}
+
+.button-secondary {
+    flex: 1;
+    margin-left: 30px;
+    height: 120px;
+    border-radius: 32px;
+    background-color: #2C2C34;
+    border-width: 3px;
+    border-color: #4A4A55;
+    color: white;
+    font-size: 42px;
+}

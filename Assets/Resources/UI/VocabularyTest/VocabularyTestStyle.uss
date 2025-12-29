@@ -1,0 +1,437 @@
+.wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 60px 50px;
+    background-color: rgb(10, 14, 20);
+    -unity-font-definition: resource('Fonts/NotoSansKR-Regular');
+}
+
+.test-card {
+    flex-direction: column;
+    background-color: rgb(27, 35, 44);
+    border-radius: 40px;
+    padding: 60px 48px;
+    width: 100%;
+    max-width: 920px;
+    gap: 40px;
+    border-top-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 2px;
+    border-top-color: rgba(255, 255, 255, 0.1);
+    border-left-color: rgba(255, 255, 255, 0.06);
+    border-right-color: rgba(255, 255, 255, 0.06);
+    border-bottom-color: rgba(0, 0, 0, 0.35);
+}
+
+.header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 12px;
+}
+
+.btn-icon {
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+    background-color: rgb(42, 52, 64);
+    color: rgb(255, 255, 255);
+    border-radius: 18px;
+    border-width: 0;
+    border-top-width: 1px;
+    border-top-color: rgba(255, 255, 255, 0.12);
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(0, 0, 0, 0.35);
+}
+
+.btn-icon:hover {
+    background-color: rgb(52, 62, 74);
+}
+
+.progress-info {
+    flex-grow: 1;
+    flex-direction: column;
+    gap: 14px;
+    -unity-font-definition: resource('Fonts/NotoSans-Bold');
+    -unity-text-align: upper-center;
+    margin-top: 0;
+    margin-right: 50px;
+    margin-bottom: 0;
+    margin-left: 50px;
+}
+
+.progress-text {
+    font-size: 48px;
+    font-weight: bold;
+    color: rgb(170, 179, 190);
+    text-align: center;
+}
+
+.progress-bar-container {
+    width: 100%;
+    height: 14px;
+    background-color: rgb(42, 52, 64);
+    border-radius: 7px;
+}
+
+.progress-bar {
+    width: 10%;
+    height: 100%;
+    background-color: rgb(16, 185, 129);
+}
+
+.type-badge-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    margin-bottom: 16px;
+}
+
+.type-badge {
+    background-color: rgb(42, 52, 64);
+    color: rgb(170, 179, 190);
+    font-size: 48px;
+    font-weight: bold;
+    padding: 16px 32px;
+    border-radius: 24px;
+    border-width: 0;
+    border-top-width: 1px;
+    border-top-color: rgba(255, 255, 255, 0.12);
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(0, 0, 0, 0.35);
+}
+
+.question-area {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 360px;
+    padding: 48px 32px;
+    gap: 32px;
+}
+
+.listen-mode {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    display: none;
+}
+
+.speaker-button {
+    width: 180px;
+    height: 180px;
+    font-size: 90px;
+    background-color: rgb(16, 185, 129);
+    color: rgb(255, 255, 255);
+    border-radius: 90px;
+    border-width: 0;
+}
+
+.speaker-button:hover {
+    background-color: rgb(5, 150, 105);
+}
+
+.reading-mode {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    display: none;
+}
+
+.question-text {
+    font-size: 72px; /* 92px에서 축소하여 긴 문구 대응 */
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    -unity-text-align: middle-center;
+    white-space: normal; /* 글자가 넘치면 다음 줄로 */
+    line-height: 1.2;
+    width: 100%;
+}
+
+.instruction {
+    font-size: 52px;
+    color: rgb(170, 179, 190);
+    -unity-text-align: middle-center;
+    line-height: 1.6;
+    margin-top: 40px;
+    white-space: normal;
+}
+
+.typing-mode {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    width: 100%;
+    display: none;
+}
+
+.speaker-button-small {
+    width: 110px;
+    height: 110px;
+    font-size: 56px;
+    background-color: rgb(16, 185, 129);
+    color: rgb(255, 255, 255);
+    border-radius: 55px;
+    border-width: 0;
+}
+
+.speaker-button-small:hover {
+    background-color: rgb(5, 150, 105);
+}
+
+.typing-input {
+    width: 100%;
+    font-size: 60px;
+    text-align: center;
+    padding: 28px;
+    background-color: rgb(15, 20, 27);
+    border-radius: 20px;
+    border-width: 3px;
+    border-color: rgb(42, 52, 64);
+    color: rgb(255, 255, 255);
+}
+
+/* Unity TextField의 실제 입력 영역 타겟팅 */
+.typing-input > .unity-text-field__input {
+    background-color: rgb(15, 20, 27);
+    color: rgb(255, 255, 255);
+    border-color: rgb(42, 52, 64);
+    padding: 28px;
+    border-radius: 20px;
+    -unity-text-align: middle-center;
+}
+
+.typing-input:focus {
+    border-color: rgb(16, 185, 129);
+    background-color: rgb(27, 35, 44);
+}
+
+/* 포커스 시 실제 입력 영역 스타일 */
+.typing-input:focus > .unity-text-field__input {
+    background-color: rgb(27, 35, 44);
+    border-color: rgb(16, 185, 129);
+}
+
+.options {
+    flex-direction: column;
+    gap: 36px;
+    margin-top: 20px;
+}
+
+.option-btn {
+    width: 100%;
+    min-height: 120px;
+    font-size: 48px; /* 56px에서 축수하여 가독성 및 공간 확보 */
+    background-color: rgb(42, 52, 64);
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border-width: 0;
+    border-top-width: 1px;
+    border-top-color: rgba(255, 255, 255, 0.12);
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(0, 0, 0, 0.35);
+    padding: 24px 32px;
+    -unity-text-align: middle-center;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    white-space: normal; /* 긴 뜻풀이 대응 */
+}
+
+.option-btn:hover {
+    background-color: rgb(52, 62, 74);
+    border-top-color: rgba(255, 255, 255, 0.18);
+}
+
+.option-btn.selected {
+    background-color: rgb(30, 58, 138);
+    border-top-width: 2px;
+    border-top-color: rgb(59, 130, 246);
+    border-bottom-width: 2px;
+    border-bottom-color: rgb(37, 99, 235);
+    color: rgb(219, 234, 254);
+}
+
+.option-btn.correct {
+    background-color: rgb(6, 95, 70);
+    border-top-width: 2px;
+    border-top-color: rgb(16, 185, 129);
+    border-bottom-width: 2px;
+    border-bottom-color: rgb(5, 150, 105);
+    color: rgb(209, 250, 229);
+}
+
+.option-btn.incorrect {
+    background-color: rgb(127, 29, 29);
+    border-top-width: 2px;
+    border-top-color: rgb(239, 68, 68);
+    border-bottom-width: 2px;
+    border-bottom-color: rgb(220, 38, 38);
+    color: rgb(254, 226, 226);
+}
+
+.option-btn:disabled {
+    opacity: 0.6;
+}
+
+.feedback-panel {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 28px;
+    padding: 36px;
+    border-radius: 24px;
+    margin-top: 20px;
+    display: none;
+}
+
+.feedback-panel.correct {
+    background-color: rgb(6, 78, 59);
+    border-width: 0;
+    border-top-width: 1px;
+    border-top-color: rgb(16, 185, 129);
+    border-bottom-width: 2px;
+    border-bottom-color: rgb(5, 120, 90);
+}
+
+.feedback-panel.incorrect {
+    background-color: rgb(127, 29, 29);
+    border-width: 0;
+    border-top-width: 1px;
+    border-top-color: rgb(239, 68, 68);
+    border-bottom-width: 2px;
+    border-bottom-color: rgb(185, 28, 28);
+}
+
+.feedback-icon {
+    width: 72px;
+    height: 72px;
+    font-size: 44px;
+    -unity-text-align: middle-center;
+    border-radius: 36px;
+    -unity-font-style: bold;
+}
+
+.feedback-panel.correct .feedback-icon {
+    background-color: rgb(16, 185, 129);
+    color: rgb(255, 255, 255);
+}
+
+.feedback-panel.incorrect .feedback-icon {
+    background-color: rgb(239, 68, 68);
+    color: rgb(255, 255, 255);
+}
+
+.feedback-content {
+    flex-grow: 1;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.feedback-title {
+    font-size: 52px;
+    -unity-font-style: bold;
+}
+
+.feedback-panel.correct .feedback-title {
+    color: rgb(209, 250, 229);
+}
+
+.feedback-panel.incorrect .feedback-title {
+    color: rgb(254, 226, 226);
+}
+
+.word-detail {
+    flex-direction: column;
+    gap: 10px;
+    padding: 24px;
+    background-color: rgb(42, 52, 64);
+    border-radius: 16px;
+    border-top-width: 1px;
+    border-top-color: rgba(255, 255, 255, 0.08);
+}
+
+.word-main {
+    font-size: 60px;
+    -unity-font-style: bold;
+    color: rgb(255, 255, 255);
+}
+
+.word-phonetic {
+    font-size: 44px;
+    color: rgb(170, 179, 190);
+    -unity-font-style: italic;
+}
+
+.word-pos {
+    font-size: 40px;
+    color: rgb(16, 185, 129);
+    -unity-font-style: bold;
+}
+
+.word-meaning {
+    font-size: 48px;
+    color: rgb(200, 210, 220);
+    margin-top: 8px;
+    line-height: 1.5;
+}
+
+.actions {
+    flex-direction: row;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 24px;
+}
+
+.btn {
+    border-radius: 24px;
+    padding: 32px 60px;
+    font-size: 52px;
+    -unity-font-style: bold;
+    border-width: 0;
+    min-width: 240px;
+    -unity-font-definition: resource('Fonts/NotoSansKR-Regular');
+}
+
+.btn.primary {
+    background-color: rgb(16, 185, 129);
+    color: rgb(255, 255, 255);
+    border-top-width: 1px;
+    border-top-color: rgba(255, 255, 255, 0.2);
+    border-bottom-width: 2px;
+    border-bottom-color: rgba(0, 0, 0, 0.4);
+}
+
+.btn.primary:hover {
+    background-color: rgb(5, 150, 105);
+}
+
+.btn.primary:disabled {
+    background-color: rgb(71, 85, 105);
+    color: rgb(154, 163, 173);
+}
+
+.btn.secondary {
+    background-color: rgb(59, 130, 246);
+    color: rgb(255, 255, 255);
+    border-top-width: 1px;
+    border-top-color: rgba(255, 255, 255, 0.2);
+    border-bottom-width: 2px;
+    border-bottom-color: rgba(0, 0, 0, 0.4);
+}
+
+.btn.secondary:hover {
+    background-color: rgb(37, 99, 235);
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: flex;
+}

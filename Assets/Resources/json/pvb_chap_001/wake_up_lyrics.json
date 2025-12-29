@@ -1,0 +1,832 @@
+[
+  {
+    "word": "I",
+    "start": 11.32,
+    "end": 11.7
+  },
+  {
+    "word": "wake",
+    "start": 11.72,
+    "end": 12.121
+  },
+  {
+    "word": "up",
+    "start": 12.241,
+    "end": 12.341
+  },
+  {
+    "word": "when",
+    "start": 13.002,
+    "end": 13.262
+  },
+  {
+    "word": "the",
+    "start": 13.362,
+    "end": 13.442
+  },
+  {
+    "word": "sun",
+    "start": 13.462,
+    "end": 13.942
+  },
+  {
+    "word": "light",
+    "start": 13.962,
+    "end": 14.383
+  },
+  {
+    "word": "is",
+    "start": 14.483,
+    "end": 14.623
+  },
+  {
+    "word": "my",
+    "start": 14.743,
+    "end": 15.124
+  },
+  {
+    "word": "face",
+    "start": 15.244,
+    "end": 15.604
+  },
+  {
+    "word": "I",
+    "start": 17.586,
+    "end": 17.726
+  },
+  {
+    "word": "get",
+    "start": 17.766,
+    "end": 18.367
+  },
+  {
+    "word": "up",
+    "start": 18.447,
+    "end": 18.547
+  },
+  {
+    "word": "and",
+    "start": 19.508,
+    "end": 19.608
+  },
+  {
+    "word": "make",
+    "start": 19.688,
+    "end": 20.008
+  },
+  {
+    "word": "my",
+    "start": 20.088,
+    "end": 20.549
+  },
+  {
+    "word": "little",
+    "start": 20.609,
+    "end": 20.869
+  },
+  {
+    "word": "space",
+    "start": 20.909,
+    "end": 21.409
+  },
+  {
+    "word": "I",
+    "start": 23.111,
+    "end": 23.171
+  },
+  {
+    "word": "turn",
+    "start": 23.231,
+    "end": 23.531
+  },
+  {
+    "word": "off",
+    "start": 23.611,
+    "end": 23.792
+  },
+  {
+    "word": "the",
+    "start": 23.852,
+    "end": 24.092
+  },
+  {
+    "word": "alarm",
+    "start": 24.212,
+    "end": 24.793
+  },
+  {
+    "word": "beside",
+    "start": 24.913,
+    "end": 25.273
+  },
+  {
+    "word": "my",
+    "start": 25.373,
+    "end": 25.653
+  },
+  {
+    "word": "bed",
+    "start": 25.753,
+    "end": 26.154
+  },
+  {
+    "word": "I",
+    "start": 26.174,
+    "end": 26.194
+  },
+  {
+    "word": "put",
+    "start": 26.314,
+    "end": 26.574
+  },
+  {
+    "word": "on",
+    "start": 26.694,
+    "end": 26.794
+  },
+  {
+    "word": "my",
+    "start": 26.895,
+    "end": 27.095
+  },
+  {
+    "word": "shirt",
+    "start": 27.195,
+    "end": 27.495
+  },
+  {
+    "word": "blue",
+    "start": 28.036,
+    "end": 28.576
+  },
+  {
+    "word": "and",
+    "start": 28.696,
+    "end": 28.776
+  },
+  {
+    "word": "red",
+    "start": 28.836,
+    "end": 29.237
+  },
+  {
+    "word": "I",
+    "start": 29.277,
+    "end": 29.297
+  },
+  {
+    "word": "take",
+    "start": 29.397,
+    "end": 29.637
+  },
+  {
+    "word": "off",
+    "start": 29.737,
+    "end": 29.877
+  },
+  {
+    "word": "my",
+    "start": 29.977,
+    "end": 30.178
+  },
+  {
+    "word": "coat",
+    "start": 30.298,
+    "end": 30.558
+  },
+  {
+    "word": "when",
+    "start": 31.479,
+    "end": 31.679
+  },
+  {
+    "word": "the",
+    "start": 31.719,
+    "end": 31.819
+  },
+  {
+    "word": "wind",
+    "start": 31.879,
+    "end": 32.24
+  },
+  {
+    "word": "says",
+    "start": 32.76,
+    "end": 33.06
+  },
+  {
+    "word": "no",
+    "start": 33.1,
+    "end": 33.481
+  },
+  {
+    "word": "I",
+    "start": 35.883,
+    "end": 36.003
+  },
+  {
+    "word": "wake",
+    "start": 36.063,
+    "end": 36.463
+  },
+  {
+    "word": "up",
+    "start": 36.584,
+    "end": 36.664
+  },
+  {
+    "word": "when",
+    "start": 37.384,
+    "end": 37.685
+  },
+  {
+    "word": "the",
+    "start": 37.705,
+    "end": 37.825
+  },
+  {
+    "word": "sun",
+    "start": 37.865,
+    "end": 38.345
+  },
+  {
+    "word": "light",
+    "start": 38.365,
+    "end": 38.806
+  },
+  {
+    "word": "is",
+    "start": 38.886,
+    "end": 39.046
+  },
+  {
+    "word": "my",
+    "start": 39.146,
+    "end": 39.546
+  },
+  {
+    "word": "face",
+    "start": 39.646,
+    "end": 40.247
+  },
+  {
+    "word": "I",
+    "start": 41.729,
+    "end": 42.11
+  },
+  {
+    "word": "get",
+    "start": 42.13,
+    "end": 42.851
+  },
+  {
+    "word": "up",
+    "start": 42.891,
+    "end": 42.931
+  },
+  {
+    "word": "and",
+    "start": 42.951,
+    "end": 43.994
+  },
+  {
+    "word": "make",
+    "start": 44.074,
+    "end": 44.394
+  },
+  {
+    "word": "my",
+    "start": 44.454,
+    "end": 44.915
+  },
+  {
+    "word": "little",
+    "start": 45.016,
+    "end": 45.256
+  },
+  {
+    "word": "space",
+    "start": 45.316,
+    "end": 45.837
+  },
+  {
+    "word": "I",
+    "start": 47.501,
+    "end": 47.561
+  },
+  {
+    "word": "turn",
+    "start": 47.621,
+    "end": 47.921
+  },
+  {
+    "word": "off",
+    "start": 48.022,
+    "end": 48.182
+  },
+  {
+    "word": "the",
+    "start": 48.242,
+    "end": 48.422
+  },
+  {
+    "word": "alarm",
+    "start": 48.623,
+    "end": 49.144
+  },
+  {
+    "word": "beside",
+    "start": 49.184,
+    "end": 49.705
+  },
+  {
+    "word": "my",
+    "start": 49.785,
+    "end": 50.066
+  },
+  {
+    "word": "bed",
+    "start": 50.166,
+    "end": 50.547
+  },
+  {
+    "word": "I",
+    "start": 50.607,
+    "end": 50.667
+  },
+  {
+    "word": "put",
+    "start": 50.727,
+    "end": 50.968
+  },
+  {
+    "word": "all",
+    "start": 51.088,
+    "end": 51.228
+  },
+  {
+    "word": "my",
+    "start": 51.308,
+    "end": 51.589
+  },
+  {
+    "word": "shirt",
+    "start": 51.609,
+    "end": 51.99
+  },
+  {
+    "word": "blue",
+    "start": 52.451,
+    "end": 53.032
+  },
+  {
+    "word": "and",
+    "start": 53.112,
+    "end": 53.192
+  },
+  {
+    "word": "red",
+    "start": 53.272,
+    "end": 53.613
+  },
+  {
+    "word": "I",
+    "start": 53.693,
+    "end": 53.753
+  },
+  {
+    "word": "take",
+    "start": 53.813,
+    "end": 54.034
+  },
+  {
+    "word": "off",
+    "start": 54.134,
+    "end": 54.294
+  },
+  {
+    "word": "my",
+    "start": 54.374,
+    "end": 54.575
+  },
+  {
+    "word": "coat",
+    "start": 54.695,
+    "end": 54.976
+  },
+  {
+    "word": "when",
+    "start": 55.877,
+    "end": 56.078
+  },
+  {
+    "word": "the",
+    "start": 56.118,
+    "end": 56.218
+  },
+  {
+    "word": "wind",
+    "start": 56.278,
+    "end": 56.679
+  },
+  {
+    "word": "says",
+    "start": 57.16,
+    "end": 57.461
+  },
+  {
+    "word": "no",
+    "start": 57.501,
+    "end": 58.202
+  },
+  {
+    "word": "I",
+    "start": 84.22,
+    "end": 84.54
+  },
+  {
+    "word": "wake",
+    "start": 84.6,
+    "end": 84.961
+  },
+  {
+    "word": "up",
+    "start": 85.161,
+    "end": 85.241
+  },
+  {
+    "word": "when",
+    "start": 85.982,
+    "end": 86.163
+  },
+  {
+    "word": "the",
+    "start": 86.223,
+    "end": 86.363
+  },
+  {
+    "word": "sunlight",
+    "start": 86.443,
+    "end": 87.344
+  },
+  {
+    "word": "hits",
+    "start": 87.364,
+    "end": 87.524
+  },
+  {
+    "word": "my",
+    "start": 87.624,
+    "end": 88.045
+  },
+  {
+    "word": "face",
+    "start": 88.165,
+    "end": 88.586
+  },
+  {
+    "word": "I",
+    "start": 90.528,
+    "end": 90.668
+  },
+  {
+    "word": "get",
+    "start": 90.708,
+    "end": 91.309
+  },
+  {
+    "word": "up",
+    "start": 91.469,
+    "end": 91.549
+  },
+  {
+    "word": "and",
+    "start": 92.491,
+    "end": 92.611
+  },
+  {
+    "word": "make",
+    "start": 92.671,
+    "end": 92.951
+  },
+  {
+    "word": "my",
+    "start": 93.031,
+    "end": 93.532
+  },
+  {
+    "word": "little",
+    "start": 93.612,
+    "end": 93.852
+  },
+  {
+    "word": "space",
+    "start": 93.913,
+    "end": 94.533
+  },
+  {
+    "word": "I",
+    "start": 96.135,
+    "end": 96.195
+  },
+  {
+    "word": "turn",
+    "start": 96.256,
+    "end": 96.556
+  },
+  {
+    "word": "off",
+    "start": 96.656,
+    "end": 96.816
+  },
+  {
+    "word": "the",
+    "start": 96.876,
+    "end": 97.057
+  },
+  {
+    "word": "alarm",
+    "start": 97.177,
+    "end": 97.757
+  },
+  {
+    "word": "beside",
+    "start": 97.818,
+    "end": 98.318
+  },
+  {
+    "word": "my",
+    "start": 98.398,
+    "end": 98.699
+  },
+  {
+    "word": "bed",
+    "start": 98.779,
+    "end": 99.159
+  },
+  {
+    "word": "I",
+    "start": 99.239,
+    "end": 99.259
+  },
+  {
+    "word": "put",
+    "start": 99.34,
+    "end": 99.58
+  },
+  {
+    "word": "on",
+    "start": 99.74,
+    "end": 99.84
+  },
+  {
+    "word": "my",
+    "start": 99.92,
+    "end": 100.141
+  },
+  {
+    "word": "shirt",
+    "start": 100.161,
+    "end": 100.521
+  },
+  {
+    "word": "blue",
+    "start": 101.062,
+    "end": 101.643
+  },
+  {
+    "word": "and",
+    "start": 101.723,
+    "end": 101.803
+  },
+  {
+    "word": "red",
+    "start": 101.863,
+    "end": 102.223
+  },
+  {
+    "word": "I",
+    "start": 102.283,
+    "end": 102.363
+  },
+  {
+    "word": "take",
+    "start": 102.403,
+    "end": 102.624
+  },
+  {
+    "word": "off",
+    "start": 102.744,
+    "end": 102.884
+  },
+  {
+    "word": "my",
+    "start": 102.964,
+    "end": 103.205
+  },
+  {
+    "word": "coat",
+    "start": 103.305,
+    "end": 103.585
+  },
+  {
+    "word": "when",
+    "start": 104.446,
+    "end": 104.646
+  },
+  {
+    "word": "the",
+    "start": 104.686,
+    "end": 104.827
+  },
+  {
+    "word": "wind",
+    "start": 104.887,
+    "end": 105.608
+  },
+  {
+    "word": "says",
+    "start": 105.748,
+    "end": 106.028
+  },
+  {
+    "word": "no",
+    "start": 106.068,
+    "end": 106.749
+  },
+  {
+    "word": "I",
+    "start": 108.872,
+    "end": 109.012
+  },
+  {
+    "word": "wake",
+    "start": 109.052,
+    "end": 109.433
+  },
+  {
+    "word": "up",
+    "start": 109.633,
+    "end": 109.713
+  },
+  {
+    "word": "when",
+    "start": 110.334,
+    "end": 110.654
+  },
+  {
+    "word": "the",
+    "start": 110.754,
+    "end": 110.814
+  },
+  {
+    "word": "sunlight",
+    "start": 110.914,
+    "end": 111.716
+  },
+  {
+    "word": "hits",
+    "start": 111.796,
+    "end": 111.956
+  },
+  {
+    "word": "my",
+    "start": 112.056,
+    "end": 112.477
+  },
+  {
+    "word": "face",
+    "start": 112.577,
+    "end": 112.877
+  },
+  {
+    "word": "I",
+    "start": 114.477,
+    "end": 115.579
+  },
+  {
+    "word": "turn",
+    "start": 115.599,
+    "end": 120.75
+  },
+  {
+    "word": "off",
+    "start": 120.85,
+    "end": 121.03
+  },
+  {
+    "word": "the",
+    "start": 121.09,
+    "end": 121.231
+  },
+  {
+    "word": "alarm",
+    "start": 121.331,
+    "end": 122.072
+  },
+  {
+    "word": "beside",
+    "start": 122.092,
+    "end": 122.493
+  },
+  {
+    "word": "my",
+    "start": 122.573,
+    "end": 122.874
+  },
+  {
+    "word": "bed",
+    "start": 122.934,
+    "end": 123.315
+  },
+  {
+    "word": "I",
+    "start": 123.375,
+    "end": 123.435
+  },
+  {
+    "word": "put",
+    "start": 123.495,
+    "end": 123.736
+  },
+  {
+    "word": "on",
+    "start": 123.876,
+    "end": 123.956
+  },
+  {
+    "word": "my",
+    "start": 124.056,
+    "end": 124.337
+  },
+  {
+    "word": "shirt",
+    "start": 124.357,
+    "end": 124.658
+  },
+  {
+    "word": "blue",
+    "start": 125.199,
+    "end": 125.76
+  },
+  {
+    "word": "and",
+    "start": 125.84,
+    "end": 125.94
+  },
+  {
+    "word": "red",
+    "start": 126.0,
+    "end": 126.341
+  },
+  {
+    "word": "I",
+    "start": 126.401,
+    "end": 126.481
+  },
+  {
+    "word": "take",
+    "start": 126.541,
+    "end": 126.762
+  },
+  {
+    "word": "off",
+    "start": 126.862,
+    "end": 127.022
+  },
+  {
+    "word": "my",
+    "start": 127.123,
+    "end": 127.263
+  },
+  {
+    "word": "coat",
+    "start": 127.443,
+    "end": 127.744
+  },
+  {
+    "word": "when",
+    "start": 128.566,
+    "end": 128.746
+  },
+  {
+    "word": "the",
+    "start": 128.806,
+    "end": 128.906
+  },
+  {
+    "word": "wind",
+    "start": 128.986,
+    "end": 129.668
+  },
+  {
+    "word": "says",
+    "start": 129.968,
+    "end": 130.149
+  },
+  {
+    "word": "no",
+    "start": 130.269,
+    "end": 130.309
+  }
+]

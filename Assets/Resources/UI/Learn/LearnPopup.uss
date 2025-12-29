@@ -1,0 +1,288 @@
+/* =========================
+   Overlay
+========================= */
+.popup-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.85);
+    display: none;
+}
+
+/* =========================
+   Popup Card
+========================= */
+.learn-popup {
+    width: 90%;
+    max-width: 900px;
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    background-color: #1a1d23;
+
+    border-radius: 20px;
+
+    align-items: stretch;
+}
+
+/* =========================
+   Title
+========================= */
+.popup-title {
+    font-size: 48px;
+    color: #8b8f98;
+
+    unity-text-align: middle-center;
+    margin-bottom: 50px;
+}
+
+/* =========================
+   Sentence
+========================= */
+.sentence-block {
+    margin-bottom: 40px;
+}
+
+.sentence-label {
+    font-size: 64px;
+    color: #ffffff;
+    -unity-font-style: bold;
+
+    unity-text-align: middle-center;
+    margin-bottom: 24px;
+    
+    white-space: normal;
+}
+
+.translation-label {
+    font-size: 54px;
+    color: #6b7280;
+
+    unity-text-align: middle-center;
+    
+    white-space: normal;
+}
+
+/* =========================
+   Divider
+========================= */
+.divider {
+    height: 1px;
+    background-color: #2d3138;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* =========================
+   Audio Button
+========================= */
+.audio-button {
+    height: 100px;
+    background-color: #23272e;
+    border-radius: 12px;
+    border-width: 0;
+    color: #ffffff;
+    font-size: 52px;
+    unity-text-align: middle-center;
+    -unity-font-style: bold;
+}
+
+.audio-button:hover {
+    background-color: #2a2f38;
+}
+
+/* =========================
+   Grammar Toggle
+========================= */
+.toggle-grammar-button {
+    height: 80px;
+    background-color: transparent;
+    border-width: 0;
+
+    color: #8b8f98;
+    font-size: 48px;
+
+    unity-text-align: middle-center;
+}
+
+/* =========================
+   Grammar Box
+========================= */
+.grammar-box {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 30px;
+
+    background-color: #23272e;
+    border-radius: 12px;
+}
+
+.grammar-text {
+    font-size: 42px;
+    color: #b4bac3;
+    
+    unity-text-align: middle-left;
+    white-space: normal;
+}
+
+/* 숨김 */
+.hidden {
+    display: none;
+}
+
+/* =========================
+   Primary Button
+========================= */
+.primary-button {
+    height: 110px;
+    margin-top: 50px;
+
+    background-color: #1e3a5f;
+    border-radius: 12px;
+    border-width: 0;
+
+    color: #ffffff;
+    font-size: 52px;
+
+    unity-text-align: middle-center;
+    -unity-font-style: bold;
+}
+
+.primary-button:hover {
+    background-color: #2a4a73;
+}
+
+.footer-row {
+    flex-direction: row;
+
+    margin-top: 40px;
+
+    height: 120px;
+}
+
+.footer-button {
+    flex-grow: 1;
+
+    height: 110px;
+
+    border-radius: 12px;
+    border-width: 0;
+
+    font-size: 52px;
+    -unity-font-style: bold;
+
+    unity-text-align: middle-center;
+}
+
+.footer-button.secondary {
+    background-color: #2a2f38;
+    color: #b4bac3;
+
+    margin-right: 20px;
+}
+
+.footer-button.secondary:hover {
+    background-color: #353b46;
+}
+
+.footer-button.primary {
+    background-color: #1e3a5f;
+    color: #ffffff;
+
+    margin-left: 20px;
+}
+
+.footer-button.primary:hover {
+    background-color: #2a4a73;
+}
+
+/* =========================
+   Examples Scroll
+========================= */
+.examples-scroll {
+    max-height: 300px;   /* 1080 기준 적당 */
+    margin-top: 24px;
+}
+
+/* 예문 컨테이너 */
+.examples-container {
+    padding-right: 10px;
+}
+
+/* 예문 텍스트 */
+.example-line {
+    font-size: 34px;
+    color: #9dd1ff; 
+    margin-bottom: 18px;
+
+    white-space: normal;
+}
+
+/* 점선 밑줄 */
+.example-underline {
+    height: 2px;
+    margin-top: -12px;
+
+    background-color: rgba(255, 255, 255, 0.35);
+
+    /* 점선 느낌 */
+    background-size: 12px 2px;
+    background-repeat: repeat-x;
+}
+
+.top-header-row {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.top-progress-label {
+    font-size: 34px;
+    color: #8b8f98;
+}
+
+.top-save-button {
+    background-color: transparent;
+    border-width: 0;
+    color: #ffffff; /* 평상시 하얀색 */
+    font-size: 38px;
+    -unity-font-style: bold;
+    padding: 10px 20px;
+}
+
+.top-save-button.saved {
+    color: #ffd700; /* 저장 시 노란색 */
+}
+
+.translation-bubble {
+    position: absolute;
+
+    max-width: 70%;
+    padding: 22px;
+
+    background-color: #344055; /* 🔥 팝업보다 밝고 푸른 톤 */
+    border-radius: 18px;
+
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.55);
+
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.12);    
+}
+
+.bubble-text {
+    font-size: 30px;
+    color: #f1f5f9; /* 순백보다 눈 덜 피로 */
+    white-space: normal;
+}

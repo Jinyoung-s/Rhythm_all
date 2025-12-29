@@ -1,0 +1,37 @@
+{
+  "steps": [
+    {
+      "stepId": "step_001_01",
+      "sentence": "Can you tell me the way?",
+      "translation": "길을 알려주실 수 있나요?",
+      "audioUrl": "Audio/asking_directions_01.mp3",
+      "grammarNote": "‘Can you ~?’는 정중한 요청 표현입니다.",
+      "examples": [
+        {
+          "sentence": "Can you tell me how to get to the station?",
+          "translation": "역에 어떻게 가는지 알려주실 수 있나요?"
+        },
+        {
+          "sentence": "Can you tell me where the museum is?",
+          "translation": "박물관이 어디 있는지 알려주실 수 있나요?"
+        }
+      ],
+      "highlights": [
+        {
+          "text": "Can you",
+          "color": "#4FC3F7"
+        }
+      ]      
+    },
+    {
+      "stepId": "step_001_02",
+      "sentence": "Excuse me, where is the restroom?",
+      "translation": "실례합니다, 화장실이 어디인가요?",
+      "audioUrl": "Audio/asking_directions_02.mp3",
+      "grammarNote": "‘Excuse me’는 말을 걸 때 자주 쓰입니다.",
+      "examples": [
+        "Excuse me, where is the nearest café?"
+      ]
+    }
+  ]
+}

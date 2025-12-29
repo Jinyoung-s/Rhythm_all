@@ -1,0 +1,18 @@
+.note-container {
+    width: 60px;
+    height: 40px;
+    background-color: #333;
+    border-radius: 8px;
+    -unity-text-align: middle-center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+}
+
+.note-label {
+    color: white;
+    font-size: 16px;    
+    -unity-text-align: middle-center;
+    -unity-font-style: bold;
+}

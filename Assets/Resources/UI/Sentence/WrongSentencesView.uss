@@ -1,0 +1,222 @@
+/* ==================== Overlay ==================== */
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    justify-content: center;
+}
+
+/* ==================== Container ==================== */
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(15, 20, 25);
+    flex-direction: column;
+}
+
+/* ==================== Header ==================== */
+.header {
+    flex-direction: row;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    background-color: rgb(20, 27, 33);
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+.back-button {
+    width: 120px;
+    height: 120px;
+    background-color: transparent;
+    border-width: 0;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-icon {
+    font-size: 80px;
+    color: rgb(255, 255, 255);
+    -unity-text-align: middle-center;
+}
+
+.header-title {
+    font-size: 60px;
+    -unity-font-style: bold;
+    color: rgb(255, 255, 255);
+    flex-grow: 1;
+    -unity-text-align: middle-left;
+    margin-left: 20px;
+}
+
+.header-spacer {
+    width: 120px;
+}
+
+/* ==================== Stats Bar ==================== */
+.stats-bar {
+    padding: 30px;
+    background-color: rgb(25, 32, 40);
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(255, 255, 255, 0.05);
+}
+
+.stats-label {
+    font-size: 48px;
+    color: rgb(154, 163, 173);
+    -unity-text-align: middle-center;
+}
+
+/* ==================== Sentence List ==================== */
+.sentence-list {
+    flex-grow: 1;
+    padding: 30px;
+}
+
+/* ==================== Sentence Card ==================== */
+.sentence-card {
+    background-color: rgb(27, 35, 44);
+    border-radius: 24px;
+    padding: 35px;
+    margin-bottom: 30px;
+    border-top-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 2px;
+    border-top-color: rgba(255, 255, 255, 0.1);
+    border-left-color: rgba(255, 255, 255, 0.06);
+    border-right-color: rgba(255, 255, 255, 0.06);
+    border-bottom-color: rgba(0, 0, 0, 0.35);
+}
+
+.sentence-header {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.sentence-accuracy {
+    font-size: 44px;
+    -unity-font-style: bold;
+    margin-right: 15px;
+}
+
+.accuracy-low {
+    color: rgb(239, 68, 68); /* red-500 */
+}
+
+.accuracy-medium {
+    color: rgb(251, 191, 36); /* amber-400 */
+}
+
+.accuracy-high {
+    color: rgb(59, 130, 246); /* blue-500 */
+}
+
+.sentence-attempts {
+    font-size: 42px;
+    color: rgb(154, 163, 173);
+    flex-grow: 1;
+}
+
+.sentence-english {
+    font-size: 52px;
+    -unity-font-style: bold;
+    color: rgb(255, 255, 255);
+    margin-bottom: 15px;
+    white-space: normal;
+}
+
+.sentence-korean {
+    font-size: 46px;
+    color: rgb(170, 179, 190);
+    margin-bottom: 30px;
+    white-space: normal;
+}
+
+.sentence-actions {
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.action-button {
+    height: 120px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 20px;
+    border-width: 0;
+    margin-left: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.action-button:active {
+    opacity: 0.8;
+}
+
+.action-button .action-label {
+    font-size: 42px;
+    -unity-font-style: bold;
+    color: rgb(255, 255, 255);
+    -unity-text-align: middle-center;
+}
+
+.play-button {
+    background-image: url("project://database/Assets/Resources/buttonbg/gradient_pupple.png?fileID=21300000&guid=15a33b216992dcf45a6976ba9812a442&type=3#gradient_pupple");
+}
+
+.delete-button {
+    background-color: rgb(220, 38, 38); /* red-600 */
+}
+
+/* ==================== Empty State ==================== */
+.empty-state {
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    display: none; /* Hidden by default */
+}
+
+.empty-state-visible {
+    display: flex;
+}
+
+.empty-icon {
+    font-size: 180px;
+    margin-bottom: 30px;
+}
+
+.empty-title {
+    font-size: 64px;
+    -unity-font-style: bold;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    -unity-text-align: middle-center;
+}
+
+.empty-subtitle {
+    font-size: 52px;
+    color: rgb(170, 179, 190);
+    margin-bottom: 30px;
+    -unity-text-align: middle-center;
+}
+
+.empty-description {
+    font-size: 46px;
+    color: rgb(107, 114, 128);
+    -unity-text-align: middle-center;
+    white-space: normal;
+    max-width: 800px;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+}

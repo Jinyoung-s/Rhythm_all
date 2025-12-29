@@ -1,0 +1,187 @@
+/* Root container */
+.wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 28px;
+    background-color: #0b0f14;
+}
+
+/* Card container */
+.card {
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    width: 90%;
+    max-width: 720px;
+}
+
+/* Ribbon at top */
+.ribbon {
+    height: 6px;
+    width: 100%;
+    background-color: #10b981; /* simple green fallback */
+    margin-bottom: 12px;
+}
+
+/* Title section */
+.title {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.badge {
+    background-color: #111827;
+    color: #ffffff;
+    font-size: 14px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 12px;
+}
+
+.headline {
+    font-size: 32px;
+    font-weight: bold;
+    color: #1a1f24;
+}
+
+/* Stars area */
+.stars {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 18px;
+}
+
+.star {
+    width: 52px;
+    height: 52px;
+    background-color: #f59e0b; /* placeholder color */
+    border-radius: 26px;
+}
+
+/* Score row */
+.score-row {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 22px;
+}
+
+.metric {
+    flex-grow: 1;
+    background-color: #f3f6f9;
+    border-radius: 14px;
+    padding: 12px;
+    align-items: center;
+}
+
+.metric Label:first-child {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1a1f24;
+}
+
+.metric Label:last-child {
+    font-size: 14px;
+    color: #6b7a89;
+}
+
+/* Rewards */
+.rewards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.reward {
+    background-color: #f6fef9;
+    border-radius: 12px;
+    border-width: 1px;
+    border-color: #dcfce7;
+    color: #14532d;
+    font-size: 14px;
+    padding: 10px 12px;
+}
+
+/* Learned sentences section */
+.section-title {
+    color: #6b7a89;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+
+.sentences {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sentence {
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    background-color: #0f172a;
+    color: #ffffff;
+    border-radius: 12px;
+    padding: 14px 16px;
+}
+
+.pill {
+    background-color: #1f2937;
+    color: #9ca3af;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 12px;
+}
+
+.s-kor {
+    color: #9fb3c8;
+    font-size: 14px;
+}
+
+/* Buttons area */
+.actions {
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.btn {
+    border-radius: 12px;
+    padding: 14px 18px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn.ghost {
+    background-color: transparent;
+    border-width: 1px;
+    border-color: #e5e7eb;
+    color: #374151;
+}
+
+.btn.secondary {
+    background-color: #111827;
+    color: #ffffff;
+}
+
+.btn.primary {
+    background-color: #10b981;
+    color: #ffffff;
+}

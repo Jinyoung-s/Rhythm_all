@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 230cc0c6bb0c4c6468747122c1c0e2ba
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 41068
+  packageName: RT-Voice PRO
+  packageVersion: 2024.1.1
+  assetPath: Assets/Plugins/crosstales/RTVoice/Scripts/Native/RTVoiceUWPBridge.cs
+  uploadId: 650789

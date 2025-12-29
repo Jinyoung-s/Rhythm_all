@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ui:UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ui="UnityEngine.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd"
+>
+  <ui:Style src="SongShopView.uss" />
+  
+  <ui:VisualElement name="ShopOverlay" class="shop-overlay">
+    
+    <ui:VisualElement class="shop-container">
+      
+      <!-- 헤더 -->
+      <ui:VisualElement class="shop-header">
+        <ui:Label class="shop-title" text="🎵 노래 상점" />
+        <ui:Button name="CloseButton" class="close-button" text="✕" />
+      </ui:VisualElement>
+      
+      <!-- 보유 포인트 -->
+      <ui:VisualElement class="points-display">
+        <ui:Label class="points-icon" text="♪" />
+        <ui:Label name="PointsLabel" class="points-value" text="0" />
+        <ui:Label class="points-unit" text="Notes" />
+      </ui:VisualElement>
+      
+      <!-- 필터 탭 -->
+      <ui:VisualElement class="filter-tabs">
+        <ui:Button name="TabAll" class="filter-tab active" text="전체" />
+        <ui:Button name="TabBeginner" class="filter-tab" text="초급" />
+        <ui:Button name="TabElementary" class="filter-tab" text="초중급" />
+        <ui:Button name="TabIntermediate" class="filter-tab" text="중급" />
+      </ui:VisualElement>
+      
+      <!-- 노래 목록 -->
+      <ui:ScrollView name="SongList" class="song-list">
+        <!-- 동적으로 추가되는 노래 카드들 -->
+      </ui:ScrollView>
+      
+    </ui:VisualElement>
+    
+  </ui:VisualElement>
+  
+</ui:UXML>

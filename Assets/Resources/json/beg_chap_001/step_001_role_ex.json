@@ -1,0 +1,37 @@
+[
+  {
+    "word": "Can",
+    "role": "verb",
+    "buttonBg": "neon_boder_red"
+  },
+  {
+    "word": "you",
+    "role": "subject",
+    "buttonBg": "neon_boder_blue"
+  },
+  {
+    "word": "help",
+    "role": "verb",
+    "buttonBg": "neon_boder_red"
+  },
+  {
+    "word": "me",
+    "role": "object",
+    "buttonBg": "neon_boder_green"
+  },
+  {
+    "word": "find",
+    "role": "verb",
+    "buttonBg": "neon_boder_red"
+  },
+  {
+    "word": "my",
+    "role": "object",
+    "buttonBg": "neon_boder_green"
+  },
+  {
+    "word": "bag",
+    "role": "object",
+    "buttonBg": "neon_boder_green"
+  }
+]

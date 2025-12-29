@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e576058ba602b5842a200ddcd1a5f12a
+timeCreated: 1500489682
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 41068
+  packageName: RT-Voice PRO
+  packageVersion: 2024.1.1
+  assetPath: Assets/Plugins/crosstales/RTVoice/Extras/AudioFileGenerator/Demo/AudioFileGenerator.unity
+  uploadId: 650789

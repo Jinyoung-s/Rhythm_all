@@ -1,0 +1,205 @@
+/* ========================================
+   Now Playing View Styles (전체 화면 플레이어)
+   모바일 1080 x 1920 기준
+   ======================================== */
+
+.now-playing-overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #0D1117;
+}
+
+.now-playing-container {
+    flex-grow: 1;
+    padding: 40px 32px;
+    padding-bottom: 80px;
+}
+
+/* ========== Header ========== */
+.now-playing-header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.back-button {
+    width: 72px;
+    height: 72px;
+    background-color: transparent;
+    border-width: 0;
+    font-size: 48px;
+    color: #FFFFFF;
+}
+
+.back-button:hover {
+    color: #1DB954;
+}
+
+.header-label {
+    font-size: 40px;
+    color: #8B949E;
+}
+
+.header-spacer {
+    width: 72px;
+}
+
+/* ========== Content ========== */
+.now-playing-content {
+    flex-grow: 1;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 40px;
+}
+
+/* Album Art */
+.album-art-container {
+    width: 600px;
+    height: 600px;
+    margin-bottom: 60px;
+}
+
+.album-art {
+    width: 100%;
+    height: 100%;
+    background-color: #21262D;
+    border-radius: 24px;
+}
+
+/* Song Info */
+.song-info-section {
+    align-items: center;
+    margin-bottom: 32px;
+    width: 100%;
+    padding: 0 40px;
+}
+
+.now-playing-title {
+    font-size: 52px;
+    color: #FFFFFF;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    margin-bottom: 12px;
+}
+
+.now-playing-artist {
+    font-size: 40px;
+    color: #8B949E;
+    -unity-text-align: middle-center;
+}
+
+/* Favorite Button */
+.favorite-button {
+    width: 72px;
+    height: 72px;
+    background-color: transparent;
+    border-width: 0;
+    font-size: 48px;
+    color: #8B949E;
+    margin-bottom: 40px;
+}
+
+.favorite-button:hover {
+    color: #FFFFFF;
+}
+
+.favorite-button.active {
+    color: #FF6B6B;
+}
+
+/* Progress Section */
+.progress-section {
+    width: 100%;
+    max-width: 900px;
+    margin-bottom: 60px;
+    padding: 0 32px;
+}
+
+.progress-slider {
+    width: 100%;
+    height: 24px;
+}
+
+.progress-slider .unity-base-slider__dragger {
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    background-color: #1DB954;
+    margin-top: -6px;
+}
+
+.progress-slider .unity-base-slider__tracker {
+    height: 12px;
+    border-radius: 6px;
+    background-color: #21262D;
+}
+
+.time-labels {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.time-label {
+    font-size: 32px;
+    color: #8B949E;
+}
+
+/* Playback Controls */
+.playback-controls {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.control-button {
+    background-color: transparent;
+    border-width: 0;
+    color: #FFFFFF;
+    margin: 0 16px;
+}
+
+.control-button:hover {
+    color: #1DB954;
+}
+
+.mode-button {
+    width: 72px;
+    height: 72px;
+    font-size: 40px;
+    color: #8B949E;
+}
+
+.mode-button.active {
+    color: #1DB954;
+}
+
+.nav-button {
+    width: 100px;
+    height: 100px;
+    font-size: 56px;
+}
+
+.play-button {
+    width: 140px;
+    height: 140px;
+    font-size: 72px;
+    background-color: #1DB954;
+    border-radius: 70px;
+    color: #FFFFFF;
+}
+
+.play-button:hover {
+    background-color: #1ED760;
+    color: #FFFFFF;
+}
+
+/* ========== Utility ========== */
+.hidden {
+    display: none;
+}

@@ -1,0 +1,6 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Resources/UI/Game/FallingNote.uss?fileID=7433441132597879392&amp;guid=4cb5105c9de807e448deb2b4af79decc&amp;type=3#FallingNote" />
+    <ui:VisualElement class="note-container">
+        <ui:Label name="NoteLabel" class="note-label" text="..."  />
+    </ui:VisualElement>
+</ui:UXML>

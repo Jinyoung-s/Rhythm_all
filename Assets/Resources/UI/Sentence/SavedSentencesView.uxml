@@ -1,0 +1,40 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Resources/UI/Sentence/SavedSentencesView.uss" />
+    
+    <!-- Full Screen Overlay -->
+    <ui:VisualElement name="SavedSentencesOverlay" class="overlay">
+        
+        <!-- Main Container -->
+        <ui:VisualElement name="SavedSentencesContainer" class="container">
+            
+            <!-- Header -->
+            <ui:VisualElement class="header">
+                <ui:Button name="BackButton" class="back-button">
+                    <ui:Label text="←" class="back-icon" />
+                </ui:Button>
+                <ui:Label text="Saved Sentences" class="header-title" />
+                <ui:VisualElement class="header-spacer" />
+            </ui:VisualElement>
+            
+            <!-- Stats Bar -->
+            <ui:VisualElement name="StatsBar" class="stats-bar">
+                <ui:Label name="StatsLabel" text="⭐ 0 saved" class="stats-label" />
+            </ui:VisualElement>
+            
+            <!-- Content Area -->
+            <ui:ScrollView name="SentenceList" class="sentence-list">
+                <!-- Sentence items will be added here dynamically -->
+            </ui:ScrollView>
+            
+            <!-- Empty State -->
+            <ui:VisualElement name="EmptyState" class="empty-state">
+                <ui:Label text="📝" class="empty-icon" />
+                <ui:Label text="No Saved Sentences" class="empty-title" />
+                <ui:Label text="저장한 문장이 없습니다" class="empty-subtitle" />
+                <ui:Label text="학습 중 중요한 문장을 ⭐ 버튼으로 저장해보세요!" class="empty-description" />
+            </ui:VisualElement>
+            
+        </ui:VisualElement>
+        
+    </ui:VisualElement>
+</ui:UXML>

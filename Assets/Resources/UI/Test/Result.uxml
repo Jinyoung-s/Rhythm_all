@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<engine:UXML
+    xmlns:ui="UnityEngine.UIElements"
+    xmlns:uie="UnityEditor.UIElements"
+    xmlns:engine="UnityEngine.UIElements">
+  <ui:VisualElement class="wrapper">
+    <ui:VisualElement class="card">
+      <ui:VisualElement class="ribbon" />
+
+      <ui:VisualElement class="title">
+        <ui:Label class="badge" text="Stage Clear" />
+        <ui:Label class="headline" text="Perfect! All Correct 🎉" />
+      </ui:VisualElement>
+
+      <ui:VisualElement class="stars">
+        <ui:VisualElement class="star" name="Star1" />
+        <ui:VisualElement class="star" name="Star2" />
+        <ui:VisualElement class="star" name="Star3" />
+      </ui:VisualElement>
+
+      <ui:VisualElement class="score-row">
+        <ui:VisualElement class="metric">
+          <ui:Label text="Score 9800" />
+          <ui:Label text="점수" />
+        </ui:VisualElement>
+        <ui:VisualElement class="metric">
+          <ui:Label text="Accuracy 100%" />
+          <ui:Label text="정확도" />
+        </ui:VisualElement>
+        <ui:VisualElement class="metric">
+          <ui:Label text="Time 03:24" />
+          <ui:Label text="학습 시간" />
+        </ui:VisualElement>
+      </ui:VisualElement>
+
+      <ui:VisualElement class="rewards">
+        <ui:Label class="reward" text="💰 +20 Coins" />
+        <ui:Label class="reward" text="⭐ New Badge: Fluent Start" />
+        <ui:Label class="reward" text="🔓 Chapter 2 Unlocked" />
+      </ui:VisualElement>
+
+      <ui:Label class="section-title" text="이번에 배운 문장" />
+
+      <ui:VisualElement class="sentences">
+        <ui:VisualElement class="sentence">
+          <ui:Label class="pill" text="EN" />
+          <ui:VisualElement>
+            <ui:Label text="He slept late last night." />
+            <ui:Label class="s-kor" text="그는 어젯밤 늦게 잤다." />
+          </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement class="sentence">
+          <ui:Label class="pill" text="EN" />
+          <ui:VisualElement>
+            <ui:Label text="I am a student." />
+            <ui:Label class="s-kor" text="나는 학생이야." />
+          </ui:VisualElement>
+        </ui:VisualElement>
+      </ui:VisualElement>
+
+      <ui:VisualElement class="actions">
+        <ui:Button class="btn ghost" name="MainMenuButton" text="메인 메뉴" />
+        <ui:Button class="btn secondary" name="RetryButton" text="다시하기" />
+        <ui:Button class="btn primary" name="NextStepButton" text="다음 스텝 ▶" />
+      </ui:VisualElement>
+    </ui:VisualElement>
+  </ui:VisualElement>
+</engine:UXML>

@@ -1,0 +1,13 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Resources/UI/Common/CommonPopup.uss" />
+    <ui:VisualElement name="PopupRoot" class="popup-root">
+        <ui:VisualElement name="PopupBox" class="popup-box">
+            <ui:Label name="Title" text="Title" class="title" />
+            <ui:Label name="Message" text="Your message goes here." class="message" />
+            <ui:VisualElement name="ButtonRow" class="button-row">
+                <ui:Button name="CancelButton" text="Cancel" class="button-secondary" />
+                <ui:Button name="ConfirmButton" text="Confirm" class="button-primary" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

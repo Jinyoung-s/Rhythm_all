@@ -1,0 +1,702 @@
+[
+  {
+    "word": "What",
+    "start": 5.779999999999999,
+    "end": 6.42
+  },
+  {
+    "word": "are",
+    "start": 6.42,
+    "end": 6.6
+  },
+  {
+    "word": "you",
+    "start": 6.6,
+    "end": 6.74
+  },
+  {
+    "word": "going",
+    "start": 6.74,
+    "end": 7.18
+  },
+  {
+    "word": "to",
+    "start": 7.18,
+    "end": 7.6
+  },
+  {
+    "word": "do",
+    "start": 7.6,
+    "end": 7.9
+  },
+  {
+    "word": "this",
+    "start": 7.9,
+    "end": 8.28
+  },
+  {
+    "word": "weekend",
+    "start": 8.28,
+    "end": 8.58
+  },
+  {
+    "word": "maybe",
+    "start": 8.94,
+    "end": 9.38
+  },
+  {
+    "word": "we",
+    "start": 9.38,
+    "end": 9.6
+  },
+  {
+    "word": "could",
+    "start": 9.6,
+    "end": 9.76
+  },
+  {
+    "word": "go",
+    "start": 9.76,
+    "end": 10.0
+  },
+  {
+    "word": "to",
+    "start": 10.0,
+    "end": 10.16
+  },
+  {
+    "word": "the",
+    "start": 10.16,
+    "end": 10.32
+  },
+  {
+    "word": "park",
+    "start": 10.32,
+    "end": 10.74
+  },
+  {
+    "word": "if",
+    "start": 10.74,
+    "end": 11.1
+  },
+  {
+    "word": "the",
+    "start": 11.1,
+    "end": 11.22
+  },
+  {
+    "word": "weather",
+    "start": 11.22,
+    "end": 11.52
+  },
+  {
+    "word": "is",
+    "start": 11.52,
+    "end": 11.88
+  },
+  {
+    "word": "good",
+    "start": 11.88,
+    "end": 12.22
+  },
+  {
+    "word": "What",
+    "start": 17.22,
+    "end": 17.86
+  },
+  {
+    "word": "are",
+    "start": 17.86,
+    "end": 18.02
+  },
+  {
+    "word": "you",
+    "start": 18.02,
+    "end": 18.18
+  },
+  {
+    "word": "going",
+    "start": 18.18,
+    "end": 18.58
+  },
+  {
+    "word": "to",
+    "start": 18.58,
+    "end": 19.04
+  },
+  {
+    "word": "do",
+    "start": 19.04,
+    "end": 19.34
+  },
+  {
+    "word": "this",
+    "start": 19.34,
+    "end": 19.62
+  },
+  {
+    "word": "weekend",
+    "start": 19.62,
+    "end": 20.0
+  },
+  {
+    "word": "maybe",
+    "start": 20.36,
+    "end": 20.82
+  },
+  {
+    "word": "we",
+    "start": 20.82,
+    "end": 21.04
+  },
+  {
+    "word": "could",
+    "start": 21.04,
+    "end": 21.2
+  },
+  {
+    "word": "go",
+    "start": 21.2,
+    "end": 21.44
+  },
+  {
+    "word": "to",
+    "start": 21.44,
+    "end": 21.6
+  },
+  {
+    "word": "the",
+    "start": 21.6,
+    "end": 21.74
+  },
+  {
+    "word": "park",
+    "start": 21.74,
+    "end": 22.16
+  },
+  {
+    "word": "if",
+    "start": 22.16,
+    "end": 22.52
+  },
+  {
+    "word": "the",
+    "start": 22.52,
+    "end": 22.66
+  },
+  {
+    "word": "weather",
+    "start": 22.66,
+    "end": 22.96
+  },
+  {
+    "word": "is",
+    "start": 22.96,
+    "end": 23.34
+  },
+  {
+    "word": "good",
+    "start": 23.34,
+    "end": 23.68
+  },
+  {
+    "word": "What",
+    "start": 28.68,
+    "end": 29.3
+  },
+  {
+    "word": "are",
+    "start": 29.3,
+    "end": 29.48
+  },
+  {
+    "word": "you",
+    "start": 29.48,
+    "end": 29.62
+  },
+  {
+    "word": "going",
+    "start": 29.62,
+    "end": 30.06
+  },
+  {
+    "word": "to",
+    "start": 30.06,
+    "end": 30.48
+  },
+  {
+    "word": "do",
+    "start": 30.48,
+    "end": 30.76
+  },
+  {
+    "word": "this",
+    "start": 30.76,
+    "end": 31.16
+  },
+  {
+    "word": "weekend",
+    "start": 31.16,
+    "end": 31.44
+  },
+  {
+    "word": "maybe",
+    "start": 31.84,
+    "end": 32.26
+  },
+  {
+    "word": "we",
+    "start": 32.26,
+    "end": 32.48
+  },
+  {
+    "word": "could",
+    "start": 32.48,
+    "end": 32.62
+  },
+  {
+    "word": "go",
+    "start": 32.62,
+    "end": 32.86
+  },
+  {
+    "word": "to",
+    "start": 32.86,
+    "end": 33.02
+  },
+  {
+    "word": "the",
+    "start": 33.02,
+    "end": 33.16
+  },
+  {
+    "word": "park",
+    "start": 33.16,
+    "end": 33.58
+  },
+  {
+    "word": "if",
+    "start": 33.58,
+    "end": 34.0
+  },
+  {
+    "word": "the",
+    "start": 34.0,
+    "end": 34.12
+  },
+  {
+    "word": "weather",
+    "start": 34.12,
+    "end": 34.36
+  },
+  {
+    "word": "is",
+    "start": 34.36,
+    "end": 34.78
+  },
+  {
+    "word": "good",
+    "start": 34.78,
+    "end": 35.12
+  },
+  {
+    "word": "What",
+    "start": 40.06,
+    "end": 40.74
+  },
+  {
+    "word": "are",
+    "start": 40.74,
+    "end": 40.9
+  },
+  {
+    "word": "you",
+    "start": 40.9,
+    "end": 41.04
+  },
+  {
+    "word": "going",
+    "start": 41.04,
+    "end": 41.5
+  },
+  {
+    "word": "to",
+    "start": 41.5,
+    "end": 41.9
+  },
+  {
+    "word": "do",
+    "start": 41.9,
+    "end": 42.24
+  },
+  {
+    "word": "this",
+    "start": 42.24,
+    "end": 42.64
+  },
+  {
+    "word": "weekend",
+    "start": 42.64,
+    "end": 42.88
+  },
+  {
+    "word": "maybe",
+    "start": 43.28,
+    "end": 43.7
+  },
+  {
+    "word": "we",
+    "start": 43.7,
+    "end": 43.9
+  },
+  {
+    "word": "could",
+    "start": 43.9,
+    "end": 44.04
+  },
+  {
+    "word": "go",
+    "start": 44.04,
+    "end": 44.3
+  },
+  {
+    "word": "to",
+    "start": 44.3,
+    "end": 44.46
+  },
+  {
+    "word": "the",
+    "start": 44.46,
+    "end": 44.62
+  },
+  {
+    "word": "park",
+    "start": 44.62,
+    "end": 45.02
+  },
+  {
+    "word": "if",
+    "start": 45.02,
+    "end": 45.44
+  },
+  {
+    "word": "the",
+    "start": 45.44,
+    "end": 45.54
+  },
+  {
+    "word": "weather",
+    "start": 45.54,
+    "end": 45.82
+  },
+  {
+    "word": "is",
+    "start": 45.82,
+    "end": 46.24
+  },
+  {
+    "word": "good",
+    "start": 46.24,
+    "end": 46.58
+  },
+  {
+    "word": "What",
+    "start": 62.94,
+    "end": 63.56
+  },
+  {
+    "word": "are",
+    "start": 63.56,
+    "end": 63.76
+  },
+  {
+    "word": "you",
+    "start": 63.76,
+    "end": 63.9
+  },
+  {
+    "word": "going",
+    "start": 63.9,
+    "end": 64.42
+  },
+  {
+    "word": "to",
+    "start": 64.42,
+    "end": 64.76
+  },
+  {
+    "word": "do",
+    "start": 64.76,
+    "end": 65.02
+  },
+  {
+    "word": "this",
+    "start": 65.02,
+    "end": 65.48
+  },
+  {
+    "word": "weekend",
+    "start": 65.48,
+    "end": 65.76
+  },
+  {
+    "word": "maybe",
+    "start": 66.12,
+    "end": 66.54
+  },
+  {
+    "word": "we",
+    "start": 66.54,
+    "end": 66.76
+  },
+  {
+    "word": "could",
+    "start": 66.76,
+    "end": 66.92
+  },
+  {
+    "word": "go",
+    "start": 66.92,
+    "end": 67.12
+  },
+  {
+    "word": "to",
+    "start": 67.12,
+    "end": 67.32
+  },
+  {
+    "word": "the",
+    "start": 67.32,
+    "end": 67.46
+  },
+  {
+    "word": "park",
+    "start": 67.46,
+    "end": 67.86
+  },
+  {
+    "word": "if",
+    "start": 67.86,
+    "end": 68.26
+  },
+  {
+    "word": "the",
+    "start": 68.26,
+    "end": 68.38
+  },
+  {
+    "word": "weather",
+    "start": 68.38,
+    "end": 68.68
+  },
+  {
+    "word": "is",
+    "start": 68.68,
+    "end": 69.06
+  },
+  {
+    "word": "good",
+    "start": 69.06,
+    "end": 69.38
+  },
+  {
+    "word": "What",
+    "start": 74.38,
+    "end": 75.02
+  },
+  {
+    "word": "are",
+    "start": 75.02,
+    "end": 75.2
+  },
+  {
+    "word": "you",
+    "start": 75.2,
+    "end": 75.32
+  },
+  {
+    "word": "going",
+    "start": 75.32,
+    "end": 75.84
+  },
+  {
+    "word": "to",
+    "start": 75.84,
+    "end": 76.2
+  },
+  {
+    "word": "do",
+    "start": 76.2,
+    "end": 76.48
+  },
+  {
+    "word": "this",
+    "start": 76.48,
+    "end": 76.9
+  },
+  {
+    "word": "weekend",
+    "start": 76.9,
+    "end": 77.16
+  },
+  {
+    "word": "maybe",
+    "start": 77.56,
+    "end": 77.98
+  },
+  {
+    "word": "we",
+    "start": 77.98,
+    "end": 78.18
+  },
+  {
+    "word": "could",
+    "start": 78.18,
+    "end": 78.32
+  },
+  {
+    "word": "go",
+    "start": 78.32,
+    "end": 78.58
+  },
+  {
+    "word": "to",
+    "start": 78.58,
+    "end": 78.74
+  },
+  {
+    "word": "the",
+    "start": 78.74,
+    "end": 78.9
+  },
+  {
+    "word": "park",
+    "start": 78.9,
+    "end": 79.36
+  },
+  {
+    "word": "if",
+    "start": 79.36,
+    "end": 79.72
+  },
+  {
+    "word": "the",
+    "start": 79.72,
+    "end": 79.82
+  },
+  {
+    "word": "weather",
+    "start": 79.82,
+    "end": 80.08
+  },
+  {
+    "word": "is",
+    "start": 80.08,
+    "end": 80.48
+  },
+  {
+    "word": "good?",
+    "start": 80.48,
+    "end": 80.84
+  },
+  {
+    "word": "What",
+    "start": 85.82,
+    "end": 86.44
+  },
+  {
+    "word": "are",
+    "start": 86.44,
+    "end": 86.62
+  },
+  {
+    "word": "you",
+    "start": 86.62,
+    "end": 86.74
+  },
+  {
+    "word": "going",
+    "start": 86.74,
+    "end": 87.22
+  },
+  {
+    "word": "to",
+    "start": 87.22,
+    "end": 87.62
+  },
+  {
+    "word": "do",
+    "start": 87.62,
+    "end": 87.92
+  },
+  {
+    "word": "this",
+    "start": 87.92,
+    "end": 88.34
+  },
+  {
+    "word": "weekend",
+    "start": 88.34,
+    "end": 88.58
+  },
+  {
+    "word": "maybe",
+    "start": 88.96,
+    "end": 89.38
+  },
+  {
+    "word": "we",
+    "start": 89.38,
+    "end": 89.6
+  },
+  {
+    "word": "could",
+    "start": 89.6,
+    "end": 89.76
+  },
+  {
+    "word": "go",
+    "start": 89.76,
+    "end": 90.0
+  },
+  {
+    "word": "to",
+    "start": 90.0,
+    "end": 90.16
+  },
+  {
+    "word": "the",
+    "start": 90.16,
+    "end": 90.32
+  },
+  {
+    "word": "park",
+    "start": 90.32,
+    "end": 90.72
+  },
+  {
+    "word": "if",
+    "start": 90.72,
+    "end": 91.14
+  },
+  {
+    "word": "the",
+    "start": 91.14,
+    "end": 91.24
+  },
+  {
+    "word": "weather",
+    "start": 91.24,
+    "end": 91.5
+  },
+  {
+    "word": "is",
+    "start": 91.5,
+    "end": 91.94
+  },
+  {
+    "word": "good?",
+    "start": 91.94,
+    "end": 92.26
+  }
+]

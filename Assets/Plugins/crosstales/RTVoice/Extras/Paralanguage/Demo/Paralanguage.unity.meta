@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 59abe4250b9c0ff49bafc5fad5f5a5bc
+timeCreated: 1533768467
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 41068
+  packageName: RT-Voice PRO
+  packageVersion: 2024.1.1
+  assetPath: Assets/Plugins/crosstales/RTVoice/Extras/Paralanguage/Demo/Paralanguage.unity
+  uploadId: 650789

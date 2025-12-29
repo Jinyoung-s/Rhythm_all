@@ -1,0 +1,37 @@
+{
+  "chapterId": "foun_chap_002",
+  "steps": [
+    {
+      "id": "step_001",
+      "title": "Asking for Directions",
+      "sentence": "Excuse me, could you tell me how to get to the nearest subway station?",
+      "songFile": "directions.mp3",
+      "lyricsFile": "directions_lyrics.json",
+      "unlocked": true
+    },
+    {
+      "id": "step_002",
+      "title": "Buying a Ticket",
+      "sentence": "I'd like to buy a one-way ticket to Central Park, please.",
+      "songFile": "buy_ticket.mp3",
+      "lyricsFile": "buy_ticket_lyrics.json",
+      "unlocked": true
+    },
+    {
+      "id": "step_003",
+      "title": "Missing the Bus",
+      "sentence": "Oh no, I think we just missed the bus. When is the next one coming?",
+      "songFile": "missed_bus.mp3",
+      "lyricsFile": "missed_bus_lyrics.json",
+      "unlocked": false
+    },
+    {
+      "id": "step_004",
+      "title": "Reading a Map",
+      "sentence": "It looks like we need to transfer at Union Station and then take Line 3.",
+      "songFile": "read_map.mp3",
+      "lyricsFile": "read_map_lyrics.json",
+      "unlocked": false
+    }
+  ]
+}

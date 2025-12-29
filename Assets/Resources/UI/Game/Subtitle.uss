@@ -1,0 +1,12 @@
+.subtitle-container {
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    width: 100%;
+    position: absolute;
+    bottom: 40px;
+    background-color: #00000044;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<engine:UXML
+    xmlns:ui="UnityEngine.UIElements"
+    xmlns:uie="UnityEditor.UIElements"
+    xmlns:engine="UnityEngine.UIElements">
+  <Style src="TTSSetupStyle.uss" />
+  <ui:VisualElement class="popup-overlay">
+    <ui:VisualElement class="popup-card">
+      <!-- Icon Section -->
+      <ui:VisualElement class="icon-container">
+        <ui:Label class="icon" text="🔊" />
+      </ui:VisualElement>
+
+      <!-- Title and Description -->
+      <ui:VisualElement class="content">
+        <ui:Label class="title" text="더 나은 발음으로 학습하세요" />
+        <ui:Label class="description" text="Google TTS 엔진을 설치하면 고품질 음성으로 단어를 학습할 수 있습니다." />
+        
+        <!-- Feature List -->
+        <ui:VisualElement class="features">
+          <ui:VisualElement class="feature-item">
+            <ui:Label class="feature-icon" text="✓" />
+            <ui:Label class="feature-text" text="자연스러운 원어민 발음" />
+          </ui:VisualElement>
+          <ui:VisualElement class="feature-item">
+            <ui:Label class="feature-icon" text="✓" />
+            <ui:Label class="feature-text" text="Neural TTS 고품질 음성" />
+          </ui:VisualElement>
+          <ui:VisualElement class="feature-item">
+            <ui:Label class="feature-icon" text="✓" />
+            <ui:Label class="feature-text" text="무료 및 빠른 설치" />
+          </ui:VisualElement>
+        </ui:VisualElement>
+
+        <!-- Info Note -->
+        <ui:VisualElement class="info-box">
+          <ui:Label class="info-icon" text="ℹ️" />
+          <ui:Label class="info-text" text="설치는 선택사항입니다. 나중에 설정에서도 안내를 다시 볼 수 있습니다." />
+        </ui:VisualElement>
+      </ui:VisualElement>
+
+      <!-- Action Buttons -->
+      <ui:VisualElement class="actions">
+        <ui:Button class="btn secondary" name="LaterButton" text="나중에" />
+        <ui:Button class="btn primary" name="InstallButton" text="설치 안내 보기" />
+      </ui:VisualElement>
+    </ui:VisualElement>
+  </ui:VisualElement>
+</engine:UXML>

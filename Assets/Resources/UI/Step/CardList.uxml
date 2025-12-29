@@ -1,0 +1,14 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Resources/UI/Step/CardList.uss?fileID=7433441132597879392&amp;guid=aacf4339a803ab14589926c624f04daa&amp;type=3#CardList" />
+    <engine:VisualElement class="card-list-container">
+        <engine:VisualElement class="header-margin-container">
+            <engine:VisualElement class="top-bar">
+                <engine:Button name="BackButton" class="back-btn" style="margin-top: 0; margin-right: 0; margin-left: 0; margin-bottom: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+                    <engine:Label text="←" class="back-icon" style="-unity-text-align: lower-right; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
+                </engine:Button>
+                <engine:Label name="title" text="Chapters" class="haeder-title" style="-unity-text-align: middle-center; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; width: 902px;" />
+            </engine:VisualElement>
+        </engine:VisualElement>
+        <engine:ScrollView name="cardListRoot" class="card-list" />
+    </engine:VisualElement>
+</engine:UXML>

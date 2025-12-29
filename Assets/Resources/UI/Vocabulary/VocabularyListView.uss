@@ -1,0 +1,330 @@
+/* VocabularyListView.uss - Professionally Redesigned */
+
+/* =========================
+   1. SCREEN OVERLAY - FULLY OPAQUE
+   ========================= */
+.screen-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    /* CRITICAL FIX: Fully opaque background */
+    background-color: rgb(18, 18, 18); /* #121212 - Dark but not pure black */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition-duration: 0.2s;
+    padding-top: 50px;
+}
+
+.screen-overlay.visible {
+    opacity: 1;
+}
+
+/* =========================
+   2. MAIN CONTAINER
+   ========================= */
+.main-card {
+    width: 100%;
+    height: 100%;
+    padding: 20px 16px 0 16px; /* Reduced top padding */
+    display: flex;
+    flex-direction: column;
+    position: relative; /* For absolute positioning of pagination */
+}
+
+/* =========================
+   3. HEADER - CENTERED TITLE WITH BACK BUTTON
+   ========================= */
+.header-section {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 16px 12px;
+    min-height: 80px;
+}
+
+.header-title {
+    font-size: 64px; /* Larger, bold title */
+    -unity-font-style: bold;
+    color: #ffffff;
+    flex-grow: 1;
+    -unity-text-align: middle-center;
+}
+
+.back-button {
+    width: 64px;
+    height: 64px;
+    font-size: 60px; /* Large back arrow */
+    color: #ffffff;
+    background-color: transparent;
+    border-width: 0;
+    border-radius: 12px;
+    -unity-text-align: middle-center;
+    padding: 0;
+}
+
+.back-button:active {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Spacer to balance the header */
+.header-spacer {
+    width: 64px;
+    height: 64px;
+}
+
+/* =========================
+   4. STATS & TOGGLES - TWO ROWS
+   ========================= */
+.stats-section {
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+/* Row 1: Stats */
+.stats-row {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 16px;
+    padding: 0 16px;
+}
+
+/* Row 2: Toggles (Left & Right) */
+.toggles-row {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; /* 양쪽 끝으로 */
+    padding: 0 16px;
+}
+
+.stat-text {
+    font-size: 42px; /* Much larger for visibility */
+    color: #999999;
+    margin-right: 16px;
+}
+
+.highlight-text {
+    color: #4CAF50; /* Material Green instead of neon */
+    -unity-font-style: bold;
+}
+
+.stat-divider {
+    width: 1px;
+    height: 14px;
+    background-color: #333333;
+    margin-right: 16px;
+}
+
+.toggle-switch {
+    color: #aaaaaa;
+    font-size: 42px; /* 두 줄이라 큰 크기 가능 */
+}
+
+/* Toggle checkbox (체크박스 크기만 조정) */
+.toggle-switch .unity-toggle__input {
+    width: 48px;
+    height: 48px;
+}
+
+.toggle-switch .unity-toggle__checkmark {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    border-width: 2px;
+}
+
+/* =========================
+   5. SCROLL VIEW
+   ========================= */
+.word-scroll-view {
+    flex-grow: 1;
+    margin-top: 12px;
+    padding-top: 20px;
+    padding-bottom: 140px; /* Space for fixed pagination + safe area */
+}
+
+/* Hide scrollbars for clean mobile feel */
+.unity-scroller {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    display: none;
+}
+
+.unity-scroller__high-button, 
+.unity-scroller__low-button, 
+.unity-scroller__slider,
+.unity-scroller__dragger {
+    display: none;
+    width: 0;
+}
+
+/* =========================
+   6. VOCABULARY CARD - REDESIGNED
+   ========================= */
+.vocab-card {
+    flex-direction: row;
+    align-items: center;
+    
+    /* Comfortable sizing */
+    min-height: 96px;
+    margin-bottom: 14px;
+    padding: 18px 24px;
+    margin-left: 8px;
+    margin-right: 8px;
+    
+    background-color: rgb(27, 35, 44);
+    border-radius: 18px;
+    border-width: 0; 
+}
+
+/* Removed :hover effect - not applicable for mobile/touch devices */
+
+/* SUBTLE MASTERED STATE - No harsh borders! */
+.vocab-card.mastered {
+    background-color: #1a2620; /* Very subtle dark green tint */
+    border-width: 0; /* NO BORDER! */
+}
+
+/* =========================
+   7. STATUS BAR (LEFT ACCENT)
+   ========================= */
+.status-bar {
+    width: 4px; /* Thinner, more elegant */
+    height: 50%;
+    background-color: #333333; /* Subtle inactive state */
+    border-radius: 2px;
+    margin-right: 16px; /* Good spacing */
+}
+
+.vocab-card.mastered .status-bar {
+    background-color: #4CAF50; /* Material Green - not neon! */
+    width: 5px; /* Slightly thicker when active */
+}
+
+/* =========================
+   8. CONTENT - TYPOGRAPHY HIERARCHY
+   ========================= */
+.content-container,
+.word-content {
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    padding: 2px 0; /* Vertical breathing room */
+}
+
+.word-text {
+    font-size: 62px; /* BIGGER for excellent readability */
+    -unity-font-style: bold;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}
+
+.meaning-text {
+    font-size: 42px;
+    color: #999999;
+    margin-top: 2px;
+    -unity-font-style: normal;
+}
+
+/* Mastered cards get subtle color shift */
+.vocab-card.mastered .word-text {
+    color: #E8F5E9; /* Very light green tint */
+}
+
+.vocab-card.mastered .meaning-text {
+    color: #A5D6A7; /* Soft green */
+}
+
+/* =========================
+   9. CONTROLS (BUTTONS)
+   ========================= */
+.controls-container {
+    flex-direction: row;
+    align-items: center;
+    /* Gap replaced with margin on children */
+}
+
+.icon-button {
+    width: 68px; /* Larger touch target */
+    height: 68px;
+    
+    background-color: rgba(255, 255, 255, 0.06);
+    border-radius: 14px;
+    border-width: 0;
+    
+    font-size: 56px; /* Bigger icons */
+    color: #ffffff;
+    -unity-text-align: middle-center;
+    padding: 0;
+    margin-left: 12px;
+}
+
+.icon-button:active {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Speaker button - blue accent */
+.speaker-btn {
+    color: #64B5F6; /* Softer blue */
+}
+
+/* Check button - inactive state */
+.check-btn {
+    color: #444444; /* More visible than #555 */
+}
+
+/* Mastered check - subtle highlight */
+.vocab-card.mastered .check-btn {
+    background-color: rgba(76, 175, 80, 0.2); /* Subtle green bg */
+    color: #4CAF50; /* Green checkmark, not black on neon! */
+}
+
+/* =========================
+   10. PAGINATION
+   ========================= */
+.pagination-container {
+    position: absolute; /* Fixed at bottom */
+    bottom: 120px; /* Safe distance from mobile gesture bar */
+    left: 0;
+    right: 0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 0;
+    background-color: rgba(18, 18, 18, 0.95); /* Slight background for visibility */
+}
+
+.page-button {
+    width: 56px; /* Larger buttons */
+    height: 56px;
+    background-color: #252525;
+    border-radius: 14px;
+    border-width: 0;
+    font-size: 48px; /* Much larger arrows */
+    color: #999999;
+    -unity-text-align: middle-center;
+    margin-left: 20px; /* More spacing */
+}
+
+.page-button:active {
+    background-color: #333333;
+}
+
+.page-button:disabled {
+    color: #444444;
+    background-color: #1a1a1a;
+}
+
+.page-info {
+    font-size: 48px; /* Much larger page numbers */
+    -unity-font-style: bold; /* Bold for emphasis */
+    color: #ffffff; /* Brighter for visibility */
+    padding: 0 16px;
+    min-width: 140px;
+    -unity-text-align: middle-center;
+}

@@ -1,0 +1,22 @@
+[
+  {"word": "What", "role": "object", "buttonBg": "neon_boder_green"},
+  {"word": "are", "role": "verb", "buttonBg": "neon_boder_red"},
+  {"word": "you", "role": "subject", "buttonBg": "neon_boder_blue"},
+  {"word": "going", "role": "verb", "buttonBg": "neon_boder_red"},
+  {"word": "to", "role": "modifier", "buttonBg": "neon_boder_white"},
+  {"word": "do", "role": "verb", "buttonBg": "neon_boder_red"},
+  {"word": "this", "role": "modifier", "buttonBg": "neon_boder_white"},
+  {"word": "weekend", "role": "object", "buttonBg": "neon_boder_green"},
+  {"word": "maybe", "role": "modifier", "buttonBg": "neon_boder_white"},
+  {"word": "we", "role": "subject", "buttonBg": "neon_boder_blue"},
+  {"word": "could", "role": "verb", "buttonBg": "neon_boder_red"},
+  {"word": "go", "role": "verb", "buttonBg": "neon_boder_red"},
+  {"word": "to", "role": "modifier", "buttonBg": "neon_boder_white"},
+  {"word": "the", "role": "modifier", "buttonBg": "neon_boder_white"},
+  {"word": "park", "role": "object", "buttonBg": "neon_boder_green"},
+  {"word": "if", "role": "modifier", "buttonBg": "neon_boder_white"},
+  {"word": "the", "role": "modifier", "buttonBg": "neon_boder_white"},
+  {"word": "weather", "role": "subject", "buttonBg": "neon_boder_blue"},
+  {"word": "is", "role": "verb", "buttonBg": "neon_boder_red"},
+  {"word": "good", "role": "modifier", "buttonBg": "neon_boder_violet"}
+]

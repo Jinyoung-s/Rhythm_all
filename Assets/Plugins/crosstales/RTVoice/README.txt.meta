@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6328d852c3eb5af40983ff01ab75075e
+timeCreated: 1437404053
+licenseType: Store
+TextScriptImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 41068
+  packageName: RT-Voice PRO
+  packageVersion: 2024.1.1
+  assetPath: Assets/Plugins/crosstales/RTVoice/README.txt
+  uploadId: 650789

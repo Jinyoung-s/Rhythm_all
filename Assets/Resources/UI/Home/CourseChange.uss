@@ -1,0 +1,18 @@
+.changeCourseButton-root {
+    position: absolute;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    top: 250px;
+    left: 58%;
+}
+
+.changeCourseButton {
+    width: 420px;
+    background-image: resource("buttonbg/MintBg2");
+    color: rgb(255, 255, 255);
+    border-radius: 52px;
+    padding: 15px;
+    font-size: 44px;
+    -unity-font-style: bold;
+    background-repeat: no-repeat no-repeat;
+    box-shadow: 0 0 25px rgba(77, 208, 225, 0.6);
+}

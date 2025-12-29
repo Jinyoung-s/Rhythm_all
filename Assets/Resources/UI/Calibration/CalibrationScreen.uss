@@ -1,0 +1,203 @@
+/* 전체 루트 */
+.root {
+    width: 100%;
+    height: 100%;
+    background-color: #050B18;
+
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding-top: 120px;
+}
+
+/* Title */
+.title {
+    width: 100%;
+    -unity-text-align: middle-center;
+    font-size: 72px;
+    -unity-font-style: bold;
+    color: #3FD2FF;
+    margin-bottom: 8px;
+}
+
+/* Subtitle */
+.subtitle {
+    width: 100%;
+    -unity-text-align: middle-center;
+    font-size: 52px;
+    color: #C7D0E1;
+    margin-bottom: 70px;
+}
+
+/* Countdown 영역 */
+.countdown-container {
+    width: 100%;
+    height: 420px;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.countdown-label {
+    width: 100%;
+    -unity-text-align: middle-center;
+    font-size: 150px;
+    color: #4CC3FF;
+    margin-bottom: 16px;
+}
+
+/* Offset 영역 전체 */
+.offset-wrap {
+    width: 100%;
+    margin-top: 40px;
+
+    align-items: center;
+}
+
+/* 슬라이더 + ± 버튼 가로 배치 */
+.offset-row {
+    width: 80%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* - / + 버튼 */
+.offset-button {
+    width: 80px;
+    height: 80px;
+
+    border-width: 3px;
+    border-color: #4CC3FF;
+
+    color: #4CC3FF;
+    font-size: 32px;
+    -unity-font-style: bold;
+
+    justify-content: center;
+    align-items: center;
+}
+
+/* 슬라이더 */
+.offset-slider {
+    flex-grow: 1;
+    height: 14px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+/* Offset: +0 ms 라벨 */
+.offset-label {
+    width: 100%;
+    -unity-text-align: middle-center;
+    font-size: 44px;
+    color: #FFFFFF;
+    margin-top: 24px;
+}
+
+/* 버튼 영역 */
+.button-row {
+    width: 100%;
+    margin-top: 70px;
+    align-items: center;
+}
+
+/* START TEST 버튼 */
+.btn-primary {
+    width: 80%;
+    height: 112px;
+
+    font-size: 52px;
+    -unity-font-style: bold;
+
+    color: #4CC3FF;
+    background-color: rgba(0, 168, 255, 0.10);
+    border-width: 3px;
+    border-color: #4CC3FF;
+
+    margin-bottom: 24px;
+
+    /* 개별 중앙 정렬 */
+    align-self: center;
+}
+
+/* APPLY OFFSET 버튼 */
+.btn-secondary {
+    margin-top: 80px;
+    width: 80%;
+    height: 112px;
+
+    font-size: 52px;
+    -unity-font-style: bold;
+
+    color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.06);
+    border-width: 2px;
+    border-color: #FFFFFF;
+
+    align-self: center;
+}
+
+/* Your Average Offset: +125 ms */
+.result-label {
+    width: 100%;
+    -unity-text-align: middle-center;
+    font-size: 46px;
+    color: #A2FFC5;
+    margin-top: 24px;
+}
+
+.tap-area {
+    width: 70%;
+    height: 350px;          /* 시안 느낌의 넉넉한 터치 영역 */
+    justify-content: center;
+    align-items: center;
+
+    picking-mode: position; /* ⭐ 터치 가능 */
+
+    /* 영역이 있다는 걸 살짝 느낄 수 있도록 */
+    background-color: rgba(255, 255, 255, 0.03); /* 매우 옅은 배경 */
+
+    border-radius: 12px;   /* 시안 느낌의 Soft UI */
+}
+
+.tap-now {
+    width: 70%;
+    height: 350px;          /* 시안 느낌의 넉넉한 터치 영역 */
+    -unity-text-align: middle-center;
+    font-size: 52px;
+    -unity-font-style: bold;
+    color: #4CC3FF;        /* 밝은 파랑 → 눈에 띔 */
+    opacity: 1;            /* ⭐ 항상 보이게 */
+}
+
+
+/* 줄 (10개 도트 배치) */
+.tap-progress-row {
+    width: 100%;
+    height: 40px;
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+/* 기본 도트 스타일 */
+.tap-dot {
+    width: 32px;
+    height: 32px;
+
+    background-color: rgba(255,255,255,0.15);
+    border-radius: 50%;
+
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+/* 채워졌을 때 */
+.tap-dot.filled {
+    background-color: #4CC3FF;
+}

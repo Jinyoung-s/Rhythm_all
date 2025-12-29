@@ -1,0 +1,1297 @@
+[
+  {
+    "word": "I",
+    "start": 0.031,
+    "end": 0.752
+  },
+  {
+    "word": "wake",
+    "start": 0.792,
+    "end": 1.053
+  },
+  {
+    "word": "up",
+    "start": 1.193,
+    "end": 1.313
+  },
+  {
+    "word": "early",
+    "start": 1.574,
+    "end": 2.155
+  },
+  {
+    "word": "and",
+    "start": 2.315,
+    "end": 2.456
+  },
+  {
+    "word": "get",
+    "start": 2.516,
+    "end": 2.736
+  },
+  {
+    "word": "up",
+    "start": 2.836,
+    "end": 2.916
+  },
+  {
+    "word": "right",
+    "start": 2.977,
+    "end": 3.397
+  },
+  {
+    "word": "away",
+    "start": 3.437,
+    "end": 3.978
+  },
+  {
+    "word": "I",
+    "start": 3.998,
+    "end": 4.018
+  },
+  {
+    "word": "turn",
+    "start": 4.78,
+    "end": 5.04
+  },
+  {
+    "word": "off",
+    "start": 5.121,
+    "end": 5.261
+  },
+  {
+    "word": "the",
+    "start": 5.301,
+    "end": 5.662
+  },
+  {
+    "word": "alarm",
+    "start": 5.782,
+    "end": 6.703
+  },
+  {
+    "word": "and",
+    "start": 6.724,
+    "end": 6.944
+  },
+  {
+    "word": "start",
+    "start": 7.064,
+    "end": 7.605
+  },
+  {
+    "word": "my",
+    "start": 7.745,
+    "end": 8.206
+  },
+  {
+    "word": "day",
+    "start": 8.306,
+    "end": 8.587
+  },
+  {
+    "word": "I",
+    "start": 8.607,
+    "end": 8.627
+  },
+  {
+    "word": "pick",
+    "start": 9.689,
+    "end": 9.93
+  },
+  {
+    "word": "up",
+    "start": 10.03,
+    "end": 10.13
+  },
+  {
+    "word": "my",
+    "start": 10.21,
+    "end": 10.37
+  },
+  {
+    "word": "phone",
+    "start": 10.45,
+    "end": 10.871
+  },
+  {
+    "word": "to",
+    "start": 10.911,
+    "end": 11.052
+  },
+  {
+    "word": "check",
+    "start": 11.132,
+    "end": 11.432
+  },
+  {
+    "word": "the",
+    "start": 11.492,
+    "end": 11.633
+  },
+  {
+    "word": "time",
+    "start": 11.753,
+    "end": 12.053
+  },
+  {
+    "word": "and",
+    "start": 12.114,
+    "end": 12.194
+  },
+  {
+    "word": "I",
+    "start": 12.254,
+    "end": 12.334
+  },
+  {
+    "word": "put",
+    "start": 12.374,
+    "end": 12.554
+  },
+  {
+    "word": "it",
+    "start": 12.635,
+    "end": 12.695
+  },
+  {
+    "word": "down",
+    "start": 12.795,
+    "end": 13.196
+  },
+  {
+    "word": "and",
+    "start": 13.296,
+    "end": 13.396
+  },
+  {
+    "word": "clear",
+    "start": 13.476,
+    "end": 13.757
+  },
+  {
+    "word": "my",
+    "start": 13.817,
+    "end": 14.017
+  },
+  {
+    "word": "mind",
+    "start": 14.077,
+    "end": 14.378
+  },
+  {
+    "word": "I",
+    "start": 14.438,
+    "end": 14.478
+  },
+  {
+    "word": "pick",
+    "start": 14.518,
+    "end": 14.698
+  },
+  {
+    "word": "up",
+    "start": 14.779,
+    "end": 14.879
+  },
+  {
+    "word": "my",
+    "start": 14.959,
+    "end": 15.199
+  },
+  {
+    "word": "bag",
+    "start": 15.259,
+    "end": 15.58
+  },
+  {
+    "word": "and",
+    "start": 15.64,
+    "end": 15.74
+  },
+  {
+    "word": "grab",
+    "start": 15.841,
+    "end": 16.061
+  },
+  {
+    "word": "my",
+    "start": 16.121,
+    "end": 16.342
+  },
+  {
+    "word": "keys",
+    "start": 16.362,
+    "end": 16.682
+  },
+  {
+    "word": "I",
+    "start": 16.802,
+    "end": 16.883
+  },
+  {
+    "word": "put",
+    "start": 16.943,
+    "end": 17.163
+  },
+  {
+    "word": "them",
+    "start": 17.263,
+    "end": 17.444
+  },
+  {
+    "word": "down",
+    "start": 17.544,
+    "end": 17.904
+  },
+  {
+    "word": "and",
+    "start": 17.965,
+    "end": 18.085
+  },
+  {
+    "word": "I",
+    "start": 18.265,
+    "end": 18.325
+  },
+  {
+    "word": "don't",
+    "start": 18.365,
+    "end": 18.566
+  },
+  {
+    "word": "need",
+    "start": 18.626,
+    "end": 19.007
+  },
+  {
+    "word": "them",
+    "start": 19.067,
+    "end": 19.828
+  },
+  {
+    "word": "I",
+    "start": 20.028,
+    "end": 20.368
+  },
+  {
+    "word": "pick",
+    "start": 20.388,
+    "end": 20.589
+  },
+  {
+    "word": "things",
+    "start": 20.669,
+    "end": 20.969
+  },
+  {
+    "word": "up",
+    "start": 21.089,
+    "end": 21.189
+  },
+  {
+    "word": "when",
+    "start": 21.55,
+    "end": 21.81
+  },
+  {
+    "word": "I",
+    "start": 22.05,
+    "end": 22.07
+  },
+  {
+    "word": "need",
+    "start": 22.15,
+    "end": 22.511
+  },
+  {
+    "word": "them",
+    "start": 22.571,
+    "end": 22.951
+  },
+  {
+    "word": "I",
+    "start": 23.732,
+    "end": 23.852
+  },
+  {
+    "word": "put",
+    "start": 23.972,
+    "end": 24.092
+  },
+  {
+    "word": "them",
+    "start": 24.172,
+    "end": 24.373
+  },
+  {
+    "word": "down",
+    "start": 24.453,
+    "end": 25.794
+  },
+  {
+    "word": "when",
+    "start": 25.954,
+    "end": 26.095
+  },
+  {
+    "word": "they're",
+    "start": 26.175,
+    "end": 26.495
+  },
+  {
+    "word": "not",
+    "start": 26.595,
+    "end": 26.735
+  },
+  {
+    "word": "necessary",
+    "start": 26.795,
+    "end": 29.278
+  },
+  {
+    "word": "I",
+    "start": 29.498,
+    "end": 29.718
+  },
+  {
+    "word": "pick",
+    "start": 29.738,
+    "end": 29.839
+  },
+  {
+    "word": "things",
+    "start": 29.919,
+    "end": 30.199
+  },
+  {
+    "word": "up",
+    "start": 30.319,
+    "end": 30.419
+  },
+  {
+    "word": "when",
+    "start": 30.8,
+    "end": 31.08
+  },
+  {
+    "word": "I",
+    "start": 31.34,
+    "end": 31.36
+  },
+  {
+    "word": "need",
+    "start": 31.38,
+    "end": 31.761
+  },
+  {
+    "word": "them",
+    "start": 31.821,
+    "end": 32.161
+  },
+  {
+    "word": "I",
+    "start": 32.181,
+    "end": 32.201
+  },
+  {
+    "word": "put",
+    "start": 33.022,
+    "end": 33.322
+  },
+  {
+    "word": "them",
+    "start": 33.402,
+    "end": 33.623
+  },
+  {
+    "word": "down",
+    "start": 33.683,
+    "end": 34.984
+  },
+  {
+    "word": "when",
+    "start": 35.164,
+    "end": 35.344
+  },
+  {
+    "word": "they're",
+    "start": 35.425,
+    "end": 35.725
+  },
+  {
+    "word": "not",
+    "start": 35.765,
+    "end": 35.965
+  },
+  {
+    "word": "necessary",
+    "start": 36.005,
+    "end": 37.347
+  },
+  {
+    "word": "I",
+    "start": 38.728,
+    "end": 38.888
+  },
+  {
+    "word": "wake",
+    "start": 38.948,
+    "end": 39.149
+  },
+  {
+    "word": "up",
+    "start": 39.289,
+    "end": 39.389
+  },
+  {
+    "word": "early",
+    "start": 39.669,
+    "end": 40.21
+  },
+  {
+    "word": "and",
+    "start": 40.23,
+    "end": 40.61
+  },
+  {
+    "word": "get",
+    "start": 40.65,
+    "end": 40.83
+  },
+  {
+    "word": "up",
+    "start": 40.93,
+    "end": 41.011
+  },
+  {
+    "word": "right",
+    "start": 41.091,
+    "end": 41.511
+  },
+  {
+    "word": "away",
+    "start": 41.531,
+    "end": 42.012
+  },
+  {
+    "word": "I",
+    "start": 42.032,
+    "end": 42.052
+  },
+  {
+    "word": "turn",
+    "start": 42.873,
+    "end": 43.253
+  },
+  {
+    "word": "off",
+    "start": 43.333,
+    "end": 43.473
+  },
+  {
+    "word": "the",
+    "start": 43.513,
+    "end": 43.874
+  },
+  {
+    "word": "alarm",
+    "start": 43.954,
+    "end": 44.715
+  },
+  {
+    "word": "and",
+    "start": 44.995,
+    "end": 45.095
+  },
+  {
+    "word": "start",
+    "start": 45.155,
+    "end": 45.776
+  },
+  {
+    "word": "my",
+    "start": 45.836,
+    "end": 46.637
+  },
+  {
+    "word": "day",
+    "start": 46.677,
+    "end": 46.997
+  },
+  {
+    "word": "I",
+    "start": 47.467,
+    "end": 47.707
+  },
+  {
+    "word": "pick",
+    "start": 47.727,
+    "end": 47.988
+  },
+  {
+    "word": "up",
+    "start": 48.108,
+    "end": 48.188
+  },
+  {
+    "word": "my",
+    "start": 48.248,
+    "end": 48.428
+  },
+  {
+    "word": "phone",
+    "start": 48.508,
+    "end": 48.909
+  },
+  {
+    "word": "to",
+    "start": 48.969,
+    "end": 49.089
+  },
+  {
+    "word": "check",
+    "start": 49.189,
+    "end": 49.469
+  },
+  {
+    "word": "the",
+    "start": 49.549,
+    "end": 49.669
+  },
+  {
+    "word": "time",
+    "start": 49.789,
+    "end": 50.11
+  },
+  {
+    "word": "Then",
+    "start": 50.13,
+    "end": 50.25
+  },
+  {
+    "word": "I",
+    "start": 50.33,
+    "end": 50.39
+  },
+  {
+    "word": "put",
+    "start": 50.43,
+    "end": 50.63
+  },
+  {
+    "word": "it",
+    "start": 50.69,
+    "end": 50.77
+  },
+  {
+    "word": "down",
+    "start": 50.831,
+    "end": 51.271
+  },
+  {
+    "word": "and",
+    "start": 51.351,
+    "end": 51.431
+  },
+  {
+    "word": "clear",
+    "start": 51.491,
+    "end": 51.832
+  },
+  {
+    "word": "my",
+    "start": 51.972,
+    "end": 52.112
+  },
+  {
+    "word": "mind",
+    "start": 52.152,
+    "end": 52.432
+  },
+  {
+    "word": "I",
+    "start": 52.472,
+    "end": 52.532
+  },
+  {
+    "word": "pick",
+    "start": 52.592,
+    "end": 52.733
+  },
+  {
+    "word": "up",
+    "start": 52.833,
+    "end": 52.913
+  },
+  {
+    "word": "my",
+    "start": 52.993,
+    "end": 53.273
+  },
+  {
+    "word": "bag",
+    "start": 53.313,
+    "end": 53.613
+  },
+  {
+    "word": "and",
+    "start": 53.694,
+    "end": 53.794
+  },
+  {
+    "word": "grab",
+    "start": 53.874,
+    "end": 54.114
+  },
+  {
+    "word": "my",
+    "start": 54.174,
+    "end": 54.374
+  },
+  {
+    "word": "keys",
+    "start": 54.434,
+    "end": 54.735
+  },
+  {
+    "word": "I",
+    "start": 54.855,
+    "end": 54.995
+  },
+  {
+    "word": "put",
+    "start": 55.035,
+    "end": 55.235
+  },
+  {
+    "word": "them",
+    "start": 55.315,
+    "end": 55.535
+  },
+  {
+    "word": "down",
+    "start": 55.616,
+    "end": 55.936
+  },
+  {
+    "word": "when",
+    "start": 55.996,
+    "end": 56.136
+  },
+  {
+    "word": "I",
+    "start": 56.336,
+    "end": 56.416
+  },
+  {
+    "word": "don't",
+    "start": 56.516,
+    "end": 56.817
+  },
+  {
+    "word": "need",
+    "start": 56.837,
+    "end": 57.057
+  },
+  {
+    "word": "them",
+    "start": 57.097,
+    "end": 57.257
+  },
+  {
+    "word": "I",
+    "start": 58.318,
+    "end": 58.438
+  },
+  {
+    "word": "pick",
+    "start": 58.499,
+    "end": 58.719
+  },
+  {
+    "word": "things",
+    "start": 58.759,
+    "end": 59.059
+  },
+  {
+    "word": "up",
+    "start": 59.179,
+    "end": 59.259
+  },
+  {
+    "word": "when",
+    "start": 59.64,
+    "end": 59.88
+  },
+  {
+    "word": "I",
+    "start": 60.441,
+    "end": 60.461
+  },
+  {
+    "word": "need",
+    "start": 60.481,
+    "end": 60.561
+  },
+  {
+    "word": "them",
+    "start": 60.661,
+    "end": 60.981
+  },
+  {
+    "word": "I",
+    "start": 61.782,
+    "end": 61.922
+  },
+  {
+    "word": "put",
+    "start": 62.042,
+    "end": 62.162
+  },
+  {
+    "word": "them",
+    "start": 62.242,
+    "end": 62.463
+  },
+  {
+    "word": "down",
+    "start": 62.523,
+    "end": 63.744
+  },
+  {
+    "word": "when",
+    "start": 63.944,
+    "end": 64.205
+  },
+  {
+    "word": "they're",
+    "start": 64.285,
+    "end": 64.565
+  },
+  {
+    "word": "not",
+    "start": 64.725,
+    "end": 64.785
+  },
+  {
+    "word": "necessary",
+    "start": 64.865,
+    "end": 66.467
+  },
+  {
+    "word": "I",
+    "start": 67.588,
+    "end": 67.688
+  },
+  {
+    "word": "pick",
+    "start": 67.748,
+    "end": 67.948
+  },
+  {
+    "word": "things",
+    "start": 68.008,
+    "end": 68.289
+  },
+  {
+    "word": "up",
+    "start": 68.409,
+    "end": 68.489
+  },
+  {
+    "word": "when",
+    "start": 68.869,
+    "end": 69.11
+  },
+  {
+    "word": "I",
+    "start": 69.69,
+    "end": 69.71
+  },
+  {
+    "word": "need",
+    "start": 69.73,
+    "end": 69.81
+  },
+  {
+    "word": "them",
+    "start": 69.89,
+    "end": 70.211
+  },
+  {
+    "word": "I",
+    "start": 71.012,
+    "end": 71.152
+  },
+  {
+    "word": "put",
+    "start": 71.212,
+    "end": 71.432
+  },
+  {
+    "word": "them",
+    "start": 71.472,
+    "end": 71.692
+  },
+  {
+    "word": "down",
+    "start": 71.772,
+    "end": 72.974
+  },
+  {
+    "word": "when",
+    "start": 73.194,
+    "end": 73.434
+  },
+  {
+    "word": "they're",
+    "start": 73.514,
+    "end": 73.815
+  },
+  {
+    "word": "not",
+    "start": 73.895,
+    "end": 74.035
+  },
+  {
+    "word": "necessary",
+    "start": 74.095,
+    "end": 76.157
+  },
+  {
+    "word": "I",
+    "start": 85.823,
+    "end": 86.225
+  },
+  {
+    "word": "wake",
+    "start": 86.245,
+    "end": 86.406
+  },
+  {
+    "word": "up",
+    "start": 86.587,
+    "end": 86.728
+  },
+  {
+    "word": "early",
+    "start": 87.03,
+    "end": 87.533
+  },
+  {
+    "word": "and",
+    "start": 87.814,
+    "end": 87.915
+  },
+  {
+    "word": "get",
+    "start": 87.955,
+    "end": 88.136
+  },
+  {
+    "word": "up",
+    "start": 88.237,
+    "end": 88.317
+  },
+  {
+    "word": "right",
+    "start": 88.378,
+    "end": 88.8
+  },
+  {
+    "word": "away",
+    "start": 88.961,
+    "end": 89.363
+  },
+  {
+    "word": "I",
+    "start": 89.404,
+    "end": 89.424
+  },
+  {
+    "word": "turn",
+    "start": 90.188,
+    "end": 90.45
+  },
+  {
+    "word": "off",
+    "start": 90.51,
+    "end": 90.651
+  },
+  {
+    "word": "the",
+    "start": 90.691,
+    "end": 91.113
+  },
+  {
+    "word": "alarm",
+    "start": 91.254,
+    "end": 91.918
+  },
+  {
+    "word": "I",
+    "start": 92.32,
+    "end": 94.964
+  },
+  {
+    "word": "pick",
+    "start": 95.044,
+    "end": 95.285
+  },
+  {
+    "word": "up",
+    "start": 95.405,
+    "end": 95.485
+  },
+  {
+    "word": "my",
+    "start": 95.565,
+    "end": 95.725
+  },
+  {
+    "word": "phone",
+    "start": 95.806,
+    "end": 96.246
+  },
+  {
+    "word": "to",
+    "start": 96.306,
+    "end": 96.427
+  },
+  {
+    "word": "check",
+    "start": 96.527,
+    "end": 96.807
+  },
+  {
+    "word": "the",
+    "start": 96.867,
+    "end": 96.988
+  },
+  {
+    "word": "time",
+    "start": 97.088,
+    "end": 97.408
+  },
+  {
+    "word": "Then",
+    "start": 97.448,
+    "end": 97.568
+  },
+  {
+    "word": "I",
+    "start": 97.629,
+    "end": 97.709
+  },
+  {
+    "word": "put",
+    "start": 97.729,
+    "end": 97.929
+  },
+  {
+    "word": "it",
+    "start": 98.009,
+    "end": 98.069
+  },
+  {
+    "word": "down",
+    "start": 98.149,
+    "end": 98.59
+  },
+  {
+    "word": "and",
+    "start": 98.67,
+    "end": 98.77
+  },
+  {
+    "word": "clear",
+    "start": 98.83,
+    "end": 99.111
+  },
+  {
+    "word": "my",
+    "start": 99.171,
+    "end": 99.391
+  },
+  {
+    "word": "mind",
+    "start": 99.451,
+    "end": 99.732
+  },
+  {
+    "word": "I",
+    "start": 99.792,
+    "end": 99.852
+  },
+  {
+    "word": "pick",
+    "start": 99.892,
+    "end": 100.052
+  },
+  {
+    "word": "up",
+    "start": 100.153,
+    "end": 100.253
+  },
+  {
+    "word": "my",
+    "start": 100.333,
+    "end": 100.573
+  },
+  {
+    "word": "bag",
+    "start": 100.633,
+    "end": 100.954
+  },
+  {
+    "word": "and",
+    "start": 101.014,
+    "end": 101.114
+  },
+  {
+    "word": "grab",
+    "start": 101.174,
+    "end": 101.435
+  },
+  {
+    "word": "my",
+    "start": 101.495,
+    "end": 101.655
+  },
+  {
+    "word": "keys",
+    "start": 101.755,
+    "end": 102.036
+  },
+  {
+    "word": "I",
+    "start": 102.136,
+    "end": 102.256
+  },
+  {
+    "word": "put",
+    "start": 102.316,
+    "end": 102.556
+  },
+  {
+    "word": "them",
+    "start": 102.637,
+    "end": 102.817
+  },
+  {
+    "word": "down",
+    "start": 102.917,
+    "end": 103.258
+  },
+  {
+    "word": "when",
+    "start": 103.298,
+    "end": 103.438
+  },
+  {
+    "word": "I",
+    "start": 103.618,
+    "end": 103.718
+  },
+  {
+    "word": "don't",
+    "start": 103.819,
+    "end": 104.239
+  },
+  {
+    "word": "need",
+    "start": 104.259,
+    "end": 104.379
+  },
+  {
+    "word": "them",
+    "start": 104.5,
+    "end": 104.6
+  },
+  {
+    "word": "I",
+    "start": 105.621,
+    "end": 105.782
+  },
+  {
+    "word": "pick",
+    "start": 105.882,
+    "end": 106.102
+  },
+  {
+    "word": "things",
+    "start": 106.122,
+    "end": 106.443
+  },
+  {
+    "word": "up",
+    "start": 106.463,
+    "end": 106.563
+  },
+  {
+    "word": "when",
+    "start": 106.964,
+    "end": 107.204
+  },
+  {
+    "word": "I",
+    "start": 107.504,
+    "end": 107.525
+  },
+  {
+    "word": "need",
+    "start": 107.805,
+    "end": 107.925
+  },
+  {
+    "word": "them,",
+    "start": 108.105,
+    "end": 109.247
+  },
+  {
+    "word": "when",
+    "start": 109.267,
+    "end": 109.508
+  },
+  {
+    "word": "I",
+    "start": 109.708,
+    "end": 109.808
+  },
+  {
+    "word": "need",
+    "start": 110.029,
+    "end": 110.269
+  },
+  {
+    "word": "them",
+    "start": 110.409,
+    "end": 110.549
+  },
+  {
+    "word": "When",
+    "start": 111.591,
+    "end": 111.831
+  },
+  {
+    "word": "I",
+    "start": 112.032,
+    "end": 112.152
+  },
+  {
+    "word": "need",
+    "start": 112.432,
+    "end": 112.573
+  },
+  {
+    "word": "them,",
+    "start": 112.733,
+    "end": 114.536
+  },
+  {
+    "word": "when",
+    "start": 114.556,
+    "end": 114.636
+  },
+  {
+    "word": "I",
+    "start": 114.656,
+    "end": 114.676
+  },
+  {
+    "word": "need",
+    "start": 114.916,
+    "end": 114.997
+  },
+  {
+    "word": "them",
+    "start": 115.017,
+    "end": 115.097
+  },
+  {
+    "word": "I",
+    "start": 115.117,
+    "end": 115.137
+  },
+  {
+    "word": "pick",
+    "start": 115.157,
+    "end": 115.257
+  },
+  {
+    "word": "things",
+    "start": 115.337,
+    "end": 115.618
+  },
+  {
+    "word": "up",
+    "start": 115.738,
+    "end": 115.818
+  },
+  {
+    "word": "when",
+    "start": 116.198,
+    "end": 116.439
+  },
+  {
+    "word": "I",
+    "start": 116.639,
+    "end": 116.779
+  },
+  {
+    "word": "need",
+    "start": 116.96,
+    "end": 117.2
+  },
+  {
+    "word": "them,",
+    "start": 117.34,
+    "end": 118.482
+  },
+  {
+    "word": "when",
+    "start": 118.502,
+    "end": 118.763
+  },
+  {
+    "word": "I",
+    "start": 119.063,
+    "end": 119.083
+  },
+  {
+    "word": "need",
+    "start": 119.364,
+    "end": 119.544
+  },
+  {
+    "word": "them",
+    "start": 119.564,
+    "end": 119.644
+  },
+  {
+    "word": "Ooh,",
+    "start": 122.223,
+    "end": 124.208
+  },
+  {
+    "word": "I",
+    "start": 124.228,
+    "end": 124.248
+  },
+  {
+    "word": "picked",
+    "start": 124.37,
+    "end": 124.511
+  },
+  {
+    "word": "things",
+    "start": 124.552,
+    "end": 124.835
+  },
+  {
+    "word": "up",
+    "start": 124.957,
+    "end": 127.002
+  }
+]

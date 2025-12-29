@@ -1,0 +1,47 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Resources/UI/GameMenu/ResultPopup.uss?fileID=7433441132597879392&amp;guid=240aaac4387c8a24dab9bfa3fd82d473&amp;type=3#ResultPopup" />
+    <ui:VisualElement name="PopupRoot" class="popup-root">
+        <ui:VisualElement name="PopupBox" class="popup-box">
+            <ui:Label name="Title" text="RESULT" class="title" />
+            <ui:VisualElement name="Content" class="content">
+                <ui:Label name="ScoreValue" text="142,300" class="score-value" />
+                <ui:VisualElement name="Stats" class="stats">
+                    <ui:VisualElement class="stat-row">
+                        <ui:Label text="Accuracy" class="stat-label" />
+                        <ui:Label text="92.4%" class="stat-value" name="AccuracyValue" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="stat-row">
+                        <ui:Label text="Max Combo" class="stat-label" />
+                        <ui:Label text="57" class="stat-value" name="MaxComboValue" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="divider" />
+                    <ui:VisualElement class="stat-row">
+                        <ui:Label text="Perfect" class="stat-label" />
+                        <ui:Label text="45" class="stat-value" name="PerfectValue" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="stat-row">
+                        <ui:Label text="Great" class="stat-label" />
+                        <ui:Label text="8" class="stat-value" name="GreatValue" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="stat-row">
+                        <ui:Label text="Good" class="stat-label" />
+                        <ui:Label text="2" class="stat-value" name="GoodValue" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="stat-row">
+                        <ui:Label text="Miss" class="stat-label" />
+                        <ui:Label text="1" class="stat-value" name="MissValue" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="divider" />
+                    <ui:VisualElement class="coin-row">
+                        <ui:VisualElement class="coin-icon" />
+                        <ui:Label text="+27" class="coin-value" name="CoinValue" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+
+                <ui:VisualElement class="button-row">
+                    <ui:Button name="ConfirmButton" text="Confirm" class="button-primary" style="margin-right: 0;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

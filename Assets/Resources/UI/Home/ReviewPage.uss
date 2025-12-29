@@ -1,0 +1,97 @@
+.review-root {
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 28px;
+    padding-bottom: 56px;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.review-title {
+    font-size: 56px;
+    -unity-font-style: bold;
+    color: rgb(255, 255, 255);
+    margin-bottom: 28px;
+    unity-text-align: middle-center;
+}
+
+.section-title {
+    font-size: 52px;
+    -unity-font-style: bold;
+    color: rgb(154, 163, 173);
+    margin-top: 56px;
+    margin-bottom: 18px;
+    unity-text-align: middle-left;
+}
+
+.review-card {
+    height: 250px;
+    padding-left: 30px;
+    padding-right: 26px;
+    margin-bottom: 42px;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(27, 35, 44);
+    border-radius: 28px;
+    border-top-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 2px;
+    border-top-color: rgba(255, 255, 255, 0.1);
+    border-left-color: rgba(255, 255, 255, 0.06);
+    border-right-color: rgba(255, 255, 255, 0.06);
+    border-bottom-color: rgba(0, 0, 0, 0.35);
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
+.card-icon {
+    width: 170px;
+    height: 170px;
+    margin-right: 26px;
+    background-color: rgb(42, 52, 64);
+    border-radius: 20px;
+    border-top-width: 1px;
+    border-top-color: rgba(255, 255, 255, 0.12);
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(0, 0, 0, 0.35);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.card-center {
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 20px;
+    height: 260px;
+}
+
+.card-title {
+    font-size: 54px;
+    -unity-font-style: bold;
+    color: rgb(255, 255, 255);
+    margin-bottom: 8px;
+}
+
+.card-subtext {
+    font-size: 48px;
+    color: rgb(170, 179, 190);
+}
+
+#WordTestIcon {
+    background-image: resource("Icons/function_icon_checks");
+}
+
+#WordListIcon {
+    background-image: resource("Icons/function_icon_list_1");
+}
+
+#DailySentencesIcon {
+    background-image: resource("Icons/function_icon_comment");
+}
+
+#SavedSentencesIcon {
+    background-image: resource("Icons/function_icon_star");
+}

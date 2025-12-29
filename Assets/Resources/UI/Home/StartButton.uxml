@@ -1,0 +1,6 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Resources/UI/Home/StartButton.uss?fileID=7433441132597879392&amp;guid=06ee0c0286fa6064099f6f527ff4cb2b&amp;type=3#StartButton" />
+    <ui:VisualElement class="start-button-root">
+        <ui:Button name="start-btn" text="Start Now" class="start-button" style="background-image: resource(&apos;buttonbg/gradient_orange&apos;);" />
+    </ui:VisualElement>
+</ui:UXML>

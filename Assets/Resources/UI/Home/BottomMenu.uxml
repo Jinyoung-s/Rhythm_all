@@ -1,0 +1,29 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Resources/UI/Home/BottomMenu.uss?fileID=7433441132597879392&amp;guid=9612da80e4072664f88a5d5592bd0fe2&amp;type=3#BottomMenu" />
+    <ui:VisualElement name="bottomRoot" class="bottom-root">
+        <ui:VisualElement name="homeTab" class="tab border-right">
+            <ui:VisualElement class="tab-item" style="color: rgb(255, 255, 255);">
+                <ui:VisualElement class="tab-icon icon-home" />
+                <ui:Label text="Home" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="reviewTab" class="tab border-right">
+            <ui:VisualElement class="tab-item">
+                <ui:VisualElement class="tab-icon icon-review" />
+                <ui:Label text="Review" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="playTab" class="tab border-right">
+            <ui:VisualElement class="tab-item">
+                <ui:VisualElement class="tab-icon icon-play" />
+                <ui:Label text="Play" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="profileTab" class="tab">
+            <ui:VisualElement class="tab-item">
+                <ui:VisualElement class="tab-icon icon-profile" />
+                <ui:Label text="Profile" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

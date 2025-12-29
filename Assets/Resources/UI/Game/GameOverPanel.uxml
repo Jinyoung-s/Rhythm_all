@@ -1,0 +1,16 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+  <Style src="GameOverPanel.uss" />
+
+  <ui:VisualElement name="game-over-root">
+    <ui:VisualElement name="overlay" />
+    <ui:VisualElement name="content">
+      <ui:Label name="Bigtitle" text="GAME OVER" />
+      <ui:Label name="title" text="💔  You lost all your hearts." />
+      <ui:Label name="subtitle" text="That’s okay — every beat teaches you." />
+      <ui:VisualElement name="buttons">
+        <ui:Button name="retry-btn" text="Retry" />
+        <ui:Button name="next-btn" text="Next Lesson" />
+      </ui:VisualElement>
+    </ui:VisualElement>
+  </ui:VisualElement>
+</ui:UXML>

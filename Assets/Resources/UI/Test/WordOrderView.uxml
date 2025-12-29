@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<engine:UXML
+    xmlns:ui="UnityEngine.UIElements"
+    xmlns:uie="UnityEditor.UIElements"
+    xmlns:engine="UnityEngine.UIElements">
+  <ui:Style src="WordOrderView.uss" />
+  <ui:VisualElement class="root">
+
+    <ui:VisualElement class="progress-container">
+      <ui:ProgressBar name="ProgressBar" class="progress-bar" value="0" />
+    </ui:VisualElement>
+    
+    <ui:VisualElement class="container">
+      <ui:VisualElement class="card">
+        <ui:Button class="close-button" text="×" name="CloseButton" />
+
+        <ui:Label class="question" name="QuestionLabel" text="그는 어제 늦게 잤다." />
+
+        <ui:Button class="play-button hidden" text="▶ Play Audio" name="PlayButton" />
+
+        
+        
+        <ui:Label name="RecognitionResult" text="" class="result-label" />
+
+        <ui:VisualElement class="blanks" name="BlanksContainer">
+          <ui:Label text="_______" class="question-blank" />
+          <ui:Label text="_______" class="question-blank" />
+          <ui:Label text="_______" class="question-blank" />
+          <ui:Label text="_______" class="question-blank" />
+          <ui:Label text="_______" class="question-blank" />
+          <ui:Label text="_______" class="question-blank" />
+          <ui:Label text="_______" class="question-blank" />
+        </ui:VisualElement>
+      
+        <ui:Button class="speak-button hidden" text="🎤 Speak" name="MicButton" />
+
+        <ui:TextField name="TypingInput" class="typing-input hidden" text="" />
+
+        <ui:VisualElement class="options" name="OptionsContainer">
+          <ui:Button class="word-button" text="He" />
+          <ui:Button class="word-button" text="slept" />
+          <ui:Button class="word-button" text="late" />
+          <ui:Button class="word-button" text="last" />
+          <ui:Button class="word-button" text="night" />
+          <ui:Button class="word-button" text="early" />
+          <ui:Button class="word-button" text="morning" />
+        </ui:VisualElement>
+      </ui:VisualElement>
+
+      <ui:VisualElement class="can-not-answer-container hidden" name="CanNotAnswerContainer">
+        <ui:Button class="add-button" text="지금은 말할 수 없어요." name="NextButton" />
+      </ui:VisualElement>
+
+      <ui:VisualElement class="bottom-buttons">
+        <ui:Button class="submit-button" text="확인" name="SubmitButton" />
+        <ui:Button class="next-button hidden" text="넘어가기" name="NextQuestionButton" />
+      </ui:VisualElement>
+    </ui:VisualElement>
+
+  </ui:VisualElement>
+</engine:UXML>

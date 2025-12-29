@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ui:UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ui="UnityEngine.UIElements"
+    xmlns:uie="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd"
+>
+  <ui:Style src="Header.uss" />
+  <ui:VisualElement class="header-root">
+
+    <!-- 중앙 제목 -->
+    <ui:Label name="titleLabel" class="header-title" text="초급 (Beginner)" />
+
+    <!-- 우측 포인트 표시 -->
+    <ui:VisualElement name="pointsContainer" class="points-container">
+      <ui:Label name="pointsIcon" class="points-icon" text="♪" />
+      <ui:Label name="pointsLabel" class="points-label" text="0" />
+    </ui:VisualElement>
+
+  </ui:VisualElement>
+    
+</ui:UXML>

@@ -1,0 +1,146 @@
+/* === 전체 화면 덮는 반투명 오버레이 === */
+.overlay {
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    top: 0; 
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    z-index: 9999;
+}
+
+/* === 모달 카드 === */
+.modal-card {
+    width: 85%;
+    max-width: 90%;
+    padding: 60px 50px;
+    background-color: #111827;
+    border-radius: 30px;
+    border-width: 2px;
+    border-color: #1f2937;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+/* === 제목 라벨 === */
+.modal-title {
+    font-size: 52px;
+    font-weight: bold;
+    color: #ffffff;
+    -unity-text-align: middle-center;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    white-space: normal;
+}
+
+/* === 메시지 라벨 === */
+.modal-message {
+    font-size: 44px;
+    font-weight: bold;
+    color: #ef4444;
+    -unity-text-align: middle-center;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    white-space: normal;
+}
+
+/* === 버튼 그룹 === */
+.modal-buttons {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+/* === 주 버튼 (네 / 확인) === */
+.modal-button-primary {
+    background-color: #10b981;
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: bold;
+    padding: 30px 50px;
+    border-radius: 20px;
+    border-width: 0;
+    -unity-text-align: middle-center;
+    flex-grow: 1;
+    min-width: 200px;
+}
+
+.modal-button-primary:hover {
+    background-color: #059669;
+}
+
+.modal-button-primary:active {
+    background-color: #047857;
+}
+
+/* === 보조 버튼 (아니오 / 취소) === */
+.modal-button-secondary {
+    background-color: #374151;
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: bold;
+    padding: 30px 50px;
+    border-radius: 20px;
+    border-width: 0;
+    -unity-text-align: middle-center;
+    flex-grow: 1;
+    min-width: 200px;
+}
+
+.modal-button-secondary:hover {
+    background-color: #4b5563;
+}
+
+.modal-button-secondary:active {
+    background-color: #6b7280;
+}
+
+/* === 힌트 라인(옵션) === */
+.hint-line {
+    margin-top: 8px;
+    -unity-text-align: middle-center;
+    font-size: 32px;
+    color: #9ca3af;
+    opacity: 0.9;
+}
+
+/* === 녹음 버튼 애니메이션 === */
+button.recording {
+    background-color: #ef4444;
+    color: #ffffff;
+}
+
+/* === 타이핑 입력 필드 === */
+.typing-input {
+    font-size: 48px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 20px;
+    color: #ffffff;
+    background-color: #1f2937;
+    border-width: 2px;
+    border-color: #374151;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.typing-input:focus {
+    border-color: #10b981;
+}
+
+/* === 숨김 토글용 === */
+.hidden {
+    display: none;
+}

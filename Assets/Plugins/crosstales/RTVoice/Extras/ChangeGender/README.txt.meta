@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 1a2c53a1a8e3bc745bb8e4294da88d33
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 41068
+  packageName: RT-Voice PRO
+  packageVersion: 2024.1.1
+  assetPath: Assets/Plugins/crosstales/RTVoice/Extras/ChangeGender/README.txt
+  uploadId: 650789

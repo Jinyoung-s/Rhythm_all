@@ -1,0 +1,155 @@
+{
+  "version": "1.0",
+  "course": {
+    "id": "eng-beginner-01",
+    "title": "Beginner Core",
+    "locale": "ko-KR",
+    "targetLocale": "en-US"
+  },
+  "items": [
+    {
+      "id": "A1-001",
+      "type": "assemble",
+      "prompt": {
+        "sourceLang": "ko",
+        "text": "나는 학생이야."
+      },
+      "wordBank": ["I", "am", "a", "student", "are", "the", "teacher"],
+      "correctOrder": ["I", "am", "a", "student"],
+      "acceptedAlternatives": [
+        ["I'm", "a", "student"]
+      ],
+      "ui": {
+        "hint": "be동사(am)와 관사(a) 순서에 주의하세요."
+      },
+      "meta": {
+        "tags": ["be-verb", "present-simple"],
+        "difficulty": 1,
+        "timeLimitSec": 45
+      }
+    },
+    {
+      "id": "A1-002",
+      "type": "assemble_listen",
+      "prompt": {
+        "sourceLang": "audio",
+        "text": "오디오를 듣고 문장을 완성하세요."
+      },
+      "media": {
+        "audioRef": "she_is_cooking_now",
+        "transcript": "She is cooking dinner now."
+      },
+      "wordBank": ["She", "is", "cooking", "dinner", "now"],
+      "correctOrder": ["She", "is", "cooking", "dinner", "now"],
+      "acceptedAlternatives": [
+        ["She's", "cooking", "dinner", "now", "."],
+        ["She", "is", "cooking", "dinner", "now", "."],
+        ["She", "is", "cooking", "dinner", "right", "now", "."]
+      ],
+      "ui": {
+        "hint": "진행형(be + V-ing)과 시간 부사(now) 위치에 주의."
+      },
+      "meta": {
+        "tags": ["present-continuous", "listening"],
+        "difficulty": 2,
+        "timeLimitSec": 60
+      }
+    },
+    {
+      "id": "A1-003",
+      "type": "speak1",
+      "prompt": {
+        "sourceLang": "ko",
+        "text": "나는 매일 아침 커피를 마신다."
+      },
+      "correctOrder": ["She", "is", "cooking", "dinner", "now"],
+      "acceptedAlternatives": [
+        ["She's", "cooking", "dinner", "now", "."],
+        ["She", "is", "cooking", "dinner", "now", "."],
+        ["She", "is", "cooking", "dinner", "right", "now", "."]
+      ],
+      "media": {
+        "audioRef": "she_is_cooking_now",
+        "transcript": "She is cooking dinner now."
+      },      
+      "evaluation": {
+        "mode": "speech",
+        "minConfidence": 0.65,
+        "pronunciationFocus": ["drink", "coffee", "every"]
+      },
+      "ui": {
+        "hint": "현재의 습관은 현재시제 사용: I + 동사원형",
+        "showMicIcon": true
+      },
+      "meta": {
+        "tags": ["present-habit", "speaking"],
+        "difficulty": 2,
+        "timeLimitSec": 40
+      }
+    },
+    {
+      "id": "A1-004",
+      "type": "speak2",
+      "prompt": {
+        "sourceLang": "ko",
+        "text": "나는 매일 아침 커피를 마신다."
+      },
+      "correctOrder": ["She", "is", "cooking", "dinner", "now"],
+      "acceptedAlternatives": [
+        ["She's", "cooking", "dinner", "now", "."],
+        ["She", "is", "cooking", "dinner", "now", "."],
+        ["She", "is", "cooking", "dinner", "right", "now", "."]
+      ],
+      "media": {
+        "audioRef": "she_is_cooking_now",
+        "transcript": "She is cooking dinner now."
+      },      
+      "evaluation": {
+        "mode": "speech",
+        "minConfidence": 0.65,
+        "pronunciationFocus": ["drink", "coffee", "every"]
+      },
+      "ui": {
+        "hint": "현재의 습관은 현재시제 사용: I + 동사원형",
+        "showMicIcon": true
+      },
+      "meta": {
+        "tags": ["present-habit", "speaking"],
+        "difficulty": 2,
+        "timeLimitSec": 40
+      }
+    },    
+    {
+      "id": "A1-005",
+      "type": "typing",
+      "prompt": {
+        "sourceLang": "ko",
+        "text": "그들은 공원에서 축구를 하고 있어."
+      },
+      "answers": {
+        "canonical": "They are playing soccer in the park.",
+        "acceptedAlternatives": [
+          "They're playing soccer in the park.",
+          "They are playing football in the park."
+        ]
+      },
+      "correctOrder": ["They", "are", "playing", "soccer", "in", "the", "park"],
+      "acceptedAlternatives": [
+        ["They're", "playing", "soccer", "in", "the", "park"],
+        ["They", "are", "playing", "football", "in", "the", "park"]
+      ],
+      "evaluation": {
+        "mode": "typed",
+        "spellingTolerance": 0.95
+      },
+      "ui": {
+        "hint": "진행형(be + playing)과 장소 전치사(in)를 사용하세요."
+      },
+      "meta": {
+        "tags": ["present-continuous", "place-preposition", "typing"],
+        "difficulty": 2,
+        "timeLimitSec": 60
+      }
+    }
+  ]
+}

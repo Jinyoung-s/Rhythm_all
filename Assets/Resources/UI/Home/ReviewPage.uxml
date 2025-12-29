@@ -1,0 +1,47 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Resources/UI/Home/ReviewPage.uss" />
+    
+    <ui:ScrollView mode="Vertical" class="review-root">
+    
+        <ui:Label name="ReviewTitle" text="Review" class="review-title" />
+        
+        <ui:Label name="WordsSectionTitle" text="WORDS" class="section-title" />
+        
+        <ui:VisualElement name="WordTestCard" class="review-card">
+            <ui:VisualElement name="WordTestIcon" class="card-icon" />
+            <ui:VisualElement class="card-center">
+                <ui:Label text="Word Test" class="card-title" />
+                <ui:Label text="Practice vocabulary" class="card-subtext" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="WordListCard" class="review-card">
+            <ui:VisualElement name="WordListIcon" class="card-icon" />
+            <ui:VisualElement class="card-center">
+                <ui:Label text="Word List" class="card-title" />
+                <ui:Label text="View all words" class="card-subtext" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:Label name="SentencesSectionTitle" text="SENTENCES" class="section-title" />
+
+        <ui:VisualElement name="DailySentencesCard" class="review-card">
+            <ui:VisualElement name="DailySentencesIcon" class="card-icon" />
+            <ui:VisualElement class="card-center">
+                <ui:Label text="Wrong Sentences" class="card-title" />
+                <ui:Label text="Review mistakes" class="card-subtext" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="SavedSentencesCard" class="review-card">
+            <ui:VisualElement name="SavedSentencesIcon" class="card-icon" />
+            <ui:VisualElement class="card-center">
+                <ui:Label text="Saved Sentences" class="card-title" />
+                <ui:Label text="View saved sentences" class="card-subtext" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        
+        <ui:VisualElement style="height: 50px;" /> 
+        
+    </ui:ScrollView>
+</ui:UXML>

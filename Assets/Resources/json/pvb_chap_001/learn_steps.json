@@ -1,0 +1,62 @@
+{
+  "steps": [
+    {
+      "stepId": "step_001",
+      "chapterId": "daily-conversation",
+      "title": "Asking for Directions",
+      "sentence": "Can you tell me the way?",
+      "translation": "길을 알려주실 수 있나요?",
+      "audioUrl": "Audio/asking_directions.mp3",
+      "grammarNote": "‘Can you ~?’는 정중한 요청 표현입니다.",
+      "examples": [
+        {
+          "sentence": "Can you tell me how to get to the station?",
+          "translation": "역에 어떻게 가는지 알려주실 수 있나요?"
+        },
+        {
+          "sentence": "Can you tell me where the museum is?",
+          "translation": "박물관이 어디 있는지 알려주실 수 있나요?"
+        }
+      ]
+    },
+    {
+      "stepId": "buying-ticket",
+      "chapterId": "daily-conversation",
+      "title": "Buying a Ticket",
+      "sentence": "I'd like to buy a ticket.",
+      "translation": "표를 사고 싶어요.",
+      "audioUrl": "Audio/buying_ticket.mp3",
+      "grammarNote": "‘I'd like to ~’는 공손하게 원하는 것을 말할 때 사용합니다.",
+      "examples": [
+        "I'd like to buy two tickets to Paris.",
+        "I'd like to reserve a seat, please."
+      ]
+    },
+    {
+      "stepId": "ordering-food",
+      "chapterId": "restaurant",
+      "title": "Ordering Food",
+      "sentence": "I’ll have the chicken sandwich.",
+      "translation": "치킨 샌드위치로 주세요.",
+      "audioUrl": "Audio/ordering_food.mp3",
+      "grammarNote": "‘I'll have ~’는 음식 주문 시 자주 사용되는 표현입니다.",
+      "examples": [
+        "I’ll have a coffee, please.",
+        "I’ll have the same as him."
+      ]
+    },
+    {
+      "stepId": "introducing-yourself",
+      "chapterId": "self-introduction",
+      "title": "Introducing Yourself",
+      "sentence": "My name is Emily.",
+      "translation": "제 이름은 에밀리입니다.",
+      "audioUrl": "Audio/introducing_yourself.mp3",
+      "grammarNote": "자기소개할 때 기본 표현입니다.",
+      "examples": [
+        "My name is David.",
+        "Hi, I’m Anna."
+      ]
+    }
+  ]
+}
