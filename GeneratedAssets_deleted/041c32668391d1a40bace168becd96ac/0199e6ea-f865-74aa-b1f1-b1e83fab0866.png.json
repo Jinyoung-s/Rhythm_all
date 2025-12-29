@@ -1,0 +1,20 @@
+{
+    "asset": "041c32668391d1a40bace168becd96ac",
+    "fileName": "0199e6ea-f865-74aa-b1f1-b1e83fab0866.png",
+    "prompt": "A luminous mint green gradient with a soft glowing highlight across the center, blending turquoise and mint tones on a dark base, smooth light reflection, minimal UI texture, horizontal layout, 1024x256, 4K detail.",
+    "negativePrompt": "",
+    "model": "e0b26c28-c771-454f-ae97-3be78d8b0159",
+    "modelName": "GPT Image 1 - Medium",
+    "customSeed": -1,
+    "w3CTraceId": "bfefdb55dad1b14cb78a240c29b86b6a",
+    "refinementMode": "Generation",
+    "pixelateTargetSize": 0,
+    "pixelateKeepImageSize": false,
+    "pixelatePixelBlockSize": 0,
+    "pixelateMode": 0,
+    "pixelateOutlineThickness": 0,
+    "doodles": {
+        "m_Items": []
+    },
+    "upscaleFactor": 0
+}

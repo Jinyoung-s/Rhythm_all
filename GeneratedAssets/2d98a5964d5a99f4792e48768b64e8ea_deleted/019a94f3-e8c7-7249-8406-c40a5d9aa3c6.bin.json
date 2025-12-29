@@ -1,0 +1,13 @@
+{
+    "asset": "2d98a5964d5a99f4792e48768b64e8ea",
+    "fileName": "019a94f3-e8c7-7249-8406-c40a5d9aa3c6.bin",
+    "prompt": "Create a short 1.5-second rhythmic electronic sound loop at 120 BPM.\r\nUse a soft click on beats 1, 2, and 3, and a strong sharp click on beat 4.\r\nMake it sound like a minimal percussive rhythm, not complete silence.\r\nThe loop should contain at least four percussive clicks.",
+    "negativePrompt": "",
+    "model": "ee31b223-3fe1-4ae6-bf54-d8a80bb4b0e1",
+    "modelName": "Text to Sound",
+    "customSeed": -1,
+    "w3CTraceId": "19809451296b0ae353686d3ab5c5a54f",
+    "duration": 10.0,
+    "autoTrim": false,
+    "hasReference": false
+}

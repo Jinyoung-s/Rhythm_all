@@ -1,0 +1,20 @@
+{
+    "asset": "bf6427a5e69b17a418a31c8b7543693d",
+    "fileName": "019adf74-18a6-7b63-9bf2-6717f3deecdb.png",
+    "prompt": "A subtle horizontal gradient background, left to right, soft transition from muted blue to gentle purple, minimal flat UI style, smooth blending, no glow, no highlights, no noise, no texture.\r\n",
+    "negativePrompt": "",
+    "model": "8236ed86-a78c-421f-9aeb-d62831026d89",
+    "modelName": "GPT Image 1 - Medium",
+    "customSeed": -1,
+    "w3CTraceId": "0afc629e3ac0095d581b23d718a988e9",
+    "refinementMode": "Generation",
+    "pixelateTargetSize": 0,
+    "pixelateKeepImageSize": false,
+    "pixelatePixelBlockSize": 0,
+    "pixelateMode": 0,
+    "pixelateOutlineThickness": 0,
+    "doodles": {
+        "m_Items": []
+    },
+    "upscaleFactor": 0
+}

@@ -1,0 +1,20 @@
+{
+    "asset": "33db307f804696e48af73b8961700eaf",
+    "fileName": "0198627d-be58-713d-8d35-ed7348de044e.jpg",
+    "prompt": "button image",
+    "negativePrompt": "",
+    "model": "072fd6c7-1a92-4d41-b504-c46546b0dd28",
+    "modelName": "Game UI Essentials",
+    "customSeed": -1,
+    "w3CTraceId": "aabedc45c48e82b1dca8dd760283b072",
+    "refinementMode": "Generation",
+    "pixelateTargetSize": 0,
+    "pixelateKeepImageSize": false,
+    "pixelatePixelBlockSize": 0,
+    "pixelateMode": 0,
+    "pixelateOutlineThickness": 0,
+    "doodles": {
+        "m_Items": []
+    },
+    "upscaleFactor": 0
+}

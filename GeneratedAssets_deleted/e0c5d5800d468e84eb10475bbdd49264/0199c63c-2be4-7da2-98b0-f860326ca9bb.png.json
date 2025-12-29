@@ -1,0 +1,20 @@
+{
+    "asset": "e0c5d5800d468e84eb10475bbdd49264",
+    "fileName": "0199c63c-2be4-7da2-98b0-f860326ca9bb.png",
+    "prompt": "smooth horizontal linear gradient from #FF6A00 to #FF3D00, high resolution, seamless",
+    "negativePrompt": "",
+    "model": "5fa78152-02ea-492b-b8ea-777b31a8a2f8",
+    "modelName": "GPT Image 1 - Low",
+    "customSeed": -1,
+    "w3CTraceId": "a11fbd71a1a79c99fa04e316cec73956",
+    "refinementMode": "Generation",
+    "pixelateTargetSize": 0,
+    "pixelateKeepImageSize": false,
+    "pixelatePixelBlockSize": 0,
+    "pixelateMode": 0,
+    "pixelateOutlineThickness": 0,
+    "doodles": {
+        "m_Items": []
+    },
+    "upscaleFactor": 0
+}

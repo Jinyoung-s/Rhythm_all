@@ -1,0 +1,20 @@
+{
+    "asset": "88095464d8120dd4dad307bebb0e51a9",
+    "fileName": "019a76b2-6b64-7fc8-a754-71be4e2e4638.png",
+    "prompt": "Create a high-quality glowing rectangular button sprite for a rhythm game UI.\r\n- Shape: Perfect rectangle, slightly rounded corners (radius 10–20%)\r\n- Style: Neon light border, soft glow around the edges\r\n- Center: Dark, slightly transparent background (almost black or dark navy)\r\n- Border Glow: Smooth HDR-style bloom effect\r\n- Color variants: \r\n  1️⃣ Bright blue (for Subject)\r\n  2️⃣ Vivid red (for Verb)\r\n  3️⃣ Fresh green (for Object)\r\n  4️⃣ Warm orange (for Etc)\r\n- Lighting: Modern UI style, luminous but not overly bright\r\n- Background: Transparent (alpha channel)\r\n- Resolution: 512x256\r\n- Use clean vector edges and subtle inner shadow to enhance depth",
+    "negativePrompt": "",
+    "model": "8c363d16-0086-48af-b7dd-20ac69e7eafd",
+    "modelName": "Cyberpunk",
+    "customSeed": -1,
+    "w3CTraceId": "00ee4ec75dd74f8ae90e207ea420a48b",
+    "refinementMode": "Generation",
+    "pixelateTargetSize": 0,
+    "pixelateKeepImageSize": false,
+    "pixelatePixelBlockSize": 0,
+    "pixelateMode": 0,
+    "pixelateOutlineThickness": 0,
+    "doodles": {
+        "m_Items": []
+    },
+    "upscaleFactor": 0
+}

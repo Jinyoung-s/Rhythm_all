@@ -1,0 +1,20 @@
+{
+    "asset": "3fe8a75ac883a3e4881247dcaffe68bb",
+    "fileName": "019a52a1-aa47-7178-a2bd-1ae29d967346.jpg",
+    "prompt": "musical note",
+    "negativePrompt": "",
+    "model": "a41d1fbc-113f-45ca-be52-0c0c8584052b",
+    "modelName": "3D Icons",
+    "customSeed": -1,
+    "w3CTraceId": "b0c03f7305958d65bfd43fca16140508",
+    "refinementMode": "Generation",
+    "pixelateTargetSize": 0,
+    "pixelateKeepImageSize": false,
+    "pixelatePixelBlockSize": 0,
+    "pixelateMode": 0,
+    "pixelateOutlineThickness": 0,
+    "doodles": {
+        "m_Items": []
+    },
+    "upscaleFactor": 0
+}

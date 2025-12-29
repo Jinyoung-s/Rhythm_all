@@ -1,0 +1,20 @@
+{
+    "asset": "cc48be65594e96d468e26e4229f25e8a",
+    "fileName": "019a31fb-7755-7072-8a74-11b9a6a3617e.jpg",
+    "prompt": "speaker",
+    "negativePrompt": "",
+    "model": "a41d1fbc-113f-45ca-be52-0c0c8584052b",
+    "modelName": "3D Icons",
+    "customSeed": -1,
+    "w3CTraceId": "d69eee15ed08699a0aa1cc25cdc93f36",
+    "refinementMode": "Generation",
+    "pixelateTargetSize": 0,
+    "pixelateKeepImageSize": false,
+    "pixelatePixelBlockSize": 0,
+    "pixelateMode": 0,
+    "pixelateOutlineThickness": 0,
+    "doodles": {
+        "m_Items": []
+    },
+    "upscaleFactor": 0
+}

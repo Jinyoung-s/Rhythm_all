@@ -1,0 +1,20 @@
+{
+    "asset": "15a33b216992dcf45a6976ba9812a442",
+    "fileName": "019adf76-e673-7cc4-9475-d6f194d36d7f.png",
+    "prompt": "A horizontal gradient background, dominant purple tones blending softly into blue, medium-to-high saturation, modern UI style, smooth and clean blending, no noise, no reflections, no glow.\r\n",
+    "negativePrompt": "pastel, low saturation, grayish, faded, washed out, desaturated, dull, matte, pale, dusty colors\r\n",
+    "model": "0409c144-da57-44a7-b531-72bc9a32fa4f",
+    "modelName": "GPT Image 1 - High",
+    "customSeed": -1,
+    "w3CTraceId": "6322f2520312efaa16d28677ad2e2552",
+    "refinementMode": "Generation",
+    "pixelateTargetSize": 0,
+    "pixelateKeepImageSize": false,
+    "pixelatePixelBlockSize": 0,
+    "pixelateMode": 0,
+    "pixelateOutlineThickness": 0,
+    "doodles": {
+        "m_Items": []
+    },
+    "upscaleFactor": 0
+}

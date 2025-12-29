@@ -1,0 +1,13 @@
+{
+    "asset": "701228649dbdf3f4387cabf1015ac5e5",
+    "fileName": "019a57de-cba5-7c02-908d-1e4dd1232e20.wav",
+    "prompt": "ding\n",
+    "negativePrompt": "",
+    "model": "ee31b223-3fe1-4ae6-bf54-d8a80bb4b0e1",
+    "modelName": "Text to Sound",
+    "customSeed": -1,
+    "w3CTraceId": "0a3000680fb695d1ba5d8e6ab56c3e6b",
+    "duration": 10.0,
+    "autoTrim": false,
+    "hasReference": false
+}

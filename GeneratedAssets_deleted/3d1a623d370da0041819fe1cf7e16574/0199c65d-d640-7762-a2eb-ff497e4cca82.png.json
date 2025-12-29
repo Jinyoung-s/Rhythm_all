@@ -1,0 +1,20 @@
+{
+    "asset": "3d1a623d370da0041819fe1cf7e16574",
+    "fileName": "0199c65d-d640-7762-a2eb-ff497e4cca82.png",
+    "prompt": "strong horizontal linear gradient from #FF6A00 to #FF3D00, vivid contrast, hard color transition, high resolution, seamless background",
+    "negativePrompt": "",
+    "model": "e0b26c28-c771-454f-ae97-3be78d8b0159",
+    "modelName": "GPT Image 1 - Medium",
+    "customSeed": 1,
+    "w3CTraceId": "25c2aba3d4626326c577684485c7eb74",
+    "refinementMode": "Generation",
+    "pixelateTargetSize": 0,
+    "pixelateKeepImageSize": false,
+    "pixelatePixelBlockSize": 0,
+    "pixelateMode": 0,
+    "pixelateOutlineThickness": 0,
+    "doodles": {
+        "m_Items": []
+    },
+    "upscaleFactor": 0
+}

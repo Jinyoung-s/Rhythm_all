@@ -1,0 +1,13 @@
+{
+    "asset": "2d98a5964d5a99f4792e48768b64e8ea",
+    "fileName": "019a94d9-07ca-73bb-ac2c-9d67eb304b23.bin",
+    "prompt": "Generate a clean, non-musical metronome-style click sound.\r\nVery short digital click with an extremely sharp attack (less than 5 ms).\r\nNo reverb, no echo, no ambience, no tonal pitch.\r\nPure percussive click only.",
+    "negativePrompt": "",
+    "model": "ee31b223-3fe1-4ae6-bf54-d8a80bb4b0e1",
+    "modelName": "Text to Sound",
+    "customSeed": -1,
+    "w3CTraceId": "7fe22135e8f9f7a1b0f1055601d8e3d3",
+    "duration": 10.0,
+    "autoTrim": false,
+    "hasReference": false
+}

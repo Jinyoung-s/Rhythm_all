@@ -1,0 +1,454 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\Rhythm English\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FD49D31B-6125-EB5E-8CE5-176840A3EE96}|Assembly-CSharp.csproj|C:\\Users\\User\\Rhythm English\\assets\\scripts\\step\\steplistloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD49D31B-6125-EB5E-8CE5-176840A3EE96}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\step\\steplistloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD49D31B-6125-EB5E-8CE5-176840A3EE96}|Assembly-CSharp.csproj|c:\\users\\user\\rhythm english\\assets\\scripts\\learningpathgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD49D31B-6125-EB5E-8CE5-176840A3EE96}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\learningpathgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Rhythm English\\Assets\\Scripts\\Game\\FallingNote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Game\\FallingNote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD49D31B-6125-EB5E-8CE5-176840A3EE96}|Assembly-CSharp.csproj|C:\\Users\\User\\Rhythm English\\assets\\scripts\\stepsceneloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD49D31B-6125-EB5E-8CE5-176840A3EE96}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\stepsceneloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Rhythm English\\Library\\PackageCache\\com.unity.ugui@22ba13624a3c\\Editor\\TMP\\TMP_BaseEditorPanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.ugui@22ba13624a3c\\Editor\\TMP\\TMP_BaseEditorPanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD49D31B-6125-EB5E-8CE5-176840A3EE96}|Assembly-CSharp.csproj|C:\\Users\\User\\Rhythm English\\assets\\scripts\\step\\steptopbarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD49D31B-6125-EB5E-8CE5-176840A3EE96}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\step\\steptopbarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD49D31B-6125-EB5E-8CE5-176840A3EE96}|Assembly-CSharp.csproj|C:\\Users\\User\\Rhythm English\\assets\\scripts\\step\\learnpopupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD49D31B-6125-EB5E-8CE5-176840A3EE96}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\step\\learnpopupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD49D31B-6125-EB5E-8CE5-176840A3EE96}|Assembly-CSharp.csproj|C:\\Users\\User\\Rhythm English\\assets\\scripts\\step\\steplist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD49D31B-6125-EB5E-8CE5-176840A3EE96}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\step\\steplist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD49D31B-6125-EB5E-8CE5-176840A3EE96}|Assembly-CSharp.csproj|C:\\Users\\User\\Rhythm English\\assets\\scripts\\step\\learnstepdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD49D31B-6125-EB5E-8CE5-176840A3EE96}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\step\\learnstepdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD49D31B-6125-EB5E-8CE5-176840A3EE96}|Assembly-CSharp.csproj|C:\\Users\\User\\Rhythm English\\assets\\ui\\neonglowbutton_rounded.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{FD49D31B-6125-EB5E-8CE5-176840A3EE96}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\neonglowbutton_rounded.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD49D31B-6125-EB5E-8CE5-176840A3EE96}|Assembly-CSharp.csproj|C:\\Users\\User\\Rhythm English\\assets\\ui\\neonglowbutton.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{FD49D31B-6125-EB5E-8CE5-176840A3EE96}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\neonglowbutton.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD49D31B-6125-EB5E-8CE5-176840A3EE96}|Assembly-CSharp.csproj|C:\\Users\\User\\Rhythm English\\assets\\resources\\ui\\cardlistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD49D31B-6125-EB5E-8CE5-176840A3EE96}|Assembly-CSharp.csproj|solutionrelative:assets\\resources\\ui\\cardlistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD49D31B-6125-EB5E-8CE5-176840A3EE96}|Assembly-CSharp.csproj|C:\\Users\\User\\Rhythm English\\assets\\resources\\ui\\game\\topbar.uss||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{FD49D31B-6125-EB5E-8CE5-176840A3EE96}|Assembly-CSharp.csproj|solutionrelative:assets\\resources\\ui\\game\\topbar.uss||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD49D31B-6125-EB5E-8CE5-176840A3EE96}|Assembly-CSharp.csproj|C:\\Users\\User\\Rhythm English\\assets\\scripts\\step\\learnsteploader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD49D31B-6125-EB5E-8CE5-176840A3EE96}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\step\\learnsteploader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD49D31B-6125-EB5E-8CE5-176840A3EE96}|Assembly-CSharp.csproj|C:\\Users\\User\\Rhythm English\\assets\\resources\\ui\\cardlist.uxml||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{FD49D31B-6125-EB5E-8CE5-176840A3EE96}|Assembly-CSharp.csproj|solutionrelative:assets\\resources\\ui\\cardlist.uxml||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD49D31B-6125-EB5E-8CE5-176840A3EE96}|Assembly-CSharp.csproj|C:\\Users\\User\\Rhythm English\\assets\\scripts\\step\\stepscenemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD49D31B-6125-EB5E-8CE5-176840A3EE96}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\step\\stepscenemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD49D31B-6125-EB5E-8CE5-176840A3EE96}|Assembly-CSharp.csproj|C:\\Users\\User\\Rhythm English\\assets\\textmesh pro\\shaders\\tmp_sdf.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{FD49D31B-6125-EB5E-8CE5-176840A3EE96}|Assembly-CSharp.csproj|solutionrelative:assets\\textmesh pro\\shaders\\tmp_sdf.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Rhythm English\\Library\\PackageCache\\com.unity.render-pipelines.universal\\Shaders\\Lit.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.render-pipelines.universal\\Shaders\\Lit.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Rhythm English\\Assets\\UI\\CardList.uxml||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\UI\\CardList.uxml||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Rhythm English\\Assets\\Scripts\\Step\\TopBarController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Step\\TopBarController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Rhythm English\\Assets\\Scripts\\Game\\GameTopBarController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Game\\GameTopBarController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Rhythm English\\Assets\\Scripts\\AudioManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\AudioManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Rhythm English\\Assets\\Scripts\\NoteLoader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\NoteLoader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Rhythm English\\Assets\\Scripts\\NoteData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\NoteData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Rhythm English\\Assets\\Scripts\\GameManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\GameManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Rhythm English\\Assets\\Scripts\\NoteSpawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\NoteSpawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Rhythm English\\Assets\\Scripts\\CountdownManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\CountdownManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LearnPopupController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Rhythm English\\Assets\\Scripts\\Step\\LearnPopupController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Step\\LearnPopupController.cs",
+              "ToolTip": "C:\\Users\\User\\Rhythm English\\Assets\\Scripts\\Step\\LearnPopupController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Step\\LearnPopupController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T00:16:12.253Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "StepTopBarController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Rhythm English\\Assets\\Scripts\\Step\\StepTopBarController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Step\\StepTopBarController.cs",
+              "ToolTip": "C:\\Users\\User\\Rhythm English\\Assets\\Scripts\\Step\\StepTopBarController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Step\\StepTopBarController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T03:56:06.377Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "GameTopBarController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Rhythm English\\Assets\\Scripts\\Game\\GameTopBarController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Game\\GameTopBarController.cs",
+              "ToolTip": "C:\\Users\\User\\Rhythm English\\Assets\\Scripts\\Game\\GameTopBarController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Game\\GameTopBarController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T01:56:10.534Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "StepList.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Rhythm English\\Assets\\Scripts\\Step\\StepList.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Step\\StepList.cs",
+              "ToolTip": "C:\\Users\\User\\Rhythm English\\Assets\\Scripts\\Step\\StepList.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Step\\StepList.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T03:51:01.933Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "NoteLoader.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Rhythm English\\Assets\\Scripts\\NoteLoader.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\NoteLoader.cs",
+              "ToolTip": "C:\\Users\\User\\Rhythm English\\Assets\\Scripts\\NoteLoader.cs",
+              "RelativeToolTip": "Assets\\Scripts\\NoteLoader.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T22:45:16.112Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TMP_BaseEditorPanel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Rhythm English\\Library\\PackageCache\\com.unity.ugui@22ba13624a3c\\Editor\\TMP\\TMP_BaseEditorPanel.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.ugui@22ba13624a3c\\Editor\\TMP\\TMP_BaseEditorPanel.cs",
+              "ToolTip": "C:\\Users\\User\\Rhythm English\\Library\\PackageCache\\com.unity.ugui@22ba13624a3c\\Editor\\TMP\\TMP_BaseEditorPanel.cs",
+              "RelativeToolTip": "Library\\PackageCache\\com.unity.ugui@22ba13624a3c\\Editor\\TMP\\TMP_BaseEditorPanel.cs",
+              "ViewState": "AgIAAKsAAAAAAAAAAAAQwL4AAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T03:31:38.085Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "NoteData.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Rhythm English\\Assets\\Scripts\\NoteData.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\NoteData.cs",
+              "ToolTip": "C:\\Users\\User\\Rhythm English\\Assets\\Scripts\\NoteData.cs",
+              "RelativeToolTip": "Assets\\Scripts\\NoteData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T19:08:59.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LearnStepData.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Rhythm English\\Assets\\Scripts\\Step\\LearnStepData.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Step\\LearnStepData.cs",
+              "ToolTip": "C:\\Users\\User\\Rhythm English\\Assets\\Scripts\\Step\\LearnStepData.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Step\\LearnStepData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T00:14:48.8Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FallingNote.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Rhythm English\\Assets\\Scripts\\Game\\FallingNote.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Game\\FallingNote.cs",
+              "ToolTip": "C:\\Users\\User\\Rhythm English\\Assets\\Scripts\\Game\\FallingNote.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Game\\FallingNote.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T19:49:33.632Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StepListLoader.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Rhythm English\\Assets\\Scripts\\Step\\StepListLoader.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Step\\StepListLoader.cs",
+              "ToolTip": "C:\\Users\\User\\Rhythm English\\Assets\\Scripts\\Step\\StepListLoader.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Step\\StepListLoader.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAiwFwAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T18:32:05.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Rhythm English\\Assets\\Scripts\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
+              "ToolTip": "C:\\Users\\User\\Rhythm English\\Assets\\Scripts\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T22:14:47.462Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LearningPathGenerator.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Rhythm English\\Assets\\Scripts\\LearningPathGenerator.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\LearningPathGenerator.cs",
+              "ToolTip": "C:\\Users\\User\\Rhythm English\\Assets\\Scripts\\LearningPathGenerator.cs",
+              "RelativeToolTip": "Assets\\Scripts\\LearningPathGenerator.cs",
+              "ViewState": "AgIAACsBAAAAAAAAAADwv1ABAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T06:33:12.859Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "NoteSpawner.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Rhythm English\\Assets\\Scripts\\NoteSpawner.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\NoteSpawner.cs",
+              "ToolTip": "C:\\Users\\User\\Rhythm English\\Assets\\Scripts\\NoteSpawner.cs",
+              "RelativeToolTip": "Assets\\Scripts\\NoteSpawner.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAwwBcAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T22:33:06.962Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StepSceneLoader.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Rhythm English\\Assets\\Scripts\\StepSceneLoader.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\StepSceneLoader.cs",
+              "ToolTip": "C:\\Users\\User\\Rhythm English\\Assets\\Scripts\\StepSceneLoader.cs",
+              "RelativeToolTip": "Assets\\Scripts\\StepSceneLoader.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T01:58:53.71Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "TopBarController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Rhythm English\\Assets\\Scripts\\Step\\TopBarController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Step\\TopBarController.cs",
+              "ToolTip": "C:\\Users\\User\\Rhythm English\\Assets\\Scripts\\Step\\TopBarController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Step\\TopBarController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T08:05:41.591Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "NeonGlowButton.shader",
+              "DocumentMoniker": "C:\\Users\\User\\Rhythm English\\Assets\\UI\\NeonGlowButton.shader",
+              "RelativeDocumentMoniker": "Assets\\UI\\NeonGlowButton.shader",
+              "ToolTip": "C:\\Users\\User\\Rhythm English\\Assets\\UI\\NeonGlowButton.shader",
+              "RelativeToolTip": "Assets\\UI\\NeonGlowButton.shader",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
+              "WhenOpened": "2025-08-01T02:37:26.025Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "NeonGlowButton_Rounded.shader",
+              "DocumentMoniker": "C:\\Users\\User\\Rhythm English\\Assets\\UI\\NeonGlowButton_Rounded.shader",
+              "RelativeDocumentMoniker": "Assets\\UI\\NeonGlowButton_Rounded.shader",
+              "ToolTip": "C:\\Users\\User\\Rhythm English\\Assets\\UI\\NeonGlowButton_Rounded.shader",
+              "RelativeToolTip": "Assets\\UI\\NeonGlowButton_Rounded.shader",
+              "ViewState": "AgIAABwAAAAAAAAAAADwv0MAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
+              "WhenOpened": "2025-08-01T02:49:18.287Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CardListController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Rhythm English\\Assets\\Resources\\UI\\CardListController.cs",
+              "RelativeDocumentMoniker": "Assets\\Resources\\UI\\CardListController.cs",
+              "ToolTip": "C:\\Users\\User\\Rhythm English\\Assets\\Resources\\UI\\CardListController.cs",
+              "RelativeToolTip": "Assets\\Resources\\UI\\CardListController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T00:17:14.682Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TopBar.uss",
+              "DocumentMoniker": "C:\\Users\\User\\Rhythm English\\Assets\\Resources\\UI\\Game\\TopBar.uss",
+              "RelativeDocumentMoniker": "Assets\\Resources\\UI\\Game\\TopBar.uss",
+              "ToolTip": "C:\\Users\\User\\Rhythm English\\Assets\\Resources\\UI\\Game\\TopBar.uss",
+              "RelativeToolTip": "Assets\\Resources\\UI\\Game\\TopBar.uss",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-07-30T01:59:58.026Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "LearnStepLoader.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Rhythm English\\Assets\\Scripts\\Step\\LearnStepLoader.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Step\\LearnStepLoader.cs",
+              "ToolTip": "C:\\Users\\User\\Rhythm English\\Assets\\Scripts\\Step\\LearnStepLoader.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Step\\LearnStepLoader.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T00:15:19.456Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CardList.uxml",
+              "DocumentMoniker": "C:\\Users\\User\\Rhythm English\\Assets\\Resources\\UI\\CardList.uxml",
+              "RelativeDocumentMoniker": "Assets\\Resources\\UI\\CardList.uxml",
+              "ToolTip": "C:\\Users\\User\\Rhythm English\\Assets\\Resources\\UI\\CardList.uxml",
+              "RelativeToolTip": "Assets\\Resources\\UI\\CardList.uxml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-07-29T18:58:19.801Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "StepSceneManager.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Rhythm English\\Assets\\Scripts\\Step\\StepSceneManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Step\\StepSceneManager.cs",
+              "ToolTip": "C:\\Users\\User\\Rhythm English\\Assets\\Scripts\\Step\\StepSceneManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Step\\StepSceneManager.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAADwvy0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T07:30:35.282Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CardList.uxml",
+              "DocumentMoniker": "C:\\Users\\User\\Rhythm English\\Assets\\UI\\CardList.uxml",
+              "RelativeDocumentMoniker": "Assets\\UI\\CardList.uxml",
+              "ToolTip": "C:\\Users\\User\\Rhythm English\\Assets\\UI\\CardList.uxml",
+              "RelativeToolTip": "Assets\\UI\\CardList.uxml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-07-29T01:00:01.457Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "TMP_SDF.shader",
+              "DocumentMoniker": "C:\\Users\\User\\Rhythm English\\Assets\\TextMesh Pro\\Shaders\\TMP_SDF.shader",
+              "RelativeDocumentMoniker": "Assets\\TextMesh Pro\\Shaders\\TMP_SDF.shader",
+              "ToolTip": "C:\\Users\\User\\Rhythm English\\Assets\\TextMesh Pro\\Shaders\\TMP_SDF.shader",
+              "RelativeToolTip": "Assets\\TextMesh Pro\\Shaders\\TMP_SDF.shader",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
+              "WhenOpened": "2025-07-20T04:24:48.059Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Lit.shader",
+              "DocumentMoniker": "C:\\Users\\User\\Rhythm English\\Library\\PackageCache\\com.unity.render-pipelines.universal\\Shaders\\Lit.shader",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.render-pipelines.universal\\Shaders\\Lit.shader",
+              "ToolTip": "C:\\Users\\User\\Rhythm English\\Library\\PackageCache\\com.unity.render-pipelines.universal\\Shaders\\Lit.shader",
+              "RelativeToolTip": "Library\\PackageCache\\com.unity.render-pipelines.universal\\Shaders\\Lit.shader",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
+              "WhenOpened": "2025-07-19T06:31:40.667Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AudioManager.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Rhythm English\\Assets\\Scripts\\AudioManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\AudioManager.cs",
+              "ToolTip": "C:\\Users\\User\\Rhythm English\\Assets\\Scripts\\AudioManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\AudioManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T22:17:41.101Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "CountdownManager.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Rhythm English\\Assets\\Scripts\\CountdownManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CountdownManager.cs",
+              "ToolTip": "C:\\Users\\User\\Rhythm English\\Assets\\Scripts\\CountdownManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CountdownManager.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAIA7wDcAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T04:39:59.083Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

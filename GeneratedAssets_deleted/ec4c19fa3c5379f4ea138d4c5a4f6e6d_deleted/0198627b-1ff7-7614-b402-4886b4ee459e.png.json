@@ -1,0 +1,20 @@
+{
+    "asset": "ec4c19fa3c5379f4ea138d4c5a4f6e6d",
+    "fileName": "0198627b-1ff7-7614-b402-4886b4ee459e.png",
+    "prompt": "create button design",
+    "negativePrompt": "",
+    "model": "e7d34c27-6927-41dd-8c59-04d1aee5acd4",
+    "modelName": "Game Backgrounds - II",
+    "customSeed": -1,
+    "w3CTraceId": "14baf15042e7b44a3c53ea082b578205",
+    "refinementMode": "Generation",
+    "pixelateTargetSize": 0,
+    "pixelateKeepImageSize": false,
+    "pixelatePixelBlockSize": 0,
+    "pixelateMode": 0,
+    "pixelateOutlineThickness": 0,
+    "doodles": {
+        "m_Items": []
+    },
+    "upscaleFactor": 0
+}

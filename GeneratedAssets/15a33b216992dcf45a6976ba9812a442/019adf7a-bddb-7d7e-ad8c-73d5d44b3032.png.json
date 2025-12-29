@@ -1,0 +1,20 @@
+{
+    "asset": "15a33b216992dcf45a6976ba9812a442",
+    "fileName": "019adf7a-bddb-7d7e-ad8c-73d5d44b3032.png",
+    "prompt": "A soft horizontal gradient background from #495FE8 to #6A60F1, low contrast, medium saturation, smooth and subtle blending, flat modern UI style, no pink tones, no glow, no noise, no texture.\r\n",
+    "negativePrompt": "pink, magenta, neon, high saturation, rainbow gradient, strong contrast, glow, bloom\r\n",
+    "model": "0409c144-da57-44a7-b531-72bc9a32fa4f",
+    "modelName": "GPT Image 1 - High",
+    "customSeed": -1,
+    "w3CTraceId": "9c5a0514a91ee94bf836dbf7c252d613",
+    "refinementMode": "Generation",
+    "pixelateTargetSize": 0,
+    "pixelateKeepImageSize": false,
+    "pixelatePixelBlockSize": 0,
+    "pixelateMode": 0,
+    "pixelateOutlineThickness": 0,
+    "doodles": {
+        "m_Items": []
+    },
+    "upscaleFactor": 0
+}

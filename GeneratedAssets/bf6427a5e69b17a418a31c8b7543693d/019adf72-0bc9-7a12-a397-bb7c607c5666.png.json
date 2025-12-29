@@ -1,0 +1,20 @@
+{
+    "asset": "bf6427a5e69b17a418a31c8b7543693d",
+    "fileName": "019adf72-0bc9-7a12-a397-bb7c607c5666.png",
+    "prompt": "A smooth, subtle blue gradient background, soft transition from light blue to deep blue, no texture, no noise, no patterns, evenly blended color, minimalist flat UI style, modern design, clean and simple, no borders.\r\n",
+    "negativePrompt": "",
+    "model": "8236ed86-a78c-421f-9aeb-d62831026d89",
+    "modelName": "GPT Image 1 - Medium",
+    "customSeed": -1,
+    "w3CTraceId": "cf7692633ab0228c4e74b47e863a2b23",
+    "refinementMode": "Generation",
+    "pixelateTargetSize": 0,
+    "pixelateKeepImageSize": false,
+    "pixelatePixelBlockSize": 0,
+    "pixelateMode": 0,
+    "pixelateOutlineThickness": 0,
+    "doodles": {
+        "m_Items": []
+    },
+    "upscaleFactor": 0
+}

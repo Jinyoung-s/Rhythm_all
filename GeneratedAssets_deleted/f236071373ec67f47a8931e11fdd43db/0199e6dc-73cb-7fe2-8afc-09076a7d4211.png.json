@@ -1,0 +1,20 @@
+{
+    "asset": "f236071373ec67f47a8931e11fdd43db",
+    "fileName": "0199e6dc-73cb-7fe2-8afc-09076a7d4211.png",
+    "prompt": "Futuristic dark sci-fi background for an education app, glowing abstract circuit patterns in turquoise and orange tones, soft depth-of-field blur, light rays and bokeh particles. Emphasize a sense of technology and intelligence, not cluttered. 4K resolution.",
+    "negativePrompt": "",
+    "model": "e0b26c28-c771-454f-ae97-3be78d8b0159",
+    "modelName": "GPT Image 1 - Medium",
+    "customSeed": -1,
+    "w3CTraceId": "57d6fe81a3f97ac3e649d4f6d166cab7",
+    "refinementMode": "Generation",
+    "pixelateTargetSize": 0,
+    "pixelateKeepImageSize": false,
+    "pixelatePixelBlockSize": 0,
+    "pixelateMode": 0,
+    "pixelateOutlineThickness": 0,
+    "doodles": {
+        "m_Items": []
+    },
+    "upscaleFactor": 0
+}

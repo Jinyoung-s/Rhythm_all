@@ -1,0 +1,20 @@
+{
+    "asset": "e0c5d5800d468e84eb10475bbdd49264",
+    "fileName": "0199c63b-4e82-79ed-97e5-8de1a0fb793c.png",
+    "prompt": "smooth horizontal linear gradient from #FF6A00 to #FF3D00, high resolution, seamless",
+    "negativePrompt": "",
+    "model": "575ecf67-4425-4939-97b9-5e138b8ee234",
+    "modelName": "Unity Texture2D",
+    "customSeed": -1,
+    "w3CTraceId": "c8db7af1b39a4882c3f4cb919862800d",
+    "refinementMode": "Generation",
+    "pixelateTargetSize": 0,
+    "pixelateKeepImageSize": false,
+    "pixelatePixelBlockSize": 0,
+    "pixelateMode": 0,
+    "pixelateOutlineThickness": 0,
+    "doodles": {
+        "m_Items": []
+    },
+    "upscaleFactor": 0
+}

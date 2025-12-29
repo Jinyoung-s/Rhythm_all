@@ -1,0 +1,20 @@
+{
+    "asset": "0bb0d809ff27d1343a82fa1e4790c3de",
+    "fileName": "0199e6e5-379f-7e9d-a167-d4e1b782dfc1.png",
+    "prompt": "Dark gradient background with subtle glowing mint green light from the bottom right, transitioning from navy blue (#0d1118) to deep cyan (#12232f), smooth and modern, soft lighting, suitable for a learning app UI. No text, 4K.",
+    "negativePrompt": "",
+    "model": "e0b26c28-c771-454f-ae97-3be78d8b0159",
+    "modelName": "GPT Image 1 - Medium",
+    "customSeed": -1,
+    "w3CTraceId": "69f089bd33aeba9a590cfc7cf040e9c6",
+    "refinementMode": "Generation",
+    "pixelateTargetSize": 0,
+    "pixelateKeepImageSize": false,
+    "pixelatePixelBlockSize": 0,
+    "pixelateMode": 0,
+    "pixelateOutlineThickness": 0,
+    "doodles": {
+        "m_Items": []
+    },
+    "upscaleFactor": 0
+}

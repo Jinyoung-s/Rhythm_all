@@ -1,0 +1,20 @@
+{
+    "asset": "88095464d8120dd4dad307bebb0e51a9",
+    "fileName": "019a76b4-c495-7e24-a257-186f1cfb2004.png",
+    "prompt": "Create a high-quality glowing rectangular button sprite for a rhythm game UI.\r\n- Shape: Perfect rectangle, slightly rounded corners (radius 10–20%)\r\n- Style: Neon light border, soft glow around the edges\r\n- Center: Dark, slightly transparent background (almost black or dark navy)\r\n- Border Glow: Smooth HDR-style bloom effect\r\n- Color variants:  Bright blue \r\n- Lighting: Modern UI style, luminous but not overly bright\r\n- Background: Transparent (alpha channel)\r\n- Resolution: 512x256\r\n- Use clean vector edges and subtle inner shadow to enhance depth",
+    "negativePrompt": "",
+    "model": "0409c144-da57-44a7-b531-72bc9a32fa4f",
+    "modelName": "GPT Image 1 - High",
+    "customSeed": -1,
+    "w3CTraceId": "c03892109f47923624035bf61a934c21",
+    "refinementMode": "Generation",
+    "pixelateTargetSize": 0,
+    "pixelateKeepImageSize": false,
+    "pixelatePixelBlockSize": 0,
+    "pixelateMode": 0,
+    "pixelateOutlineThickness": 0,
+    "doodles": {
+        "m_Items": []
+    },
+    "upscaleFactor": 0
+}
