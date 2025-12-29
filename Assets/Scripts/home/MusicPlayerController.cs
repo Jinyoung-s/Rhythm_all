@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UIElements;
 using RhythmEnglish.Economy;
@@ -48,6 +49,7 @@ public class MusicPlayerController : MonoBehaviour
     // State
     private bool isDraggingSlider = false;
     private bool isNowPlayingVisible = false;
+    private Dictionary<string, bool> playlistSelection = new Dictionary<string, bool>(); // ChapterId -> IsSelected
 
     private void Awake()
     {
@@ -140,8 +142,10 @@ public class MusicPlayerController : MonoBehaviour
     private void RefreshSongList()
     {
         if (songListContainer == null) return;
-
         songListContainer.Clear();
+
+        // 카탈로그 데이터 최신화 (새로 추가된 곡 등이 있을 수 있음)
+        SongShopManager.Instance.RefreshCatalog();
 
         // ProgressManager에서 테스트 완료된 Step 목록 가져오기
         var completedSongs = GetCompletedSongs();
@@ -196,14 +200,22 @@ public class MusicPlayerController : MonoBehaviour
                         // CurriculumRepository에서 곡 정보 가져오기
                         if (CurriculumRepository.TryGetChapter(chapterId, out var chapter))
                         {
-                            Debug.Log($"[MusicPlayerController] ✅ Adding song: {chapter.Name}");
+                            // 해당 스텝의 타이틀 찾기
+                            var stepData = chapter.Steps.FirstOrDefault(s => s.id == stepProgress.StepId);
+                            string displayTitle = (stepData != null && !string.IsNullOrEmpty(stepData.title)) 
+                                ? stepData.title 
+                                : (chapter.Name ?? chapterId);
+
+                            string thumbnailPath = $"Covers/{chapterId}/{stepProgress.StepId}";
+
+                            Debug.Log($"[MusicPlayerController] ✅ Adding song: {displayTitle}, Thumbnail: {thumbnailPath}");
                             completedSongs.Add(new CompletedSongInfo
                             {
                                 ChapterId = chapterId,
                                 StepId = stepProgress.StepId,
-                                Title = chapter.Name ?? chapterId,
-                                Artist = "", // 현재 ChapterData에 Artist 없음
-                                ThumbnailPath = "" // 현재 ChapterData에 ThumbnailPath 없음
+                                Title = displayTitle,
+                                Artist = chapter.Name ?? "Rhythm English", // fallback
+                                ThumbnailPath = thumbnailPath
                             });
                         }
                         else
@@ -236,15 +248,19 @@ public class MusicPlayerController : MonoBehaviour
         var card = new VisualElement();
         card.AddToClassList("song-card");
 
+        // SongItem 정보 가져오기 (가격 및 구매 상태 확인용)
+        var songData = SongShopManager.Instance.GetSongInfo(songInfo.ChapterId);
+        bool isPurchased = SongShopManager.Instance.IsPurchased(songInfo.ChapterId);
+
         // 썸네일
         var thumbnail = new VisualElement();
         thumbnail.AddToClassList("song-thumbnail");
         if (!string.IsNullOrEmpty(songInfo.ThumbnailPath))
         {
-            var tex = Resources.Load<Texture2D>(songInfo.ThumbnailPath);
-            if (tex != null)
+            var sprite = Resources.Load<Sprite>(songInfo.ThumbnailPath);
+            if (sprite != null)
             {
-                thumbnail.style.backgroundImage = new StyleBackground(tex);
+                thumbnail.style.backgroundImage = new StyleBackground(sprite);
             }
         }
         card.Add(thumbnail);
@@ -257,42 +273,125 @@ public class MusicPlayerController : MonoBehaviour
         title.AddToClassList("song-title");
         info.Add(title);
 
-        var artist = new Label(songInfo.Artist);
+        var artistNameStr = songData != null ? songData.artist : songInfo.Artist;
+        var artist = new Label(artistNameStr);
         artist.AddToClassList("song-artist");
         info.Add(artist);
 
         card.Add(info);
 
-        // 액션 영역 - 재생 버튼 + 체크 아이콘
+        // 액션 영역
         var actionArea = new VisualElement();
         actionArea.AddToClassList("song-action-area");
 
-        // 재생 버튼 (아이콘)
-        var playBtn = new Button();
-        playBtn.AddToClassList("play-song-button");
-        
-        // 아이콘 이미지 로드 및 설정
-        var playIcon = Resources.Load<Texture2D>("Icons/function_icon_player_start");
-        if (playIcon != null)
+        if (isPurchased)
         {
-            playBtn.iconImage = playIcon;
-        }
-        
-        playBtn.RegisterCallback<ClickEvent>(evt =>
-        {
-            PlaySong(songInfo);
-            evt.StopPropagation();
-        });
-        actionArea.Add(playBtn);
+            // 구매 완료: 체크 아이콘 (플레이리스트 포함 여부 토글)
+            var check = new VisualElement();
+            check.AddToClassList("owned-check");
+            
+            // 초기 상태 설정 (구매된 곡은 디폴트가 선택 상태)
+            if (!playlistSelection.ContainsKey(songInfo.ChapterId))
+            {
+                playlistSelection[songInfo.ChapterId] = true;
+            }
+            
+            bool isSelected = playlistSelection[songInfo.ChapterId];
+            if (isSelected) check.AddToClassList("active");
 
-        // 구매 완료 체크 아이콘
-        var check = new VisualElement();
-        check.AddToClassList("owned-check");
-        actionArea.Add(check);
+            check.RegisterCallback<ClickEvent>(evt =>
+            {
+                bool newState = !playlistSelection[songInfo.ChapterId];
+                playlistSelection[songInfo.ChapterId] = newState;
+                
+                if (newState) check.AddToClassList("active");
+                else check.RemoveFromClassList("active");
+                
+                Debug.Log($"[MusicPlayerController] Song {songInfo.Title} playlist selection: {newState}");
+                evt.StopPropagation(); // 카드 클릭(재생) 방지
+            });
+
+            actionArea.Add(check);
+        }
+        else
+        {
+            // 카탈로그에 없어도 완료된 곡이라면 구매 버튼을 표시하거나 
+            // 기본값으로 처리 (여기서는 기본 구매 버튼 표시)
+            var buyBtn = new Button();
+            buyBtn.AddToClassList("buy-button");
+            int price = songData?.price ?? 500;
+            buyBtn.text = $"♪{price}\nBuy";
+            actionArea.Add(buyBtn);
+
+            buyBtn.RegisterCallback<ClickEvent>(evt =>
+            {
+                if (songData != null)
+                {
+                    RequestPurchase(songData);
+                }
+                else
+                {
+                    // 카탈로그에 없는 경우에 대한 구매 로직 (기본 처리)
+                     Debug.LogWarning($"[MusicPlayerController] Song not in catalog: {songInfo.ChapterId}");
+                }
+                evt.StopPropagation();
+            });
+        }
 
         card.Add(actionArea);
 
+        // 카드 전체 클릭 처리
+        card.RegisterCallback<ClickEvent>(evt =>
+        {
+            if (isPurchased)
+            {
+                PlaySong(songInfo);
+                ShowNowPlaying();
+            }
+            else if (songData != null)
+            {
+                RequestPurchase(songData);
+            }
+        });
+
         return card;
+    }
+
+    private void RequestPurchase(SongItem song)
+    {
+        if (PopupManager.Instance != null)
+        {
+            PopupManager.Instance.ShowPopup(
+                "곡 구매", 
+                $"'{song.title}' 곡을 {song.price} Notes로 구매하시겠습니까?",
+                "구매", 
+                () => TryPurchase(song),
+                "취소",
+                null
+            );
+        }
+        else
+        {
+            // PopupManager가 없으면 기존처럼 즉시 구매 시도
+            TryPurchase(song);
+        }
+    }
+
+    private void TryPurchase(SongItem song)
+    {
+        if (SongShopManager.Instance.TryPurchaseSong(song.chapterId, out string error))
+        {
+            Debug.Log($"[MusicPlayerController] Successfully purchased: {song.title}");
+            RefreshSongList(); // 구매 후 목록 갱신
+            
+            // 구매 성공 알림 (선택 사항)
+            PopupManager.Instance?.ShowPopup("구매 완료", $"'{song.title}' 곡을 구매했습니다.", "확인");
+        }
+        else
+        {
+            Debug.LogWarning($"[MusicPlayerController] Purchase failed: {error}");
+            PopupManager.Instance?.ShowPopup("구매 실패", error, "확인");
+        }
     }
 
     private void ShowEmptyState()
@@ -341,10 +440,10 @@ public class MusicPlayerController : MonoBehaviour
         // 앨범 아트
         if (miniAlbumArt != null && !string.IsNullOrEmpty(currentSong.thumbnailPath))
         {
-            var tex = Resources.Load<Texture2D>(currentSong.thumbnailPath);
-            if (tex != null)
+            var sprite = Resources.Load<Sprite>(currentSong.thumbnailPath);
+            if (sprite != null)
             {
-                miniAlbumArt.style.backgroundImage = new StyleBackground(tex);
+                miniAlbumArt.style.backgroundImage = new StyleBackground(sprite);
             }
         }
 
@@ -450,10 +549,10 @@ public class MusicPlayerController : MonoBehaviour
         // 앨범 아트
         if (albumArt != null && !string.IsNullOrEmpty(currentSong.thumbnailPath))
         {
-            var tex = Resources.Load<Texture2D>(currentSong.thumbnailPath);
-            if (tex != null)
+            var sprite = Resources.Load<Sprite>(currentSong.thumbnailPath);
+            if (sprite != null)
             {
-                albumArt.style.backgroundImage = new StyleBackground(tex);
+                albumArt.style.backgroundImage = new StyleBackground(sprite);
             }
         }
 
@@ -542,36 +641,46 @@ public class MusicPlayerController : MonoBehaviour
                 isPurchased = true
             };
 
-            // 완료된 곡들로 플레이리스트 구성
+            // 완료된 곡들 중 선택된 곡들로만 플레이리스트 구성
             var completedSongs = GetCompletedSongs();
             var playlist = new List<SongItem>();
-            int startIndex = 0;
+            int startIndex = -1;
 
-            for (int i = 0; i < completedSongs.Count; i++)
+            foreach (var info in completedSongs)
             {
-                var info = completedSongs[i];
-                if (CurriculumRepository.TryGetChapter(info.ChapterId, out var ch))
-                {
-                    playlist.Add(new SongItem
-                    {
-                        chapterId = info.ChapterId,
-                        title = info.Title,
-                        artist = info.Artist,
-                        thumbnailPath = info.ThumbnailPath,
-                        fullAudioPath = $"Audio/Songs/{info.ChapterId}/full",
-                        isFree = true,
-                        isPurchased = true
-                    });
+                // 선택된 곡이거나 현재 클릭한 곡인 경우에만 플레이리스트에 포함
+                bool isSelected = playlistSelection.ContainsKey(info.ChapterId) && playlistSelection[info.ChapterId];
+                bool isCurrentRequested = (info.ChapterId == songInfo.ChapterId);
 
-                    if (info.ChapterId == songInfo.ChapterId)
+                if (isSelected || isCurrentRequested)
+                {
+                    if (CurriculumRepository.TryGetChapter(info.ChapterId, out var ch))
                     {
-                        startIndex = i;
+                        var item = new SongItem
+                        {
+                            chapterId = info.ChapterId,
+                            title = info.Title,
+                            artist = info.Artist,
+                            thumbnailPath = info.ThumbnailPath,
+                            fullAudioPath = $"Audio/Songs/{info.ChapterId}/full",
+                            isFree = true,
+                            isPurchased = true
+                        };
+                        playlist.Add(item);
+
+                        // 방금 클릭한 노래의 인덱스 기억
+                        if (isCurrentRequested)
+                        {
+                            startIndex = playlist.Count - 1;
+                        }
                     }
                 }
             }
 
             if (playlist.Count > 0)
             {
+                // startIndex를 찾지 못했다면(현재 곡이 선택 안 된 상태에서 강제 재생 시 등) 0번부터
+                if (startIndex == -1) startIndex = 0;
                 MusicPlayerManager.Instance.PlayPlaylist(playlist, startIndex);
             }
         }

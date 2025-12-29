@@ -1,7 +1,7 @@
 .play-tab-root {
     flex-grow: 1;
     background-color: rgb(13, 17, 23);
-    padding-top: 260px;
+    padding-top: 200px;
     padding-bottom: 20px;
 }
 
@@ -75,11 +75,13 @@
 .song-card {
     flex-direction: row;
     align-items: center;
-    padding: 20px 24px;
-    margin-bottom: 16px;
+    padding: 16px 20px;
+    margin-bottom: 12px;
     background-color: rgb(22, 27, 34);
-    border-radius: 20px;
-    min-height: 180px;
+    border-radius: 16px;
+    min-height: 140px;
+    transition-property: background-color;
+    transition-duration: 0.2s;
 }
 
 .song-card:hover {
@@ -97,20 +99,31 @@
 
 .song-info {
     flex-grow: 1;
+    flex-shrink: 1;
     flex-direction: column;
     justify-content: center;
+    overflow: hidden;
+    padding-right: 12px;
 }
 
 .song-title {
-    font-size: 44px;
+    font-size: 32px;
     color: rgb(255, 255, 255);
     -unity-font-style: bold;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
+    overflow: hidden;
+    -unity-text-overflow-position: end;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .song-artist {
-    font-size: 38px;
+    font-size: 26px;
     color: rgb(139, 148, 158);
+    overflow: hidden;
+    -unity-text-overflow-position: end;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .song-action-area {
@@ -120,14 +133,32 @@
 }
 
 .owned-check {
-    width: 72px;
-    height: 72px;
+    width: 64px;
+    height: 64px;
     background-image: resource('Icons/MenuIcon_Check_Disable');
     -unity-background-scale-mode: scale-to-fit;
     background-size: 100% 100%;
+    -unity-background-image-tint-color: rgba(180, 188, 198, 0.7);
+    transition-property: -unity-background-image-tint-color, scale;
+    transition-duration: 0.15s;
+}
+
+.owned-check.active {
+    background-image: resource('Icons/MenuIcon_Check_Focus');
+    -unity-background-image-tint-color: rgb(29, 233, 182);
+}
+
+.owned-check:hover {
+    scale: 1.1;
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+}
+
+.owned-check.active:hover {
+    -unity-background-image-tint-color: rgb(50, 255, 200);
 }
 
 .play-song-button {
+    display: none;
     width: 140px;
     height: 82px;
     background-color: transparent;
@@ -135,7 +166,7 @@
     border-width: 4px;
     border-color: rgb(29, 233, 182);
     -unity-background-scale-mode: scale-to-fit;
-    margin-right: 100px;
+    margin-right: 20px;
     min-width: 140px;
 }
 
@@ -144,21 +175,30 @@
 }
 
 .buy-button {
-    min-width: 130px;
-    height: 92px;
-    background-color: rgb(33, 38, 45);
-    border-width: 2px;
-    border-color: rgb(29, 185, 84);
-    border-radius: 16px;
-    font-size: 36px;
-    color: rgb(29, 185, 84);
+    min-width: 140px;
+    height: 100px;
+    background-color: rgba(255, 215, 0, 0.05);
+    border-width: 2.5px;
+    border-color: rgb(255, 215, 0);
+    border-radius: 18px;
+    font-size: 30px;
+    color: rgb(255, 215, 0);
     -unity-text-align: middle-center;
-    padding: 8px 16px;
+    -unity-font-style: bold;
+    padding: 4px 12px;
+    transition-property: background-color, border-color, scale;
+    transition-duration: 0.2s;
 }
 
 .buy-button:hover {
-    background-color: rgb(29, 185, 84);
-    color: rgb(255, 255, 255);
+    background-color: rgb(255, 215, 0);
+    color: rgb(13, 17, 23);
+    scale: 1.05;
+}
+
+.buy-button:active {
+    scale: 0.95;
+    background-color: rgb(218, 165, 32);
 }
 
 .buy-button:disabled {

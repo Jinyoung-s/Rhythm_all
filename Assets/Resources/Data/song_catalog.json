@@ -94,6 +94,25 @@
                 "Rock"
             ],
             "description": "신나는 팝록"
+        },
+        {
+            "chapterId": "pvb_chap_001",
+            "title": "Morning Routine",
+            "artist": "Rhythm English",
+            "difficulty": "Elementary",
+            "price": 500,
+            "duration": 180,
+            "isFree": false,
+            "isPurchased": false,
+            "purchaseDate": "",
+            "thumbnailPath": "Covers/pvb_chap_001/step_001",
+            "fullAudioPath": "Audio/Songs/pvb_chap_001/full",
+            "previewAudioPath": "Audio/Songs/pvb_chap_001/preview",
+            "tags": [
+                "Phrasal Verbs",
+                "Routine"
+            ],
+            "description": "구동사로 배우는 아침 일과"
         }
     ]
 }
