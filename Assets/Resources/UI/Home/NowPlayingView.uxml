@@ -17,23 +17,33 @@
         <ui:VisualElement class="header-spacer" />
       </ui:VisualElement>
       
-      <!-- 중앙: 앨범 아트 + 곡 정보 -->
+      <!-- 중앙: 가사 & 곡 정보 -->
       <ui:VisualElement class="now-playing-content">
         
-        <!-- 앨범 아트 -->
-        <ui:VisualElement name="AlbumArtContainer" class="album-art-container">
-          <ui:VisualElement name="AlbumArt" class="album-art" />
+        <!-- 가사 영역 (확장 가능) -->
+        <ui:VisualElement name="LyricsContainer" class="lyrics-container">
+          <ui:ScrollView name="LyricsScroll" class="lyrics-scroll">
+            <ui:Label name="LyricsText" class="lyrics-text" text="가사를 불러오는 중..." />
+          </ui:ScrollView>
         </ui:VisualElement>
-        
-        <!-- 곡 정보 -->
-        <ui:VisualElement class="song-info-section">
-          <ui:Label name="SongTitle" class="now-playing-title" text="곡 제목" />
-          <ui:Label name="ArtistName" class="now-playing-artist" text="아티스트" />
+
+        <!-- 곡 기본 정보 & 보컬 볼륨 제어 -->
+        <ui:VisualElement class="song-meta-section">
+            <ui:VisualElement name="AlbumArt" class="album-art-mini" />
+            <ui:VisualElement class="title-vocal-row">
+                <ui:VisualElement class="song-titles">
+                    <ui:Label name="SongTitle" class="now-playing-title" text="곡 제목" />
+                    <ui:Label name="ArtistName" class="now-playing-artist" text="아티스트" />
+                </ui:VisualElement>
+                
+                <!-- 보컬 볼륨 섹션 -->
+                <ui:VisualElement class="vocal-control-section">
+                    <ui:Label text="VOCAL" class="vocal-label" />
+                    <ui:Slider name="VocalVolumeSlider" class="vocal-slider" low-value="0" high-value="1" value="1" />
+                </ui:VisualElement>
+            </ui:VisualElement>
         </ui:VisualElement>
-        
-        <!-- 즐겨찾기 버튼 -->
-        <ui:Button name="FavoriteButton" class="favorite-button" text="♡" />
-        
+
         <!-- 진행바 -->
         <ui:VisualElement class="progress-section">
           <ui:Slider name="ProgressSlider" class="progress-slider" low-value="0" high-value="1" value="0" />
@@ -45,11 +55,11 @@
         
         <!-- 재생 컨트롤 -->
         <ui:VisualElement class="playback-controls">
-          <ui:Button name="ShuffleButton" class="control-button mode-button" text="🔀" />
-          <ui:Button name="PrevButton" class="control-button nav-button" text="⏮" />
-          <ui:Button name="PlayPauseButton" class="control-button play-button" text="▶" />
-          <ui:Button name="NextButton" class="control-button nav-button" text="⏭" />
-          <ui:Button name="RepeatButton" class="control-button mode-button" text="🔁" />
+          <ui:Button name="ShuffleButton" class="control-button mode-button icon-shuffle" />
+          <ui:Button name="PrevButton" class="control-button nav-button icon-prev" />
+          <ui:Button name="PlayPauseButton" class="control-button play-button icon-play" />
+          <ui:Button name="NextButton" class="control-button nav-button icon-next" />
+          <ui:Button name="RepeatButton" class="control-button mode-button icon-repeat" />
         </ui:VisualElement>
         
       </ui:VisualElement>

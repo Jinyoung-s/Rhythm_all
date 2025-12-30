@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -35,7 +36,6 @@ public class MusicPlayerController : MonoBehaviour
     private VisualElement albumArt;
     private Label songTitle;
     private Label artistName;
-    private Button favoriteButton;
     private Slider progressSlider;
     private Label currentTimeLabel;
     private Label totalTimeLabel;
@@ -45,6 +45,22 @@ public class MusicPlayerController : MonoBehaviour
     private Button nextButton;
     private Button repeatButton;
     private Button backButton;
+
+    // 신규 추가 요소
+    private Slider vocalVolumeSlider;
+    private VisualElement lyricsTextLine; // 레거시 참조 및 레이아웃 용
+    private ScrollView lyricsScroll;
+
+    // 가사 하이라이팅을 위한 데이터
+    private class LyricsLine 
+    { 
+        public string text; 
+        public float startTime; 
+        public float endTime; 
+        public Label label; 
+    }
+    private List<LyricsLine> currentLyricsLines = new List<LyricsLine>();
+    private int currentLyricIndex = -1;
 
     // State
     private bool isDraggingSlider = false;
@@ -483,20 +499,29 @@ public class MusicPlayerController : MonoBehaviour
         if (nowPlayingOverlay != null)
         {
             nowPlayingOverlay.RemoveFromClassList("hidden");
+            if (uiDocument != null) uiDocument.sortingOrder = 10; // 플레이 화면 오픈 시 맨 앞으로
+            UpdateNowPlayingUI(); // 매번 최신 상태로 갱신
             isNowPlayingVisible = true;
             return;
         }
 
         // 생성
-        nowPlayingOverlay = nowPlayingViewUxml.CloneTree().Q<VisualElement>("NowPlayingOverlay");
-        root.Add(nowPlayingOverlay);
+        var template = nowPlayingViewUxml.CloneTree();
+        // 템플릿 컨테이너 스타일 설정: 전체 화면을 차지하면서 클릭은 통과시킴 (하위 요소만 클릭 가능하게)
+        template.style.position = Position.Absolute;
+        template.style.width = new Length(100, LengthUnit.Percent);
+        template.style.height = new Length(100, LengthUnit.Percent);
+        template.pickingMode = PickingMode.Ignore;
+
+        nowPlayingOverlay = template.Q<VisualElement>("NowPlayingOverlay");
+        root.Add(template);
+        if (uiDocument != null) uiDocument.sortingOrder = 10; // 생성 시에도 맨 앞으로
 
         // UI 요소 바인딩
         backButton = nowPlayingOverlay.Q<Button>("BackButton");
         albumArt = nowPlayingOverlay.Q<VisualElement>("AlbumArt");
         songTitle = nowPlayingOverlay.Q<Label>("SongTitle");
         artistName = nowPlayingOverlay.Q<Label>("ArtistName");
-        favoriteButton = nowPlayingOverlay.Q<Button>("FavoriteButton");
         progressSlider = nowPlayingOverlay.Q<Slider>("ProgressSlider");
         currentTimeLabel = nowPlayingOverlay.Q<Label>("CurrentTime");
         totalTimeLabel = nowPlayingOverlay.Q<Label>("TotalTime");
@@ -506,23 +531,64 @@ public class MusicPlayerController : MonoBehaviour
         nextButton = nowPlayingOverlay.Q<Button>("NextButton");
         repeatButton = nowPlayingOverlay.Q<Button>("RepeatButton");
 
+        // 신규 요소 바인딩
+        vocalVolumeSlider = nowPlayingOverlay.Q<Slider>("VocalVolumeSlider");
+        lyricsTextLine = nowPlayingOverlay.Q<Label>("LyricsText"); // UI에서 여전히 이 이름일 것임
+        lyricsScroll = nowPlayingOverlay.Q<ScrollView>("LyricsScroll");
+
         // 이벤트 바인딩
         backButton?.RegisterCallback<ClickEvent>(evt => HideNowPlaying());
-        favoriteButton?.RegisterCallback<ClickEvent>(evt => OnFavoriteClicked());
         shuffleButton?.RegisterCallback<ClickEvent>(evt => OnShuffleClicked());
         prevButton?.RegisterCallback<ClickEvent>(evt => OnPrevClicked());
         playPauseButton?.RegisterCallback<ClickEvent>(evt => OnPlayPauseClicked());
         nextButton?.RegisterCallback<ClickEvent>(evt => OnNextClicked());
         repeatButton?.RegisterCallback<ClickEvent>(evt => OnRepeatClicked());
 
-        // 슬라이더 이벤트
+        // 진행바 설정 및 이벤트
         if (progressSlider != null)
         {
-            progressSlider.RegisterCallback<PointerDownEvent>(evt => isDraggingSlider = true);
-            progressSlider.RegisterCallback<PointerUpEvent>(evt =>
+            progressSlider.lowValue = 0f;
+            progressSlider.highValue = 1f;
+
+            // 드래그 시작 감지
+            progressSlider.RegisterCallback<PointerDownEvent>(evt => {
+                isDraggingSlider = true;
+                Debug.Log($"[LyricsDebug] Slider Drag Start - Value: {progressSlider.value}");
+            }, TrickleDown.TrickleDown);
+
+            // 드래그 종료 감지 (포인터 캡처 해제 시)
+            progressSlider.RegisterCallback<PointerCaptureOutEvent>(evt => {
+                if (isDraggingSlider) {
+                    float targetPos = progressSlider.value;
+                    Debug.Log($"[LyricsDebug] Slider Drag End (Capture Released) - Target: {targetPos}");
+                    
+                    MusicPlayerManager.Instance.Seek(targetPos);
+                    UpdateLyricsHighlight(targetPos * MusicPlayerManager.Instance.Duration);
+                    
+                    isDraggingSlider = false;
+                }
+            });
+
+            // 드래그 중 시간 업데이트
+            progressSlider.RegisterValueChangedCallback(evt => {
+                if (isDraggingSlider) {
+                    float duration = MusicPlayerManager.Instance.Duration;
+                    float dragTime = evt.newValue * duration;
+                    int minutes = Mathf.FloorToInt(dragTime / 60);
+                    int seconds = Mathf.FloorToInt(dragTime % 60);
+                    if (currentTimeLabel != null) currentTimeLabel.text = $"{minutes}:{seconds:D2}";
+                }
+            });
+        }
+
+        // 보컬 슬라이더 이벤트
+        if (vocalVolumeSlider != null)
+        {
+            vocalVolumeSlider.lowValue = 0f;
+            vocalVolumeSlider.highValue = 1f;
+            vocalVolumeSlider.RegisterValueChangedCallback(evt =>
             {
-                isDraggingSlider = false;
-                MusicPlayerManager.Instance.Seek(progressSlider.value);
+                MusicPlayerManager.Instance.VocalVolume = evt.newValue;
             });
         }
 
@@ -533,6 +599,7 @@ public class MusicPlayerController : MonoBehaviour
     private void HideNowPlaying()
     {
         nowPlayingOverlay?.AddToClassList("hidden");
+        if (uiDocument != null) uiDocument.sortingOrder = 0; // 뒤로 가기 시 원래 순서로
         isNowPlayingVisible = false;
     }
 
@@ -562,14 +629,126 @@ public class MusicPlayerController : MonoBehaviour
             totalTimeLabel.text = currentSong.GetFormattedDuration();
         }
 
-        // 즐겨찾기 상태
-        bool isFavorite = player.IsFavorite(currentSong.chapterId);
-        UpdateFavoriteButton(isFavorite);
+        // 가사 로드 및 표시
+        UpdateLyrics(currentSong);
+
+        // 보컬 볼륨 슬라이더 값 동기화
+        if (vocalVolumeSlider != null)
+        {
+            vocalVolumeSlider.value = player.VocalVolume;
+        }
 
         // 셔플/반복 상태
         UpdateShuffleButton(player.IsShuffleOn);
         UpdateRepeatButton(player.CurrentRepeatMode);
         UpdatePlayPauseButton(player.IsPlaying);
+    }
+
+    private void UpdateLyrics(SongItem song)
+    {
+        if (lyricsScroll == null) return;
+
+        lyricsScroll.Clear();
+        currentLyricsLines.Clear();
+        currentLyricIndex = -1;
+
+        if (CurriculumRepository.TryGetChapter(song.chapterId, out var chapter))
+        {
+            var step = chapter.Steps.FirstOrDefault();
+            if (step != null)
+            {
+                TextAsset lyricsAsset = StepResourceResolver.LoadLyricsAsset(song.chapterId, step);
+                if (lyricsAsset != null)
+                {
+                    var rawItems = ParseLyricsJson(lyricsAsset.text);
+                    if (rawItems != null && rawItems.Count > 0)
+                    {
+                        LyricsLine currentLine = new LyricsLine { startTime = rawItems[0].start };
+                        System.Text.StringBuilder sb = new System.Text.StringBuilder();
+                        float lastEndTime = 0;
+
+                        for (int i = 0; i < rawItems.Count; i++)
+                        {
+                            var item = rawItems[i];
+                            bool isLongGap = i > 0 && (item.start - lastEndTime > 1.2f);
+
+                            if (isLongGap && sb.Length > 0)
+                            {
+                                currentLine.text = sb.ToString().Trim();
+                                currentLine.endTime = lastEndTime;
+                                AddLyricLineToUI(currentLine);
+                                currentLine = new LyricsLine { startTime = item.start };
+                                sb.Clear();
+                            }
+
+                            sb.Append(item.word).Append(" ");
+                            lastEndTime = item.end;
+                        }
+
+                        if (sb.Length > 0)
+                        {
+                            currentLine.text = sb.ToString().Trim();
+                            currentLine.endTime = lastEndTime;
+                            AddLyricLineToUI(currentLine);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    private void AddLyricLineToUI(LyricsLine line)
+    {
+        var label = new Label(line.text);
+        label.AddToClassList("lyrics-text-line");
+        lyricsScroll.Add(label);
+        line.label = label;
+        currentLyricsLines.Add(line);
+    }
+
+    private void UpdateLyricsHighlight(float currentTime)
+    {
+        if (currentLyricsLines == null || currentLyricsLines.Count == 0) return;
+
+        int foundIndex = -1;
+        for (int i = 0; i < currentLyricsLines.Count; i++)
+        {
+            if (currentTime >= currentLyricsLines[i].startTime)
+                foundIndex = i;
+            if (currentTime < currentLyricsLines[i].startTime)
+                break;
+        }
+
+        if (foundIndex != -1 && foundIndex != currentLyricIndex)
+        {
+            if (currentLyricIndex != -1)
+                currentLyricsLines[currentLyricIndex].label.RemoveFromClassList("active");
+
+            currentLyricIndex = foundIndex;
+            var activeLabel = currentLyricsLines[currentLyricIndex].label;
+            activeLabel.AddToClassList("active");
+            lyricsScroll.ScrollTo(activeLabel);
+        }
+    }
+
+    // 데이터 파싱 내부 클래스 (레거시 유지하되 내부 호출용)
+    private class LyricItem { public string word; public float start; public float end; }
+    private List<LyricItem> ParseLyricsJson(string json)
+    {
+        var list = new List<LyricItem>();
+        try {
+            var regex = new System.Text.RegularExpressions.Regex("\"word\"\\s*:\\s*\"([^\"]+)\"\\s*,\\s*\"start\"\\s*:\\s*([0-9.]+)\\s*,\\s*\"end\"\\s*:\\s*([0-9.]+)");
+            var matches = regex.Matches(json);
+            foreach (System.Text.RegularExpressions.Match m in matches)
+            {
+                list.Add(new LyricItem {
+                    word = m.Groups[1].Value,
+                    start = float.Parse(m.Groups[2].Value),
+                    end = float.Parse(m.Groups[3].Value)
+                });
+            }
+        } catch { }
+        return list;
     }
 
     // ========== 이벤트 핸들러 ==========
@@ -587,14 +766,18 @@ public class MusicPlayerController : MonoBehaviour
     {
         if (!isDraggingSlider && progressSlider != null)
         {
-            progressSlider.value = position;
+            progressSlider.SetValueWithoutNotify(position);
         }
+
+        float currTime = MusicPlayerManager.Instance.CurrentTime;
+        
+        // 가사 하이라이트 업데이트 호출
+        UpdateLyricsHighlight(currTime);
 
         if (currentTimeLabel != null)
         {
-            float currentTime = MusicPlayerManager.Instance.CurrentTime;
-            int minutes = Mathf.FloorToInt(currentTime / 60);
-            int seconds = Mathf.FloorToInt(currentTime % 60);
+            int minutes = Mathf.FloorToInt(currTime / 60);
+            int seconds = Mathf.FloorToInt(currTime % 60);
             currentTimeLabel.text = $"{minutes}:{seconds:D2}";
         }
     }
@@ -629,6 +812,8 @@ public class MusicPlayerController : MonoBehaviour
         // Chapter에서 오디오 경로 가져오기
         if (CurriculumRepository.TryGetChapter(songInfo.ChapterId, out var chapter))
         {
+            var stepData = chapter.Steps.FirstOrDefault(s => s.id == songInfo.StepId);
+            
             // SongItem 생성하여 MusicPlayerManager에 전달
             var songItem = new SongItem
             {
@@ -636,7 +821,13 @@ public class MusicPlayerController : MonoBehaviour
                 title = songInfo.Title,
                 artist = songInfo.Artist,
                 thumbnailPath = songInfo.ThumbnailPath,
-                fullAudioPath = $"Audio/Songs/{songInfo.ChapterId}/full",
+                fullAudioPath = $"mp3/{songInfo.ChapterId}/full", // 레거시 혹은 기본
+                vocalAudioPath = stepData != null && !string.IsNullOrEmpty(stepData.vocalFile) 
+                    ? $"mp3/{songInfo.ChapterId}/{Path.GetFileNameWithoutExtension(stepData.vocalFile)}" 
+                    : null,
+                instrumentalAudioPath = stepData != null && !string.IsNullOrEmpty(stepData.instrumentalFile) 
+                    ? $"mp3/{songInfo.ChapterId}/{Path.GetFileNameWithoutExtension(stepData.instrumentalFile)}" 
+                    : null,
                 isFree = true,
                 isPurchased = true
             };
@@ -656,13 +847,20 @@ public class MusicPlayerController : MonoBehaviour
                 {
                     if (CurriculumRepository.TryGetChapter(info.ChapterId, out var ch))
                     {
+                        var sData = ch.Steps.FirstOrDefault(s => s.id == info.StepId);
                         var item = new SongItem
                         {
                             chapterId = info.ChapterId,
                             title = info.Title,
                             artist = info.Artist,
                             thumbnailPath = info.ThumbnailPath,
-                            fullAudioPath = $"Audio/Songs/{info.ChapterId}/full",
+                            fullAudioPath = $"mp3/{info.ChapterId}/full",
+                            vocalAudioPath = sData != null && !string.IsNullOrEmpty(sData.vocalFile) 
+                                ? $"mp3/{info.ChapterId}/{Path.GetFileNameWithoutExtension(sData.vocalFile)}" 
+                                : null,
+                            instrumentalAudioPath = sData != null && !string.IsNullOrEmpty(sData.instrumentalFile) 
+                                ? $"mp3/{info.ChapterId}/{Path.GetFileNameWithoutExtension(sData.instrumentalFile)}" 
+                                : null,
                             isFree = true,
                             isPurchased = true
                         };
@@ -746,7 +944,16 @@ public class MusicPlayerController : MonoBehaviour
     {
         if (playPauseButton != null)
         {
-            playPauseButton.text = isPlaying ? "⏸" : "▶";
+            if (isPlaying)
+            {
+                playPauseButton.RemoveFromClassList("icon-play");
+                playPauseButton.AddToClassList("icon-pause");
+            }
+            else
+            {
+                playPauseButton.RemoveFromClassList("icon-pause");
+                playPauseButton.AddToClassList("icon-play");
+            }
         }
     }
 
@@ -765,7 +972,7 @@ public class MusicPlayerController : MonoBehaviour
     {
         if (repeatButton != null)
         {
-            repeatButton.text = mode == RepeatMode.One ? "🔂" : "🔁";
+            // repeatButton.text = mode == RepeatMode.One ? "🔂" : "🔁"; // 아이콘으로 대체됨
 
             if (mode != RepeatMode.Off)
                 repeatButton.AddToClassList("active");
@@ -776,6 +983,7 @@ public class MusicPlayerController : MonoBehaviour
 
     private void UpdateFavoriteButton(bool isFavorite)
     {
+        /*
         if (favoriteButton != null)
         {
             favoriteButton.text = isFavorite ? "♥" : "♡";
@@ -784,5 +992,6 @@ public class MusicPlayerController : MonoBehaviour
             else
                 favoriteButton.RemoveFromClassList("active");
         }
+        */
     }
 }

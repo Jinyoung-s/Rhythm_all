@@ -74,6 +74,16 @@ namespace RhythmEnglish.Economy
         /// 전체 곡 오디오 경로
         /// </summary>
         public string fullAudioPath;
+
+        /// <summary>
+        /// 보컬 트랙 경로
+        /// </summary>
+        public string vocalAudioPath;
+
+        /// <summary>
+        /// 인스트(MR) 트랙 경로
+        /// </summary>
+        public string instrumentalAudioPath;
         
         /// <summary>
         /// 미리듣기 오디오 경로 (30초)

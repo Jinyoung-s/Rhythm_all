@@ -6,6 +6,8 @@
       "title": "Morning Routine — Wake up and start your day",
       "sentence": "Wake up, get up, and turn off the alarm.",
       "songFile": "wakeup.mp3",
+      "vocalFile": "step_001_vocal.mp3",
+      "instrumentalFile": "step_001_inst.mp3",
       "lyricsFile": "wake_up_lyrics.json",
       "unlocked": true
     },
@@ -14,6 +16,8 @@
       "title": "Pick up, Put down",
       "sentence": "Pick up your things and carry on with your day.",
       "songFile": "step_002.mp3",
+      "vocalFile": "step_002_vocal.mp3",
+      "instrumentalFile": "step_002_inst.mp3",
       "lyricsFile": "step_002_lyrics.json",
       "unlocked": true
     },

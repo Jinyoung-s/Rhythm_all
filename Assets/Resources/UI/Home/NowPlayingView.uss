@@ -5,17 +5,19 @@
 
 .now-playing-overlay {
     position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background-color: #0D1117;
+    width: 100%;
+    height: 100%;
+    background-color: #0B0E14;
+    padding: 20px 40px 300px 40px; /* 탭 바 간섭 방지를 위해 하단 패딩 300px까지 대폭 확대 */
+    flex-direction: column;
 }
 
 .now-playing-container {
     flex-grow: 1;
-    padding: 40px 32px;
-    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    padding-bottom: 0px; 
 }
 
 /* ========== Header ========== */
@@ -51,101 +53,177 @@
 /* ========== Content ========== */
 .now-playing-content {
     flex-grow: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding-top: 40px;
 }
 
-/* Album Art */
-.album-art-container {
-    width: 600px;
-    height: 600px;
-    margin-bottom: 60px;
-}
-
-.album-art {
+.lyrics-container {
+    flex-grow: 1;
     width: 100%;
-    height: 100%;
-    background-color: #21262D;
-    border-radius: 24px;
+    min-height: 80px; /* 가사 영역 최소 높이를 더 줄여 버튼 공간 확보 */
+    margin-bottom: 5px;
+    background-color: transparent;
+    padding: 20px 0;
 }
 
-/* Song Info */
-.song-info-section {
+.lyrics-scroll {
+    flex-grow: 1;
+    width: 100%;
+}
+
+/* 스크롤바 완전 강제 제거 */
+.lyrics-scroll .Scroller, 
+.lyrics-scroll .unity-scroller {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    display: none;
+}
+
+.lyrics-text-line {
+    font-size: 36px; /* 글자 크기 약간 미세 조정 */
+    color: rgba(255, 255, 255, 0.25);
+    white-space: normal;
+    -unity-text-align: middle-left; /* 왼쪽 정렬로 변경 */
+    padding: 15px 80px; /* 좌측 여백을 더 확보 */
+    transition-property: color, scale;
+    transition-duration: 0.4s;
+    -unity-font-style: bold;
+}
+
+.lyrics-text-line.active {
+    color: #FFFFFF;
+    scale: 1.05;
+}
+
+/* Song Meta & Vocal Section */
+.song-meta-section {
+    flex-direction: row;
+    width: 100%;
+    padding: 0 32px;
     align-items: center;
-    margin-bottom: 32px;
-    width: 100%;
-    padding: 0 40px;
+    margin-bottom: 24px;
+    flex-shrink: 0;
+}
+
+.album-art-mini {
+    width: 120px;
+    height: 120px;
+    background-color: #21262D;
+    border-radius: 16px;
+    margin-right: 24px;
+    flex-shrink: 0;
+}
+
+.title-vocal-row {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row; /* 가로 배치로 변경 */
+    align-items: center; /* 세로 중앙 정렬 */
+    justify-content: space-between; /* 우측 끝으로 밀기 */
+}
+
+.song-titles {
+    flex-shrink: 1; /* 제목이 너무 길 경우 볼륨 영역을 밀지 않게 설정 */
+    margin-right: 16px;
 }
 
 .now-playing-title {
-    font-size: 52px;
+    font-size: 36px;
     color: #FFFFFF;
     -unity-font-style: bold;
-    -unity-text-align: middle-center;
-    margin-bottom: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .now-playing-artist {
-    font-size: 40px;
+    font-size: 28px;
     color: #8B949E;
-    -unity-text-align: middle-center;
 }
 
-/* Favorite Button */
-.favorite-button {
-    width: 72px;
-    height: 72px;
-    background-color: transparent;
-    border-width: 0;
-    font-size: 48px;
-    color: #8B949E;
-    margin-bottom: 40px;
+/* Vocal Control */
+.vocal-control-section {
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(255, 215, 0, 0.1);
+    padding: 10px 16px;
+    border-radius: 16px;
+    flex-shrink: 0; /* 볼륨 영역 크기 고정 */
 }
 
-.favorite-button:hover {
-    color: #FFFFFF;
+.vocal-label {
+    font-size: 24px;
+    color: rgb(255, 215, 0);
+    -unity-font-style: bold;
+    margin-right: 20px;
 }
 
-.favorite-button.active {
-    color: #FF6B6B;
+.vocal-slider {
+    width: 150px; /* 기존 250px에서 축소 */
+    height: 32px;
+    justify-content: center;
+}
+
+.vocal-slider .unity-base-slider__dragger {
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    background-color: rgb(255, 215, 0);
+    top: 50%;
+    margin-top: -12px; /* 높이 24의 절반 */
+    position: absolute;
+}
+
+.vocal-slider .unity-base-slider__tracker {
+    height: 8px;
+    border-radius: 4px;
+    background-color: rgba(255, 215, 0, 0.2);
+    top: 50%;
+    margin-top: -4px; /* 높이 8의 절반 */
 }
 
 /* Progress Section */
 .progress-section {
     width: 100%;
-    max-width: 900px;
-    margin-bottom: 60px;
-    padding: 0 32px;
+    margin-bottom: 40px;
+    padding: 0 40px;
 }
 
 .progress-slider {
     width: 100%;
-    height: 24px;
+    height: 40px; /* 터치 영역 확대 */
+    justify-content: center;
 }
 
 .progress-slider .unity-base-slider__dragger {
-    width: 36px;
-    height: 36px;
-    border-radius: 18px;
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
     background-color: #1DB954;
-    margin-top: -6px;
+    top: 50%;
+    margin-top: -16px; /* 높이 32의 절반 */
+    position: absolute;
 }
 
 .progress-slider .unity-base-slider__tracker {
-    height: 12px;
-    border-radius: 6px;
+    height: 10px;
+    border-radius: 5px;
     background-color: #21262D;
+    top: 50%;
+    margin-top: -5px; /* 높이 10의 절반 */
 }
 
 .time-labels {
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 16px;
+    margin-top: 12px;
 }
 
 .time-label {
-    font-size: 32px;
+    font-size: 28px;
     color: #8B949E;
 }
 
@@ -153,50 +231,78 @@
 .playback-controls {
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
+    padding: 10px 40px; /* 패딩 축소 */
+    margin-top: 5px;
 }
 
 .control-button {
     background-color: transparent;
     border-width: 0;
-    color: #FFFFFF;
-    margin: 0 16px;
+    margin: 0; /* space-between을 사용하므로 개별 마진은 제거 */
+    -unity-background-scale-mode: scale-to-fit;
+    padding: 0;
+    transition-property: scale, -unity-background-image-tint-color;
+    transition-duration: 0.1s;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.control-button:hover {
-    color: #1DB954;
+.control-button:active {
+    scale: 0.85;
 }
 
 .mode-button {
-    width: 72px;
-    height: 72px;
-    font-size: 40px;
-    color: #8B949E;
-}
-
-.mode-button.active {
-    color: #1DB954;
+    width: 50px;  /* 셔플, 반복 아이콘 크기 축소 */
+    height: 50px;
+    -unity-background-image-tint-color: rgba(255, 255, 255, 0.4);
 }
 
 .nav-button {
-    width: 100px;
-    height: 100px;
-    font-size: 56px;
+    width: 90px;  /* 이전, 다음 버튼 크기 확대 */
+    height: 90px;
+    -unity-background-image-tint-color: #FFFFFF;
 }
 
 .play-button {
-    width: 140px;
-    height: 140px;
-    font-size: 72px;
-    background-color: #1DB954;
-    border-radius: 70px;
-    color: #FFFFFF;
+    width: 125px; /* 재생 버튼 크기 확대 */
+    height: 125px;
+    -unity-background-image-tint-color: #FFFFFF;
 }
 
-.play-button:hover {
-    background-color: #1ED760;
-    color: #FFFFFF;
+/* Icons */
+.icon-shuffle {
+    background-image: url('project://database/Assets/Resources/Icons/shuffle.png');
+}
+
+.icon-shuffle.active {
+    -unity-background-image-tint-color: #1DB954;
+}
+
+.icon-prev {
+    background-image: url('project://database/Assets/Resources/Icons/btn_prev.png');
+}
+
+.icon-play {
+    background-image: url('project://database/Assets/Resources/Icons/btn_play.png');
+}
+
+.icon-pause {
+    background-image: url('project://database/Assets/Resources/Icons/btn_pause.png');
+}
+
+.icon-next {
+    background-image: url('project://database/Assets/Resources/Icons/btn_next1.png');
+}
+
+.icon-repeat {
+    background-image: url('project://database/Assets/Resources/Icons/repeat.png');
+}
+
+.icon-repeat.active {
+    -unity-background-image-tint-color: #1DB954;
 }
 
 /* ========== Utility ========== */
