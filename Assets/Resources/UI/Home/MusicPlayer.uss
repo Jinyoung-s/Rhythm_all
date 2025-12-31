@@ -228,7 +228,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    right: 140px;
+    right: 160px; /* 88px 아이콘 + 여백 */
     bottom: 0;
 }
 
@@ -245,6 +245,9 @@
     flex-grow: 1;
     flex-direction: column;
     justify-content: center;
+    overflow: hidden; /* 넘치는 텍스트 숨김 */
+    padding-right: 16px; /* 버튼과의 간격 확보 */
+    max-width: 100%; /* 최대 너비 제한 */
 }
 
 .mini-now-playing {
@@ -258,11 +261,17 @@
     color: rgb(255, 255, 255);
     -unity-font-style: bold;
     margin-bottom: 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; /* 한 줄로 제한 */
 }
 
 .mini-artist-name {
     font-size: 38px;
     color: rgb(139, 148, 158);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; /* 한 줄로 제한 */
 }
 
 .mini-controls {
@@ -272,17 +281,23 @@
 }
 
 .mini-control-button {
-    width: 64px;
-    height: 64px;
+    width: 88px;
+    height: 88px;
     background-color: transparent;
     border-width: 0;
-    font-size: 55px;
-    color: rgb(255, 255, 255);
     margin-left: 8px;
+    -unity-background-scale-mode: scale-to-fit;
+    transition-property: -unity-background-image-tint-color, scale;
+    transition-duration: 0.2s;
 }
 
 .mini-control-button:hover {
-    color: rgb(29, 185, 84);
+    -unity-background-image-tint-color: rgb(29, 185, 84);
+    scale: 1.1;
+}
+
+.mini-control-button:active {
+    scale: 0.9;
 }
 
 .mini-player.hidden {

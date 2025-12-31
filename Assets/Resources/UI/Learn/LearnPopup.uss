@@ -13,6 +13,12 @@
 
     background-color: rgba(0, 0, 0, 0.85);
     display: none;
+    
+    /* ✅ 다른 UI 위에 렌더링되도록 설정 */
+    -unity-slice-left: 0;
+    -unity-slice-top: 0;
+    -unity-slice-right: 0;
+    -unity-slice-bottom: 0;
 }
 
 /* =========================

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ui:UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ui="UnityEngine.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd"
+>
+  <ui:Style src="QueueView.uss" />
+  
+  <ui:VisualElement name="QueueOverlay" class="queue-overlay">
+    
+    <ui:VisualElement class="queue-container">
+      
+      <!-- Header -->
+      <ui:VisualElement class="queue-header">
+        <ui:Label class="queue-title" text="Up Next" />
+        <ui:Button name="CloseQueueButton" class="close-button" text="✕" />
+      </ui:VisualElement>
+      
+      <!-- Current Playing Section -->
+      <ui:VisualElement class="current-playing-section">
+        <ui:Label class="section-label" text="NOW PLAYING" />
+        <ui:VisualElement name="CurrentSongCard" class="current-song-container">
+          <!-- 동적으로 생성됨 -->
+        </ui:VisualElement>
+      </ui:VisualElement>
+      
+      <!-- Queue List -->
+      <ui:VisualElement class="queue-list-section">
+        <ui:VisualElement class="queue-list-header">
+          <ui:Label class="section-label" text="NEXT IN QUEUE" />
+          <ui:Label name="QueueCount" class="queue-count" text="0 songs" />
+        </ui:VisualElement>
+        <ui:ScrollView name="QueueList" class="queue-scroll">
+          <!-- 동적으로 생성됨 -->
+        </ui:ScrollView>
+      </ui:VisualElement>
+      
+      <!-- Empty State -->
+      <ui:VisualElement name="EmptyQueueState" class="empty-queue hidden">
+        <ui:Label class="empty-icon" text="🎵" />
+        <ui:Label class="empty-text" text="Your queue is empty" />
+        <ui:Label class="empty-subtext" text="Add songs from your library" />
+      </ui:VisualElement>
+      
+    </ui:VisualElement>
+    
+  </ui:VisualElement>
+  
+</ui:UXML>

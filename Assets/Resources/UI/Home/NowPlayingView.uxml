@@ -10,11 +10,11 @@
     
     <ui:VisualElement class="now-playing-container">
       
-      <!-- 상단: 뒤로가기 -->
+      <!-- 상단: 뒤로가기 + 큐 버튼 -->
       <ui:VisualElement class="now-playing-header">
-        <ui:Button name="BackButton" class="back-button" text="▼" />
+        <ui:Button name="BackButton" class="back-button" text="〈" />
         <ui:Label class="header-label" text="Now Playing" />
-        <ui:VisualElement class="header-spacer" />
+        <ui:Button name="QueueButton" class="queue-button icon-queue" />
       </ui:VisualElement>
       
       <!-- 중앙: 가사 & 곡 정보 -->
@@ -23,7 +23,6 @@
         <!-- 가사 영역 (확장 가능) -->
         <ui:VisualElement name="LyricsContainer" class="lyrics-container">
           <ui:ScrollView name="LyricsScroll" class="lyrics-scroll">
-            <ui:Label name="LyricsText" class="lyrics-text" text="가사를 불러오는 중..." />
           </ui:ScrollView>
         </ui:VisualElement>
 

@@ -86,9 +86,11 @@ public class MenuDialogController : MonoBehaviour
 
     private void OnExitStep()
     {
-        //HideMenuOnly();        
-        SceneNavigator.Load("StepScene");
+        // ✅ TimeScale 복구 (pause 상태에서 나갔을 수 있으므로)
+        Time.timeScale = 1f;
+        Debug.Log("[MenuDialog] OnExitStep: timeScale reset to 1");
         
+        SceneNavigator.Load("StepScene");
     }
 
     private void ShowMenuOnly()

@@ -943,6 +943,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MusicPlayerController
   nowPlayingViewUxml: {fileID: 9197481963319205126, guid: 70527be2d7f0d0241b40bafef8c4156a, type: 3}
+  queueViewUxml: {fileID: 9197481963319205126, guid: 90172ad6b3bb3e84cb0f4037e227cb18, type: 3}
 --- !u!1 &669702990
 GameObject:
   m_ObjectHideFlags: 0

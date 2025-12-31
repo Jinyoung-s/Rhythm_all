@@ -63,14 +63,14 @@
             </ui:VisualElement>
         </ui:ScrollView>
         <ui:VisualElement name="MiniPlayer" class="mini-player">
-            <ui:VisualElement name="MiniPlayerContent" class="mini-player-content">
+            <ui:VisualElement name="MiniPlayerContent" class="mini-player-content" picking-mode="Ignore">
                 <ui:VisualElement name="MiniAlbumArt" class="mini-album-art" />
                 <ui:VisualElement class="mini-song-info">
                     <ui:Label name="MiniSongTitle" text="Shape of You" class="mini-song-title" />
                     <ui:Label name="MiniArtistName" text="Ed Sheeran" class="mini-artist-name" />
                 </ui:VisualElement>
                 <ui:VisualElement class="mini-controls">
-                    <ui:Button name="MiniPlayPauseButton" text="▶" class="mini-control-button" />
+                    <ui:Button name="MiniPlayPauseButton" class="mini-control-button icon-play-mini" />
                 </ui:VisualElement>
             </ui:VisualElement>
             <ui:VisualElement name="MiniPlayerTapArea" class="mini-player-tap-area" />

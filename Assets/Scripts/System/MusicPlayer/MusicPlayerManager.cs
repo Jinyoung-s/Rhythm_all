@@ -68,6 +68,10 @@ public class MusicPlayerManager : MonoBehaviour
         }
     }
 
+    // Queue 정보 노출
+    public List<SongItem> CurrentPlaylist => GetCurrentPlaylist();
+    public int CurrentIndex => currentIndex;
+
     public void SetVocalVolume(float volume)
     {
         VocalVolume = volume;
@@ -106,16 +110,23 @@ public class MusicPlayerManager : MonoBehaviour
 
         LoadPlaylistData();
     }
+    
+    private bool wasPlayingLastFrame = false;
 
     private void Update()
     {
-        if (IsPlaying)
+        if (mrSource != null && mrSource.clip != null)
         {
-            OnPositionChanged?.Invoke(CurrentPosition);
-
-            // 곡 끝났는지 체크 (MR 소스 기준)
-            if (!mrSource.isPlaying && mrSource.time >= mrSource.clip.length - 0.1f)
+            // 재생 중일 때 위치 업데이트
+            if (mrSource.isPlaying)
             {
+                OnPositionChanged?.Invoke(CurrentPosition);
+                wasPlayingLastFrame = true;
+            }
+            // 재생이 멈췄고, 이전 프레임에서는 재생 중이었다면 곡이 끝난 것
+            else if (wasPlayingLastFrame && mrSource.time >= mrSource.clip.length - 0.1f)
+            {
+                wasPlayingLastFrame = false;
                 OnSongEnded();
             }
         }

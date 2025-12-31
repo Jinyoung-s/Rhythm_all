@@ -149,17 +149,31 @@ public class StepListLoader : MonoBehaviour
             {
                 learnButton.clicked += () =>
                 {
-                    Debug.LogWarning($"[StepListLoader] Button clicked for step: {stepContext.id}   ");
+                    Debug.Log($"[StepListLoader] Learn button clicked for step: {stepContext.id}");
+                    
+                    if (popupController == null)
+                    {
+                        Debug.LogError($"[StepListLoader] PopupController is NULL! Cannot show popup.");
+                        return;
+                    }
+                    
                     PersistContext();
                     var learnDataList = StepResourceResolver.LoadLearnAsset(chapterId, stepContext);
-                    if (learnDataList != null && learnDataList.steps != null)
+                    
+                    if (learnDataList == null)
                     {
-                        popupController?.Show(learnDataList.steps);
+                        Debug.LogError($"[StepListLoader] Learn data is NULL for step: {stepContext.id}");
+                        return;
                     }
-                    else
+                    
+                    if (learnDataList.steps == null || learnDataList.steps.Count == 0)
                     {
-                        Debug.LogWarning($"[StepListLoader] Learn data missing for step: {stepContext.id}");
+                        Debug.LogError($"[StepListLoader] Learn steps are NULL or empty for step: {stepContext.id}");
+                        return;
                     }
+                    
+                    Debug.Log($"[StepListLoader] Showing popup with {learnDataList.steps.Count} learn steps");
+                    popupController.Show(learnDataList.steps);
                 };
             }
 

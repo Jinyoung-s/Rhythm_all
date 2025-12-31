@@ -3,6 +3,7 @@ using System.IO;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UIElements;
+using Newtonsoft.Json;
 using RhythmEnglish.Economy;
 using RhythmEnglish.MusicPlayer;
 
@@ -14,9 +15,11 @@ public class MusicPlayerController : MonoBehaviour
 {
     [Header("UXML Assets")]
     [SerializeField] private VisualTreeAsset nowPlayingViewUxml;
+    [SerializeField] private VisualTreeAsset queueViewUxml;
 
     private UIDocument uiDocument;
     private VisualElement root;
+    private HeaderUI headerUI; // 헤더 참조
 
     // === 노래 리스트 UI ===
     private VisualElement songListContainer;
@@ -32,6 +35,7 @@ public class MusicPlayerController : MonoBehaviour
     private VisualElement miniPlayerTapArea;
 
     // === 전체 화면 플레이어 (Now Playing) ===
+    private VisualElement nowPlayingContainer; // 템플릿 컨테이너 참조 추가
     private VisualElement nowPlayingOverlay;
     private VisualElement albumArt;
     private Label songTitle;
@@ -45,11 +49,21 @@ public class MusicPlayerController : MonoBehaviour
     private Button nextButton;
     private Button repeatButton;
     private Button backButton;
+    private Button queueButton;
 
     // 신규 추가 요소
     private Slider vocalVolumeSlider;
     private VisualElement lyricsTextLine; // 레거시 참조 및 레이아웃 용
     private ScrollView lyricsScroll;
+
+    // === 큐 뷰 UI ===
+    private VisualElement queueContainer; // 템플릿 컨테이너 참조 추가
+    private VisualElement queueOverlay;
+    private Button closeQueueButton;
+    private VisualElement currentSongCard;
+    private ScrollView queueList;
+    private Label queueCount;
+    private VisualElement emptyQueueState;
 
     // 가사 하이라이팅을 위한 데이터
     private class LyricsLine 
@@ -65,7 +79,18 @@ public class MusicPlayerController : MonoBehaviour
     // State
     private bool isDraggingSlider = false;
     private bool isNowPlayingVisible = false;
+    private bool isQueueVisible = false;
     private Dictionary<string, bool> playlistSelection = new Dictionary<string, bool>(); // ChapterId -> IsSelected
+    private Coroutine showHeaderCoroutine; // 헤더 표시 코루틴 참조
+    private string playlistSelectionPath; // 플레이리스트 선택 저장 경로
+
+    // 플레이리스트 선택 저장용 클래스
+    [System.Serializable]
+    private class PlaylistSelectionData
+    {
+        public List<string> selectedSongs = new List<string>();
+        public List<string> unselectedSongs = new List<string>();
+    }
 
     private void Awake()
     {
@@ -76,6 +101,13 @@ public class MusicPlayerController : MonoBehaviour
         {
             uiDocument.sortingOrder = 0;
         }
+
+        // HeaderUI 찾기
+        headerUI = FindObjectOfType<HeaderUI>();
+        
+        // 플레이리스트 선택 저장 경로 설정
+        playlistSelectionPath = Path.Combine(Application.persistentDataPath, "playlist_selection.json");
+        LoadPlaylistSelection();
     }
 
     private void OnEnable()
@@ -84,11 +116,53 @@ public class MusicPlayerController : MonoBehaviour
         SubscribeToEvents();
         RefreshSongList();
         UpdateMiniPlayer();
+        
+        // Play 탭 활성화 시 헤더 표시 (Now Playing이 열려있지 않다면)
+        // 약간 딜레이를 주어 ShowNowPlaying()과의 경합 방지
+        if (!isNowPlayingVisible)
+        {
+            // 이전 코루틴이 실행 중이면 중단
+            if (showHeaderCoroutine != null)
+            {
+                StopCoroutine(showHeaderCoroutine);
+            }
+            showHeaderCoroutine = StartCoroutine(ShowHeaderAfterFrame());
+        }
+    }
+
+    private System.Collections.IEnumerator ShowHeaderAfterFrame()
+    {
+        yield return null; // 1프레임 대기
+        if (!isNowPlayingVisible)
+        {
+            headerUI?.Show();
+        }
     }
 
     private void OnDisable()
     {
         UnsubscribeFromEvents();
+        
+        // 탭 전환 시 UIDocument가 비활성화되면서 rootVisualElement가 비워집니다.
+        // 다시 활성화될 때 root가 새로 생성(rebuild)되므로, 
+        // 기존에 CloneTree로 생성해서 Add했던 오버레이 참조들을 null로 초기화해야 합니다.
+        if (nowPlayingOverlay != null)
+        {
+            if (uiDocument != null) uiDocument.sortingOrder = 0;
+        }
+
+        nowPlayingContainer = null;
+        nowPlayingOverlay = null;
+        queueContainer = null;
+        queueOverlay = null;
+        
+        // 상태 초기화
+        if (isNowPlayingVisible)
+        {
+            headerUI?.Show();
+            isNowPlayingVisible = false;
+        }
+        isQueueVisible = false;
     }
 
     // ========== 초기화 ==========
@@ -261,19 +335,29 @@ public class MusicPlayerController : MonoBehaviour
 
     private VisualElement CreateSongCard(CompletedSongInfo songInfo)
     {
+        // 클로저 캡처 문제 방지를 위해 로컬 복사본 생성
+        var localSongInfo = new CompletedSongInfo
+        {
+            ChapterId = songInfo.ChapterId,
+            StepId = songInfo.StepId,
+            Title = songInfo.Title,
+            Artist = songInfo.Artist,
+            ThumbnailPath = songInfo.ThumbnailPath
+        };
+
         var card = new VisualElement();
         card.AddToClassList("song-card");
 
         // SongItem 정보 가져오기 (가격 및 구매 상태 확인용)
-        var songData = SongShopManager.Instance.GetSongInfo(songInfo.ChapterId);
-        bool isPurchased = SongShopManager.Instance.IsPurchased(songInfo.ChapterId);
+        var songData = SongShopManager.Instance.GetSongInfo(localSongInfo.ChapterId);
+        bool isPurchased = SongShopManager.Instance.IsPurchased(localSongInfo.ChapterId);
 
         // 썸네일
         var thumbnail = new VisualElement();
         thumbnail.AddToClassList("song-thumbnail");
-        if (!string.IsNullOrEmpty(songInfo.ThumbnailPath))
+        if (!string.IsNullOrEmpty(localSongInfo.ThumbnailPath))
         {
-            var sprite = Resources.Load<Sprite>(songInfo.ThumbnailPath);
+            var sprite = Resources.Load<Sprite>(localSongInfo.ThumbnailPath);
             if (sprite != null)
             {
                 thumbnail.style.backgroundImage = new StyleBackground(sprite);
@@ -285,11 +369,11 @@ public class MusicPlayerController : MonoBehaviour
         var info = new VisualElement();
         info.AddToClassList("song-info");
 
-        var title = new Label(songInfo.Title);
+        var title = new Label(localSongInfo.Title);
         title.AddToClassList("song-title");
         info.Add(title);
 
-        var artistNameStr = songData != null ? songData.artist : songInfo.Artist;
+        var artistNameStr = songData != null ? songData.artist : localSongInfo.Artist;
         var artist = new Label(artistNameStr);
         artist.AddToClassList("song-artist");
         info.Add(artist);
@@ -307,24 +391,34 @@ public class MusicPlayerController : MonoBehaviour
             check.AddToClassList("owned-check");
             
             // 초기 상태 설정 (구매된 곡은 디폴트가 선택 상태)
-            if (!playlistSelection.ContainsKey(songInfo.ChapterId))
+            // ChapterId + StepId 조합으로 고유 키 생성
+            string songKey = $"{localSongInfo.ChapterId}_{localSongInfo.StepId}";
+            
+            if (!playlistSelection.ContainsKey(songKey))
             {
-                playlistSelection[songInfo.ChapterId] = true;
+                playlistSelection[songKey] = true;
+                SavePlaylistSelection(); // 초기 설정도 저장
+                Debug.Log($"[MusicPlayerController] New song added to playlist: {localSongInfo.Title} (Key: {songKey})");
             }
             
-            bool isSelected = playlistSelection[songInfo.ChapterId];
+            bool isSelected = playlistSelection[songKey];
             if (isSelected) check.AddToClassList("active");
 
             check.RegisterCallback<ClickEvent>(evt =>
             {
-                bool newState = !playlistSelection[songInfo.ChapterId];
-                playlistSelection[songInfo.ChapterId] = newState;
+                bool newState = !playlistSelection[songKey];
+                playlistSelection[songKey] = newState;
                 
                 if (newState) check.AddToClassList("active");
                 else check.RemoveFromClassList("active");
                 
-                Debug.Log($"[MusicPlayerController] Song {songInfo.Title} playlist selection: {newState}");
-                evt.StopPropagation(); // 카드 클릭(재생) 방지
+                Debug.Log($"[MusicPlayerController] 🔄 Song {localSongInfo.Title} (Key: {songKey}) selection changed to: {newState}");
+                SavePlaylistSelection(); // 변경 사항 저장
+                
+                // 카드 클릭 방지: 즉시 전파 중단 + 기본 동작 방지
+                evt.StopImmediatePropagation();
+                evt.StopPropagation();
+                evt.PreventDefault();
             });
 
             actionArea.Add(check);
@@ -348,7 +442,7 @@ public class MusicPlayerController : MonoBehaviour
                 else
                 {
                     // 카탈로그에 없는 경우에 대한 구매 로직 (기본 처리)
-                     Debug.LogWarning($"[MusicPlayerController] Song not in catalog: {songInfo.ChapterId}");
+                     Debug.LogWarning($"[MusicPlayerController] Song not in catalog: {localSongInfo.ChapterId}");
                 }
                 evt.StopPropagation();
             });
@@ -356,12 +450,28 @@ public class MusicPlayerController : MonoBehaviour
 
         card.Add(actionArea);
 
-        // 카드 전체 클릭 처리
+        // 카드 전체 클릭 처리 (localSongInfo 사용)
         card.RegisterCallback<ClickEvent>(evt =>
         {
+            // 체크 버튼이나 그 자식 요소 클릭은 무시
+            var clickedElement = evt.target as VisualElement;
+            
+            // 클릭된 요소 또는 그 부모 중 하나라도 owned-check 클래스를 가지고 있으면 무시
+            var current = clickedElement;
+            while (current != null)
+            {
+                if (current.ClassListContains("owned-check"))
+                {
+                    Debug.Log($"[MusicPlayerController] Check button (or its child) clicked, ignoring card click");
+                    return;
+                }
+                current = current.parent;
+            }
+            
+            Debug.Log($"[MusicPlayerController] Card clicked: {localSongInfo.Title}");
             if (isPurchased)
             {
-                PlaySong(songInfo);
+                PlaySong(localSongInfo);
                 ShowNowPlaying();
             }
             else if (songData != null)
@@ -490,6 +600,16 @@ public class MusicPlayerController : MonoBehaviour
 
     private void ShowNowPlaying()
     {
+        Debug.Log("[MusicPlayerController] ShowNowPlaying called");
+        
+        // 헤더 표시 코루틴 중단 (실행 중이라면)
+        if (showHeaderCoroutine != null)
+        {
+            StopCoroutine(showHeaderCoroutine);
+            showHeaderCoroutine = null;
+            Debug.Log("[MusicPlayerController] Stopped header coroutine");
+        }
+        
         if (nowPlayingViewUxml == null)
         {
             Debug.LogWarning("[MusicPlayerController] NowPlayingView UXML not assigned!");
@@ -498,24 +618,44 @@ public class MusicPlayerController : MonoBehaviour
 
         if (nowPlayingOverlay != null)
         {
+            Debug.Log($"[MusicPlayerController] Showing existing Now Playing overlay - hasHiddenClass: {nowPlayingOverlay.ClassListContains("hidden")}");
+            
+            // 중요: 컨테이너 자체를 보여주고 pickingMode를 활성화
+            nowPlayingContainer.style.display = DisplayStyle.Flex;
+            nowPlayingContainer.pickingMode = PickingMode.Position;
+            
             nowPlayingOverlay.RemoveFromClassList("hidden");
-            if (uiDocument != null) uiDocument.sortingOrder = 10; // 플레이 화면 오픈 시 맨 앞으로
+            Debug.Log("[MusicPlayerController] Overlay display set to Flex");
+            
+            // sortingOrder 명시적 설정
+            if (uiDocument != null) 
+            {
+                uiDocument.sortingOrder = 200;
+                Debug.Log("[MusicPlayerController] Set sortingOrder to 200");
+            }
+            
+            headerUI?.Hide(); // 헤더 숨기기
+            Debug.Log("[MusicPlayerController] Header hidden");
+            
             UpdateNowPlayingUI(); // 매번 최신 상태로 갱신
             isNowPlayingVisible = true;
             return;
         }
 
-        // 생성
-        var template = nowPlayingViewUxml.CloneTree();
-        // 템플릿 컨테이너 스타일 설정: 전체 화면을 차지하면서 클릭은 통과시킴 (하위 요소만 클릭 가능하게)
-        template.style.position = Position.Absolute;
-        template.style.width = new Length(100, LengthUnit.Percent);
-        template.style.height = new Length(100, LengthUnit.Percent);
-        template.pickingMode = PickingMode.Ignore;
+        Debug.Log("[MusicPlayerController] Creating new Now Playing overlay");
 
-        nowPlayingOverlay = template.Q<VisualElement>("NowPlayingOverlay");
-        root.Add(template);
-        if (uiDocument != null) uiDocument.sortingOrder = 10; // 생성 시에도 맨 앞으로
+        // 생성
+        nowPlayingContainer = nowPlayingViewUxml.CloneTree();
+        // 템플릿 컨테이너 스타일 설정
+        nowPlayingContainer.style.position = Position.Absolute;
+        nowPlayingContainer.style.width = new Length(100, LengthUnit.Percent);
+        nowPlayingContainer.style.height = new Length(100, LengthUnit.Percent);
+        nowPlayingContainer.pickingMode = PickingMode.Position; 
+
+        nowPlayingOverlay = nowPlayingContainer.Q<VisualElement>("NowPlayingOverlay");
+        root.Add(nowPlayingContainer);
+        if (uiDocument != null) uiDocument.sortingOrder = 200; // 생성 시에도 맨 앞으로
+        headerUI?.Hide(); // 헤더 숨기기
 
         // UI 요소 바인딩
         backButton = nowPlayingOverlay.Q<Button>("BackButton");
@@ -530,11 +670,14 @@ public class MusicPlayerController : MonoBehaviour
         playPauseButton = nowPlayingOverlay.Q<Button>("PlayPauseButton");
         nextButton = nowPlayingOverlay.Q<Button>("NextButton");
         repeatButton = nowPlayingOverlay.Q<Button>("RepeatButton");
+        queueButton = nowPlayingOverlay.Q<Button>("QueueButton");
 
         // 신규 요소 바인딩
         vocalVolumeSlider = nowPlayingOverlay.Q<Slider>("VocalVolumeSlider");
         lyricsTextLine = nowPlayingOverlay.Q<Label>("LyricsText"); // UI에서 여전히 이 이름일 것임
         lyricsScroll = nowPlayingOverlay.Q<ScrollView>("LyricsScroll");
+        
+        Debug.Log($"[MusicPlayerController] lyricsScroll binding result: {(lyricsScroll != null ? "SUCCESS" : "FAILED (NULL)")}");
 
         // 이벤트 바인딩
         backButton?.RegisterCallback<ClickEvent>(evt => HideNowPlaying());
@@ -543,6 +686,7 @@ public class MusicPlayerController : MonoBehaviour
         playPauseButton?.RegisterCallback<ClickEvent>(evt => OnPlayPauseClicked());
         nextButton?.RegisterCallback<ClickEvent>(evt => OnNextClicked());
         repeatButton?.RegisterCallback<ClickEvent>(evt => OnRepeatClicked());
+        queueButton?.RegisterCallback<ClickEvent>(evt => ShowQueue());
 
         // 진행바 설정 및 이벤트
         if (progressSlider != null)
@@ -598,8 +742,15 @@ public class MusicPlayerController : MonoBehaviour
 
     private void HideNowPlaying()
     {
+        if (nowPlayingContainer != null)
+        {
+            nowPlayingContainer.style.display = DisplayStyle.None;
+            nowPlayingContainer.pickingMode = PickingMode.Ignore; // 터치 방지
+        }
+        
         nowPlayingOverlay?.AddToClassList("hidden");
-        if (uiDocument != null) uiDocument.sortingOrder = 0; // 뒤로 가기 시 원래 순서로
+        if (uiDocument != null) uiDocument.sortingOrder = 0; 
+        headerUI?.Show(); 
         isNowPlayingVisible = false;
     }
 
@@ -626,7 +777,10 @@ public class MusicPlayerController : MonoBehaviour
         // 총 재생 시간
         if (totalTimeLabel != null)
         {
-            totalTimeLabel.text = currentSong.GetFormattedDuration();
+            float duration = (currentSong.duration > 0) ? currentSong.duration : player.Duration;
+            int mins = Mathf.FloorToInt(duration / 60);
+            int secs = Mathf.FloorToInt(duration % 60);
+            totalTimeLabel.text = $"{mins}:{secs:D2}";
         }
 
         // 가사 로드 및 표시
@@ -646,7 +800,12 @@ public class MusicPlayerController : MonoBehaviour
 
     private void UpdateLyrics(SongItem song)
     {
-        if (lyricsScroll == null) return;
+        if (lyricsScroll == null) 
+        {
+            Debug.LogError("[MusicPlayerController] ❌ lyricsScroll is NULL! Cannot display lyrics.");
+            return;
+        }
+        Debug.Log($"[MusicPlayerController] UpdateLyrics called for song: {song.title}");
 
         lyricsScroll.Clear();
         currentLyricsLines.Clear();
@@ -654,45 +813,45 @@ public class MusicPlayerController : MonoBehaviour
 
         if (CurriculumRepository.TryGetChapter(song.chapterId, out var chapter))
         {
-            var step = chapter.Steps.FirstOrDefault();
+            // stepId가 있으면 해당 스텝을 사용, 없으면 첫 번째
+            var step = !string.IsNullOrEmpty(song.stepId) 
+                ? chapter.Steps.FirstOrDefault(s => s.id == song.stepId)
+                : chapter.Steps.FirstOrDefault();
+            
             if (step != null)
             {
-                TextAsset lyricsAsset = StepResourceResolver.LoadLyricsAsset(song.chapterId, step);
-                if (lyricsAsset != null)
-                {
-                    var rawItems = ParseLyricsJson(lyricsAsset.text);
-                    if (rawItems != null && rawItems.Count > 0)
+                // MusicPlayer는 문장 단위 가사가 필요하므로 LoadSingAlongAsset 사용
+                TextAsset lyricsAsset = StepResourceResolver.LoadSingAlongAsset(song.chapterId, step);
+                    if (lyricsAsset != null)
                     {
-                        LyricsLine currentLine = new LyricsLine { startTime = rawItems[0].start };
-                        System.Text.StringBuilder sb = new System.Text.StringBuilder();
-                        float lastEndTime = 0;
-
-                        for (int i = 0; i < rawItems.Count; i++)
+                        Debug.Log($"[MusicPlayerController] ✅ Successfully loaded lyrics asset: {lyricsAsset.name}");
+                        var rawItems = ParseLyricsJson(lyricsAsset.text);
+                        if (rawItems != null && rawItems.Count > 0)
                         {
-                            var item = rawItems[i];
-                            bool isLongGap = i > 0 && (item.start - lastEndTime > 1.2f);
-
-                            if (isLongGap && sb.Length > 0)
+                            foreach (var item in rawItems)
                             {
-                                currentLine.text = sb.ToString().Trim();
-                                currentLine.endTime = lastEndTime;
-                                AddLyricLineToUI(currentLine);
-                                currentLine = new LyricsLine { startTime = item.start };
-                                sb.Clear();
+                                var line = new LyricsLine 
+                                { 
+                                    text = item.sentence, 
+                                    startTime = item.start, 
+                                    endTime = item.end 
+                                };
+                                AddLyricLineToUI(line);
                             }
-
-                            sb.Append(item.word).Append(" ");
-                            lastEndTime = item.end;
+                            Debug.Log($"[MusicPlayerController] ✅ Added {rawItems.Count} lines to UI.");
+                            
+                            // 초기 하이라이트 적용
+                            UpdateLyricsHighlight(MusicPlayerManager.Instance.CurrentTime);
                         }
-
-                        if (sb.Length > 0)
+                        else
                         {
-                            currentLine.text = sb.ToString().Trim();
-                            currentLine.endTime = lastEndTime;
-                            AddLyricLineToUI(currentLine);
+                            Debug.LogError("[MusicPlayerController] ❌ Parsed items are null or empty.");
                         }
                     }
-                }
+                    else
+                    {
+                        Debug.LogError($"[MusicPlayerController] ❌ Lyrics asset NOT found. Chapter: {song.chapterId}, Step: {step.id}");
+                    }
             }
         }
     }
@@ -731,24 +890,45 @@ public class MusicPlayerController : MonoBehaviour
         }
     }
 
-    // 데이터 파싱 내부 클래스 (레거시 유지하되 내부 호출용)
-    private class LyricItem { public string word; public float start; public float end; }
-    private List<LyricItem> ParseLyricsJson(string json)
+    // 데이터 파싱: 기존 SingAlongLine 클래스 활용 (정합성 유지)
+    private List<SingAlongLine> ParseLyricsJson(string json)
     {
-        var list = new List<LyricItem>();
-        try {
-            var regex = new System.Text.RegularExpressions.Regex("\"word\"\\s*:\\s*\"([^\"]+)\"\\s*,\\s*\"start\"\\s*:\\s*([0-9.]+)\\s*,\\s*\"end\"\\s*:\\s*([0-9.]+)");
-            var matches = regex.Matches(json);
-            foreach (System.Text.RegularExpressions.Match m in matches)
+        if (string.IsNullOrEmpty(json)) return new List<SingAlongLine>();
+        
+        try 
+        {
+            // Newtonsoft.Json 사용 시 리스트로 직접 파싱
+            var list = JsonConvert.DeserializeObject<List<SingAlongLine>>(json);
+            if (list == null) 
             {
-                list.Add(new LyricItem {
-                    word = m.Groups[1].Value,
-                    start = float.Parse(m.Groups[2].Value),
-                    end = float.Parse(m.Groups[3].Value)
-                });
+                Debug.LogWarning("[MusicPlayerController] Parsed list is null");
+                return new List<SingAlongLine>();
             }
-        } catch { }
-        return list;
+            
+            Debug.Log($"[MusicPlayerController] Parsed {list.Count} items from JSON");
+            
+            // 데이터 유효성 검사: 문장이 있고, start/end가 유효한 항목만
+            var filtered = list.Where(l => 
+                !string.IsNullOrEmpty(l.sentence) && 
+                l.start >= 0 && 
+                l.end >= 0
+            ).ToList();
+            
+            int invalidCount = list.Count - filtered.Count;
+            if (invalidCount > 0)
+            {
+                Debug.LogWarning($"[MusicPlayerController] Filtered out {invalidCount} invalid items (missing sentence or null timing)");
+            }
+            
+            Debug.Log($"[MusicPlayerController] After filtering: {filtered.Count} valid items");
+            
+            return filtered;
+        } 
+        catch (System.Exception e) 
+        {
+            Debug.LogError($"[MusicPlayerController] Lyrics JSON Parse Error: {e.Message}\nJSON Content: {json.Substring(0, Mathf.Min(json.Length, 100))}...");
+            return new List<SingAlongLine>();
+        }
     }
 
     // ========== 이벤트 핸들러 ==========
@@ -818,6 +998,7 @@ public class MusicPlayerController : MonoBehaviour
             var songItem = new SongItem
             {
                 chapterId = songInfo.ChapterId,
+                stepId = songInfo.StepId,
                 title = songInfo.Title,
                 artist = songInfo.Artist,
                 thumbnailPath = songInfo.ThumbnailPath,
@@ -841,7 +1022,9 @@ public class MusicPlayerController : MonoBehaviour
             {
                 // 선택된 곡이거나 현재 클릭한 곡인 경우에만 플레이리스트에 포함
                 bool isSelected = playlistSelection.ContainsKey(info.ChapterId) && playlistSelection[info.ChapterId];
-                bool isCurrentRequested = (info.ChapterId == songInfo.ChapterId);
+                bool isCurrentRequested = (info.ChapterId == songInfo.ChapterId && info.StepId == songInfo.StepId);
+
+                Debug.Log($"[MusicPlayerController] Checking song: {info.Title} (StepId: {info.StepId}) - isSelected: {isSelected}, isCurrentRequested: {isCurrentRequested}");
 
                 if (isSelected || isCurrentRequested)
                 {
@@ -851,6 +1034,7 @@ public class MusicPlayerController : MonoBehaviour
                         var item = new SongItem
                         {
                             chapterId = info.ChapterId,
+                            stepId = info.StepId,
                             title = info.Title,
                             artist = info.Artist,
                             thumbnailPath = info.ThumbnailPath,
@@ -870,6 +1054,7 @@ public class MusicPlayerController : MonoBehaviour
                         if (isCurrentRequested)
                         {
                             startIndex = playlist.Count - 1;
+                            Debug.Log($"[MusicPlayerController] Found requested song at index {startIndex}: {info.Title}");
                         }
                     }
                 }
@@ -993,5 +1178,260 @@ public class MusicPlayerController : MonoBehaviour
                 favoriteButton.RemoveFromClassList("active");
         }
         */
+    }
+
+    // ========== 큐 뷰 ==========
+
+    private void ShowQueue()
+    {
+        if (queueViewUxml == null)
+        {
+            Debug.LogWarning("[MusicPlayerController] QueueView UXML not assigned!");
+            return;
+        }
+
+        if (queueContainer != null)
+        {
+            queueContainer.style.display = DisplayStyle.Flex;
+            queueContainer.pickingMode = PickingMode.Position;
+            queueOverlay.RemoveFromClassList("hidden");
+            UpdateQueueUI();
+            isQueueVisible = true;
+            return;
+        }
+
+        // 생성
+        queueContainer = queueViewUxml.CloneTree();
+        queueContainer.style.position = Position.Absolute;
+        queueContainer.style.width = new Length(100, LengthUnit.Percent);
+        queueContainer.style.height = new Length(100, LengthUnit.Percent);
+        queueContainer.pickingMode = PickingMode.Position; 
+
+        queueOverlay = queueContainer.Q<VisualElement>("QueueOverlay");
+        root.Add(queueContainer);
+        if (uiDocument != null) uiDocument.sortingOrder = 200; // 큐 표시 시에도 오더 유지 또는 설정
+
+        // UI 요소 바인딩
+        closeQueueButton = queueOverlay.Q<Button>("CloseQueueButton");
+        currentSongCard = queueOverlay.Q<VisualElement>("CurrentSongCard");
+        queueList = queueOverlay.Q<ScrollView>("QueueList");
+        queueCount = queueOverlay.Q<Label>("QueueCount");
+        emptyQueueState = queueOverlay.Q<VisualElement>("EmptyQueueState");
+
+        // 이벤트 바인딩
+        closeQueueButton?.RegisterCallback<ClickEvent>(evt => HideQueue());
+
+        UpdateQueueUI();
+        isQueueVisible = true;
+    }
+
+    private void HideQueue()
+    {
+        if (queueContainer != null)
+        {
+            queueContainer.style.display = DisplayStyle.None;
+            queueContainer.pickingMode = PickingMode.Ignore;
+        }
+        
+        queueOverlay?.AddToClassList("hidden");
+        isQueueVisible = false;
+    }
+
+    private void UpdateQueueUI()
+    {
+        if (queueOverlay == null) return;
+
+        var player = MusicPlayerManager.Instance;
+        var playlist = player.CurrentPlaylist;
+        var currentIndex = player.CurrentIndex;
+
+        if (playlist == null || playlist.Count == 0)
+        {
+            ShowEmptyQueueState();
+            return;
+        }
+
+        emptyQueueState?.AddToClassList("hidden");
+
+        // 현재 재생 중인 곡
+        if (currentSongCard != null)
+        {
+            currentSongCard.Clear();
+            if (currentIndex >= 0 && currentIndex < playlist.Count)
+            {
+                var currentSong = playlist[currentIndex];
+                var card = CreateQueueSongCard(currentSong, -1, true);
+                currentSongCard.Add(card);
+            }
+        }
+
+        // 다음 곡들
+        if (queueList != null)
+        {
+            queueList.Clear();
+            int nextCount = 0;
+
+            for (int i = currentIndex + 1; i < playlist.Count; i++)
+            {
+                var song = playlist[i];
+                var card = CreateQueueSongCard(song, nextCount + 1, false);
+                queueList.Add(card);
+                nextCount++;
+            }
+
+            // 큐 카운트 업데이트
+            if (queueCount != null)
+            {
+                queueCount.text = nextCount == 1 ? "1 song" : $"{nextCount} songs";
+            }
+        }
+    }
+
+    private VisualElement CreateQueueSongCard(SongItem song, int position, bool isCurrent)
+    {
+        var card = new VisualElement();
+        card.AddToClassList("song-card");
+        if (isCurrent) card.AddToClassList("current-song");
+
+        // 포지션 번호 (현재 곡은 재생 아이콘)
+        if (!isCurrent && position > 0)
+        {
+            var number = new Label(position.ToString());
+            number.AddToClassList("queue-number");
+            card.Add(number);
+        }
+
+        // 썸네일
+        var thumbnail = new VisualElement();
+        thumbnail.AddToClassList("song-thumbnail");
+        if (!string.IsNullOrEmpty(song.thumbnailPath))
+        {
+            var sprite = Resources.Load<Sprite>(song.thumbnailPath);
+            if (sprite != null)
+            {
+                thumbnail.style.backgroundImage = new StyleBackground(sprite);
+            }
+        }
+        card.Add(thumbnail);
+
+        // 곡 정보
+        var info = new VisualElement();
+        info.AddToClassList("song-info");
+
+        var title = new Label(song.title);
+        title.AddToClassList("song-title");
+        info.Add(title);
+
+        var artist = new Label(song.artist);
+        artist.AddToClassList("song-artist");
+        info.Add(artist);
+
+        card.Add(info);
+
+        // 재생 시간
+        var duration = new Label(song.GetFormattedDuration());
+        duration.AddToClassList("song-duration");
+        card.Add(duration);
+
+        return card;
+    }
+
+    private void ShowEmptyQueueState()
+    {
+        emptyQueueState?.RemoveFromClassList("hidden");
+        if (currentSongCard != null) currentSongCard.Clear();
+        if (queueList != null) queueList.Clear();
+        if (queueCount != null) queueCount.text = "0 songs";
+    }
+
+    // ========== 플레이리스트 선택 저장/로드 ==========
+    
+    private void SavePlaylistSelection()
+    {
+        try
+        {
+            Debug.Log($"[MusicPlayerController] 💾 Saving playlist selection... Total in dict: {playlistSelection.Count}");
+            
+            var data = new PlaylistSelectionData();
+            foreach (var kvp in playlistSelection)
+            {
+                if (kvp.Value) 
+                {
+                    data.selectedSongs.Add(kvp.Key);
+                    Debug.Log($"[MusicPlayerController]   - {kvp.Key}: selected");
+                }
+                else // ⭐ false인 것도 저장!
+                {
+                    data.unselectedSongs.Add(kvp.Key);
+                    Debug.Log($"[MusicPlayerController]   - {kvp.Key}: NOT selected (saving as unselected)");
+                }
+            }
+            
+            string json = JsonUtility.ToJson(data, true);
+            File.WriteAllText(playlistSelectionPath, json);
+            Debug.Log($"[MusicPlayerController] ✅ Playlist selection saved to: {playlistSelectionPath}");
+            Debug.Log($"[MusicPlayerController] ✅ Selected: {data.selectedSongs.Count}, Unselected: {data.unselectedSongs.Count}");
+        }
+        catch (System.Exception e)
+        {
+            Debug.LogError($"[MusicPlayerController] ❌ Failed to save playlist selection: {e.Message}");
+        }
+    }
+    
+    private void LoadPlaylistSelection()
+    {
+        try
+        {
+            if (File.Exists(playlistSelectionPath))
+            {
+                string json = File.ReadAllText(playlistSelectionPath);
+                var data = JsonUtility.FromJson<PlaylistSelectionData>(json);
+                
+                playlistSelection.Clear();
+                
+                // 선택된 곡 로드 (true)
+                int selectedCount = 0;
+                int unselectedCount = 0;
+                int skippedCount = 0;
+                
+                foreach (var songId in data.selectedSongs)
+                {
+                    if (songId.Contains("_step_"))
+                    {
+                        playlistSelection[songId] = true;
+                        selectedCount++;
+                    }
+                    else
+                    {
+                        skippedCount++;
+                        Debug.LogWarning($"[MusicPlayerController] Skipped old format key: {songId}");
+                    }
+                }
+                
+                // ⭐ 선택 해제된 곡 로드 (false)
+                foreach (var songId in data.unselectedSongs)
+                {
+                    if (songId.Contains("_step_"))
+                    {
+                        playlistSelection[songId] = false;
+                        unselectedCount++;
+                    }
+                    else
+                    {
+                        skippedCount++;
+                    }
+                }
+                
+                Debug.Log($"[MusicPlayerController] Playlist selection loaded: {selectedCount} selected, {unselectedCount} unselected, {skippedCount} old format skipped");
+            }
+            else
+            {
+                Debug.Log("[MusicPlayerController] No saved playlist selection found");
+            }
+        }
+        catch (System.Exception e)
+        {
+            Debug.LogError($"[MusicPlayerController] Failed to load playlist selection: {e.Message}");
+        }
     }
 }

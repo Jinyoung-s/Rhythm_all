@@ -200,6 +200,7 @@
     <None Include="Assets\Resources\UI\Game\FallingNote.uxml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\Resources\UI\Home\NowPlayingView.uxml" />
+    <None Include="Assets\Resources\UI\Home\QueueView.uxml" />
     <None Include="Assets\Resources\UI\Game\TopBar.uss" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\Resources\UI\Game\Subtitle.uss" />
@@ -224,6 +225,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\Resources\UI\GameMenu\ResultPopup.uss" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\Resources\UI\Home\QueueView.uss" />
     <None Include="Assets\Layer Lab\GUI Pro-FantasyRPG\Extensions\UIParticle\hidden particle.shader" />
     <None Include="Assets\Resources\UI\Home\StartButton.uss" />
     <None Include="Assets\Material\UI_Glow_URP.shader" />

@@ -34,6 +34,8 @@ public class LearnPopupController : MonoBehaviour
 
     void Start()
     {
+        Debug.Log("[LearnPopupController] Start() called - initializing popup");
+        
         var doc = GetComponent<UIDocument>();
         if (doc == null)
         {
@@ -76,19 +78,54 @@ public class LearnPopupController : MonoBehaviour
         if (popupContainer != null)
             popupContainer.style.display = DisplayStyle.None;
 
-        popupContainer.RegisterCallback<ClickEvent>(OnBackgroundClicked);            
+        popupContainer.RegisterCallback<ClickEvent>(OnBackgroundClicked);
+        
+        // ✅ Panel Settings 정보 확인
+        var panelSettings = doc.panelSettings;
+        if (panelSettings != null)
+        {
+            Debug.Log($"[LearnPopupController] PanelSettings found: {panelSettings.name}");
+        }
+        else
+        {
+            Debug.LogWarning("[LearnPopupController] PanelSettings is NULL!");
+        }
+        
+        Debug.Log("[LearnPopupController] Start() completed - popup ready");
     }
 
     // ✅ 여러개 표시
     public void Show(List<LearnStepData> steps)
     {
-        if (popupContainer == null) return;
-        if (steps == null || steps.Count == 0) return;
+        Debug.Log($"[LearnPopupController] Show() called with {steps?.Count ?? 0} steps");
+        
+        if (popupContainer == null)
+        {
+            Debug.LogError("[LearnPopupController] popupContainer is NULL! Popup cannot be shown.");
+            return;
+        }
+        
+        if (steps == null || steps.Count == 0)
+        {
+            Debug.LogError("[LearnPopupController] steps list is NULL or empty!");
+            return;
+        }
 
         currentSteps = steps;
         currentIndex = 0;
 
+        Debug.Log("[LearnPopupController] Setting popupContainer to visible and starting fade-in");
+        
+        // ✅ Display 설정
         popupContainer.style.display = DisplayStyle.Flex;
+        
+        Debug.Log($"[LearnPopupController] After setting display=Flex:");
+        Debug.Log($"  - resolvedStyle.display: {popupContainer.resolvedStyle.display}");
+        Debug.Log($"  - visible: {popupContainer.visible}");
+        Debug.Log($"  - layout: {popupContainer.layout}");
+        Debug.Log($"  - worldBound: {popupContainer.worldBound}");
+        Debug.Log($"  - parent: {popupContainer.parent?.name ?? "NULL"}");
+        
         StartCoroutine(FadeIn());
 
         UpdateView();
@@ -288,8 +325,11 @@ public class LearnPopupController : MonoBehaviour
 
     IEnumerator FadeIn()
     {
+        Debug.Log("[LearnPopupController] FadeIn started");
         popupContainer.style.opacity = 0;
         popupContainer.style.display = DisplayStyle.Flex;
+        
+        Debug.Log($"[LearnPopupController] FadeIn - display set to Flex, opacity={popupContainer.style.opacity.value}");
 
         float elapsed = 0f;
         while (elapsed < 0.3f)
@@ -299,6 +339,8 @@ public class LearnPopupController : MonoBehaviour
             yield return null;
         }
         popupContainer.style.opacity = 1;
+        
+        Debug.Log($"[LearnPopupController] FadeIn completed - opacity={popupContainer.style.opacity.value}, display={popupContainer.style.display.value}");
     }
 
     IEnumerator FadeOut()

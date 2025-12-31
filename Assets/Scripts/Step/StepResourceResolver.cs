@@ -48,6 +48,27 @@ public static class StepResourceResolver
         return null;
     }
 
+    /// <summary>
+    /// MusicPlayer 전용: 문장 단위 가사 파일(singalong)을 우선적으로 로드
+    /// </summary>
+    public static TextAsset LoadSingAlongAsset(string chapterId, StepData step)
+    {
+        Debug.Log($"[StepResourceResolver] LoadSingAlongAsset called for {chapterId}/{step?.id}");
+        if (step == null) return null;
+        foreach (var candidate in EnumerateSingAlongResourceKeys(chapterId, step))
+        {
+            Debug.Log($"[StepResourceResolver] Trying to load: {candidate}");
+            var asset = Resources.Load<TextAsset>(candidate);
+            if (asset != null) 
+            {
+                Debug.Log($"[StepResourceResolver] ✅ Found: {asset.name}");
+                return asset;
+            }
+        }
+        Debug.LogWarning($"[StepResourceResolver] ❌ No singalong asset found for {chapterId}/{step.id}");
+        return null;
+    }
+
     public static TextAsset LoadRoleAsset(string chapterId, StepData step)
     {
         if (step == null) return null;
@@ -97,13 +118,30 @@ public static class StepResourceResolver
         yield return $"mp3/{chapterId}/{step.id}";
     }
 
+    /// <summary>
+    /// 게임용: 단어 단위 타이밍 파일(_lyrics)을 우선 로드
+    /// </summary>
     private static IEnumerable<string> EnumerateLyricsResourceKeys(string chapterId, StepData step)
     {
         if (!string.IsNullOrEmpty(step.lyricsFile))
             yield return $"json/{chapterId}/{RemoveExtension(step.lyricsFile)}";
             
+        // lyrics를 먼저 시도 (단어 단위 타이밍, 게임용)
         yield return $"json/{chapterId}/{step.id}_lyrics";
+        // singalong은 두 번째 (문장 단위 가사, fallback)
         yield return $"json/{chapterId}/{step.id}_singalong";
+    }
+
+    /// <summary>
+    /// MusicPlayer용: 문장 단위 가사 파일(_singalong)을 우선 로드
+    /// step.lyricsFile을 무시하고 무조건 _singalong 우선
+    /// </summary>
+    private static IEnumerable<string> EnumerateSingAlongResourceKeys(string chapterId, StepData step)
+    {
+        // singalong을 먼저 시도 (문장 단위 가사, MusicPlayer용)
+        yield return $"json/{chapterId}/{step.id}_singalong";
+        // lyrics는 두 번째 (단어 단위 타이밍, fallback)
+        yield return $"json/{chapterId}/{step.id}_lyrics";
     }
 
     private static string RemoveExtension(string name)

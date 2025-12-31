@@ -93,6 +93,10 @@ public class Game1MenuController : MonoBehaviour
 
     private void OnExitStep()
     {
+        // ✅ TimeScale 복구 (pause 상태에서 나갔을 수 있으므로)
+        Time.timeScale = 1f;
+        Debug.Log("[Game1Menu] OnExitStep: timeScale reset to 1");
+        
         SceneNavigator.Load("StepScene");
     }
 

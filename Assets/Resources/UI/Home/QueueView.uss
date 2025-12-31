@@ -1,0 +1,247 @@
+/* ========================================
+   Queue View Styles (플레이리스트 큐)
+   모바일 1080 x 1920 기준
+   ======================================== */
+
+.queue-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #0B0E14; /* 완전 불투명하게 변경 (뒤의 컨트롤 비침 방지) */
+    padding: 0; /* 패딩 제거 후 내부 컨테이너에서 처리 */
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.queue-container {
+    width: 100%;
+    height: 100%; /* 전체 화면으로 확장하거나 90% 정도로 설정 */
+    background-color: #0B0E14;
+    padding: 40px;
+    padding-bottom: 250px; /* 하단 탭바 및 여유 공간 */
+    flex-direction: column;
+}
+
+/* ========== Header ========== */
+.queue-header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    padding-bottom: 24px;
+    border-bottom-width: 2px;
+    border-bottom-color: rgba(139, 148, 158, 0.2);
+}
+
+.queue-title {
+    font-size: 52px;
+    color: #FFFFFF;
+    -unity-font-style: bold;
+    letter-spacing: -1px;
+}
+
+.close-button {
+    width: 72px;
+    height: 72px;
+    background-color: rgba(139, 148, 158, 0.15);
+    border-width: 0;
+    border-radius: 36px;
+    font-size: 48px;
+    color: #8B949E;
+    transition-property: background-color, scale;
+    transition-duration: 0.2s;
+}
+
+.close-button:hover {
+    background-color: rgba(139, 148, 158, 0.25);
+    color: #FFFFFF;
+}
+
+.close-button:active {
+    scale: 0.9;
+}
+
+/* ========== Current Playing Section ========== */
+.current-playing-section {
+    margin-bottom: 40px;
+}
+
+.section-label {
+    font-size: 28px;
+    color: #8B949E;
+    -unity-font-style: bold;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+}
+
+.current-song {
+    background-color: rgba(29, 185, 84, 0.08); /* 더 은은한 녹색 배경 */
+    border-radius: 24px;
+    border-width: 1px;
+    border-color: rgba(29, 185, 84, 0.2);
+}
+
+.current-song .song-title {
+    color: #1DB954; /* 곡 제목을 녹색으로 강조 (스포티파이 스타일) */
+}
+
+.current-song-container {
+    width: 100%;
+}
+
+/* ========== Song Card ========== */
+.song-card {
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 24px;
+    background-color: rgba(33, 38, 45, 0.5);
+    border-radius: 20px;
+    margin-bottom: 16px;
+    transition-property: background-color, scale;
+    transition-duration: 0.2s;
+}
+
+.song-card:hover {
+    background-color: rgba(33, 38, 45, 0.8);
+}
+
+.song-card:active {
+    scale: 0.98;
+}
+
+/* Queue position number */
+.queue-number {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(139, 148, 158, 0.1);
+    border-radius: 30px;
+    font-size: 28px;
+    color: #8B949E;
+    -unity-text-align: middle-center;
+    -unity-font-style: bold;
+    margin-right: 24px;
+    flex-shrink: 0;
+}
+
+.current-song .queue-number {
+    background-color: rgba(29, 185, 84, 0.3);
+    color: #1DB954;
+}
+
+/* Thumbnail */
+.song-thumbnail {
+    width: 100px;
+    height: 100px;
+    background-color: #21262D;
+    border-radius: 16px;
+    margin-right: 24px;
+    flex-shrink: 0;
+    -unity-background-scale-mode: scale-and-crop;
+}
+
+/* Song Info */
+.song-info {
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.song-title {
+    font-size: 36px;
+    color: #FFFFFF;
+    -unity-font-style: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 8px;
+}
+
+.song-artist {
+    font-size: 28px;
+    color: #8B949E;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.song-duration {
+    font-size: 28px;
+    color: #8B949E;
+    margin-left: 20px;
+    flex-shrink: 0;
+}
+
+/* ========== Queue List ========== */
+.queue-list-section {
+    flex-grow: 1;
+    flex-direction: column;
+    min-height: 200px;
+}
+
+.queue-list-header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.queue-count {
+    font-size: 28px;
+    color: #8B949E;
+}
+
+.queue-scroll {
+    flex-grow: 1;
+}
+
+/* 스크롤바 스타일링 */
+.queue-scroll .unity-scroller--vertical {
+    width: 12px;
+    background-color: rgba(33, 38, 45, 0.5);
+    border-radius: 6px;
+    margin-left: 8px;
+}
+
+.queue-scroll .unity-scroller--vertical .unity-base-slider__dragger {
+    background-color: rgba(139, 148, 158, 0.4);
+    border-radius: 6px;
+    margin: 2px;
+}
+
+.queue-scroll .unity-scroller--vertical .unity-base-slider__tracker {
+    background-color: transparent;
+}
+
+/* ========== Empty State ========== */
+.empty-queue {
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 40px;
+}
+
+.empty-icon {
+    font-size: 120px;
+    margin-bottom: 24px;
+    opacity: 0.3;
+}
+
+.empty-text {
+    font-size: 40px;
+    color: #FFFFFF;
+    -unity-font-style: bold;
+    margin-bottom: 12px;
+    -unity-text-align: middle-center;
+}
+
+.empty-subtext {
+    font-size: 32px;
+    color: #8B949E;
+    -unity-text-align: middle-center;
+}
+
+/* ========== Utility ========== */
+.hidden {
+    display: none;
+}

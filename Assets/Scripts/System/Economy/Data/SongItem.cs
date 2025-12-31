@@ -26,6 +26,11 @@ namespace RhythmEnglish.Economy
         public string chapterId;
         
         /// <summary>
+        /// 스텝 ID (챕터 내 상세 구분)
+        /// </summary>
+        public string stepId;
+        
+        /// <summary>
         /// 노래 제목
         /// </summary>
         public string title;
