@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="history-item" class="history-item">
+        <ui:VisualElement name="history-left" class="history-left">
+            <ui:Label name="history-icon" text="🎮" class="history-icon" />
+            <ui:VisualElement name="history-details" class="history-details">
+                <ui:Label name="history-description" text="Game1 - Perfect Clear" class="history-description" />
+                <ui:Label name="history-time" text="2 hours ago" class="history-time" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:Label name="history-amount" text="+50" class="history-amount positive" />
+    </ui:VisualElement>
+</ui:UXML>

@@ -32,7 +32,7 @@
 }
 
 .progress-bar .unity-progress-bar__progress {
-    background-color: #10b981;
+    background-image: url("project://database/Assets/Resources/buttonbg/gradient_pupple.png?fileID=21300000&guid=15a33b216992dcf45a6976ba9812a442&type=3#gradient_pupple");
     border-radius: 10px;
 }
 
@@ -133,13 +133,14 @@
 
 /* 8. 미디어 컨트롤 (Play/Speak) */
 .play-button, .speak-button {
-    background-color: #10b981;
+    background-image: url("project://database/Assets/Resources/buttonbg/gradient_pupple.png?fileID=21300000&guid=15a33b216992dcf45a6976ba9812a442&type=3#gradient_pupple");
     color: #ffffff;
     border-radius: 20px;
     font-size: 48px;
     padding: 35px 70px;
     font-weight: bold;
     margin-bottom: 40px;
+    border-width: 0;
 }
 
 /* 9. 하단 확인 버튼: 카드 외부 또는 하단에 배치 */
@@ -153,8 +154,8 @@
     margin-top: 80px;
 }
 
-.submit-button, .next-button {
-    background-color: #10b981;
+.submit-button {
+    background-image: url("project://database/Assets/Resources/buttonbg/gradient_pupple.png?fileID=21300000&guid=15a33b216992dcf45a6976ba9812a442&type=3#gradient_pupple");
     color: #ffffff;
     font-size: 56px;
     font-weight: bold;
@@ -167,7 +168,17 @@
 
 .next-button {
     background-color: #374151;
+    color: #ffffff;
+    font-size: 56px;
+    font-weight: bold;
+    padding: 40px;
+    flex-grow: 1;
+    flex-basis: 0;
+    border-radius: 30px;
+    border-width: 0;
 }
+
+
 
 /* 10. 상태 피드백 클래스 (C# 스크립트 대응) */
 .answer-button {
@@ -180,9 +191,9 @@
 }
 
 .correct {
-    background-color: #14532d;
+    background-image: url("project://database/Assets/Resources/buttonbg/gradient_pupple.png?fileID=21300000&guid=15a33b216992dcf45a6976ba9812a442&type=3#gradient_pupple");
     border-width: 3px;
-    border-color: #10b981;
+    border-color: rgba(255, 255, 255, 0.3);
 }
 
 .incorrect {
@@ -204,27 +215,40 @@
 
 .typing-input {
     width: 80%;
-    font-size: 44px;
-    padding: 20px;
+    font-size: 46px;
+    padding: 26px;
     background-color: #1f2937;
     color: #ffffff;
     border-radius: 20px;
     margin-bottom: 40px;
+    border-width: 3px;
+    border-color: #374151;
 }
 
 /* Unity TextField의 실제 입력 영역 타겟팅 */
 .typing-input > .unity-text-field__input {
     background-color: #1f2937;
     color: #ffffff;
-    border-color: #374151;
-    padding: 20px;
+    border-color: transparent;
+    border-width: 0;
+    padding: 26px;
     border-radius: 20px;
-    -unity-text-align: middle-left;
+    -unity-text-align: middle-center;
+    font-size: 46px;
+    /* 커서 색상 설정 - 흰색으로 명확하게 */
+    --unity-cursor-color: #ffffff;
+    /* 텍스트 선택 영역 색상 */
+    --unity-selection-color: rgba(168, 85, 247, 0.5);
 }
 
-/* 포커스 상태 */
+/* Unity의 기본 포커스 링 제거 */
+.typing-input:focus {
+    border-color: #9333ea;
+}
+
 .typing-input:focus > .unity-text-field__input {
-    border-color: #10b981;
+    border-color: transparent;
+    border-width: 0;
     background-color: #1f2937;
 }
 

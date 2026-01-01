@@ -1,0 +1,113 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Resources/UI/Profile/ProfileView.uss" />
+    
+    <ui:VisualElement name="profile-root" class="profile-root">
+        <ui:ScrollView name="profile-scroll" class="profile-scroll">
+            
+            <!-- 사용자 정보 섹션 (간소화) -->
+            <ui:VisualElement name="user-info-section" class="section card">
+                <ui:VisualElement name="profile-header" class="profile-header">
+                    <ui:VisualElement name="profile-avatar" class="profile-avatar">
+                        <ui:Label name="avatar-initial" text="J" class="avatar-initial" />
+                    </ui:VisualElement>
+                    
+                    <ui:VisualElement name="user-details" class="user-details">
+                        <ui:Label name="username" text="Jinyoung" class="username" />
+                        <ui:Label name="user-status" text="Free Account" class="user-status" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            
+            <!-- 학습 통계 대시보드 -->
+            <ui:VisualElement name="stats-section" class="section card">
+                <ui:Label text="Learning Stats" class="section-title" />
+                
+                <!-- 포인트 현황 -->
+                <ui:VisualElement name="points-stats" class="points-stats">
+                    <ui:VisualElement name="stat-card" class="stat-card primary">
+                        <ui:Label name="current-notes-label" text="Current Notes" class="stat-label" />
+                        <ui:VisualElement name="notes-value-container" class="notes-value-container">
+                            <ui:Label text="♪" class="notes-icon" />
+                            <ui:Label name="current-notes" text="500" class="stat-value" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    
+                    <ui:VisualElement name="stat-card" class="stat-card">
+                        <ui:Label text="Total Earned" class="stat-label" />
+                        <ui:Label name="total-earned" text="1,250" class="stat-value-small" />
+                    </ui:VisualElement>
+                    
+                    <ui:VisualElement name="stat-card" class="stat-card">
+                        <ui:Label text="Total Spent" class="stat-label" />
+                        <ui:Label name="total-spent" text="750" class="stat-value-small" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                
+                <!-- 학습 진행 통계 -->
+                <ui:VisualElement name="progress-stats" class="progress-stats">
+                    <ui:VisualElement name="stat-row" class="stat-row">
+                        <ui:Label text="Steps Completed" class="stat-row-label" />
+                        <ui:Label name="steps-completed" text="42" class="stat-row-value" />
+                    </ui:VisualElement>
+                    
+                    <ui:VisualElement name="course-progress" class="course-progress">
+                        <ui:VisualElement name="course-info" class="course-info">
+                            <ui:Label text="Current Course" class="stat-row-label" />
+                            <ui:Label name="current-course-name" text="Pre-beginner" class="course-name" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="progress-bar-container" class="progress-bar-container">
+                            <ui:VisualElement name="progress-bar-bg" class="progress-bar-bg">
+                                <ui:VisualElement name="progress-bar-fill" class="progress-bar-fill" />
+                            </ui:VisualElement>
+                            <ui:Label name="progress-percent" text="65%" class="progress-percent" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            
+            <!-- 설정 -->
+            <ui:VisualElement name="settings-section" class="section card">
+                <ui:Label text="Settings" class="section-title" />
+                
+                <ui:VisualElement name="settings-list" class="settings-list">
+                    <ui:Button name="language-setting-btn" class="setting-item">
+                        <ui:Label text="🌐 Language" class="setting-label" />
+                        <ui:Label text="English ›" class="setting-value" />
+                    </ui:Button>
+                    
+                    <ui:Button name="notifications-setting-btn" class="setting-item">
+                        <ui:Label text="🔔 Notifications" class="setting-label" />
+                        <ui:Label text="›" class="setting-value" />
+                    </ui:Button>
+                    
+                    <ui:Button name="logout-btn" class="setting-item">
+                        <ui:Label text="🚪 Logout" class="setting-label" />
+                        <ui:Label text="›" class="setting-value" />
+                    </ui:Button>
+                    
+                    <ui:Button name="about-btn" class="setting-item">
+                        <ui:Label text="ℹ️ About" class="setting-label" />
+                        <ui:Label name="app-version" text="Version 1.0.0 ›" class="setting-value" />
+                    </ui:Button>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            
+            <!-- 포인트 히스토리 (하단 배치) -->
+            <ui:VisualElement name="history-section" class="section card">
+                <ui:VisualElement name="history-header" class="section-header">
+                    <ui:Label text="Notes History" class="section-title" />
+                    <ui:Button name="view-all-history-btn" text="View All" class="btn-link" />
+                </ui:VisualElement>
+                
+                <ui:VisualElement name="history-list" class="history-list">
+                    <!-- History items will be dynamically added here -->
+                    <ui:Label name="no-history-label" text="No history yet" class="empty-label" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            
+            <!-- Bottom spacing for navigation bar -->
+            <ui:VisualElement class="bottom-spacer" />
+            
+        </ui:ScrollView>
+    </ui:VisualElement>
+</ui:UXML>

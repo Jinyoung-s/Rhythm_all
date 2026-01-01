@@ -345,7 +345,12 @@ public class StepTestManager : MonoBehaviour
             {
                 _typingInput.RemoveFromClassList("hidden");
                 _typingInput.value = "";
-                _typingInput.Focus(); // 자동 포커스 → 모바일 키보드 뜸
+                
+                // 커서 색상을 명시적으로 설정
+                _typingInput.style.unityTextAlign = TextAnchor.MiddleCenter;
+                
+                // 지연 후 포커스를 주어 커서가 확실히 보이도록 함
+                StartCoroutine(FocusInputFieldDelayed(_typingInput));
             }
             _optionsContainer.AddToClassList("hidden");
         }
@@ -1016,6 +1021,25 @@ public class StepTestManager : MonoBehaviour
         catch (Exception ex)
         {
             Debug.LogError($"[StepTestManager] ❌ Failed to save vocabulary: {ex.Message}");
+        }
+    }
+
+    /// <summary>
+    /// TextField에 지연 후 포커스를 주어 커서가 확실히 표시되도록 함
+    /// </summary>
+    private System.Collections.IEnumerator FocusInputFieldDelayed(TextField textField)
+    {
+        // 1프레임 대기
+        yield return null;
+        
+        // 포커스 설정
+        if (textField != null)
+        {
+            textField.Focus();
+            
+            // 추가로 한 프레임 더 대기 후 재포커스 (모바일 키보드 대응)
+            yield return null;
+            textField.Focus();
         }
     }
 }

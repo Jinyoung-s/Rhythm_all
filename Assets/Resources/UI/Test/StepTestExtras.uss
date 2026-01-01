@@ -63,7 +63,7 @@
 
 /* === 주 버튼 (네 / 확인) === */
 .modal-button-primary {
-    background-color: #10b981;
+    background-image: url("project://database/Assets/Resources/buttonbg/gradient_pupple.png?fileID=21300000&guid=15a33b216992dcf45a6976ba9812a442&type=3#gradient_pupple");
     color: #ffffff;
     font-size: 48px;
     font-weight: bold;
@@ -76,11 +76,11 @@
 }
 
 .modal-button-primary:hover {
-    background-color: #059669;
+    opacity: 0.9;
 }
 
 .modal-button-primary:active {
-    background-color: #047857;
+    opacity: 0.8;
 }
 
 /* === 보조 버튼 (아니오 / 취소) === */
@@ -137,7 +137,7 @@ button.recording {
 }
 
 .typing-input:focus {
-    border-color: #10b981;
+    border-color: #9333ea;
 }
 
 /* === 숨김 토글용 === */

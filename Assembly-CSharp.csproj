@@ -145,6 +145,7 @@
     <Compile Include="Assets\Scripts\SingAlong\SingAlongManager.cs" />
     <Compile Include="Assets\LeanTween\Framework\LeanTweenExt.cs" />
     <Compile Include="Assets\Scripts\Game2\NoteController.cs" />
+    <Compile Include="Assets\Scripts\home\ProfileViewController.cs" />
     <Compile Include="Assets\Scripts\UI\SafeAreaHandler.cs" />
     <Compile Include="Assets\LeanTween\Framework\LeanAudio.cs" />
     <Compile Include="Assets\LeanTween\Framework\LTDescrOptional.cs" />
@@ -245,6 +246,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\Layer Lab\GUI Pro-FantasyRPG\ResourcesData\Fonts\Alata - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\Resources\UI\Profile\ProfileView.uxml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
     <None Include="Assets\Resources\UI\Test\StepTestExtras.uss" />
@@ -264,6 +266,7 @@
     <None Include="Assets\Resources\UI\Game\GameOverPanel.uxml" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\Resources\UI\Sentence\WrongSentencesView.uss" />
+    <None Include="Assets\Resources\UI\Profile\ProfileView.uss" />
     <None Include="Assets\Resources\UI\Sentence\WrongSentencesView.uxml" />
     <None Include="Assets\Resources\UI\Course\Courses.uss" />
     <None Include="Assets\_Heathen Engineering\Documentation\UX\Flat Icons [Free]\Read Me.txt" />
@@ -288,6 +291,7 @@
     <None Include="Assets\Resources\UI\Common\CommonPopup.uss" />
     <None Include="Assets\Resources\UI\Vocabulary\VocabularyListView.uss" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\Resources\UI\Profile\PointHistoryItem.uxml" />
     <None Include="Assets\Layer Lab\GUI Pro-FantasyRPG\Extensions\UIParticle\UIAdditive.shader" />
     <None Include="Assets\Layer Lab\GUI Pro-FantasyRPG\ResourcesData\Fonts\Play - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
