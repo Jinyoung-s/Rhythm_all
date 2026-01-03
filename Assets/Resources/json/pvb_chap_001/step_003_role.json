@@ -1,0 +1,697 @@
+[
+  {
+    "word": "I",
+    "role": "subject",
+    "buttonBg": "neon_boder_blue"
+  },
+  {
+    "word": "I\u0027ll",
+    "role": "subject",
+    "buttonBg": "neon_boder_blue"
+  },
+  {
+    "word": "I\u0027ve",
+    "role": "subject",
+    "buttonBg": "neon_boder_blue"
+  },
+  {
+    "word": "got",
+    "role": "verb",
+    "buttonBg": "neon_boder_red"
+  },
+  {
+    "word": "get",
+    "role": "verb",
+    "buttonBg": "neon_boder_red"
+  },
+  {
+    "word": "up",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "down",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "in",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "out",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "off",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "on",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "early,",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "5",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "a.m.",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "Couldn\u0027t",
+    "role": "verb",
+    "buttonBg": "neon_boder_red"
+  },
+  {
+    "word": "sleep,",
+    "role": "verb",
+    "buttonBg": "neon_boder_red"
+  },
+  {
+    "word": "This",
+    "role": "subject",
+    "buttonBg": "neon_boder_blue"
+  },
+  {
+    "word": "was",
+    "role": "verb",
+    "buttonBg": "neon_boder_red"
+  },
+  {
+    "word": "my",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "chance.",
+    "role": "object",
+    "buttonBg": "neon_boder_green"
+  },
+  {
+    "word": "Got",
+    "role": "verb",
+    "buttonBg": "neon_boder_red"
+  },
+  {
+    "word": "of",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "bed",
+    "role": "object",
+    "buttonBg": "neon_boder_green"
+  },
+  {
+    "word": "with",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "butterflies.",
+    "role": "object",
+    "buttonBg": "neon_boder_green"
+  },
+  {
+    "word": "Today",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "that",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "office,",
+    "role": "object",
+    "buttonBg": "neon_boder_green"
+  },
+  {
+    "word": "No",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "more",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "but",
+    "role": "conjunction",
+    "buttonBg": "neon_boder_white"
+  },
+  {
+    "word": "bites.",
+    "role": "object",
+    "buttonBg": "neon_boder_green"
+  },
+  {
+    "word": "the",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "shower,",
+    "role": "object",
+    "buttonBg": "neon_boder_green"
+  },
+  {
+    "word": "Wash",
+    "role": "verb",
+    "buttonBg": "neon_boder_red"
+  },
+  {
+    "word": "face",
+    "role": "object",
+    "buttonBg": "neon_boder_green"
+  },
+  {
+    "word": "away.",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "stairs,",
+    "role": "object",
+    "buttonBg": "neon_boder_green"
+  },
+  {
+    "word": "Mom",
+    "role": "subject",
+    "buttonBg": "neon_boder_blue"
+  },
+  {
+    "word": "smiled",
+    "role": "verb",
+    "buttonBg": "neon_boder_red"
+  },
+  {
+    "word": "and",
+    "role": "conjunction",
+    "buttonBg": "neon_boder_white"
+  },
+  {
+    "word": "said,",
+    "role": "verb",
+    "buttonBg": "neon_boder_red"
+  },
+  {
+    "word": "\"You\u0027ll",
+    "role": "subject",
+    "buttonBg": "neon_boder_blue"
+  },
+  {
+    "word": "be",
+    "role": "verb",
+    "buttonBg": "neon_boder_red"
+  },
+  {
+    "word": "great,",
+    "role": "complement",
+    "buttonBg": "neon_boder_violet"
+  },
+  {
+    "word": "Just",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "yourself",
+    "role": "complement",
+    "buttonBg": "neon_boder_violet"
+  },
+  {
+    "word": "today.\"",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "bus,",
+    "role": "object",
+    "buttonBg": "neon_boder_green"
+  },
+  {
+    "word": "My",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "new",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "life",
+    "role": "object",
+    "buttonBg": "neon_boder_green"
+  },
+  {
+    "word": "ahead.",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "way.",
+    "role": "object",
+    "buttonBg": "neon_boder_green"
+  },
+  {
+    "word": "to",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "day.",
+    "role": "object",
+    "buttonBg": "neon_boder_green"
+  },
+  {
+    "word": "those",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "doors",
+    "role": "object",
+    "buttonBg": "neon_boder_green"
+  },
+  {
+    "word": "make",
+    "role": "verb",
+    "buttonBg": "neon_boder_red"
+  },
+  {
+    "word": "mark.",
+    "role": "object",
+    "buttonBg": "neon_boder_green"
+  },
+  {
+    "word": "this",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "far,",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "Won\u0027t",
+    "role": "verb",
+    "buttonBg": "neon_boder_red"
+  },
+  {
+    "word": "lose",
+    "role": "verb",
+    "buttonBg": "neon_boder_red"
+  },
+  {
+    "word": "spark.",
+    "role": "object",
+    "buttonBg": "neon_boder_green"
+  },
+  {
+    "word": "downtown",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "at",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "8:15.",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "The",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "buildings",
+    "role": "subject",
+    "buttonBg": "neon_boder_blue"
+  },
+  {
+    "word": "tall,",
+    "role": "complement",
+    "buttonBg": "neon_boder_violet"
+  },
+  {
+    "word": "biggest",
+    "role": "complement",
+    "buttonBg": "neon_boder_violet"
+  },
+  {
+    "word": "seen.",
+    "role": "verb",
+    "buttonBg": "neon_boder_red"
+  },
+  {
+    "word": "lobby,",
+    "role": "object",
+    "buttonBg": "neon_boder_green"
+  },
+  {
+    "word": "took",
+    "role": "verb",
+    "buttonBg": "neon_boder_red"
+  },
+  {
+    "word": "a",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "breath",
+    "role": "object",
+    "buttonBg": "neon_boder_green"
+  },
+  {
+    "word": "so",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "deep.",
+    "role": "complement",
+    "buttonBg": "neon_boder_violet"
+  },
+  {
+    "word": "elevator,",
+    "role": "object",
+    "buttonBg": "neon_boder_green"
+  },
+  {
+    "word": "promises",
+    "role": "object",
+    "buttonBg": "neon_boder_green"
+  },
+  {
+    "word": "keep.",
+    "role": "verb",
+    "buttonBg": "neon_boder_red"
+  },
+  {
+    "word": "floor",
+    "role": "object",
+    "buttonBg": "neon_boder_green"
+  },
+  {
+    "word": "23.",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "hands",
+    "role": "subject",
+    "buttonBg": "neon_boder_blue"
+  },
+  {
+    "word": "were",
+    "role": "verb",
+    "buttonBg": "neon_boder_red"
+  },
+  {
+    "word": "shaking,",
+    "role": "complement",
+    "buttonBg": "neon_boder_violet"
+  },
+  {
+    "word": "felt",
+    "role": "verb",
+    "buttonBg": "neon_boder_red"
+  },
+  {
+    "word": "free.",
+    "role": "complement",
+    "buttonBg": "neon_boder_violet"
+  },
+  {
+    "word": "room,",
+    "role": "object",
+    "buttonBg": "neon_boder_green"
+  },
+  {
+    "word": "all",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "turned",
+    "role": "verb",
+    "buttonBg": "neon_boder_red"
+  },
+  {
+    "word": "around.",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "\"Welcome,\"",
+    "role": "verb",
+    "buttonBg": "neon_boder_red"
+  },
+  {
+    "word": "they",
+    "role": "subject",
+    "buttonBg": "neon_boder_blue"
+  },
+  {
+    "word": "\"We\u0027re",
+    "role": "subject",
+    "buttonBg": "neon_boder_blue"
+  },
+  {
+    "word": "glad",
+    "role": "complement",
+    "buttonBg": "neon_boder_violet"
+  },
+  {
+    "word": "you\u0027re",
+    "role": "subject",
+    "buttonBg": "neon_boder_blue"
+  },
+  {
+    "word": "here",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "now.\"",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "Looking",
+    "role": "verb",
+    "buttonBg": "neon_boder_red"
+  },
+  {
+    "word": "back",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "how",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "here.",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "Every",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "time",
+    "role": "object",
+    "buttonBg": "neon_boder_green"
+  },
+  {
+    "word": "after",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "falling",
+    "role": "verb",
+    "buttonBg": "neon_boder_red"
+  },
+  {
+    "word": "door",
+    "role": "object",
+    "buttonBg": "neon_boder_green"
+  },
+  {
+    "word": "of,",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "living",
+    "role": "verb",
+    "buttonBg": "neon_boder_red"
+  },
+  {
+    "word": "fear.",
+    "role": "object",
+    "buttonBg": "neon_boder_green"
+  },
+  {
+    "word": "chance",
+    "role": "object",
+    "buttonBg": "neon_boder_green"
+  },
+  {
+    "word": "on,",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "Turn",
+    "role": "verb",
+    "buttonBg": "neon_boder_red"
+  },
+  {
+    "word": "around.",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "it",
+    "role": "object",
+    "buttonBg": "neon_boder_green"
+  },
+  {
+    "word": "all,",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "fill",
+    "role": "verb",
+    "buttonBg": "neon_boder_red"
+  },
+  {
+    "word": "journey",
+    "role": "object",
+    "buttonBg": "neon_boder_green"
+  },
+  {
+    "word": "today.",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "made",
+    "role": "verb",
+    "buttonBg": "neon_boder_red"
+  },
+  {
+    "word": "kept",
+    "role": "verb",
+    "buttonBg": "neon_boder_red"
+  },
+  {
+    "word": "Tomorrow",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "again.",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "Get",
+    "role": "verb",
+    "buttonBg": "neon_boder_red"
+  },
+  {
+    "word": "bus",
+    "role": "object",
+    "buttonBg": "neon_boder_green"
+  },
+  {
+    "word": "best",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "friend.",
+    "role": "object",
+    "buttonBg": "neon_boder_green"
+  },
+  {
+    "word": "is",
+    "role": "verb",
+    "buttonBg": "neon_boder_red"
+  },
+  {
+    "word": "just",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "start",
+    "role": "object",
+    "buttonBg": "neon_boder_green"
+  },
+  {
+    "word": "you\u0027ll",
+    "role": "subject",
+    "buttonBg": "neon_boder_blue"
+  },
+  {
+    "word": "see.",
+    "role": "verb",
+    "buttonBg": "neon_boder_red"
+  },
+  {
+    "word": "into,",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "It\u0027s",
+    "role": "subject",
+    "buttonBg": "neon_boder_blue"
+  },
+  {
+    "word": "meant",
+    "role": "verb",
+    "buttonBg": "neon_boder_red"
+  },
+  {
+    "word": "for",
+    "role": "modifier",
+    "buttonBg": "neon_boder_orange"
+  },
+  {
+    "word": "me.",
+    "role": "object",
+    "buttonBg": "neon_boder_green"
+  }
+]

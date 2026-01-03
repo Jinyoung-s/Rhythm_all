@@ -1,0 +1,289 @@
+{
+    "version": "1.0",
+    "level": "beginner",
+    "patterns": [
+        {
+            "id": "pat_001",
+            "category": "i_am_patterns",
+            "difficulty": 1,
+            "name_key": "pat_001_name",
+            "desc_key": "pat_001_desc",
+            "icon_id": "icon_identity",
+            "structure": "I am + [noun/occupation]",
+            "examples": [
+                "Hi, I am a student.",
+                "I am a teacher at this school.",
+                "I am a doctor.",
+                "I am an engineer.",
+                "I am Korean.",
+                "I am your friend."
+            ]
+        },
+        {
+            "id": "pat_002",
+            "category": "i_am_patterns",
+            "difficulty": 1,
+            "name_key": "pat_002_name",
+            "desc_key": "pat_002_desc",
+            "icon_id": "icon_happy",
+            "structure": "I am + [emotion]",
+            "examples": [
+                "I am happy today.",
+                "I am so excited.",
+                "I am fine, thank you.",
+                "I am great, thanks.",
+                "I'm feeling amazing."
+            ]
+        },
+        {
+            "id": "pat_003",
+            "category": "i_am_patterns",
+            "difficulty": 1,
+            "name_key": "pat_003_name",
+            "desc_key": "pat_003_desc",
+            "icon_id": "icon_tired",
+            "structure": "I am + [state/feeling]",
+            "examples": [
+                "I am so tired right now.",
+                "I am hungry, let's eat.",
+                "I am really thirsty.",
+                "I am feeling sick.",
+                "I am too busy today."
+            ]
+        },
+        {
+            "id": "pat_004",
+            "category": "i_am_patterns",
+            "difficulty": 1,
+            "name_key": "pat_004_name",
+            "desc_key": "pat_004_desc",
+            "icon_id": "icon_location",
+            "structure": "I'm + [location/time]",
+            "examples": [
+                "I'm here now.",
+                "I'm home finally.",
+                "I'm at work right now.",
+                "I'm ready to go.",
+                "I'm on my way."
+            ]
+        },
+        {
+            "id": "pat_005",
+            "category": "i_am_patterns",
+            "difficulty": 2,
+            "name_key": "pat_005_name",
+            "desc_key": "pat_005_desc",
+            "icon_id": "icon_question_mark",
+            "structure": "Am I + ...?",
+            "examples": [
+                "Am I late for the meeting?",
+                "Am I right about this?",
+                "Am I next in line?",
+                "Am I in trouble now?",
+                "Am I doing this right?"
+            ],
+            "responses": {
+                "positive": [
+                    "Yes, you are",
+                    "Of course"
+                ],
+                "negative": [
+                    "No, you aren't",
+                    "Not at all"
+                ]
+            }
+        },
+        {
+            "id": "pat_006",
+            "category": "i_am_patterns",
+            "difficulty": 1,
+            "name_key": "pat_006_name",
+            "desc_key": "pat_006_desc",
+            "icon_id": "icon_negative",
+            "structure": "I'm not + ...",
+            "examples": [
+                "I'm not sure about that.",
+                "I'm not ready yet.",
+                "I'm not a student anymore.",
+                "I'm not American.",
+                "I'm not joking, seriously."
+            ]
+        },
+        {
+            "id": "pat_007",
+            "category": "i_have_want_patterns",
+            "difficulty": 1,
+            "name_key": "pat_007_name",
+            "desc_key": "pat_007_desc",
+            "icon_id": "icon_box",
+            "structure": "I have + [object/person]",
+            "examples": [
+                "I have a car now.",
+                "I have a new phone.",
+                "I have a younger brother.",
+                "I have two cats at home.",
+                "I have some money."
+            ]
+        },
+        {
+            "id": "pat_008",
+            "category": "i_have_want_patterns",
+            "difficulty": 1,
+            "name_key": "pat_008_name",
+            "desc_key": "pat_008_desc",
+            "icon_id": "icon_idea",
+            "structure": "I have + [abstract noun]",
+            "examples": [
+                "I have a question for you.",
+                "I have a problem here.",
+                "I have an idea.",
+                "I have some time now.",
+                "I have good news."
+            ]
+        },
+        {
+            "id": "pat_009",
+            "category": "i_have_want_patterns",
+            "difficulty": 1,
+            "name_key": "pat_009_name",
+            "desc_key": "pat_009_desc",
+            "icon_id": "icon_want",
+            "structure": "I want + [noun]",
+            "examples": [
+                "I want this one.",
+                "I want some water, please.",
+                "I want pizza for dinner.",
+                "I want coffee right now.",
+                "I want that blue one."
+            ]
+        },
+        {
+            "id": "pat_010",
+            "category": "i_have_want_patterns",
+            "difficulty": 2,
+            "name_key": "pat_010_name",
+            "desc_key": "pat_010_desc",
+            "icon_id": "icon_go",
+            "structure": "I want to + [verb]",
+            "examples": [
+                "I want to go home.",
+                "I want to see you.",
+                "I want to try this.",
+                "I want to know more.",
+                "I want to learn English."
+            ]
+        },
+        {
+            "id": "pat_011",
+            "category": "i_have_want_patterns",
+            "difficulty": 1,
+            "name_key": "pat_011_name",
+            "desc_key": "pat_011_desc",
+            "icon_id": "icon_need",
+            "structure": "I need + [noun]",
+            "examples": [
+                "I need help.",
+                "I need time.",
+                "I need money.",
+                "I need a taxi.",
+                "I need a doctor."
+            ]
+        },
+        {
+            "id": "pat_012",
+            "category": "i_have_want_patterns",
+            "difficulty": 2,
+            "name_key": "pat_012_name",
+            "desc_key": "pat_012_desc",
+            "icon_id": "icon_task",
+            "structure": "I need to + [verb]",
+            "examples": [
+                "I need to go.",
+                "I need to sleep.",
+                "I need to eat.",
+                "I need to think.",
+                "I need to work."
+            ]
+        },
+        {
+            "id": "pat_013",
+            "category": "i_like_patterns",
+            "difficulty": 1,
+            "name_key": "pat_013_name",
+            "desc_key": "pat_013_desc",
+            "icon_id": "icon_heart",
+            "structure": "I like/love + [noun]",
+            "examples": [
+                "I like this.",
+                "I like music.",
+                "I like coffee.",
+                "I love you.",
+                "I love this place."
+            ]
+        },
+        {
+            "id": "pat_014",
+            "category": "i_like_patterns",
+            "difficulty": 2,
+            "name_key": "pat_014_name",
+            "desc_key": "pat_014_desc",
+            "icon_id": "icon_star",
+            "structure": "I like/love + [verb-ing]",
+            "examples": [
+                "I like reading.",
+                "I like watching movies.",
+                "I love eating.",
+                "I love cooking.",
+                "I love traveling."
+            ]
+        },
+        {
+            "id": "pat_015",
+            "category": "i_like_patterns",
+            "difficulty": 1,
+            "name_key": "pat_015_name",
+            "desc_key": "pat_015_desc",
+            "icon_id": "icon_dislike",
+            "structure": "I don't like / I hate + ...",
+            "examples": [
+                "I don't like this.",
+                "I don't like waiting.",
+                "I hate this.",
+                "I can't stand it.",
+                "I'm not a fan of this movie."
+            ]
+        },
+        {
+            "id": "pat_016",
+            "category": "i_like_patterns",
+            "difficulty": 2,
+            "name_key": "pat_016_name",
+            "desc_key": "pat_016_desc",
+            "icon_id": "icon_question_heart",
+            "structure": "Do you like ...?",
+            "examples": [
+                "Do you like it?",
+                "Do you like music?",
+                "What do you like?",
+                "Do you like coffee?",
+                "Don't you like it?"
+            ]
+        },
+        {
+            "id": "pat_017",
+            "category": "i_like_patterns",
+            "difficulty": 2,
+            "name_key": "pat_017_name",
+            "desc_key": "pat_017_desc",
+            "icon_id": "icon_gentle",
+            "structure": "I'd like ... (polite)",
+            "examples": [
+                "I'd like this.",
+                "I'd like to go.",
+                "I'd like coffee.",
+                "I'd love to.",
+                "I'd prefer this one."
+            ]
+        }
+    ]
+}

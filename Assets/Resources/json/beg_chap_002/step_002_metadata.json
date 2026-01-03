@@ -1,0 +1,317 @@
+{
+    "songId": "step_002",
+    "chapterId": "beg_chap_002",
+    "chapterTitle": "Cafe & Shop Talk",
+    "title": "Coffee Shop Talk",
+    "titleKo": "커피숍 대화",
+    "artist": "Cafe Vibes",
+    "featuring": "Customer & Barista (Duet)",
+    "level": "beginner",
+    "difficulty": 1,
+    "duration": 150,
+    "tempo": 95,
+    "genre": "acoustic_pop",
+    "genreKo": "어쿠스틱 팝",
+    "mood": "friendly",
+    "moodKo": "친근한",
+    "isDuet": true,
+    "roles": [
+        {
+            "role": "customer",
+            "roleKo": "손님",
+            "lines": 8,
+            "voice": "female"
+        },
+        {
+            "role": "barista",
+            "roleKo": "바리스타",
+            "lines": 8,
+            "voice": "male"
+        }
+    ],
+    "description": "카페에서 주문하는 자연스러운 대화를 노래로 표현한 듀엣곡. 손님과 바리스타의 실제 대화 패턴을 배울 수 있습니다.",
+    "story": "손님이 거리를 걷다가 커피숍을 발견하고 들어가서 음료를 주문하는 과정을 담은 노래. 주문, 사이즈 선택, 결제까지의 전체 과정을 자연스럽게 표현합니다.",
+    "learningObjectives": [
+        "Can I...? 패턴으로 주문하기",
+        "Would you like...? 정중한 질문 이해하기",
+        "카페 관련 실용 영어 표현 익히기",
+        "대화 턴 테이킹 연습하기"
+    ],
+    "patterns": [
+        {
+            "patternId": "can_i_request",
+            "patternName": "Can I...? (허가 요청)",
+            "occurrences": 6,
+            "isFeatured": true,
+            "examples_in_song": [
+                "Can I have a coffee?",
+                "Can I have it iced?",
+                "Can I add some sugar?",
+                "Can I make it sweet?",
+                "Can I pay by card?"
+            ]
+        },
+        {
+            "patternId": "would_you_like",
+            "patternName": "Would you like...? (정중한 제안)",
+            "occurrences": 5,
+            "isFeatured": true,
+            "examples_in_song": [
+                "What can I get for you?",
+                "What size would you recommend?",
+                "Would you like a medium or a large cup?",
+                "For here or is it to go?"
+            ]
+        },
+        {
+            "patternId": "id_like",
+            "patternName": "I'd like... (정중한 요청)",
+            "occurrences": 3,
+            "isFeatured": false,
+            "examples_in_song": [
+                "I'd like the medium size",
+                "I'd like it to go"
+            ]
+        },
+        {
+            "patternId": "present_continuous",
+            "patternName": "현재 진행형",
+            "occurrences": 2,
+            "isFeatured": false,
+            "examples_in_song": [
+                "The smell is calling me",
+                "I'm on my way"
+            ]
+        }
+    ],
+    "grammarFocus": [
+        {
+            "point": "can_questions",
+            "pointKo": "Can 의문문",
+            "importance": "high"
+        },
+        {
+            "point": "polite_requests",
+            "pointKo": "정중한 요청",
+            "importance": "high"
+        },
+        {
+            "point": "or_questions",
+            "pointKo": "선택 질문 (A or B?)",
+            "importance": "medium"
+        }
+    ],
+    "vocabularyThemes": [
+        {
+            "theme": "cafe",
+            "themeKo": "카페",
+            "words": [
+                "coffee",
+                "iced",
+                "medium",
+                "large",
+                "cup",
+                "sugar",
+                "sweet",
+                "barista",
+                "order"
+            ]
+        },
+        {
+            "theme": "ordering",
+            "themeKo": "주문하기",
+            "words": [
+                "order",
+                "recommend",
+                "for here",
+                "to go",
+                "size",
+                "cost",
+                "pay",
+                "card"
+            ]
+        }
+    ],
+    "keyExpressions": [
+        {
+            "en": "Can I have a coffee?",
+            "ko": "커피 한 잔 주실 수 있나요?",
+            "usage": "주문할 때",
+            "frequency": "very_high"
+        },
+        {
+            "en": "What can I get for you?",
+            "ko": "무엇을 드릴까요?",
+            "usage": "점원이 주문 받을 때",
+            "frequency": "very_high"
+        },
+        {
+            "en": "What size would you like?",
+            "ko": "사이즈 어떤 걸로 하시겠어요?",
+            "usage": "사이즈 물을 때",
+            "frequency": "high"
+        },
+        {
+            "en": "For here or to go?",
+            "ko": "여기서 드시나요, 가져가시나요?",
+            "usage": "매장/포장 물을 때",
+            "frequency": "very_high"
+        },
+        {
+            "en": "Can I pay by card?",
+            "ko": "카드로 결제할 수 있나요?",
+            "usage": "결제 방법 물을 때",
+            "frequency": "high"
+        },
+        {
+            "en": "Here's your coffee",
+            "ko": "커피 여기 있습니다",
+            "usage": "음료 건넬 때",
+            "frequency": "high"
+        },
+        {
+            "en": "Come back anytime",
+            "ko": "언제든지 다시 오세요",
+            "usage": "작별 인사",
+            "frequency": "medium"
+        }
+    ],
+    "situationalContexts": [
+        "ordering_food",
+        "cafe",
+        "shopping",
+        "customer_service",
+        "daily_conversation"
+    ],
+    "culturalNotes": [
+        {
+            "note": "For here or to go?는 미국에서 매우 흔한 표현입니다.",
+            "noteKo": "'여기서 드시나요, 가져가시나요?'는 미국 카페/식당에서 거의 항상 듣게 되는 질문입니다."
+        },
+        {
+            "note": "Can I...?는 정중하지만 친근한 표현입니다.",
+            "noteKo": "Can I...?는 격식을 차리지 않으면서도 정중한 일상적 표현입니다."
+        }
+    ],
+    "dialogueStructure": {
+        "hasTurnTaking": true,
+        "customerLines": 8,
+        "baristaLines": 8,
+        "totalTurns": 16,
+        "interactionType": "transactional_dialogue"
+    },
+    "audioInfo": {
+        "filePathMp3": "Resources/audio/beg_chap_002/step_002.mp3",
+        "filePathVocal": "Resources/audio/beg_chap_002/step_002_vocal.mp3",
+        "filePathInstrumental": "Resources/audio/beg_chap_002/step_002_instrumental.mp3",
+        "hasLyricSync": true,
+        "lyricSyncFile": "Resources/json/beg_chap_002/step_002_lyrics.json"
+    },
+    "relatedContent": {
+        "learnFile": "Resources/json/beg_chap_002/step_002_learn.json",
+        "testFile": "Resources/json/beg_chap_002/step_002_test.json",
+        "roleFile": "Resources/json/beg_chap_002/step_002_role.json",
+        "singalongFile": "Resources/json/beg_chap_002/step_002_singalong.json"
+    },
+    "prerequisites": [
+        {
+            "patternId": "i_am_job",
+            "required": false
+        },
+        {
+            "patternId": "i_like_noun",
+            "required": false
+        }
+    ],
+    "nextSteps": [
+        {
+            "songId": "step_016",
+            "title": "At the Bakery",
+            "reason": "Similar ordering context"
+        },
+        {
+            "songId": "step_019",
+            "title": "Clothes Shopping",
+            "reason": "More Can I...? practice"
+        },
+        {
+            "songId": "step_023",
+            "title": "Restaurant Order",
+            "reason": "Advanced ordering patterns"
+        }
+    ],
+    "tags": [
+        "duet",
+        "cafe",
+        "ordering",
+        "beginner",
+        "practical",
+        "acoustic",
+        "dialogue",
+        "can_i",
+        "polite_requests"
+    ],
+    "statistics": {
+        "totalWords": 180,
+        "uniqueWords": 85,
+        "averageWordLength": 4.2,
+        "sentenceCount": 24,
+        "questionCount": 12
+    },
+    "ratingInfo": {
+        "difficulty": {
+            "grammar": 2,
+            "vocabulary": 1,
+            "speed": 2,
+            "pronunciation": 2,
+            "overall": 1
+        },
+        "usefulness": 5,
+        "popularity": 4.5,
+        "funFactor": 4
+    },
+    "practiceActivities": [
+        {
+            "type": "role_play",
+            "description": "듀엣으로 손님/바리스타 역할 바꿔가며 연습",
+            "difficulty": "beginner"
+        },
+        {
+            "type": "listen_and_repeat",
+            "description": "각 문장을 듣고 따라하기",
+            "difficulty": "beginner"
+        },
+        {
+            "type": "fill_in_blanks",
+            "description": "빈칸 채우기 퀴즈",
+            "difficulty": "beginner"
+        },
+        {
+            "type": "karaoke",
+            "description": "반주에 맞춰 노래 부르기",
+            "difficulty": "beginner"
+        }
+    ],
+    "achievements": [
+        {
+            "id": "first_order",
+            "name": "First Coffee Order",
+            "nameKo": "첫 커피 주문",
+            "condition": "Complete this song for the first time"
+        },
+        {
+            "id": "perfect_duet",
+            "name": "Perfect Duet",
+            "nameKo": "완벽한 듀엣",
+            "condition": "Score 100% in karaoke mode"
+        }
+    ],
+    "userProgress": {
+        "listenCount": 0,
+        "completionRate": 0,
+        "lastPlayedDate": null,
+        "highScore": 0,
+        "isFavorite": false,
+        "notes": []
+    }
+}

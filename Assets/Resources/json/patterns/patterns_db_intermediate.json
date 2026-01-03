@@ -1,0 +1,681 @@
+{
+    "version": "1.0",
+    "level": "intermediate",
+    "patterns": [
+        {
+            "id": "pat_126",
+            "category": "gh_pv",
+            "difficulty": 3,
+            "name_key": "pat_126_name",
+            "desc_key": "pat_126_desc",
+            "structure": "Get Up/Down/In/Out",
+            "examples": [
+                "I get up early.",
+                "Get down here.",
+                "Get in the car.",
+                "Get out of here.",
+                "I get on the bus."
+            ]
+        },
+        {
+            "id": "pat_127",
+            "category": "gh_pv",
+            "difficulty": 3,
+            "name_key": "pat_127_name",
+            "desc_key": "pat_127_desc",
+            "structure": "Get + Adj",
+            "examples": [
+                "I get tired easily.",
+                "Don't get angry.",
+                "I'll get ready.",
+                "It will get better.",
+                "The weather will get worse."
+            ]
+        },
+        {
+            "id": "pat_128",
+            "category": "gh_pv",
+            "difficulty": 3,
+            "name_key": "pat_128_name",
+            "desc_key": "pat_128_desc",
+            "structure": "Get + Relation",
+            "examples": [
+                "We get along well.",
+                "Let's get together.",
+                "They will get married.",
+                "They might get divorced.",
+                "We should get back together."
+            ]
+        },
+        {
+            "id": "pat_129",
+            "category": "gh_pv",
+            "difficulty": 3,
+            "name_key": "pat_129_name",
+            "desc_key": "pat_129_desc",
+            "structure": "Get + Action",
+            "examples": [
+                "I'll get back to you.",
+                "I'll get over it.",
+                "We'll get through this.",
+                "Let's get away for a while.",
+                "I need to get rid of this."
+            ]
+        },
+        {
+            "id": "pat_130",
+            "category": "gh_pv",
+            "difficulty": 3,
+            "name_key": "pat_130_name",
+            "desc_key": "pat_130_desc",
+            "structure": "Get Hybrid",
+            "examples": [
+                "I get it.",
+                "Don't get lost.",
+                "Let's get started.",
+                "I don't get it at all.",
+                "Let's get going now."
+            ]
+        },
+        {
+            "id": "pat_131",
+            "category": "tt_pv",
+            "difficulty": 3,
+            "name_key": "pat_131_name",
+            "desc_key": "pat_131_desc",
+            "structure": "Turn On/Off/Up/Down",
+            "examples": [
+                "Turn on the light.",
+                "Turn down the volume.",
+                "Turn around and look.",
+                "Turn it up, please.",
+                "Turn off the TV now."
+            ]
+        },
+        {
+            "id": "pat_132",
+            "category": "tt_pv",
+            "difficulty": 3,
+            "name_key": "pat_132_name",
+            "desc_key": "pat_132_desc",
+            "structure": "Turn + Change",
+            "examples": [
+                "Caterpillars turn into butterflies.",
+                "Everything will turn out fine.",
+                "I will turn back now.",
+                "It turned out well in the end.",
+                "The situation turns around quickly."
+            ]
+        },
+        {
+            "id": "pat_133",
+            "category": "tt_pv",
+            "difficulty": 3,
+            "name_key": "pat_133_name",
+            "desc_key": "pat_133_desc",
+            "structure": "Take Off/Out/Away",
+            "examples": [
+                "The plane will take off soon.",
+                "I'll take out the trash.",
+                "Take away this trash, please.",
+                "I'll take back what I said.",
+                "Take down those decorations."
+            ]
+        },
+        {
+            "id": "pat_134",
+            "category": "tt_pv",
+            "difficulty": 3,
+            "name_key": "pat_134_name",
+            "desc_key": "pat_134_desc",
+            "structure": "Take Care/Part",
+            "examples": [
+                "Take care on your way home.",
+                "I'll take care of it for you.",
+                "I want to take part in the event.",
+                "Please take your time.",
+                "Let's take a break here."
+            ]
+        },
+        {
+            "id": "pat_135",
+            "category": "tt_pv",
+            "difficulty": 3,
+            "name_key": "pat_135_name",
+            "desc_key": "pat_135_desc",
+            "structure": "Take + Motion",
+            "examples": [
+                "I need to take a shower.",
+                "Can you take a picture for me?",
+                "Please take a seat over there.",
+                "Let me take a look at that.",
+                "I'll take notes during the meeting."
+            ]
+        },
+        {
+            "id": "pat_136",
+            "category": "pp_pv",
+            "difficulty": 3,
+            "name_key": "pat_136_name",
+            "desc_key": "pat_136_desc",
+            "structure": "Put On/Off/Away",
+            "examples": [
+                "Put on your coat.",
+                "Don't put off your work.",
+                "Put away your toys.",
+                "Put down that glass.",
+                "Put aside some money."
+            ]
+        },
+        {
+            "id": "pat_137",
+            "category": "pp_pv",
+            "difficulty": 3,
+            "name_key": "pat_137_name",
+            "desc_key": "pat_137_desc",
+            "structure": "Put + Loc",
+            "examples": [
+                "Put in some sugar.",
+                "Put out the fire.",
+                "Put up your hand.",
+                "I can't put up with this.",
+                "Let's put it together."
+            ]
+        },
+        {
+            "id": "pat_138",
+            "category": "pp_pv",
+            "difficulty": 3,
+            "name_key": "pat_138_name",
+            "desc_key": "pat_138_desc",
+            "structure": "Pick Up/Out",
+            "examples": [
+                "Pick up",
+                "Pick out",
+                "Pick on",
+                "Pick up the phone",
+                "I'll pick you up"
+            ]
+        },
+        {
+            "id": "pat_139",
+            "category": "pp_pv",
+            "difficulty": 3,
+            "name_key": "pat_139_name",
+            "desc_key": "pat_139_desc",
+            "structure": "Pick + Select",
+            "examples": [
+                "We'll pick and choose together.",
+                "Pick your favorite color.",
+                "Pick a card from the deck.",
+                "Pick a place for dinner.",
+                "Pick a time for the meeting."
+            ]
+        },
+        {
+            "id": "pat_140",
+            "category": "pp_pv",
+            "difficulty": 3,
+            "name_key": "pat_140_name",
+            "desc_key": "pat_140_desc",
+            "structure": "Put/Pick Hybrid",
+            "examples": [
+                "Put it on/off",
+                "Pick it up",
+                "Put it away",
+                "Pick me up",
+                "Put up with it"
+            ]
+        },
+        {
+            "id": "pat_141",
+            "category": "lcg_pv",
+            "difficulty": 3,
+            "name_key": "pat_141_name",
+            "desc_key": "pat_141_desc",
+            "structure": "Look For/After/At",
+            "examples": [
+                "I'm looking for my keys.",
+                "I'll look after your cat.",
+                "Look at this beautiful view.",
+                "I look forward to meeting you.",
+                "Look out for the cars!"
+            ]
+        },
+        {
+            "id": "pat_142",
+            "category": "lcg_pv",
+            "difficulty": 3,
+            "name_key": "pat_142_name",
+            "desc_key": "pat_142_desc",
+            "structure": "Look + Dir",
+            "examples": [
+                "Look up at the stars.",
+                "Don't look down on others.",
+                "Look around the garden.",
+                "Look back at your memories.",
+                "Look ahead to the future."
+            ]
+        },
+        {
+            "id": "pat_143",
+            "category": "lcg_pv",
+            "difficulty": 3,
+            "name_key": "pat_143_name",
+            "desc_key": "pat_143_desc",
+            "structure": "Come In/Out/Back",
+            "examples": [
+                "Please come in the room.",
+                "The truth will come out soon.",
+                "I'll come back tomorrow.",
+                "Come over to my house.",
+                "I'll come up with an idea."
+            ]
+        },
+        {
+            "id": "pat_144",
+            "category": "lcg_pv",
+            "difficulty": 3,
+            "name_key": "pat_144_name",
+            "desc_key": "pat_144_desc",
+            "structure": "Go On/Out/Away",
+            "examples": [
+                "The show must go on.",
+                "Let's go out tonight.",
+                "Please go away now.",
+                "Let's go over the plan.",
+                "We'll go through it together."
+            ]
+        },
+        {
+            "id": "pat_145",
+            "category": "lcg_pv",
+            "difficulty": 3,
+            "name_key": "pat_145_name",
+            "desc_key": "pat_145_desc",
+            "structure": "LCG Hybrid",
+            "examples": [
+                "Look it up",
+                "Come on!",
+                "Go for it!",
+                "Come on in",
+                "Look who's here"
+            ]
+        },
+        {
+            "id": "pat_146",
+            "category": "small_talk",
+            "difficulty": 2,
+            "name_key": "pat_146_name",
+            "desc_key": "pat_146_desc",
+            "structure": "Weather",
+            "examples": [
+                "Nice weather, isn't it?",
+                "It's so hot",
+                "It's raining",
+                "Beautiful day",
+                "What's the weather like?"
+            ]
+        },
+        {
+            "id": "pat_147",
+            "category": "small_talk",
+            "difficulty": 2,
+            "name_key": "pat_147_name",
+            "desc_key": "pat_147_desc",
+            "structure": "Greeting",
+            "examples": [
+                "How's it going?",
+                "What's new?",
+                "What have you been up to?",
+                "Long time no see",
+                "How have you been?"
+            ]
+        },
+        {
+            "id": "pat_148",
+            "category": "small_talk",
+            "difficulty": 2,
+            "name_key": "pat_148_name",
+            "desc_key": "pat_148_desc",
+            "structure": "Hobby",
+            "examples": [
+                "What did you do this weekend?",
+                "Do you have any plans for tonight?",
+                "What do you do for fun?",
+                "I like to play basketball.",
+                "Do you have any hobbies?"
+            ]
+        },
+        {
+            "id": "pat_149",
+            "category": "small_talk",
+            "difficulty": 2,
+            "name_key": "pat_149_name",
+            "desc_key": "pat_149_desc",
+            "structure": "Daily Life",
+            "examples": [
+                "How was your day?",
+                "How was work?",
+                "Busy day?",
+                "Tell me about it",
+                "You must be tired"
+            ]
+        },
+        {
+            "id": "pat_150",
+            "category": "small_talk",
+            "difficulty": 1,
+            "name_key": "pat_150_name",
+            "desc_key": "pat_150_desc",
+            "structure": "Reaction",
+            "examples": [
+                "Really?",
+                "That's interesting",
+                "I see",
+                "Makes sense",
+                "Good for you"
+            ]
+        },
+        {
+            "id": "pat_151",
+            "category": "social",
+            "difficulty": 2,
+            "name_key": "pat_151_name",
+            "desc_key": "pat_151_desc",
+            "structure": "Invite",
+            "examples": [
+                "Join us?",
+                "Free this weekend?",
+                "I'd love to",
+                "That sounds great",
+                "I can't make it"
+            ]
+        },
+        {
+            "id": "pat_152",
+            "category": "social",
+            "difficulty": 2,
+            "name_key": "pat_152_name",
+            "desc_key": "pat_152_desc",
+            "structure": "Appointment",
+            "examples": [
+                "When are you free?",
+                "How about Friday?",
+                "What time works?",
+                "Let's meet at 7",
+                "See you then"
+            ]
+        },
+        {
+            "id": "pat_153",
+            "category": "social",
+            "difficulty": 2,
+            "name_key": "pat_153_name",
+            "desc_key": "pat_153_desc",
+            "structure": "Apology",
+            "examples": [
+                "Sorry I'm late for the meeting.",
+                "Please accept my apologies.",
+                "It's my fault that we missed it.",
+                "I didn't mean to hurt your feelings.",
+                "I'm truly sorry about that."
+            ]
+        },
+        {
+            "id": "pat_154",
+            "category": "social",
+            "difficulty": 1,
+            "name_key": "pat_154_name",
+            "desc_key": "pat_154_desc",
+            "structure": "Compliment",
+            "examples": [
+                "You look great",
+                "Nice job",
+                "Well done",
+                "You did great",
+                "Thanks, I appreciate it"
+            ]
+        },
+        {
+            "id": "pat_155",
+            "category": "social",
+            "difficulty": 1,
+            "name_key": "pat_155_name",
+            "desc_key": "pat_155_desc",
+            "structure": "Farewell",
+            "examples": [
+                "I should get going",
+                "I have to run",
+                "Nice talking to you",
+                "Keep in touch",
+                "Take care"
+            ]
+        },
+        {
+            "id": "pat_156",
+            "category": "feeling",
+            "difficulty": 2,
+            "name_key": "pat_156_name",
+            "desc_key": "pat_156_desc",
+            "structure": "Happy/Excited",
+            "examples": [
+                "I'm so happy",
+                "I'm excited",
+                "That's awesome",
+                "I can't believe it",
+                "Amazing"
+            ]
+        },
+        {
+            "id": "pat_157",
+            "category": "feeling",
+            "difficulty": 2,
+            "name_key": "pat_157_name",
+            "desc_key": "pat_157_desc",
+            "structure": "Sad/Disappointed",
+            "examples": [
+                "I'm disappointed",
+                "I'm sad",
+                "That's too bad",
+                "I'm sorry to hear that",
+                "What a shame"
+            ]
+        },
+        {
+            "id": "pat_158",
+            "category": "feeling",
+            "difficulty": 2,
+            "name_key": "pat_158_name",
+            "desc_key": "pat_158_desc",
+            "structure": "Worry/Fear",
+            "examples": [
+                "I'm worried",
+                "I'm nervous",
+                "I'm afraid",
+                "I'm scared",
+                "Don't worry"
+            ]
+        },
+        {
+            "id": "pat_159",
+            "category": "feeling",
+            "difficulty": 2,
+            "name_key": "pat_159_name",
+            "desc_key": "pat_159_desc",
+            "structure": "Anger/Annoyance",
+            "examples": [
+                "I'm upset",
+                "I'm angry",
+                "That's annoying",
+                "I'm fed up",
+                "Frustrating"
+            ]
+        },
+        {
+            "id": "pat_160",
+            "category": "feeling",
+            "difficulty": 2,
+            "name_key": "pat_160_name",
+            "desc_key": "pat_160_desc",
+            "structure": "Surprise",
+            "examples": [
+                "I'm surprised",
+                "I'm shocked",
+                "I can't believe it",
+                "Unexpected",
+                "Seriously?"
+            ]
+        },
+        {
+            "id": "pat_161",
+            "category": "travel",
+            "difficulty": 2,
+            "name_key": "pat_161_name",
+            "desc_key": "pat_161_desc",
+            "structure": "Check-in",
+            "examples": [
+                "I'd like to check in for my flight.",
+                "Here is my passport.",
+                "Do you prefer a window or aisle seat?",
+                "How many bags are you checking?",
+                "Here is your boarding pass."
+            ]
+        },
+        {
+            "id": "pat_162",
+            "category": "travel",
+            "difficulty": 2,
+            "name_key": "pat_162_name",
+            "desc_key": "pat_162_desc",
+            "structure": "Security/Gate",
+            "examples": [
+                "Where is Gate 5?",
+                "When are we boarding the plane?",
+                "Where is the security checkpoint?",
+                "We must go through security now.",
+                "Are we at the right gate?"
+            ]
+        },
+        {
+            "id": "pat_163",
+            "category": "travel",
+            "difficulty": 2,
+            "name_key": "pat_163_name",
+            "desc_key": "pat_163_desc",
+            "structure": "On Board",
+            "examples": [
+                "Water, please",
+                "Blanket",
+                "Bathroom?",
+                "I feel sick",
+                "When land?"
+            ]
+        },
+        {
+            "id": "pat_164",
+            "category": "travel",
+            "difficulty": 3,
+            "name_key": "pat_164_name",
+            "desc_key": "pat_164_desc",
+            "structure": "Immigration",
+            "examples": [
+                "Here is my passport.",
+                "What is the purpose of your visit?",
+                "I am here for tourism.",
+                "How long will you stay in the country?",
+                "Where will you stay tonight?"
+            ]
+        },
+        {
+            "id": "pat_165",
+            "category": "travel",
+            "difficulty": 2,
+            "name_key": "pat_165_name",
+            "desc_key": "pat_165_desc",
+            "structure": "Baggage",
+            "examples": [
+                "Where is the baggage claim area?",
+                "I can't find my bag on the carousel.",
+                "My bag is missing from the flight.",
+                "I think this is my bag.",
+                "Where should I report this?"
+            ]
+        },
+        {
+            "id": "pat_166",
+            "category": "travel",
+            "difficulty": 2,
+            "name_key": "pat_166_name",
+            "desc_key": "pat_166_desc",
+            "structure": "Hotel Check-in",
+            "examples": [
+                "I have a hotel reservation.",
+                "May I have your name, please?",
+                "Which floor is my room on?",
+                "Where is the elevator?",
+                "What time is the checkout time?"
+            ]
+        },
+        {
+            "id": "pat_167",
+            "category": "travel",
+            "difficulty": 3,
+            "name_key": "pat_167_name",
+            "desc_key": "pat_167_desc",
+            "structure": "Hotel Problem",
+            "examples": [
+                "The AC doesn't work in my room.",
+                "Is it possible to change rooms?",
+                "There is no hot water in the shower.",
+                "Can you fix this problem?",
+                "May I have some more towels?"
+            ]
+        },
+        {
+            "id": "pat_168",
+            "category": "travel",
+            "difficulty": 2,
+            "name_key": "pat_168_name",
+            "desc_key": "pat_168_desc",
+            "structure": "Directions Q",
+            "examples": [
+                "Where is the nearest bank?",
+                "How do I get to the museum?",
+                "Is it far from here?",
+                "Can I walk to that place?",
+                "Which way should I go?"
+            ]
+        },
+        {
+            "id": "pat_169",
+            "category": "travel",
+            "difficulty": 2,
+            "name_key": "pat_169_name",
+            "desc_key": "pat_169_desc",
+            "structure": "Directions Info",
+            "examples": [
+                "Go straight",
+                "Turn left/right",
+                "On your left",
+                "Cross the street",
+                "You'll see it"
+            ]
+        },
+        {
+            "id": "pat_170",
+            "category": "travel",
+            "difficulty": 2,
+            "name_key": "pat_170_name",
+            "desc_key": "pat_170_desc",
+            "structure": "Sightseeing",
+            "examples": [
+                "How much is the admission fee?",
+                "Is it okay to take photos here?",
+                "When do you close today?",
+                "The view from here is beautiful.",
+                "Where can I buy tickets?"
+            ]
+        }
+    ]
+}

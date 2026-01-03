@@ -1,0 +1,406 @@
+{
+    "version": "1.0",
+    "level": "beginner",
+    "patterns": [
+        {
+            "id": "pat_036",
+            "category": "do_does_questions",
+            "difficulty": 1,
+            "name_key": "pat_036_name",
+            "desc_key": "pat_036_desc",
+            "icon_id": "icon_do_basic",
+            "structure": "Do you...? (Basic)",
+            "examples": [
+                "Do you like this?",
+                "Do you want this?",
+                "Do you have a pet?",
+                "Do you know?",
+                "Do you understand?"
+            ]
+        },
+        {
+            "id": "pat_037",
+            "category": "do_does_questions",
+            "difficulty": 2,
+            "name_key": "pat_037_name",
+            "desc_key": "pat_037_desc",
+            "icon_id": "icon_do_action",
+            "structure": "Do you...? (Action)",
+            "examples": [
+                "Do you speak English?",
+                "Do you live here?",
+                "Do you work here?",
+                "Do you need help?",
+                "Do you have time?"
+            ]
+        },
+        {
+            "id": "pat_038",
+            "category": "do_does_questions",
+            "difficulty": 2,
+            "name_key": "pat_038_name",
+            "desc_key": "pat_038_desc",
+            "icon_id": "icon_third_person",
+            "structure": "Does He/She/It...?",
+            "examples": [
+                "Does he know?",
+                "Does she work here?",
+                "Does it work?",
+                "Does this make sense?",
+                "Doesn't he like it?"
+            ]
+        },
+        {
+            "id": "pat_039",
+            "category": "do_does_questions",
+            "difficulty": 2,
+            "name_key": "pat_039_name",
+            "desc_key": "pat_039_desc",
+            "icon_id": "icon_negative_q",
+            "structure": "Don't You...? (Negative)",
+            "examples": [
+                "Don't you like it?",
+                "Don't you know?",
+                "Don't you think so?",
+                "Don't you want to?",
+                "Don't you remember?"
+            ]
+        },
+        {
+            "id": "pat_040",
+            "category": "do_does_questions",
+            "difficulty": 2,
+            "name_key": "pat_040_name",
+            "desc_key": "pat_040_desc",
+            "icon_id": "icon_did_q",
+            "structure": "Did You...? (Past Question)",
+            "examples": [
+                "Did you do it?",
+                "Did you go?",
+                "Did you see it?",
+                "Did you hear that?",
+                "What did you do?"
+            ]
+        },
+        {
+            "id": "pat_041",
+            "category": "what_questions",
+            "difficulty": 1,
+            "name_key": "pat_041_name",
+            "desc_key": "pat_041_desc",
+            "icon_id": "icon_what_is",
+            "structure": "What Is...?",
+            "examples": [
+                "What is this?",
+                "What's that?",
+                "What's your name?",
+                "What's the time?",
+                "What's wrong?"
+            ]
+        },
+        {
+            "id": "pat_042",
+            "category": "what_questions",
+            "difficulty": 2,
+            "name_key": "pat_042_name",
+            "desc_key": "pat_042_desc",
+            "icon_id": "icon_what_do",
+            "structure": "What Do You...?",
+            "examples": [
+                "What do you want?",
+                "What do you like?",
+                "What do you do?",
+                "What do you think?",
+                "What do you mean?"
+            ]
+        },
+        {
+            "id": "pat_043",
+            "category": "what_questions",
+            "difficulty": 2,
+            "name_key": "pat_043_name",
+            "desc_key": "pat_043_desc",
+            "icon_id": "icon_what_doing",
+            "structure": "What Are You...?",
+            "examples": [
+                "What are you doing?",
+                "What are you saying?",
+                "What are you thinking?",
+                "What are you looking at?",
+                "What are you talking about?"
+            ]
+        },
+        {
+            "id": "pat_044",
+            "category": "what_questions",
+            "difficulty": 2,
+            "name_key": "pat_044_name",
+            "desc_key": "pat_044_desc",
+            "icon_id": "icon_what_kind",
+            "structure": "What's the... / What Kind of...?",
+            "examples": [
+                "What's the problem?",
+                "What's the matter?",
+                "What kind of food do you like?",
+                "What kind of music do you like?",
+                "What sort of movies do you watch?"
+            ]
+        },
+        {
+            "id": "pat_045",
+            "category": "what_questions",
+            "difficulty": 2,
+            "name_key": "pat_045_name",
+            "desc_key": "pat_045_desc",
+            "icon_id": "icon_what_about",
+            "structure": "What About...? / What If...?",
+            "examples": [
+                "What about you?",
+                "What about this?",
+                "What if we go now?",
+                "What else do you need?",
+                "What for?"
+            ]
+        },
+        {
+            "id": "pat_046",
+            "category": "where_when_questions",
+            "difficulty": 1,
+            "name_key": "pat_046_name",
+            "desc_key": "pat_046_desc",
+            "icon_id": "icon_where_is",
+            "structure": "Where Is...?",
+            "examples": [
+                "Where is it?",
+                "Where's the bathroom?",
+                "Where is my phone?",
+                "Where is he?",
+                "Where are they?"
+            ]
+        },
+        {
+            "id": "pat_047",
+            "category": "where_when_questions",
+            "difficulty": 2,
+            "name_key": "pat_047_name",
+            "desc_key": "pat_047_desc",
+            "icon_id": "icon_where_are",
+            "structure": "Where Are You...?",
+            "examples": [
+                "Where are you?",
+                "Where are you from?",
+                "Where do you live?",
+                "Where do you work?",
+                "Where are you going?"
+            ]
+        },
+        {
+            "id": "pat_048",
+            "category": "where_when_questions",
+            "difficulty": 2,
+            "name_key": "pat_048_name",
+            "desc_key": "pat_048_desc",
+            "icon_id": "icon_where_can",
+            "structure": "Where Can I...?",
+            "examples": [
+                "Where can I find a taxi?",
+                "Where can I buy a ticket?",
+                "Where can I park my car?",
+                "Where can I eat lunch?",
+                "Where should I go now?"
+            ]
+        },
+        {
+            "id": "pat_049",
+            "category": "where_when_questions",
+            "difficulty": 1,
+            "name_key": "pat_049_name",
+            "desc_key": "pat_049_desc",
+            "icon_id": "icon_when_is",
+            "structure": "When Is...?",
+            "examples": [
+                "When is it?",
+                "When do we start?",
+                "When does it start?",
+                "When did you arrive?",
+                "When will you come?"
+            ]
+        },
+        {
+            "id": "pat_050",
+            "category": "where_when_questions",
+            "difficulty": 2,
+            "name_key": "pat_050_name",
+            "desc_key": "pat_050_desc",
+            "icon_id": "icon_when_do",
+            "structure": "When Do You...?",
+            "examples": [
+                "When do you work?",
+                "When do you leave?",
+                "When is your birthday?",
+                "Since when?",
+                "Until when?"
+            ]
+        },
+        {
+            "id": "pat_051",
+            "category": "who_why_which_questions",
+            "difficulty": 1,
+            "name_key": "pat_051_name",
+            "desc_key": "pat_051_desc",
+            "icon_id": "icon_who_is",
+            "structure": "Who Is...?",
+            "examples": [
+                "Who is this?",
+                "Who's that?",
+                "Who are you?",
+                "Who's calling?",
+                "Who did this?"
+            ]
+        },
+        {
+            "id": "pat_052",
+            "category": "who_why_which_questions",
+            "difficulty": 2,
+            "name_key": "pat_052_name",
+            "desc_key": "pat_052_desc",
+            "icon_id": "icon_why",
+            "structure": "Why...?",
+            "examples": [
+                "Why did you do that?",
+                "Why not join us?",
+                "Why did you say that?",
+                "Why do you ask?",
+                "Why are you late?"
+            ]
+        },
+        {
+            "id": "pat_053",
+            "category": "who_why_which_questions",
+            "difficulty": 1,
+            "name_key": "pat_053_name",
+            "desc_key": "pat_053_desc",
+            "icon_id": "icon_which",
+            "structure": "Which...?",
+            "examples": [
+                "Which one do you like?",
+                "Which do you want?",
+                "Which is better?",
+                "Which way should I go?",
+                "Which size do you need?"
+            ]
+        },
+        {
+            "id": "pat_054",
+            "category": "who_why_which_questions",
+            "difficulty": 2,
+            "name_key": "pat_054_name",
+            "desc_key": "pat_054_desc",
+            "icon_id": "icon_whose",
+            "structure": "Whose...? / Whom...?",
+            "examples": [
+                "Whose is this?",
+                "Whose car is it?",
+                "Whom did you meet?",
+                "For whom is this gift?",
+                "With whom did you go?"
+            ]
+        },
+        {
+            "id": "pat_055",
+            "category": "who_why_which_questions",
+            "difficulty": 1,
+            "name_key": "pat_055_name",
+            "desc_key": "pat_055_desc",
+            "icon_id": "icon_wh_all",
+            "structure": "Question Words Review",
+            "examples": [
+                "What do you want?",
+                "Where are you?",
+                "When did you go?",
+                "Who are you?",
+                "Why are you here?"
+            ]
+        },
+        {
+            "id": "pat_056",
+            "category": "how_questions",
+            "difficulty": 1,
+            "name_key": "pat_056_name",
+            "desc_key": "pat_056_desc",
+            "icon_id": "icon_how_are",
+            "structure": "How Are You?",
+            "examples": [
+                "How are you?",
+                "How's it going?",
+                "How do you do?",
+                "How have you been?",
+                "How's everything?"
+            ]
+        },
+        {
+            "id": "pat_057",
+            "category": "how_questions",
+            "difficulty": 2,
+            "name_key": "pat_057_name",
+            "desc_key": "pat_057_desc",
+            "icon_id": "icon_how_adj",
+            "structure": "How + Adjective",
+            "examples": [
+                "How old are you?",
+                "How tall are you?",
+                "How long does it take?",
+                "How far is it?",
+                "How big is the room?"
+            ]
+        },
+        {
+            "id": "pat_058",
+            "category": "how_questions",
+            "difficulty": 2,
+            "name_key": "pat_058_name",
+            "desc_key": "pat_058_desc",
+            "icon_id": "icon_how_much",
+            "structure": "How Much/Many",
+            "examples": [
+                "How much is it?",
+                "How much does it cost?",
+                "How many do you want?",
+                "How many people are there?",
+                "How much time do we have?"
+            ]
+        },
+        {
+            "id": "pat_059",
+            "category": "how_questions",
+            "difficulty": 2,
+            "name_key": "pat_059_name",
+            "desc_key": "pat_059_desc",
+            "icon_id": "icon_how_do",
+            "structure": "How Do You...?",
+            "examples": [
+                "How do you know?",
+                "How do you say this in English?",
+                "How do I get there?",
+                "How can I help you?",
+                "How should I do this?"
+            ]
+        },
+        {
+            "id": "pat_060",
+            "category": "how_questions",
+            "difficulty": 2,
+            "name_key": "pat_060_name",
+            "desc_key": "pat_060_desc",
+            "icon_id": "icon_how_was",
+            "structure": "How Was...? / How About...?",
+            "examples": [
+                "How was it?",
+                "How was your day?",
+                "How about you?",
+                "How about coffee?",
+                "How come you are late?"
+            ]
+        }
+    ]
+}

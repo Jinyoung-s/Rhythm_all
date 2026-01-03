@@ -1,0 +1,566 @@
+{
+    "version": "1.0",
+    "level": "elementary",
+    "patterns": [
+        {
+            "id": "pat_061",
+            "category": "present_simple",
+            "difficulty": 1,
+            "name_key": "pat_061_name",
+            "desc_key": "pat_061_desc",
+            "icon_id": "icon_daily",
+            "structure": "I + [verb]",
+            "examples": [
+                "I wake up at 7.",
+                "I eat breakfast.",
+                "I go to work.",
+                "I work from 9 to 6.",
+                "I come home at 7."
+            ]
+        },
+        {
+            "id": "pat_062",
+            "category": "present_simple",
+            "difficulty": 2,
+            "name_key": "pat_062_name",
+            "desc_key": "pat_062_desc",
+            "icon_id": "icon_third_person",
+            "structure": "He/She + [verb]-s",
+            "examples": [
+                "My brother lives in Seoul",
+                "He works at a bank",
+                "My sister studies hard",
+                "She goes to school",
+                "The shop opens at 7"
+            ]
+        },
+        {
+            "id": "pat_063",
+            "category": "present_simple",
+            "difficulty": 1,
+            "name_key": "pat_063_name",
+            "desc_key": "pat_063_desc",
+            "icon_id": "icon_we_they",
+            "structure": "We/They + [verb]",
+            "examples": [
+                "We live in the same building",
+                "We work together",
+                "They go to the gym",
+                "We eat lunch",
+                "They like Korean food"
+            ]
+        },
+        {
+            "id": "pat_064",
+            "category": "present_simple",
+            "difficulty": 2,
+            "name_key": "pat_064_name",
+            "desc_key": "pat_064_desc",
+            "icon_id": "icon_do_does_q",
+            "structure": "Do/Does ...?",
+            "examples": [
+                "Do you live around here?",
+                "Does he work here?",
+                "Do they like this?",
+                "Does she know?",
+                "Do you speak Korean?"
+            ]
+        },
+        {
+            "id": "pat_065",
+            "category": "present_simple",
+            "difficulty": 2,
+            "name_key": "pat_065_name",
+            "desc_key": "pat_065_desc",
+            "icon_id": "icon_dont_doesnt",
+            "structure": "Don't/Doesn't + [verb]",
+            "examples": [
+                "I don't like coffee",
+                "He doesn't know me",
+                "She doesn't speak English",
+                "We don't have time",
+                "It doesn't work"
+            ]
+        },
+        {
+            "id": "pat_066",
+            "category": "present_continuous",
+            "difficulty": 2,
+            "name_key": "pat_066_name",
+            "desc_key": "pat_066_desc",
+            "icon_id": "icon_ing_1",
+            "structure": "I'm + [verb]-ing",
+            "examples": [
+                "I'm working.",
+                "I'm studying English.",
+                "I'm eating lunch.",
+                "I'm watching a movie.",
+                "I'm waiting for the bus."
+            ]
+        },
+        {
+            "id": "pat_067",
+            "category": "present_continuous",
+            "difficulty": 2,
+            "name_key": "pat_067_name",
+            "desc_key": "pat_067_desc",
+            "icon_id": "icon_ing_q",
+            "structure": "What are you doing?",
+            "examples": [
+                "I'm talking to my friend",
+                "I'm looking for my phone",
+                "I'm trying to find it",
+                "What is he doing?",
+                "He's talking on the phone"
+            ]
+        },
+        {
+            "id": "pat_068",
+            "category": "present_continuous",
+            "difficulty": 2,
+            "name_key": "pat_068_name",
+            "desc_key": "pat_068_desc",
+            "icon_id": "icon_ing_3rd",
+            "structure": "He's/She's + [verb]-ing",
+            "examples": [
+                "He's working in the office",
+                "She's studying",
+                "My brother is sleeping",
+                "They're playing soccer",
+                "Everyone is having fun"
+            ]
+        },
+        {
+            "id": "pat_069",
+            "category": "present_continuous",
+            "difficulty": 2,
+            "name_key": "pat_069_name",
+            "desc_key": "pat_069_desc",
+            "icon_id": "icon_are_you_ing",
+            "structure": "Are you + [verb]-ing?",
+            "examples": [
+                "Are you working today?",
+                "Are you coming?",
+                "Is he sleeping?",
+                "Is she coming with us?",
+                "Are they ready?"
+            ]
+        },
+        {
+            "id": "pat_070",
+            "category": "present_continuous",
+            "difficulty": 2,
+            "name_key": "pat_070_name",
+            "desc_key": "pat_070_desc",
+            "icon_id": "icon_not_ing",
+            "structure": "I'm not + [verb]-ing",
+            "examples": [
+                "I'm not working today",
+                "I'm not joking",
+                "I'm not going anywhere",
+                "He's not coming",
+                "She's not listening"
+            ]
+        },
+        {
+            "id": "pat_071",
+            "category": "past_simple",
+            "difficulty": 2,
+            "name_key": "pat_071_name",
+            "desc_key": "pat_071_desc",
+            "icon_id": "icon_past_reg",
+            "structure": "[verb]-ed",
+            "examples": [
+                "I worked yesterday.",
+                "I studied last night.",
+                "I played soccer.",
+                "I watched TV.",
+                "I called you."
+            ]
+        },
+        {
+            "id": "pat_072",
+            "category": "past_simple",
+            "difficulty": 2,
+            "name_key": "pat_072_name",
+            "desc_key": "pat_072_desc",
+            "icon_id": "icon_past_irreg_1",
+            "structure": "Irregular Past Part 1",
+            "examples": [
+                "I went there.",
+                "I saw it.",
+                "I ate lunch.",
+                "I got up.",
+                "I came back."
+            ]
+        },
+        {
+            "id": "pat_073",
+            "category": "past_simple",
+            "difficulty": 2,
+            "name_key": "pat_073_name",
+            "desc_key": "pat_073_desc",
+            "icon_id": "icon_past_irreg_2",
+            "structure": "Irregular Past Part 2",
+            "examples": [
+                "I made it.",
+                "I took a taxi.",
+                "I bought this.",
+                "I met him.",
+                "I left home."
+            ]
+        },
+        {
+            "id": "pat_074",
+            "category": "past_simple",
+            "difficulty": 2,
+            "name_key": "pat_074_name",
+            "desc_key": "pat_074_desc",
+            "icon_id": "icon_was_were",
+            "structure": "Was/Were",
+            "examples": [
+                "I was there.",
+                "You were right.",
+                "He was late.",
+                "We were together.",
+                "There was a cat on the street."
+            ]
+        },
+        {
+            "id": "pat_075",
+            "category": "past_simple",
+            "difficulty": 2,
+            "name_key": "pat_075_name",
+            "desc_key": "pat_075_desc",
+            "icon_id": "icon_did_q_neg",
+            "structure": "Did you ...? / I didn't",
+            "examples": [
+                "Did you go?",
+                "Did you see it?",
+                "I didn't go.",
+                "I didn't know.",
+                "He didn't come."
+            ]
+        },
+        {
+            "id": "pat_076",
+            "category": "future",
+            "difficulty": 2,
+            "name_key": "pat_076_name",
+            "desc_key": "pat_076_desc",
+            "icon_id": "icon_will",
+            "structure": "I will + [verb]",
+            "examples": [
+                "I will go.",
+                "I will do it.",
+                "I will call you.",
+                "I will be there.",
+                "I won't forget."
+            ]
+        },
+        {
+            "id": "pat_077",
+            "category": "future",
+            "difficulty": 2,
+            "name_key": "pat_077_name",
+            "desc_key": "pat_077_desc",
+            "icon_id": "icon_going_to",
+            "structure": "I'm going to + [verb]",
+            "examples": [
+                "I'm going to go.",
+                "I'm going to buy some groceries.",
+                "I'm going to study.",
+                "What are you going to do?",
+                "I'm not going to tell anyone."
+            ]
+        },
+        {
+            "id": "pat_078",
+            "category": "future",
+            "difficulty": 2,
+            "name_key": "pat_078_name",
+            "desc_key": "pat_078_desc",
+            "icon_id": "icon_fixed_future",
+            "structure": "I'm -ing (Fixed)",
+            "examples": [
+                "I'm meeting him tomorrow",
+                "I'm flying to Japan",
+                "We're having a party",
+                "She's getting married",
+                "What are you doing tonight?"
+            ]
+        },
+        {
+            "id": "pat_079",
+            "category": "future",
+            "difficulty": 2,
+            "name_key": "pat_079_name",
+            "desc_key": "pat_079_desc",
+            "icon_id": "icon_will_q",
+            "structure": "Will you ...?",
+            "examples": [
+                "Will you come?",
+                "Will you help me?",
+                "What will you do?",
+                "When will you call me back?",
+                "Will it work?"
+            ]
+        },
+        {
+            "id": "pat_080",
+            "category": "future",
+            "difficulty": 1,
+            "name_key": "pat_080_name",
+            "desc_key": "pat_080_desc",
+            "icon_id": "icon_time_exp",
+            "structure": "Future Time Expressions",
+            "examples": [
+                "I'll see you tomorrow.",
+                "See you next week.",
+                "We'll go next month.",
+                "I'll be there soon.",
+                "We may meet in the future."
+            ]
+        },
+        {
+            "id": "pat_081",
+            "category": "present_perfect",
+            "difficulty": 3,
+            "name_key": "pat_081_name",
+            "desc_key": "pat_081_desc",
+            "icon_id": "icon_exp",
+            "structure": "I've + p.p. (Experience)",
+            "examples": [
+                "I've been there.",
+                "I've seen it.",
+                "I've tried it.",
+                "Have you ever been to Paris?",
+                "I've never seen him before."
+            ]
+        },
+        {
+            "id": "pat_082",
+            "category": "present_perfect",
+            "difficulty": 3,
+            "name_key": "pat_082_name",
+            "desc_key": "pat_082_desc",
+            "icon_id": "icon_completion",
+            "structure": "I've done (Complete)",
+            "examples": [
+                "I've done it",
+                "I've finished",
+                "Have you finished?",
+                "I haven't done it yet",
+                "She's already gone"
+            ]
+        },
+        {
+            "id": "pat_083",
+            "category": "present_perfect",
+            "difficulty": 3,
+            "name_key": "pat_083_name",
+            "desc_key": "pat_083_desc",
+            "icon_id": "icon_duration",
+            "structure": "I've + p.p. (Duration)",
+            "examples": [
+                "I've lived here for 5 years.",
+                "I've worked here since 2020.",
+                "How long have you lived here?",
+                "I've known him for five years.",
+                "We've been friends since middle school."
+            ]
+        },
+        {
+            "id": "pat_084",
+            "category": "present_perfect",
+            "difficulty": 3,
+            "name_key": "pat_084_name",
+            "desc_key": "pat_084_desc",
+            "icon_id": "icon_just_already",
+            "structure": "Just/Already/Yet",
+            "examples": [
+                "I've just arrived",
+                "I've already done it",
+                "Have you done it yet?",
+                "I haven't seen it yet",
+                "She's just left"
+            ]
+        },
+        {
+            "id": "pat_085",
+            "category": "present_perfect",
+            "difficulty": 3,
+            "name_key": "pat_085_name",
+            "desc_key": "pat_085_desc",
+            "icon_id": "icon_before",
+            "structure": "Ever/Never/Before",
+            "examples": [
+                "Have you ever been to London?",
+                "I've never tried it.",
+                "I've done this before.",
+                "I've never seen this before.",
+                "Have you been here before?"
+            ]
+        },
+        {
+            "id": "pat_086",
+            "category": "modal",
+            "difficulty": 2,
+            "name_key": "pat_086_name",
+            "desc_key": "pat_086_desc",
+            "icon_id": "icon_should",
+            "structure": "Should/Shouldn't",
+            "examples": [
+                "You should go.",
+                "You shouldn't do that.",
+                "Should I go now?",
+                "I should have done that.",
+                "You should've told me."
+            ]
+        },
+        {
+            "id": "pat_087",
+            "category": "modal",
+            "difficulty": 3,
+            "name_key": "pat_087_name",
+            "desc_key": "pat_087_desc",
+            "icon_id": "icon_must",
+            "structure": "Must/Have to",
+            "examples": [
+                "I must go.",
+                "You must try this.",
+                "I have to work.",
+                "Do I have to wait?",
+                "You don't have to worry."
+            ]
+        },
+        {
+            "id": "pat_088",
+            "category": "modal",
+            "difficulty": 2,
+            "name_key": "pat_088_name",
+            "desc_key": "pat_088_desc",
+            "icon_id": "icon_may_might",
+            "structure": "May/Might",
+            "examples": [
+                "It may rain.",
+                "I might be late.",
+                "It might not work.",
+                "May I come in?",
+                "You may be right."
+            ]
+        },
+        {
+            "id": "pat_089",
+            "category": "modal",
+            "difficulty": 2,
+            "name_key": "pat_089_name",
+            "desc_key": "pat_089_desc",
+            "icon_id": "icon_could_would",
+            "structure": "Could/Would",
+            "examples": [
+                "I could do it.",
+                "You could try.",
+                "Would you like some coffee?",
+                "I would if I could.",
+                "Could you help me?"
+            ]
+        },
+        {
+            "id": "pat_090",
+            "category": "modal",
+            "difficulty": 3,
+            "name_key": "pat_090_name",
+            "desc_key": "pat_090_desc",
+            "icon_id": "icon_be_supposed",
+            "structure": "Be Able to / Supposed to",
+            "examples": [
+                "I'm able to drive.",
+                "I was able to finish it.",
+                "I'm supposed to be there.",
+                "You're not supposed to smoke here.",
+                "Am I supposed to do this?"
+            ]
+        },
+        {
+            "id": "pat_091",
+            "category": "prep",
+            "difficulty": 1,
+            "name_key": "pat_091_name",
+            "desc_key": "pat_091_desc",
+            "icon_id": "icon_at",
+            "structure": "At",
+            "examples": [
+                "I am at home.",
+                "I am at work.",
+                "I am at school.",
+                "Wait at the station.",
+                "It's at 5 o'clock."
+            ]
+        },
+        {
+            "id": "pat_092",
+            "category": "prep",
+            "difficulty": 1,
+            "name_key": "pat_092_name",
+            "desc_key": "pat_092_desc",
+            "icon_id": "icon_in",
+            "structure": "In",
+            "examples": [
+                "I live in Seoul.",
+                "It is in Korea.",
+                "He is in the room.",
+                "I work in the morning.",
+                "It happened in 2024."
+            ]
+        },
+        {
+            "id": "pat_093",
+            "category": "prep",
+            "difficulty": 1,
+            "name_key": "pat_093_name",
+            "desc_key": "pat_093_desc",
+            "icon_id": "icon_on",
+            "structure": "On",
+            "examples": [
+                "It's on the table.",
+                "It's on the wall.",
+                "I'll go on Monday.",
+                "I saw it on TV.",
+                "I'm on my way."
+            ]
+        },
+        {
+            "id": "pat_094",
+            "category": "prep",
+            "difficulty": 2,
+            "name_key": "pat_094_name",
+            "desc_key": "pat_094_desc",
+            "icon_id": "icon_loc",
+            "structure": "Location (near/next/etc)",
+            "examples": [
+                "Sit next to me.",
+                "He lives near the station.",
+                "It is between the bank and cafe.",
+                "It's behind the building.",
+                "Wait in front of the library."
+            ]
+        },
+        {
+            "id": "pat_095",
+            "category": "prep",
+            "difficulty": 2,
+            "name_key": "pat_095_name",
+            "desc_key": "pat_095_desc",
+            "icon_id": "icon_motion",
+            "structure": "Motion (to/from/etc)",
+            "examples": [
+                "I'm going to work.",
+                "He came from home.",
+                "Call me before noon.",
+                "Let's go after lunch.",
+                "I saw him during the meeting."
+            ]
+        }
+    ]
+}

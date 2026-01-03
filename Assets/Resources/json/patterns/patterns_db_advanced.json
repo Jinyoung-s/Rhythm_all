@@ -1,0 +1,756 @@
+{
+    "version": "1.0",
+    "level": "advanced",
+    "patterns": [
+        {
+            "id": "pat_171",
+            "category": "biz",
+            "difficulty": 4,
+            "name_key": "pat_171_name",
+            "desc_key": "pat_171_desc",
+            "structure": "Biz Intro",
+            "examples": [
+                "I work at a software company.",
+                "I am in charge of marketing.",
+                "My role is project manager.",
+                "I've been working here for five years.",
+                "It's nice to meet you."
+            ]
+        },
+        {
+            "id": "pat_172",
+            "category": "biz",
+            "difficulty": 4,
+            "name_key": "pat_172_name",
+            "desc_key": "pat_172_desc",
+            "structure": "Email",
+            "examples": [
+                "I am writing to you regarding the project.",
+                "Thanks for your email.",
+                "I hope this email finds you well.",
+                "Please let me know your thoughts.",
+                "I look forward to hearing from you."
+            ]
+        },
+        {
+            "id": "pat_173",
+            "category": "biz",
+            "difficulty": 4,
+            "name_key": "pat_173_name",
+            "desc_key": "pat_173_desc",
+            "structure": "Phone",
+            "examples": [
+                "May I speak to the manager?",
+                "I am calling regarding your order.",
+                "Would you like to leave a message?",
+                "I will call back later.",
+                "Could you transfer me to the sales department?"
+            ]
+        },
+        {
+            "id": "pat_174",
+            "category": "biz",
+            "difficulty": 4,
+            "name_key": "pat_174_name",
+            "desc_key": "pat_174_desc",
+            "structure": "Schedule",
+            "examples": [
+                "Are you available on Monday?",
+                "Is this a good time to talk?",
+                "I'd like to schedule a meeting.",
+                "Does Monday work for you?",
+                "I'll send you a calendar invite."
+            ]
+        },
+        {
+            "id": "pat_175",
+            "category": "biz",
+            "difficulty": 4,
+            "name_key": "pat_175_name",
+            "desc_key": "pat_175_desc",
+            "structure": "Status",
+            "examples": [
+                "How's it going with the project?",
+                "What's the status of the report?",
+                "Everything is on track.",
+                "We are a bit behind schedule.",
+                "We are making good progress."
+            ]
+        },
+        {
+            "id": "pat_176",
+            "category": "meeting",
+            "difficulty": 4,
+            "name_key": "pat_176_name",
+            "desc_key": "pat_176_desc",
+            "structure": "Start",
+            "examples": [
+                "Get started",
+                "Thanks for coming",
+                "Agenda is",
+                "First on agenda",
+                "Let's begin"
+            ]
+        },
+        {
+            "id": "pat_177",
+            "category": "meeting",
+            "difficulty": 4,
+            "name_key": "pat_177_name",
+            "desc_key": "pat_177_desc",
+            "structure": "Opinion",
+            "examples": [
+                "I suggest we postpone the meeting.",
+                "What if we change the strategy?",
+                "Have you considered this option?",
+                "How about we try a different approach?",
+                "I propose a new solution."
+            ]
+        },
+        {
+            "id": "pat_178",
+            "category": "meeting",
+            "difficulty": 4,
+            "name_key": "pat_178_name",
+            "desc_key": "pat_178_desc",
+            "structure": "Agree",
+            "examples": [
+                "I agree with your point.",
+                "That's a good point.",
+                "I see what you mean, but I have concerns.",
+                "I'm not sure I agree with that.",
+                "Let me think about that for a moment."
+            ]
+        },
+        {
+            "id": "pat_179",
+            "category": "meeting",
+            "difficulty": 4,
+            "name_key": "pat_179_name",
+            "desc_key": "pat_179_desc",
+            "structure": "Presentation",
+            "examples": [
+                "I'd like to present my findings.",
+                "Let me show you the data.",
+                "As you see in this chart, sales are up.",
+                "Moving on to the next topic.",
+                "In conclusion, we need to act now."
+            ]
+        },
+        {
+            "id": "pat_180",
+            "category": "meeting",
+            "difficulty": 4,
+            "name_key": "pat_180_name",
+            "desc_key": "pat_180_desc",
+            "structure": "Q&A",
+            "examples": [
+                "Do you have any questions?",
+                "That's a good question.",
+                "Let me clarify that point.",
+                "Did I answer your question?",
+                "Feel free to ask anything."
+            ]
+        },
+        {
+            "id": "pat_181",
+            "category": "skill",
+            "difficulty": 5,
+            "name_key": "pat_181_name",
+            "desc_key": "pat_181_desc",
+            "structure": "Fix",
+            "examples": [
+                "We have a problem to solve.",
+                "Let's brainstorm some ideas.",
+                "What are our options?",
+                "I have a proposal for you.",
+                "We should implement this change."
+            ]
+        },
+        {
+            "id": "pat_182",
+            "category": "skill",
+            "difficulty": 5,
+            "name_key": "pat_182_name",
+            "desc_key": "pat_182_desc",
+            "structure": "Negotiate",
+            "examples": [
+                "Discuss terms",
+                "We offer",
+                "Deal breaker",
+                "Meet halfway",
+                "We have a deal"
+            ]
+        },
+        {
+            "id": "pat_183",
+            "category": "skill",
+            "difficulty": 4,
+            "name_key": "pat_183_name",
+            "desc_key": "pat_183_desc",
+            "structure": "Feedback",
+            "examples": [
+                "You did good work on this.",
+                "There is room to improve.",
+                "Overall, you did very well.",
+                "We need to work on this part.",
+                "I appreciate your effort."
+            ]
+        },
+        {
+            "id": "pat_184",
+            "category": "skill",
+            "difficulty": 4,
+            "name_key": "pat_184_name",
+            "desc_key": "pat_184_desc",
+            "structure": "Network",
+            "examples": [
+                "I'd like to connect with you on LinkedIn.",
+                "Let's stay in touch.",
+                "May I have your business card?",
+                "It was great talking to you.",
+                "I'll follow up with you soon."
+            ]
+        },
+        {
+            "id": "pat_185",
+            "category": "skill",
+            "difficulty": 5,
+            "name_key": "pat_185_name",
+            "desc_key": "pat_185_desc",
+            "structure": "Professional",
+            "examples": [
+                "I have extensive experience in this field.",
+                "Based on the data, we should proceed.",
+                "We need a new strategy.",
+                "The key thing is to stay focused.",
+                "Moving forward, we will change our goals."
+            ]
+        },
+        {
+            "id": "pat_186",
+            "category": "complex",
+            "difficulty": 4,
+            "name_key": "pat_186_name",
+            "desc_key": "pat_186_desc",
+            "structure": "If Clause",
+            "examples": [
+                "If I were you, I would go.",
+                "If I had known, I would have helped.",
+                "If you don't mind, I'll stay here.",
+                "What if we try something new?",
+                "Even if it rains, we will go."
+            ]
+        },
+        {
+            "id": "pat_187",
+            "category": "complex",
+            "difficulty": 4,
+            "name_key": "pat_187_name",
+            "desc_key": "pat_187_desc",
+            "structure": "Reason",
+            "examples": [
+                "I am happy because you are here.",
+                "Since you are here, let's start.",
+                "As it is raining, we should stay.",
+                "The flight was canceled due to bad weather.",
+                "Thanks to your help, we finished on time."
+            ]
+        },
+        {
+            "id": "pat_188",
+            "category": "complex",
+            "difficulty": 4,
+            "name_key": "pat_188_name",
+            "desc_key": "pat_188_desc",
+            "structure": "Concession",
+            "examples": [
+                "Although it was late, he stayed.",
+                "Even though it's hard, I'll try.",
+                "Despite the rain, we went out.",
+                "In spite of the delay, we arrived.",
+                "Regardless of the cost, we need it."
+            ]
+        },
+        {
+            "id": "pat_189",
+            "category": "complex",
+            "difficulty": 4,
+            "name_key": "pat_189_name",
+            "desc_key": "pat_189_desc",
+            "structure": "Result",
+            "examples": [
+                "The news was so shocking that I cried.",
+                "It was such a beautiful day that we stayed out.",
+                "Therefore, we decided to wait.",
+                "As a result, they won the game.",
+                "Consequently, the price went up."
+            ]
+        },
+        {
+            "id": "pat_190",
+            "category": "complex",
+            "difficulty": 4,
+            "name_key": "pat_190_name",
+            "desc_key": "pat_190_desc",
+            "structure": "Relative",
+            "examples": [
+                "Person who",
+                "Something that",
+                "Place where",
+                "Time when",
+                "Reason why"
+            ]
+        },
+        {
+            "id": "pat_191",
+            "category": "nuance",
+            "difficulty": 4,
+            "name_key": "pat_191_name",
+            "desc_key": "pat_191_desc",
+            "structure": "Guess",
+            "examples": [
+                "I think it will rain.",
+                "He will probably come.",
+                "Maybe it's true.",
+                "It seems like a good idea.",
+                "I guess you are right."
+            ]
+        },
+        {
+            "id": "pat_192",
+            "category": "nuance",
+            "difficulty": 4,
+            "name_key": "pat_192_name",
+            "desc_key": "pat_192_desc",
+            "structure": "Certainty",
+            "examples": [
+                "I'm sure you will succeed.",
+                "I will definitely be there.",
+                "I will certainly help you.",
+                "I doubt it will work.",
+                "It is unlikely to happen."
+            ]
+        },
+        {
+            "id": "pat_193",
+            "category": "nuance",
+            "difficulty": 4,
+            "name_key": "pat_193_name",
+            "desc_key": "pat_193_desc",
+            "structure": "Softening",
+            "examples": [
+                "Sort of",
+                "Kind of",
+                "More or less",
+                "To some extent",
+                "In a way"
+            ]
+        },
+        {
+            "id": "pat_194",
+            "category": "nuance",
+            "difficulty": 4,
+            "name_key": "pat_194_name",
+            "desc_key": "pat_194_desc",
+            "structure": "Emphasize",
+            "examples": [
+                "Actually",
+                "In fact",
+                "To be honest",
+                "Frankly",
+                "The thing is"
+            ]
+        },
+        {
+            "id": "pat_195",
+            "category": "nuance",
+            "difficulty": 4,
+            "name_key": "pat_195_name",
+            "desc_key": "pat_195_desc",
+            "structure": "Contrast",
+            "examples": [
+                "On the other hand",
+                "In contrast",
+                "Compared to",
+                "Unlike",
+                "Similarly"
+            ]
+        },
+        {
+            "id": "pat_196",
+            "category": "nuance",
+            "difficulty": 4,
+            "name_key": "pat_196_name",
+            "desc_key": "pat_196_desc",
+            "structure": "Example",
+            "examples": [
+                "For example, you can use this.",
+                "He likes fruits, such as apples.",
+                "It's like a dream.",
+                "For instance, consider this case.",
+                "To illustrate, here is an example."
+            ]
+        },
+        {
+            "id": "pat_197",
+            "category": "nuance",
+            "difficulty": 4,
+            "name_key": "pat_197_name",
+            "desc_key": "pat_197_desc",
+            "structure": "Summary",
+            "examples": [
+                "In short",
+                "To sum up",
+                "Basically",
+                "The point is",
+                "All in all"
+            ]
+        },
+        {
+            "id": "pat_198",
+            "category": "nuance",
+            "difficulty": 4,
+            "name_key": "pat_198_name",
+            "desc_key": "pat_198_desc",
+            "structure": "Topic",
+            "examples": [
+                "By the way",
+                "Speaking of which",
+                "That reminds me",
+                "Anyway",
+                "Back to"
+            ]
+        },
+        {
+            "id": "pat_199",
+            "category": "nuance",
+            "difficulty": 5,
+            "name_key": "pat_199_name",
+            "desc_key": "pat_199_desc",
+            "structure": "Polite",
+            "examples": [
+                "I'm afraid I cannot help you.",
+                "I'm sorry to say it is true.",
+                "With all respect, I disagree.",
+                "Would you mind my asking a question?",
+                "Is it possible to go now?"
+            ]
+        },
+        {
+            "id": "pat_200",
+            "category": "nuance",
+            "difficulty": 4,
+            "name_key": "pat_200_name",
+            "desc_key": "pat_200_desc",
+            "structure": "Colloquial",
+            "examples": [
+                "What's up with you?",
+                "Let's hang out later.",
+                "Just chill out and relax.",
+                "No way, I don't believe it!",
+                "You bet I'll be there."
+            ]
+        },
+        {
+            "id": "pat_201",
+            "category": "idiom",
+            "difficulty": 5,
+            "name_key": "pat_201_name",
+            "desc_key": "pat_201_desc",
+            "structure": "Problem Idioms",
+            "examples": [
+                "He is in hot water now.",
+                "Let's break the ice with a joke.",
+                "I think I missed the boat.",
+                "It's back to square one.",
+                "That was the last straw."
+            ]
+        },
+        {
+            "id": "pat_202",
+            "category": "idiom",
+            "difficulty": 5,
+            "name_key": "pat_202_name",
+            "desc_key": "pat_202_desc",
+            "structure": "Action Idioms",
+            "examples": [
+                "You hit the nail on the head.",
+                "Don't pull my leg.",
+                "Can you give me a hand?",
+                "Cross your fingers for me.",
+                "Break a leg at the show!"
+            ]
+        },
+        {
+            "id": "pat_203",
+            "category": "idiom",
+            "difficulty": 5,
+            "name_key": "pat_203_name",
+            "desc_key": "pat_203_desc",
+            "structure": "Nature Idioms",
+            "examples": [
+                "It's raining cats and dogs.",
+                "I am under the weather.",
+                "I am on cloud nine.",
+                "Every cloud has a silver lining.",
+                "Save it for a rainy day."
+            ]
+        },
+        {
+            "id": "pat_204",
+            "category": "idiom",
+            "difficulty": 5,
+            "name_key": "pat_204_name",
+            "desc_key": "pat_204_desc",
+            "structure": "Food Idioms",
+            "examples": [
+                "It's a piece of cake.",
+                "Don't spill the beans.",
+                "Don't butter him up.",
+                "In a nutshell, it's done.",
+                "That's the icing on the cake."
+            ]
+        },
+        {
+            "id": "pat_205",
+            "category": "idiom",
+            "difficulty": 5,
+            "name_key": "pat_205_name",
+            "desc_key": "pat_205_desc",
+            "structure": "Time Idioms",
+            "examples": [
+                "In the nick of time.",
+                "Time flies when you have fun.",
+                "Better late than never.",
+                "Once in a blue moon.",
+                "Make the most of it."
+            ]
+        },
+        {
+            "id": "pat_206",
+            "category": "slang",
+            "difficulty": 4,
+            "name_key": "pat_206_name",
+            "desc_key": "pat_206_desc",
+            "structure": "Pos Slang",
+            "examples": [
+                "Awesome",
+                "Cool",
+                "Amazing",
+                "Dope",
+                "Lit"
+            ]
+        },
+        {
+            "id": "pat_207",
+            "category": "slang",
+            "difficulty": 4,
+            "name_key": "pat_207_name",
+            "desc_key": "pat_207_desc",
+            "structure": "Neg Slang",
+            "examples": [
+                "Sucks",
+                "Bummer",
+                "Lame",
+                "Whatever",
+                "Meh"
+            ]
+        },
+        {
+            "id": "pat_208",
+            "category": "slang",
+            "difficulty": 3,
+            "name_key": "pat_208_name",
+            "desc_key": "pat_208_desc",
+            "structure": "React Slang",
+            "examples": [
+                "For real",
+                "No kidding",
+                "Totally",
+                "You got it",
+                "Fair enough"
+            ]
+        },
+        {
+            "id": "pat_209",
+            "category": "slang",
+            "difficulty": 4,
+            "name_key": "pat_209_name",
+            "desc_key": "pat_209_desc",
+            "structure": "Modern",
+            "examples": [
+                "FOMO",
+                "On point",
+                "Big time",
+                "No brainer",
+                "Deal with it"
+            ]
+        },
+        {
+            "id": "pat_210",
+            "category": "slang",
+            "difficulty": 3,
+            "name_key": "pat_210_name",
+            "desc_key": "pat_210_desc",
+            "structure": "Social Media",
+            "examples": [
+                "This post is trending now.",
+                "The video will go viral.",
+                "Don't forget the hashtag.",
+                "She is a famous influencer.",
+                "Please subscribe to my channel."
+            ]
+        },
+        {
+            "id": "pat_211",
+            "category": "native",
+            "difficulty": 5,
+            "name_key": "pat_211_name",
+            "desc_key": "pat_211_desc",
+            "structure": "Start Filler",
+            "examples": [
+                "You know what?",
+                "Here's the thing",
+                "Fact is",
+                "To be fair",
+                "As I was saying"
+            ]
+        },
+        {
+            "id": "pat_212",
+            "category": "native",
+            "difficulty": 5,
+            "name_key": "pat_212_name",
+            "desc_key": "pat_212_desc",
+            "structure": "Hesitation",
+            "examples": [
+                "Well, let me think about it.",
+                "Um, I'm not sure.",
+                "Let me think for a moment.",
+                "How can I put it into words?",
+                "What's the word I'm looking for?"
+            ]
+        },
+        {
+            "id": "pat_213",
+            "category": "native",
+            "difficulty": 5,
+            "name_key": "pat_213_name",
+            "desc_key": "pat_213_desc",
+            "structure": "Confirm",
+            "examples": [
+                "You see?",
+                "You know?",
+                "Right?",
+                "Seriously",
+                "Honestly"
+            ]
+        },
+        {
+            "id": "pat_214",
+            "category": "native",
+            "difficulty": 5,
+            "name_key": "pat_214_name",
+            "desc_key": "pat_214_desc",
+            "structure": "Fix Filler",
+            "examples": [
+                "I mean",
+                "Rather",
+                "What I meant",
+                "Rephrase",
+                "Other words"
+            ]
+        },
+        {
+            "id": "pat_215",
+            "category": "native",
+            "difficulty": 5,
+            "name_key": "pat_215_name",
+            "desc_key": "pat_215_desc",
+            "structure": "React Filler",
+            "examples": [
+                "Oh really?",
+                "Is that so?",
+                "You don't say",
+                "Go on",
+                "And then?"
+            ]
+        },
+        {
+            "id": "pat_216",
+            "category": "native",
+            "difficulty": 5,
+            "name_key": "pat_216_name",
+            "desc_key": "pat_216_desc",
+            "structure": "Nuance Diff",
+            "examples": [
+                "Think vs Believe",
+                "Look/See/Watch",
+                "Hear/Listen",
+                "Say/Tell/Speak",
+                "Make vs Do"
+            ]
+        },
+        {
+            "id": "pat_217",
+            "category": "native",
+            "difficulty": 5,
+            "name_key": "pat_217_name",
+            "desc_key": "pat_217_desc",
+            "structure": "Formal vs Inf",
+            "examples": [
+                "I would appreciate",
+                "Can you?",
+                "I regret to inform",
+                "Sorry, but",
+                "Contrast learning"
+            ]
+        },
+        {
+            "id": "pat_218",
+            "category": "native",
+            "difficulty": 5,
+            "name_key": "pat_218_name",
+            "desc_key": "pat_218_desc",
+            "structure": "Implicit",
+            "examples": [
+                "I was wondering if you could help.",
+                "You might want to check this.",
+                "It wouldn't hurt to try.",
+                "I wouldn't say no to a coffee.",
+                "That's one way to put it."
+            ]
+        },
+        {
+            "id": "pat_219",
+            "category": "native",
+            "difficulty": 5,
+            "name_key": "pat_219_name",
+            "desc_key": "pat_219_desc",
+            "structure": "Adv Q",
+            "examples": [
+                "Do you happen to?",
+                "Would you happen?",
+                "I don't suppose",
+                "Wouldn't know?",
+                "Any chance?"
+            ]
+        },
+        {
+            "id": "pat_220",
+            "category": "native",
+            "difficulty": 5,
+            "name_key": "pat_220_name",
+            "desc_key": "pat_220_desc",
+            "structure": "Final Master",
+            "examples": [
+                "I will review all patterns.",
+                "I can speak at native speed.",
+                "This is a simulation exercise.",
+                "Let's do a final check.",
+                "You have achieved mastery."
+            ]
+        }
+    ]
+}

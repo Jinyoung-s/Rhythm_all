@@ -1,0 +1,647 @@
+{
+  "version": "1.0",
+  "course": {
+      "id": "eng-phrasal-verbs-01",
+      "title": "Get Phrasal Verbs",
+      "locale": "ko-KR",
+      "targetLocale": "en-US"
+    },
+  "items": [
+      {
+        "id": "Q001",
+        "type": "assemble",
+        "prompt": {
+                "sourceLang": "ko",
+                "text": "ë‚˜ëŠ” ì¼ì° ì¼ì–´ë‚¬ì–´ìš”."
+              },
+        "wordBank": [
+                "I",
+                "got",
+                "up",
+                "early",
+                "down",
+                "in",
+                "late"
+              ],
+        "correctOrder": [
+                  "I",
+                  "got",
+                  "up",
+                  "early"
+                ],
+        "acceptedAlternatives": [
+
+                    ],
+        "ui": {
+              "hint": "\u0027ì¼ì–´ë‚¬ë‹¤\u0027ëŠ” \u0027got up\u0027ì´ì—ìš”"
+        },
+        "meta": {
+              "tags": [
+                      "get-up",
+                      "daily-routine"
+                    ],
+              "difficulty": 3,
+              "timeLimitSec": 45
+        }
+      },
+      {
+        "id": "Q002",
+        "type": "assemble",
+        "prompt": {
+                "sourceLang": "ko",
+                "text": "ì¹¨ëŒ€ì—ì„œ ë‚˜ì™”ì–´ìš”."
+              },
+        "wordBank": [
+                "Got",
+                "out",
+                "of",
+                "bed",
+                "in",
+                "on",
+                "the"
+              ],
+        "correctOrder": [
+                  "Got",
+                  "out",
+                  "of",
+                  "bed"
+                ],
+        "acceptedAlternatives": [
+
+                    ],
+        "ui": {
+              "hint": "\u0027ë‚˜ì™”ë‹¤\u0027ëŠ” \u0027got out of\u0027ì˜ˆìš”"
+        },
+        "meta": {
+              "tags": [
+                      "get-out",
+                      "morning"
+                    ],
+              "difficulty": 3,
+              "timeLimitSec": 45
+        }
+      },
+      {
+        "id": "Q003",
+        "type": "assemble",
+        "prompt": {
+                "sourceLang": "ko",
+                "text": "ë‚˜ëŠ” ìƒ¤ì›Œì‹¤ì— ë“¤ì–´ê°”ì–´ìš”."
+              },
+        "wordBank": [
+                "I",
+                "got",
+                "in",
+                "the",
+                "shower",
+                "out",
+                "on",
+                "off"
+              ],
+        "correctOrder": [
+                  "I",
+                  "got",
+                  "in",
+                  "the",
+                  "shower"
+                ],
+        "acceptedAlternatives": [
+
+                    ],
+        "ui": {
+              "hint": "\u0027ë“¤ì–´ê°”ë‹¤\u0027ëŠ” \u0027got in\u0027ì´ì—ìš”"
+        },
+        "meta": {
+              "tags": [
+                      "get-in",
+                      "daily-routine"
+                    ],
+              "difficulty": 3,
+              "timeLimitSec": 45
+        }
+      },
+      {
+        "id": "Q004",
+        "type": "assemble",
+        "prompt": {
+                "sourceLang": "ko",
+                "text": "ê³„ë‹¨ì„ ë‚´ë ¤ê°”ì–´ìš”."
+              },
+        "wordBank": [
+                "Got",
+                "down",
+                "the",
+                "stairs",
+                "up",
+                "off",
+                "bus"
+              ],
+        "correctOrder": [
+                  "Got",
+                  "down",
+                  "the",
+                  "stairs"
+                ],
+        "acceptedAlternatives": [
+
+                    ],
+        "ui": {
+              "hint": "\u0027ë‚´ë ¤ê°”ë‹¤\u0027ëŠ” \u0027got down\u0027ì´ì—ìš”"
+        },
+        "meta": {
+              "tags": [
+                      "get-down",
+                      "movement"
+                    ],
+              "difficulty": 3,
+              "timeLimitSec": 45
+        }
+      },
+      {
+        "id": "Q005",
+        "type": "assemble",
+        "prompt": {
+                "sourceLang": "ko",
+                "text": "ë‚˜ëŠ” ë²„ìŠ¤ì— íƒ”ì–´ìš”."
+              },
+        "wordBank": [
+                "I",
+                "got",
+                "on",
+                "my",
+                "bus",
+                "off",
+                "in",
+                "the"
+              ],
+        "correctOrder": [
+                  "I",
+                  "got",
+                  "on",
+                  "my",
+                  "bus"
+                ],
+        "acceptedAlternatives": [
+                      [
+                        "I",
+                        "got",
+                        "on",
+                        "the",
+                        "bus"
+                      ]
+                    ],
+        "ui": {
+              "hint": "í° êµí†µìˆ˜ë‹¨ì— íƒ€ë‹¤ëŠ” \u0027get on\u0027ì´ì—ìš”"
+        },
+        "meta": {
+              "tags": [
+                      "get-on",
+                      "transportation"
+                    ],
+              "difficulty": 3,
+              "timeLimitSec": 45
+        }
+      },
+      {
+        "id": "Q006",
+        "type": "assemble",
+        "prompt": {
+                "sourceLang": "ko",
+                "text": "ì‹œë‚´ì—ì„œ ë‚´ë ¸ì–´ìš”."
+              },
+        "wordBank": [
+                "Got",
+                "off",
+                "downtown",
+                "on",
+                "in",
+                "at",
+                "the"
+              ],
+        "correctOrder": [
+                  "Got",
+                  "off",
+                  "downtown"
+                ],
+        "acceptedAlternatives": [
+
+                    ],
+        "ui": {
+              "hint": "\u0027ë‚´ë ¸ë‹¤\u0027ëŠ” \u0027got off\u0027ì˜ˆìš”"
+        },
+        "meta": {
+              "tags": [
+                      "get-off",
+                      "transportation"
+                    ],
+              "difficulty": 3,
+              "timeLimitSec": 45
+        }
+      },
+      {
+        "id": "Q007",
+        "type": "assemble_listen",
+        "prompt": {
+                "sourceLang": "audio",
+                "text": "ì˜¤ë””ì˜¤ë¥¼ ë“£ê³  ë¬¸ìž¥ì„ ì™„ì„±í•˜ì„¸ìš”."
+              },
+        "media": {
+                "audioRef": "step_003_q007",
+                "transcript": "I got in the lobby"
+              },
+        "wordBank": [
+                "I",
+                "got",
+                "in",
+                "the",
+                "lobby",
+                "out",
+                "on",
+                "off"
+              ],
+        "correctOrder": [
+                  "I",
+                  "got",
+                  "in",
+                  "the",
+                  "lobby"
+                ],
+        "acceptedAlternatives": [
+
+                    ],
+        "ui": {
+              "hint": "ë¡œë¹„ì— ë“¤ì–´ê°€ëŠ” í‘œí˜„ì´ì—ìš”"
+        },
+        "meta": {
+              "tags": [
+                      "get-in",
+                      "listening"
+                    ],
+              "difficulty": 4,
+              "timeLimitSec": 60
+        }
+      },
+      {
+        "id": "Q008",
+        "type": "assemble_listen",
+        "prompt": {
+                "sourceLang": "audio",
+                "text": "ì˜¤ë””ì˜¤ë¥¼ ë“£ê³  ë¬¸ìž¥ì„ ì™„ì„±í•˜ì„¸ìš”."
+              },
+        "media": {
+                "audioRef": "step_003_q008",
+                "transcript": "Got on my bus to face the day"
+              },
+        "wordBank": [
+                "Got",
+                "on",
+                "my",
+                "bus",
+                "to",
+                "face",
+                "the",
+                "day",
+                "off"
+              ],
+        "correctOrder": [
+                  "Got",
+                  "on",
+                  "my",
+                  "bus",
+                  "to",
+                  "face",
+                  "the",
+                  "day"
+                ],
+        "acceptedAlternatives": [
+
+                    ],
+        "ui": {
+              "hint": "ë²„ìŠ¤ì— íƒ€ì„œ í•˜ë£¨ë¥¼ ë§žì´í•˜ëŠ” í‘œí˜„ì´ì—ìš”"
+        },
+        "meta": {
+              "tags": [
+                      "get-on",
+                      "listening"
+                    ],
+              "difficulty": 4,
+              "timeLimitSec": 60
+        }
+      },
+      {
+        "id": "Q009",
+        "type": "assemble_listen",
+        "prompt": {
+                "sourceLang": "audio",
+                "text": "ì˜¤ë””ì˜¤ë¥¼ ë“£ê³  ë¬¸ìž¥ì„ ì™„ì„±í•˜ì„¸ìš”."
+              },
+        "media": {
+                "audioRef": "step_003_q009",
+                "transcript": "Tomorrow I\u0027ll get up again"
+              },
+        "wordBank": [
+                "Tomorrow",
+                "I\u0027ll",
+                "get",
+                "up",
+                "again",
+                "down",
+                "on",
+                "off"
+              ],
+        "correctOrder": [
+                  "Tomorrow",
+                  "I\u0027ll",
+                  "get",
+                  "up",
+                  "again"
+                ],
+        "acceptedAlternatives": [
+
+                    ],
+        "ui": {
+              "hint": "ë‚´ì¼ ë‹¤ì‹œ ì¼ì–´ë‚˜ëŠ” í‘œí˜„ì´ì—ìš”"
+        },
+        "meta": {
+              "tags": [
+                      "get-up",
+                      "listening"
+                    ],
+              "difficulty": 4,
+              "timeLimitSec": 60
+        }
+      },
+      {
+        "id": "Q010",
+        "type": "speak1",
+        "prompt": {
+                "sourceLang": "ko",
+                "text": "ëª‡ ì‹œì— ì¼ì–´ë‚˜ìš”?"
+              },
+        "correctOrder": [
+                  "What",
+                  "time",
+                  "do",
+                  "you",
+                  "get",
+                  "up"
+                ],
+        "acceptedAlternatives": [
+                      [
+                        "What",
+                        "time",
+                        "do",
+                        "you",
+                        "wake",
+                        "up"
+                      ]
+                    ],
+        "media": {
+                "audioRef": "step_003_q010",
+                "transcript": "What time do you get up?"
+              },
+        "evaluation": {
+                  "mode": "speech",
+                  "minConfidence": 0.65,
+                  "pronunciationFocus": [
+                                "get",
+                                "up"
+                              ]
+                },
+        "ui": {
+              "hint": "\u0027get up\u0027ì„ ì‚¬ìš©í•˜ì„¸ìš”",
+              "showMicIcon": true
+        },
+        "meta": {
+              "tags": [
+                      "get-up",
+                      "speaking"
+                    ],
+              "difficulty": 3,
+              "timeLimitSec": 40
+        }
+      },
+      {
+        "id": "Q011",
+        "type": "speak2",
+        "prompt": {
+                "sourceLang": "ko",
+                "text": "ì°¨ì— íƒ€!"
+              },
+        "correctOrder": [
+                  "Get",
+                  "in",
+                  "the",
+                  "car"
+                ],
+        "acceptedAlternatives": [
+
+                    ],
+        "media": {
+                "audioRef": "step_003_q011",
+                "transcript": "Get in the car!"
+              },
+        "evaluation": {
+                  "mode": "speech",
+                  "minConfidence": 0.65,
+                  "pronunciationFocus": [
+                                "Get",
+                                "in"
+                              ]
+                },
+        "ui": {
+              "hint": "ìž‘ì€ ì°¨ëŸ‰ì—ëŠ” \u0027get in\u0027ì„ ì‚¬ìš©í•´ìš”",
+              "showMicIcon": true
+        },
+        "meta": {
+              "tags": [
+                      "get-in",
+                      "speaking"
+                    ],
+              "difficulty": 3,
+              "timeLimitSec": 40
+        }
+      },
+      {
+        "id": "Q012",
+        "type": "speak1",
+        "prompt": {
+                "sourceLang": "ko",
+                "text": "ë‹¤ìŒ ì •ë¥˜ìž¥ì—ì„œ ë‚´ë¦´ê²Œìš”."
+              },
+        "correctOrder": [
+                  "I\u0027ll",
+                  "get",
+                  "off",
+                  "at",
+                  "the",
+                  "next",
+                  "stop"
+                ],
+        "acceptedAlternatives": [
+
+                    ],
+        "media": {
+                "audioRef": "step_003_q012",
+                "transcript": "I\u0027ll get off at the next stop."
+              },
+        "evaluation": {
+                  "mode": "speech",
+                  "minConfidence": 0.65,
+                  "pronunciationFocus": [
+                                "get",
+                                "off"
+                              ]
+                },
+        "ui": {
+              "hint": "\u0027get off\u0027ë¥¼ ì‚¬ìš©í•˜ì„¸ìš”",
+              "showMicIcon": true
+        },
+        "meta": {
+              "tags": [
+                      "get-off",
+                      "speaking"
+                    ],
+              "difficulty": 4,
+              "timeLimitSec": 40
+        }
+      },
+      {
+        "id": "Q013",
+        "type": "typing",
+        "prompt": {
+                "sourceLang": "ko",
+                "text": "ë‚˜ë¬´ì—ì„œ ë‚´ë ¤ì™€!"
+              },
+        "answers": {
+                "canonical": "Get down from the tree!",
+                "acceptedAlternatives": [
+                              "Get down from the tree",
+                              "Come down from the tree!"
+                            ]
+              },
+        "correctOrder": [
+                  "Get",
+                  "down",
+                  "from",
+                  "the",
+                  "tree"
+                ],
+        "acceptedAlternatives": [
+                      [
+                        "Come",
+                        "down",
+                        "from",
+                        "the",
+                        "tree"
+                      ]
+                    ],
+        "evaluation": {
+                  "mode": "typed",
+                  "spellingTolerance": 0.95
+                },
+        "ui": {
+              "hint": "\u0027ë‚´ë ¤ì˜¤ë‹¤\u0027ëŠ” \u0027get down\u0027ì´ì—ìš”"
+        },
+        "meta": {
+              "tags": [
+                      "get-down",
+                      "typing"
+                    ],
+              "difficulty": 4,
+              "timeLimitSec": 60
+        }
+      },
+      {
+        "id": "Q014",
+        "type": "typing",
+        "prompt": {
+                "sourceLang": "ko",
+                "text": "ê¸°ì°¨ë¥¼ íƒ€ìš”."
+              },
+        "answers": {
+                "canonical": "Let\u0027s get on the train.",
+                "acceptedAlternatives": [
+                              "Let\u0027s get on the train",
+                              "Lets get on the train"
+                            ]
+              },
+        "correctOrder": [
+                  "Let\u0027s",
+                  "get",
+                  "on",
+                  "the",
+                  "train"
+                ],
+        "acceptedAlternatives": [
+
+                    ],
+        "evaluation": {
+                  "mode": "typed",
+                  "spellingTolerance": 0.95
+                },
+        "ui": {
+              "hint": "í° êµí†µìˆ˜ë‹¨ì—ëŠ” \u0027get on\u0027ì„ ì‚¬ìš©í•´ìš”"
+        },
+        "meta": {
+              "tags": [
+                      "get-on",
+                      "typing"
+                    ],
+              "difficulty": 3,
+              "timeLimitSec": 60
+        }
+      },
+      {
+        "id": "Q015",
+        "type": "typing",
+        "prompt": {
+                "sourceLang": "ko",
+                "text": "ì—¬ê¸°ì„œ ë‚˜ê°€ì•¼ í•´ìš”."
+              },
+        "answers": {
+                "canonical": "I need to get out of here.",
+                "acceptedAlternatives": [
+                              "I need to get out of here",
+                              "I have to get out of here",
+                              "I have to get out of here."
+                            ]
+              },
+        "correctOrder": [
+                  "I",
+                  "need",
+                  "to",
+                  "get",
+                  "out",
+                  "of",
+                  "here"
+                ],
+        "acceptedAlternatives": [
+                      [
+                        "I",
+                        "have",
+                        "to",
+                        "get",
+                        "out",
+                        "of",
+                        "here"
+                      ]
+                    ],
+        "evaluation": {
+                  "mode": "typed",
+                  "spellingTolerance": 0.95
+                },
+        "ui": {
+              "hint": "\u0027ë‚˜ê°€ë‹¤\u0027ëŠ” \u0027get out of\u0027ì˜ˆìš”"
+        },
+        "meta": {
+              "tags": [
+                      "get-out",
+                      "typing"
+                    ],
+              "difficulty": 4,
+              "timeLimitSec": 60
+        }
+      }
+    ]
+}

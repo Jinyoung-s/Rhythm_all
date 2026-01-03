@@ -1,0 +1,304 @@
+{
+    "version": "1.0",
+    "level": "beginner",
+    "patterns": [
+        {
+            "id": "pat_018",
+            "category": "i_can_patterns",
+            "difficulty": 1,
+            "name_key": "pat_018_name",
+            "desc_key": "pat_018_desc",
+            "icon_id": "icon_swim",
+            "structure": "I can + [ability]",
+            "examples": [
+                "I can swim.",
+                "I can drive.",
+                "I can cook.",
+                "I can speak English.",
+                "I can play piano."
+            ]
+        },
+        {
+            "id": "pat_019",
+            "category": "i_can_patterns",
+            "difficulty": 1,
+            "name_key": "pat_019_name",
+            "desc_key": "pat_019_desc",
+            "icon_id": "icon_check",
+            "structure": "I can + [action]",
+            "examples": [
+                "I can do it.",
+                "I can help.",
+                "I can see it.",
+                "I can hear you.",
+                "I can try."
+            ]
+        },
+        {
+            "id": "pat_020",
+            "category": "i_can_patterns",
+            "difficulty": 2,
+            "name_key": "pat_020_name",
+            "desc_key": "pat_020_desc",
+            "icon_id": "icon_stop",
+            "structure": "I can't + [impossible]",
+            "examples": [
+                "I can't do it.",
+                "I can't come.",
+                "I can't wait.",
+                "I can't believe it.",
+                "I can't afford it."
+            ]
+        },
+        {
+            "id": "pat_021",
+            "category": "i_can_questions",
+            "difficulty": 2,
+            "name_key": "pat_021_name",
+            "desc_key": "pat_021_desc",
+            "icon_id": "icon_permission",
+            "structure": "Can I...? (Permission)",
+            "examples": [
+                "Can I help you?",
+                "Can I go now?",
+                "Can I ask you?",
+                "Can I use this?",
+                "Can I have a cup of coffee?"
+            ],
+            "responses": {
+                "positive": [
+                    "Yes, you can",
+                    "Sure"
+                ],
+                "negative": [
+                    "Sorry, you can't",
+                    "I'm afraid not"
+                ]
+            }
+        },
+        {
+            "id": "pat_022",
+            "category": "i_can_questions",
+            "difficulty": 2,
+            "name_key": "pat_022_name",
+            "desc_key": "pat_022_desc",
+            "icon_id": "icon_request",
+            "structure": "Can you...? (Request)",
+            "examples": [
+                "Can you help me?",
+                "Can you show me?",
+                "Can you wait?",
+                "Can you repeat that?",
+                "Can you tell me?"
+            ]
+        },
+        {
+            "id": "pat_023",
+            "category": "i_will_patterns",
+            "difficulty": 1,
+            "name_key": "pat_023_name",
+            "desc_key": "pat_023_desc",
+            "icon_id": "icon_promise",
+            "structure": "I will + [promise]",
+            "examples": [
+                "I will do it.",
+                "I will go.",
+                "I will help.",
+                "I will call you.",
+                "I will be there."
+            ]
+        },
+        {
+            "id": "pat_024",
+            "category": "i_will_patterns",
+            "difficulty": 2,
+            "name_key": "pat_024_name",
+            "desc_key": "pat_024_desc",
+            "icon_id": "icon_deny",
+            "structure": "I won't + [refusal]",
+            "examples": [
+                "I won't go.",
+                "I won't tell.",
+                "I won't forget.",
+                "I won't do it again.",
+                "I won't let you down."
+            ]
+        },
+        {
+            "id": "pat_025",
+            "category": "i_will_patterns",
+            "difficulty": 1,
+            "name_key": "pat_025_name",
+            "desc_key": "pat_025_desc",
+            "icon_id": "icon_short_promise",
+            "structure": "I'll + [short promise]",
+            "examples": [
+                "I'll try.",
+                "I'll see.",
+                "I'll think about it.",
+                "I'll let you know.",
+                "I'll be right back."
+            ]
+        },
+        {
+            "id": "pat_026",
+            "category": "i_will_patterns",
+            "difficulty": 2,
+            "name_key": "pat_026_name",
+            "desc_key": "pat_026_desc",
+            "icon_id": "icon_will_you",
+            "structure": "Will you...? (Request/Question)",
+            "examples": [
+                "Will you come?",
+                "Will you help me?",
+                "Will you wait?",
+                "What will you do?",
+                "When will you arrive?"
+            ]
+        },
+        {
+            "id": "pat_027",
+            "category": "i_past_patterns",
+            "difficulty": 2,
+            "name_key": "pat_027_name",
+            "desc_key": "pat_027_desc",
+            "icon_id": "icon_past",
+            "structure": "I was + [state]",
+            "examples": [
+                "I was there.",
+                "I was busy.",
+                "I was tired.",
+                "I was happy.",
+                "I wasn't ready."
+            ]
+        },
+        {
+            "id": "pat_028",
+            "category": "i_past_patterns",
+            "difficulty": 2,
+            "name_key": "pat_028_name",
+            "desc_key": "pat_028_desc",
+            "icon_id": "icon_motion",
+            "structure": "I went/came",
+            "examples": [
+                "I went there.",
+                "I went home.",
+                "I came here.",
+                "I came back.",
+                "I didn't go."
+            ]
+        },
+        {
+            "id": "pat_029",
+            "category": "i_past_patterns",
+            "difficulty": 2,
+            "name_key": "pat_029_name",
+            "desc_key": "pat_029_desc",
+            "icon_id": "icon_saw",
+            "structure": "I saw/heard/met",
+            "examples": [
+                "I saw it.",
+                "I saw him.",
+                "I heard it.",
+                "I met her.",
+                "I didn't see it."
+            ]
+        },
+        {
+            "id": "pat_030",
+            "category": "i_past_patterns",
+            "difficulty": 2,
+            "name_key": "pat_030_name",
+            "desc_key": "pat_030_desc",
+            "icon_id": "icon_did",
+            "structure": "I did/made/had",
+            "examples": [
+                "I did it.",
+                "I made it.",
+                "I had lunch.",
+                "I had fun.",
+                "What did you do?"
+            ]
+        },
+        {
+            "id": "pat_031",
+            "category": "can_questions",
+            "difficulty": 2,
+            "name_key": "pat_031_name",
+            "desc_key": "pat_031_desc",
+            "icon_id": "icon_restaurant",
+            "structure": "Can I...? (Restaurant/Cafe)",
+            "examples": [
+                "Can I see the menu?",
+                "Can I order?",
+                "Can I have the bill?",
+                "Can I get a coffee?",
+                "Can I have some water?"
+            ]
+        },
+        {
+            "id": "pat_032",
+            "category": "can_questions",
+            "difficulty": 2,
+            "name_key": "pat_032_name",
+            "desc_key": "pat_032_desc",
+            "icon_id": "icon_shopping",
+            "structure": "Can I...? (Shopping)",
+            "examples": [
+                "Can I try this on?",
+                "Can I have a receipt?",
+                "Can I pay by card?",
+                "Can I return this?",
+                "Can I exchange this?"
+            ]
+        },
+        {
+            "id": "pat_033",
+            "category": "can_questions",
+            "difficulty": 1,
+            "name_key": "pat_033_name",
+            "desc_key": "pat_033_desc",
+            "icon_id": "icon_daily",
+            "structure": "Can I...? (Daily)",
+            "examples": [
+                "Can I use the bathroom?",
+                "Can I sit here?",
+                "Can I open the window?",
+                "Can I borrow your pen?",
+                "Can I take a picture?"
+            ]
+        },
+        {
+            "id": "pat_034",
+            "category": "can_questions",
+            "difficulty": 2,
+            "name_key": "pat_034_name",
+            "desc_key": "pat_034_desc",
+            "icon_id": "icon_help",
+            "structure": "Can you...? (Help)",
+            "examples": [
+                "Can you help me?",
+                "Can you show me?",
+                "Can you tell me?",
+                "Can you explain this to me?",
+                "Can you check this for me?"
+            ]
+        },
+        {
+            "id": "pat_035",
+            "category": "can_questions",
+            "difficulty": 2,
+            "name_key": "pat_034_name",
+            "desc_key": "pat_034_desc",
+            "icon_id": "icon_favor",
+            "structure": "Can you...? (Favor)",
+            "examples": [
+                "Can you repeat that?",
+                "Can you wait a minute?",
+                "Can you call me back?",
+                "Can you pass me the salt?",
+                "Can you turn down the volume?"
+            ]
+        }
+    ]
+}

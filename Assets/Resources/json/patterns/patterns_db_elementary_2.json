@@ -1,0 +1,456 @@
+{
+    "version": "1.0",
+    "level": "elementary",
+    "patterns": [
+        {
+            "id": "pat_096",
+            "category": "shopping",
+            "difficulty": 2,
+            "name_key": "pat_096_name",
+            "desc_key": "pat_096_desc",
+            "structure": "Looking for / Have ...?",
+            "examples": [
+                "I'm looking for a jacket.",
+                "Do you have this in medium?",
+                "Where is the fitting room?",
+                "Can I see that one?",
+                "Can I try this on?"
+            ]
+        },
+        {
+            "id": "pat_097",
+            "category": "shopping",
+            "difficulty": 2,
+            "name_key": "pat_097_name",
+            "desc_key": "pat_097_desc",
+            "structure": "Price / Discount",
+            "examples": [
+                "How much is this?",
+                "What's the total?",
+                "Is this on sale?",
+                "Can I get a discount?",
+                "Do you have anything cheaper?"
+            ]
+        },
+        {
+            "id": "pat_098",
+            "category": "shopping",
+            "difficulty": 1,
+            "name_key": "pat_098_name",
+            "desc_key": "pat_098_desc",
+            "structure": "Size / Color",
+            "examples": [
+                "I need a size medium",
+                "Do you have this in large?",
+                "Do you have this in blue?",
+                "This is too big",
+                "Do you have a smaller size?"
+            ]
+        },
+        {
+            "id": "pat_099",
+            "category": "shopping",
+            "difficulty": 2,
+            "name_key": "pat_099_name",
+            "desc_key": "pat_099_desc",
+            "structure": "Buy / Pay",
+            "examples": [
+                "I'll take this one",
+                "I'll buy this",
+                "Can I pay by card?",
+                "Do you take cards?",
+                "Can I have a receipt?"
+            ]
+        },
+        {
+            "id": "pat_100",
+            "category": "shopping",
+            "difficulty": 3,
+            "name_key": "pat_100_name",
+            "desc_key": "pat_100_desc",
+            "structure": "Refund / Exchange",
+            "examples": [
+                "I'd like to return this",
+                "Can I get a refund?",
+                "Can I exchange this?",
+                "It doesn't fit me",
+                "I changed my mind"
+            ]
+        },
+        {
+            "id": "pat_101",
+            "category": "restaurant",
+            "difficulty": 2,
+            "name_key": "pat_101_name",
+            "desc_key": "pat_101_desc",
+            "structure": "Reservation / Entrance",
+            "examples": [
+                "I'd like to make a reservation",
+                "Table for two, please",
+                "Do you have a table?",
+                "How long is the wait?",
+                "Can we sit by the window?"
+            ]
+        },
+        {
+            "id": "pat_102",
+            "category": "restaurant",
+            "difficulty": 2,
+            "name_key": "pat_102_name",
+            "desc_key": "pat_102_desc",
+            "structure": "Ordering",
+            "examples": [
+                "Can I see the menu?",
+                "I'll have the pasta",
+                "Can I get a burger?",
+                "What do you recommend?",
+                "I'll have the same thing"
+            ]
+        },
+        {
+            "id": "pat_103",
+            "category": "restaurant",
+            "difficulty": 1,
+            "name_key": "pat_103_name",
+            "desc_key": "pat_103_desc",
+            "structure": "During Meal",
+            "examples": [
+                "This is delicious",
+                "Water, please",
+                "More bread, please",
+                "Everything's great",
+                "The taste is amazing"
+            ]
+        },
+        {
+            "id": "pat_104",
+            "category": "restaurant",
+            "difficulty": 3,
+            "name_key": "pat_104_name",
+            "desc_key": "pat_104_desc",
+            "structure": "Special Request",
+            "examples": [
+                "No onions, please",
+                "Without cheese",
+                "Sauce on the side",
+                "I'm allergic to nuts",
+                "Less spicy, please"
+            ]
+        },
+        {
+            "id": "pat_105",
+            "category": "restaurant",
+            "difficulty": 2,
+            "name_key": "pat_105_name",
+            "desc_key": "pat_105_desc",
+            "structure": "Payment / Bill",
+            "examples": [
+                "Check, please",
+                "Can I have the bill?",
+                "Together or separate?",
+                "I'll pay for everything",
+                "Keep the change"
+            ]
+        },
+        {
+            "id": "pat_106",
+            "category": "service",
+            "difficulty": 1,
+            "name_key": "pat_106_name",
+            "desc_key": "pat_106_desc",
+            "structure": "Cafe",
+            "examples": [
+                "One coffee, please",
+                "Hot or iced?",
+                "For here or to go?",
+                "To go, please",
+                "Do you have WiFi?"
+            ]
+        },
+        {
+            "id": "pat_107",
+            "category": "service",
+            "difficulty": 2,
+            "name_key": "pat_107_name",
+            "desc_key": "pat_107_desc",
+            "structure": "Taxi / Transport",
+            "examples": [
+                "To the airport, please",
+                "How much will it cost?",
+                "How long will it take?",
+                "Drop me off here",
+                "Here's the fare"
+            ]
+        },
+        {
+            "id": "pat_108",
+            "category": "service",
+            "difficulty": 3,
+            "name_key": "pat_108_name",
+            "desc_key": "pat_108_desc",
+            "structure": "Hotel",
+            "examples": [
+                "I have a reservation",
+                "I'd like to check in",
+                "What floor am I on?",
+                "What time is checkout?",
+                "Can I have a wake-up call?"
+            ]
+        },
+        {
+            "id": "pat_109",
+            "category": "service",
+            "difficulty": 3,
+            "name_key": "pat_109_name",
+            "desc_key": "pat_109_desc",
+            "structure": "Pharmacy / Hospital",
+            "examples": [
+                "I don't feel well",
+                "I have a headache",
+                "I need some medicine",
+                "How often should I take this?",
+                "Take it after eating"
+            ]
+        },
+        {
+            "id": "pat_110",
+            "category": "service",
+            "difficulty": 2,
+            "name_key": "pat_110_name",
+            "desc_key": "pat_110_desc",
+            "structure": "Bank / Post Office",
+            "examples": [
+                "I'd like to withdraw money",
+                "I want to send this",
+                "How much does it cost?",
+                "How long will it take?",
+                "Do I need insurance?"
+            ]
+        },
+        {
+            "id": "pat_111",
+            "category": "request",
+            "difficulty": 2,
+            "name_key": "pat_111_name",
+            "desc_key": "pat_111_desc",
+            "structure": "Can/Could you ...?",
+            "examples": [
+                "Can you help me?",
+                "Could you tell me the way?",
+                "Would you mind opening the window?",
+                "Would you please wait?",
+                "Do you mind if I sit here?"
+            ]
+        },
+        {
+            "id": "pat_112",
+            "category": "request",
+            "difficulty": 2,
+            "name_key": "pat_112_name",
+            "desc_key": "pat_112_desc",
+            "structure": "I'd like to ...",
+            "examples": [
+                "I'd like to go there",
+                "I'd like to see the manager",
+                "I'd like to try this on",
+                "I'd like to ask a question",
+                "I'd like a reservation"
+            ]
+        },
+        {
+            "id": "pat_113",
+            "category": "request",
+            "difficulty": 3,
+            "name_key": "pat_113_name",
+            "desc_key": "pat_113_desc",
+            "structure": "I need you to ...",
+            "examples": [
+                "I need you to help me",
+                "I want you to come early",
+                "Make sure it's ready",
+                "Don't forget to call me",
+                "I need this done by tomorrow"
+            ]
+        },
+        {
+            "id": "pat_114",
+            "category": "request",
+            "difficulty": 2,
+            "name_key": "pat_114_name",
+            "desc_key": "pat_114_desc",
+            "structure": "Excuse me / Bother",
+            "examples": [
+                "Excuse me, sir.",
+                "Sorry to bother you.",
+                "Do you have a minute?",
+                "Can I ask you something?",
+                "I hate to ask, but could you help me?"
+            ]
+        },
+        {
+            "id": "pat_115",
+            "category": "request",
+            "difficulty": 1,
+            "name_key": "pat_115_name",
+            "desc_key": "pat_115_desc",
+            "structure": "Thank You Resp.",
+            "examples": [
+                "You're very welcome.",
+                "No problem at all.",
+                "My pleasure.",
+                "Don't mention it.",
+                "Anytime!"
+            ]
+        },
+        {
+            "id": "pat_116",
+            "category": "suggestion",
+            "difficulty": 2,
+            "name_key": "pat_116_name",
+            "desc_key": "pat_116_desc",
+            "structure": "Let's ...",
+            "examples": [
+                "Let's go to the park",
+                "Let's eat something",
+                "Let's try this",
+                "Let's do it together",
+                "Let's not waste time"
+            ]
+        },
+        {
+            "id": "pat_117",
+            "category": "suggestion",
+            "difficulty": 2,
+            "name_key": "pat_117_name",
+            "desc_key": "pat_117_desc",
+            "structure": "How/What about ...?",
+            "examples": [
+                "How about some coffee?",
+                "How about tomorrow?",
+                "What about you?",
+                "What about this one?",
+                "How about we meet at 3?"
+            ]
+        },
+        {
+            "id": "pat_118",
+            "category": "suggestion",
+            "difficulty": 3,
+            "name_key": "pat_118_name",
+            "desc_key": "pat_118_desc",
+            "structure": "Why don't we / Shall we",
+            "examples": [
+                "Why don't we go together?",
+                "Why don't you try this?",
+                "Shall we go now?",
+                "Shall we start?",
+                "Shall I help you?"
+            ]
+        },
+        {
+            "id": "pat_119",
+            "category": "suggestion",
+            "difficulty": 2,
+            "name_key": "pat_119_name",
+            "desc_key": "pat_119_desc",
+            "structure": "Would you like ...?",
+            "examples": [
+                "Would you like to come?",
+                "Would you like some coffee?",
+                "Do you want to join us?",
+                "Want to grab lunch?",
+                "I'd love to join you."
+            ]
+        },
+        {
+            "id": "pat_120",
+            "category": "suggestion",
+            "difficulty": 3,
+            "name_key": "pat_120_name",
+            "desc_key": "pat_120_desc",
+            "structure": "Suggest / Recommend",
+            "examples": [
+                "I suggest we start early",
+                "I recommend this place",
+                "You might want to try this",
+                "You should try the pasta",
+                "It might be better to wait"
+            ]
+        },
+        {
+            "id": "pat_121",
+            "category": "agree",
+            "difficulty": 1,
+            "name_key": "pat_121_name",
+            "desc_key": "pat_121_desc",
+            "structure": "Agreement",
+            "examples": [
+                "I agree.",
+                "That's true.",
+                "You're right.",
+                "Exactly.",
+                "I think so too."
+            ]
+        },
+        {
+            "id": "pat_122",
+            "category": "agree",
+            "difficulty": 2,
+            "name_key": "pat_122_name",
+            "desc_key": "pat_122_desc",
+            "structure": "Strong Agreement",
+            "examples": [
+                "Absolutely.",
+                "Definitely.",
+                "No doubt about it.",
+                "For sure.",
+                "I couldn't agree more."
+            ]
+        },
+        {
+            "id": "pat_123",
+            "category": "agree",
+            "difficulty": 2,
+            "name_key": "pat_123_name",
+            "desc_key": "pat_123_desc",
+            "structure": "Disagreement",
+            "examples": [
+                "I disagree.",
+                "I don't think so.",
+                "I'm not sure about that.",
+                "I see it differently.",
+                "I'm afraid I disagree."
+            ]
+        },
+        {
+            "id": "pat_124",
+            "category": "agree",
+            "difficulty": 2,
+            "name_key": "pat_124_name",
+            "desc_key": "pat_124_desc",
+            "structure": "Partial Agreement",
+            "examples": [
+                "Yes, but I have a different idea.",
+                "That's true, but it's too expensive.",
+                "I see your point, but I disagree.",
+                "I agree to some extent.",
+                "In a way, you are right."
+            ]
+        },
+        {
+            "id": "pat_125",
+            "category": "agree",
+            "difficulty": 2,
+            "name_key": "pat_125_name",
+            "desc_key": "pat_125_desc",
+            "structure": "Asking Opinion",
+            "examples": [
+                "What do you think?",
+                "Do you agree?",
+                "What's your opinion?",
+                "How do you feel?",
+                "Don't you think it's beautiful?"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,188 @@
+{
+  "steps": [
+      {
+        "stepId": "step_003_01",
+        "sentence": "I got up early.",
+        "translation": "ë‚˜ëŠ” ì¼ì° ì¼ì–´ë‚¬ì–´ìš”.",
+        "audioUrl": "Audio/step_003_01.mp3",
+        "grammarNote": "\u0027get up\u0027ì€ \u0027ì¼ì–´ë‚˜ë‹¤\u0027ë¼ëŠ” ëœ»ì˜ êµ¬ë™ì‚¬ìž…ë‹ˆë‹¤. ì•„ì¹¨ì— ì¹¨ëŒ€ì—ì„œ ì¼ì–´ë‚˜ê±°ë‚˜ ì˜ìžì—ì„œ ì¼ì–´ì„¤ ë•Œ ì‚¬ìš©í•©ë‹ˆë‹¤.",
+        "examples": [
+                {
+                  "sentence": "What time do you get up?",
+                  "translation": "ëª‡ ì‹œì— ì¼ì–´ë‚˜ìš”?"
+                },
+                {
+                  "sentence": "I need to get up at 6 AM tomorrow.",
+                  "translation": "ë‚´ì¼ ì•„ì¹¨ 6ì‹œì— ì¼ì–´ë‚˜ì•¼ í•´ìš”."
+                }
+              ],
+        "highlights": [
+                  {
+                    "text": "get up",
+                    "color": "#4FC3F7"
+                  }
+                ]
+      },
+      {
+        "stepId": "step_003_02",
+        "sentence": "Get down the stairs.",
+        "translation": "ê³„ë‹¨ì„ ë‚´ë ¤ê°€ìš”.",
+        "audioUrl": "Audio/step_003_02.mp3",
+        "grammarNote": "\u0027get down\u0027ì€ \u0027ë‚´ë ¤ê°€ë‹¤, ë‚´ë ¤ì˜¤ë‹¤\u0027ë¼ëŠ” ëœ»ìž…ë‹ˆë‹¤. ë†’ì€ ê³³ì—ì„œ ë‚®ì€ ê³³ìœ¼ë¡œ ì´ë™í•  ë•Œ ì‚¬ìš©í•©ë‹ˆë‹¤.",
+        "examples": [
+                {
+                  "sentence": "Get down from the tree!",
+                  "translation": "ë‚˜ë¬´ì—ì„œ ë‚´ë ¤ì™€!"
+                },
+                {
+                  "sentence": "Can you help me get down from here?",
+                  "translation": "ì—¬ê¸°ì„œ ë‚´ë ¤ê°€ëŠ” ê±¸ ë„ì™€ì¤„ ìˆ˜ ìžˆì–´ìš”?"
+                }
+              ],
+        "highlights": [
+                  {
+                    "text": "get down",
+                    "color": "#FFA726"
+                  }
+                ]
+      },
+      {
+        "stepId": "step_003_03",
+        "sentence": "I got in the shower.",
+        "translation": "ë‚˜ëŠ” ìƒ¤ì›Œì‹¤ì— ë“¤ì–´ê°”ì–´ìš”.",
+        "audioUrl": "Audio/step_003_03.mp3",
+        "grammarNote": "\u0027get in\u0027ì€ \u0027ë“¤ì–´ê°€ë‹¤, íƒ€ë‹¤\u0027ë¼ëŠ” ëœ»ìž…ë‹ˆë‹¤. ìž‘ì€ ê³µê°„ì´ë‚˜ ì°¨ëŸ‰ ì•ˆìœ¼ë¡œ ë“¤ì–´ê°ˆ ë•Œ ì£¼ë¡œ ì‚¬ìš©í•©ë‹ˆë‹¤.",
+        "examples": [
+                {
+                  "sentence": "Get in the car!",
+                  "translation": "ì°¨ì— íƒ€!"
+                },
+                {
+                  "sentence": "I\u0027ll get in the taxi.",
+                  "translation": "íƒì‹œì— íƒˆê²Œìš”."
+                }
+              ],
+        "highlights": [
+                  {
+                    "text": "get in",
+                    "color": "#66BB6A"
+                  }
+                ]
+      },
+      {
+        "stepId": "step_003_04",
+        "sentence": "Got out of bed.",
+        "translation": "ì¹¨ëŒ€ì—ì„œ ë‚˜ì™”ì–´ìš”.",
+        "audioUrl": "Audio/step_003_04.mp3",
+        "grammarNote": "\u0027get out\u0027ì€ \u0027ë‚˜ê°€ë‹¤, ë‚˜ì˜¤ë‹¤\u0027ë¼ëŠ” ëœ»ìž…ë‹ˆë‹¤. ì•ˆì—ì„œ ë°–ìœ¼ë¡œ ë‚˜ì˜¬ ë•Œ ì‚¬ìš©í•©ë‹ˆë‹¤. \u0027get out of\u0027ëŠ” \u0027~ì—ì„œ ë‚˜ì˜¤ë‹¤\u0027ìž…ë‹ˆë‹¤.",
+        "examples": [
+                {
+                  "sentence": "Get out of the room!",
+                  "translation": "ë°©ì—ì„œ ë‚˜ê°€!"
+                },
+                {
+                  "sentence": "I need to get out of here.",
+                  "translation": "ì—¬ê¸°ì„œ ë‚˜ê°€ì•¼ í•´ìš”."
+                }
+              ],
+        "highlights": [
+                  {
+                    "text": "get out of",
+                    "color": "#EF5350"
+                  }
+                ]
+      },
+      {
+        "stepId": "step_003_05",
+        "sentence": "I got on my bus.",
+        "translation": "ë‚˜ëŠ” ë²„ìŠ¤ì— íƒ”ì–´ìš”.",
+        "audioUrl": "Audio/step_003_05.mp3",
+        "grammarNote": "\u0027get on\u0027ì€ \u0027íƒ€ë‹¤\u0027ë¼ëŠ” ëœ»ìœ¼ë¡œ, í° êµí†µìˆ˜ë‹¨(ë²„ìŠ¤, ê¸°ì°¨, ë¹„í–‰ê¸°)ì— íƒˆ ë•Œ ì‚¬ìš©í•©ë‹ˆë‹¤.",
+        "examples": [
+                {
+                  "sentence": "Let\u0027s get on the train.",
+                  "translation": "ê¸°ì°¨ë¥¼ íƒ€ìš”."
+                },
+                {
+                  "sentence": "I\u0027ll get on the next bus.",
+                  "translation": "ë‹¤ìŒ ë²„ìŠ¤ë¥¼ íƒˆê²Œìš”."
+                }
+              ],
+        "highlights": [
+                  {
+                    "text": "get on",
+                    "color": "#AB47BC"
+                  }
+                ]
+      },
+      {
+        "stepId": "step_003_06",
+        "sentence": "Got off downtown.",
+        "translation": "ì‹œë‚´ì—ì„œ ë‚´ë ¸ì–´ìš”.",
+        "audioUrl": "Audio/step_003_06.mp3",
+        "grammarNote": "\u0027get off\u0027ëŠ” \u0027ë‚´ë¦¬ë‹¤\u0027ë¼ëŠ” ëœ»ìœ¼ë¡œ, í° êµí†µìˆ˜ë‹¨ì—ì„œ ë‚´ë¦´ ë•Œ ì‚¬ìš©í•©ë‹ˆë‹¤. \u0027get on\u0027ì˜ ë°˜ëŒ€ìž…ë‹ˆë‹¤.",
+        "examples": [
+                {
+                  "sentence": "I\u0027ll get off at the next stop.",
+                  "translation": "ë‹¤ìŒ ì •ë¥˜ìž¥ì—ì„œ ë‚´ë¦´ê²Œìš”."
+                },
+                {
+                  "sentence": "Where should I get off?",
+                  "translation": "ì–´ë””ì—ì„œ ë‚´ë ¤ì•¼ í•˜ë‚˜ìš”?"
+                }
+              ],
+        "highlights": [
+                  {
+                    "text": "get off",
+                    "color": "#FF7043"
+                  }
+                ]
+      },
+      {
+        "stepId": "step_003_07",
+        "sentence": "I got in the lobby.",
+        "translation": "ë¡œë¹„ì— ë“¤ì–´ê°”ì–´ìš”.",
+        "audioUrl": "Audio/step_003_07.mp3",
+        "grammarNote": "\u0027get in\u0027ì€ ê±´ë¬¼ì´ë‚˜ ìž¥ì†Œ ì•ˆìœ¼ë¡œ ë“¤ì–´ê°ˆ ë•Œë„ ì‚¬ìš©í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤. ëª©ì ì§€ì— ë„ì°©í–ˆë‹¤ëŠ” ì˜ë¯¸ë„ ìžˆìŠµë‹ˆë‹¤.",
+        "examples": [
+                {
+                  "sentence": "What time did you get in last night?",
+                  "translation": "ì–´ì ¯ë°¤ ëª‡ ì‹œì— ë„ì°©í–ˆì–´ìš”?"
+                },
+                {
+                  "sentence": "Let\u0027s get in the building before it rains.",
+                  "translation": "ë¹„ ì˜¤ê¸° ì „ì— ê±´ë¬¼ ì•ˆìœ¼ë¡œ ë“¤ì–´ê°€ìš”."
+                }
+              ],
+        "highlights": [
+                  {
+                    "text": "get in",
+                    "color": "#66BB6A"
+                  }
+                ]
+      },
+      {
+        "stepId": "step_003_08",
+        "sentence": "I\u0027ll get up again.",
+        "translation": "ë‹¤ì‹œ ì¼ì–´ë‚  ê±°ì˜ˆìš”.",
+        "audioUrl": "Audio/step_003_08.mp3",
+        "grammarNote": "\u0027get up\u0027ì€ ë„˜ì–´ì§„ í›„ ë‹¤ì‹œ ì¼ì–´ë‚  ë•Œë„ ì‚¬ìš©í•©ë‹ˆë‹¤. í¬ê¸°í•˜ì§€ ì•Šê³  ë‹¤ì‹œ ì‹œë„í•œë‹¤ëŠ” ë¹„ìœ ì  ì˜ë¯¸ë¡œë„ ì“°ìž…ë‹ˆë‹¤.",
+        "examples": [
+                {
+                  "sentence": "If you fall, just get up and try again.",
+                  "translation": "ë„˜ì–´ì§€ë©´, ê·¸ëƒ¥ ì¼ì–´ë‚˜ì„œ ë‹¤ì‹œ ì‹œë„í•´ìš”."
+                },
+                {
+                  "sentence": "Every time I got up after falling down.",
+                  "translation": "ë„˜ì–´ì§„ í›„ ì¼ì–´ë‚  ë•Œë§ˆë‹¤."
+                }
+              ],
+        "highlights": [
+                  {
+                    "text": "get up again",
+                    "color": "#4FC3F7"
+                  }
+                ]
+      }
+    ]
+}

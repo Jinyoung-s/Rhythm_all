@@ -1,0 +1,651 @@
+{
+    "steps": [
+        {
+            "id": "step_001",
+            "title": "Hello - Adele",
+            "artist": "Adele",
+            "genre": "Pop",
+            "difficulty": "beginner",
+            "theme": "Greetings & Reunion",
+            "description": "Adele의 대표곡 'Hello'로 인사와 재회 표현을 배웁니다",
+            "grammarPoints": [
+                "Self-introduction: Hello, it's me",
+                "Present Perfect: I've been wondering",
+                "Apologizing: I'm sorry for..."
+            ],
+            "keyExpressions": [
+                {
+                    "expression": "Hello, it's me",
+                    "translation": "안녕, 나야",
+                    "usage": "전화나 만남에서 자신을 소개할 때"
+                },
+                {
+                    "expression": "I've been wondering",
+                    "translation": "계속 궁금했어",
+                    "usage": "지금까지 생각해왔던 것을 표현할 때"
+                },
+                {
+                    "expression": "I must have called a thousand times",
+                    "translation": "수천 번은 전화했을 거야",
+                    "usage": "과거의 반복된 행동을 강조할 때"
+                },
+                {
+                    "expression": "It's so typical of me",
+                    "translation": "그게 바로 나답지",
+                    "usage": "자신의 습관적 행동을 표현할 때"
+                },
+                {
+                    "expression": "I'm sorry for everything",
+                    "translation": "모든 것에 대해 미안해",
+                    "usage": "전반적인 사과를 할 때"
+                }
+            ],
+            "vocabulary": [
+                {
+                    "word": "wonder",
+                    "translation": "궁금해하다",
+                    "partOfSpeech": "verb",
+                    "example": "I wonder if you received my message"
+                },
+                {
+                    "word": "typical",
+                    "translation": "전형적인",
+                    "partOfSpeech": "adjective",
+                    "example": "That's typical behavior for him"
+                },
+                {
+                    "word": "heal",
+                    "translation": "치유하다",
+                    "partOfSpeech": "verb",
+                    "example": "Time heals all wounds"
+                },
+                {
+                    "word": "difference",
+                    "translation": "차이",
+                    "partOfSpeech": "noun",
+                    "example": "There's a big difference between us"
+                }
+            ],
+            "audioPath": "Audio/chap_001_pop_basics/hello_adele.mp3",
+            "coverImagePath": "Covers/chap_001_pop_basics/step_001.jpg",
+            "duration": 302,
+            "bpm": 79,
+            "unlocked": true,
+            "completed": false,
+            "stars": 0,
+            "highScore": 0,
+            "estimatedPlayTime": 300
+        },
+        {
+            "id": "step_002",
+            "title": "Someone Like You - Adele",
+            "artist": "Adele",
+            "genre": "Pop",
+            "difficulty": "beginner",
+            "theme": "Expressing Emotions",
+            "description": "감정 표현과 소망을 나타내는 방법을 배웁니다",
+            "grammarPoints": [
+                "Past tense: I heard that you...",
+                "Wish expressions: I wish nothing but the best",
+                "Imperatives: Never mind, Don't forget me"
+            ],
+            "keyExpressions": [
+                {
+                    "expression": "I heard that you settled down",
+                    "translation": "네가 정착했다고 들었어",
+                    "usage": "다른 사람에게 들은 소식을 전할 때"
+                },
+                {
+                    "expression": "I wish nothing but the best for you",
+                    "translation": "너에게 최고만을 바랄게",
+                    "usage": "상대에게 진심으로 좋은 일이 있기를 바랄 때"
+                },
+                {
+                    "expression": "Never mind, I'll find someone like you",
+                    "translation": "괜찮아, 너 같은 사람을 찾을 거야",
+                    "usage": "포기하지 않고 앞으로 나아갈 때"
+                },
+                {
+                    "expression": "Don't forget me",
+                    "translation": "나를 잊지 마",
+                    "usage": "헤어질 때 기억해달라고 부탁할 때"
+                },
+                {
+                    "expression": "Sometimes it lasts in love",
+                    "translation": "때로는 사랑이 지속되기도 해",
+                    "usage": "불확실한 미래에 대해 이야기할 때"
+                }
+            ],
+            "vocabulary": [
+                {
+                    "word": "settle down",
+                    "translation": "정착하다",
+                    "partOfSpeech": "phrasal verb",
+                    "example": "They decided to settle down in the countryside"
+                },
+                {
+                    "word": "married",
+                    "translation": "결혼한",
+                    "partOfSpeech": "adjective",
+                    "example": "She's happily married"
+                },
+                {
+                    "word": "unexpected",
+                    "translation": "예상치 못한",
+                    "partOfSpeech": "adjective",
+                    "example": "It was an unexpected surprise"
+                },
+                {
+                    "word": "remind",
+                    "translation": "상기시키다",
+                    "partOfSpeech": "verb",
+                    "example": "This song reminds me of you"
+                }
+            ],
+            "audioPath": "Audio/chap_001_pop_basics/someone_like_you.mp3",
+            "coverImagePath": "Covers/chap_001_pop_basics/step_002.jpg",
+            "duration": 285,
+            "bpm": 67,
+            "unlocked": true,
+            "completed": false,
+            "stars": 0,
+            "highScore": 0,
+            "estimatedPlayTime": 280
+        },
+        {
+            "id": "step_003",
+            "title": "Perfect - Ed Sheeran",
+            "artist": "Ed Sheeran",
+            "genre": "Pop",
+            "difficulty": "beginner",
+            "theme": "Describing People",
+            "description": "사람을 묘사하고 사랑을 표현하는 방법을 배웁니다",
+            "grammarPoints": [
+                "Past tense: I found a love",
+                "Descriptive adjectives: perfect, beautiful, strong",
+                "Future: We will be a family"
+            ],
+            "keyExpressions": [
+                {
+                    "expression": "I found a love",
+                    "translation": "사랑을 찾았어",
+                    "usage": "무언가를 발견했을 때"
+                },
+                {
+                    "expression": "You look perfect tonight",
+                    "translation": "오늘 밤 너는 완벽해 보여",
+                    "usage": "상대의 외모를 칭찬할 때"
+                },
+                {
+                    "expression": "I don't deserve this",
+                    "translation": "나는 이럴 자격이 없어",
+                    "usage": "겸손하게 말할 때"
+                },
+                {
+                    "expression": "Darling, just hold my hand",
+                    "translation": "자기야, 내 손을 잡아",
+                    "usage": "애정을 담아 부탁할 때"
+                }
+            ],
+            "vocabulary": [
+                {
+                    "word": "deserve",
+                    "translation": "자격이 있다",
+                    "partOfSpeech": "verb",
+                    "example": "You deserve all the happiness"
+                },
+                {
+                    "word": "whisper",
+                    "translation": "속삭이다",
+                    "partOfSpeech": "verb",
+                    "example": "He whispered in her ear"
+                },
+                {
+                    "word": "barefoot",
+                    "translation": "맨발로",
+                    "partOfSpeech": "adverb",
+                    "example": "Walking barefoot on the grass"
+                }
+            ],
+            "audioPath": "Audio/chap_001_pop_basics/perfect.mp3",
+            "coverImagePath": "Covers/chap_001_pop_basics/step_003.jpg",
+            "duration": 263,
+            "bpm": 95,
+            "unlocked": true,
+            "completed": false,
+            "stars": 0,
+            "highScore": 0,
+            "estimatedPlayTime": 260
+        },
+        {
+            "id": "step_004",
+            "title": "Shape of You - Ed Sheeran",
+            "artist": "Ed Sheeran",
+            "genre": "Pop",
+            "difficulty": "beginner",
+            "theme": "Daily Activities",
+            "description": "일상 활동과 만남에 대해 이야기하는 방법을 배웁니다",
+            "grammarPoints": [
+                "Present continuous: I'm in love with your body",
+                "Prepositions: at the bar, in the backseat",
+                "Causative: Push and start"
+            ],
+            "keyExpressions": [
+                {
+                    "expression": "I'm in love with your body",
+                    "translation": "나는 네 몸에 반했어",
+                    "usage": "강한 끌림을 표현할 때"
+                },
+                {
+                    "expression": "Come on, be my baby",
+                    "translation": "자, 내 연인이 되어줘",
+                    "usage": "상대에게 관계를 제안할 때"
+                },
+                {
+                    "expression": "We talk for hours",
+                    "translation": "우리는 몇 시간 동안 이야기해",
+                    "usage": "긴 시간 동안 한 행동을 표현할 때"
+                }
+            ],
+            "vocabulary": [
+                {
+                    "word": "club",
+                    "translation": "클럽",
+                    "partOfSpeech": "noun",
+                    "example": "We met at a club"
+                },
+                {
+                    "word": "magnet",
+                    "translation": "자석",
+                    "partOfSpeech": "noun",
+                    "example": "Like a magnet, we were drawn together"
+                },
+                {
+                    "word": "discover",
+                    "translation": "발견하다",
+                    "partOfSpeech": "verb",
+                    "example": "I discovered a new cafe"
+                }
+            ],
+            "audioPath": "Audio/chap_001_pop_basics/shape_of_you.mp3",
+            "coverImagePath": "Covers/chap_001_pop_basics/step_004.jpg",
+            "duration": 233,
+            "bpm": 96,
+            "unlocked": true,
+            "completed": false,
+            "stars": 0,
+            "highScore": 0,
+            "estimatedPlayTime": 230
+        },
+        {
+            "id": "step_005",
+            "title": "Shake It Off - Taylor Swift",
+            "artist": "Taylor Swift",
+            "genre": "Pop",
+            "difficulty": "beginner",
+            "theme": "Positive Attitude",
+            "description": "긍정적인 태도와 행동을 표현하는 방법을 배웁니다",
+            "grammarPoints": [
+                "Future with 'gonna': I'm gonna shake it off",
+                "Present continuous: Haters gonna hate",
+                "Causative verbs: Make you move"
+            ],
+            "keyExpressions": [
+                {
+                    "expression": "I'm gonna shake it off",
+                    "translation": "털어버릴 거야",
+                    "usage": "부정적인 것을 벗어던질 때"
+                },
+                {
+                    "expression": "Players gonna play",
+                    "translation": "놀 사람은 놀 거야",
+                    "usage": "사람들의 본성을 표현할 때"
+                },
+                {
+                    "expression": "I keep cruising",
+                    "translation": "계속 나아가",
+                    "usage": "멈추지 않고 계속할 때"
+                },
+                {
+                    "expression": "Can't stop, won't stop",
+                    "translation": "멈출 수 없어, 멈추지 않을 거야",
+                    "usage": "강한 의지를 표현할 때"
+                }
+            ],
+            "vocabulary": [
+                {
+                    "word": "shake off",
+                    "translation": "털어버리다",
+                    "partOfSpeech": "phrasal verb",
+                    "example": "Shake off your worries"
+                },
+                {
+                    "word": "hater",
+                    "translation": "비방하는 사람",
+                    "partOfSpeech": "noun",
+                    "example": "Don't listen to the haters"
+                },
+                {
+                    "word": "beat",
+                    "translation": "박자, 리듬",
+                    "partOfSpeech": "noun",
+                    "example": "Dance to the beat"
+                }
+            ],
+            "audioPath": "Audio/chap_001_pop_basics/shake_it_off.mp3",
+            "coverImagePath": "Covers/chap_001_pop_basics/step_005.jpg",
+            "duration": 219,
+            "bpm": 160,
+            "unlocked": false,
+            "completed": false,
+            "stars": 0,
+            "highScore": 0,
+            "estimatedPlayTime": 220
+        },
+        {
+            "id": "step_006",
+            "title": "Count on Me - Bruno Mars",
+            "artist": "Bruno Mars",
+            "genre": "Pop",
+            "difficulty": "beginner",
+            "theme": "Friendship",
+            "description": "우정과 도움을 표현하는 방법을 배웁니다",
+            "grammarPoints": [
+                "Modal verb 'can': You can count on me",
+                "Conditional: If you ever find yourself",
+                "Future will: I will be there"
+            ],
+            "keyExpressions": [
+                {
+                    "expression": "You can count on me",
+                    "translation": "나를 믿어도 돼",
+                    "usage": "상대에게 신뢰를 줄 때"
+                },
+                {
+                    "expression": "I'll be there",
+                    "translation": "내가 거기 있을게",
+                    "usage": "도움을 약속할 때"
+                },
+                {
+                    "expression": "Find out what we're made of",
+                    "translation": "우리가 어떤 사람인지 알아낼 거야",
+                    "usage": "진짜 모습을 발견할 때"
+                }
+            ],
+            "vocabulary": [
+                {
+                    "word": "count on",
+                    "translation": "믿다, 의지하다",
+                    "partOfSpeech": "phrasal verb",
+                    "example": "I can always count on my friends"
+                },
+                {
+                    "word": "stuck",
+                    "translation": "막힌, 갇힌",
+                    "partOfSpeech": "adjective",
+                    "example": "I'm stuck in traffic"
+                },
+                {
+                    "word": "sail",
+                    "translation": "항해하다",
+                    "partOfSpeech": "verb",
+                    "example": "Let's sail away together"
+                }
+            ],
+            "audioPath": "Audio/chap_001_pop_basics/count_on_me.mp3",
+            "coverImagePath": "Covers/chap_001_pop_basics/step_006.jpg",
+            "duration": 196,
+            "bpm": 84,
+            "unlocked": false,
+            "completed": false,
+            "stars": 0,
+            "highScore": 0,
+            "estimatedPlayTime": 200
+        },
+        {
+            "id": "step_007",
+            "title": "Just the Way You Are - Bruno Mars",
+            "artist": "Bruno Mars",
+            "genre": "Pop",
+            "difficulty": "beginner",
+            "theme": "Compliments",
+            "description": "칭찬하고 외모를 묘사하는 방법을 배웁니다",
+            "grammarPoints": [
+                "Adjectives: Amazing, wonderful, beautiful",
+                "Present tense: You're amazing just the way you are",
+                "When clause: When I see your face"
+            ],
+            "keyExpressions": [
+                {
+                    "expression": "You're amazing just the way you are",
+                    "translation": "있는 그대로의 네가 멋져",
+                    "usage": "상대를 있는 그대로 인정할 때"
+                },
+                {
+                    "expression": "When I see your face",
+                    "translation": "네 얼굴을 볼 때",
+                    "usage": "특정 순간을 말할 때"
+                },
+                {
+                    "expression": "There's not a thing that I would change",
+                    "translation": "바꾸고 싶은 게 하나도 없어",
+                    "usage": "완벽함을 표현할 때"
+                }
+            ],
+            "vocabulary": [
+                {
+                    "word": "amazing",
+                    "translation": "놀라운",
+                    "partOfSpeech": "adjective",
+                    "example": "You did an amazing job"
+                },
+                {
+                    "word": "whole",
+                    "translation": "전체의",
+                    "partOfSpeech": "adjective",
+                    "example": "The whole world knows"
+                },
+                {
+                    "word": "fall",
+                    "translation": "떨어지다, 빠지다",
+                    "partOfSpeech": "verb",
+                    "example": "I fall for you every day"
+                }
+            ],
+            "audioPath": "Audio/chap_001_pop_basics/just_the_way_you_are.mp3",
+            "coverImagePath": "Covers/chap_001_pop_basics/step_007.jpg",
+            "duration": 220,
+            "bpm": 109,
+            "unlocked": false,
+            "completed": false,
+            "stars": 0,
+            "highScore": 0,
+            "estimatedPlayTime": 220
+        },
+        {
+            "id": "step_008",
+            "title": "What Makes You Beautiful - One Direction",
+            "artist": "One Direction",
+            "genre": "Pop",
+            "difficulty": "beginner",
+            "theme": "Describing Appearance",
+            "description": "외모와 매력을 표현하는 방법을 배웁니다",
+            "grammarPoints": [
+                "Negative: You don't know you're beautiful",
+                "Conditional: If only you saw",
+                "Present tense: Everyone else can see it"
+            ],
+            "keyExpressions": [
+                {
+                    "expression": "You don't know you're beautiful",
+                    "translation": "너는 네가 아름다운 줄 몰라",
+                    "usage": "상대의 겸손함을 표현할 때"
+                },
+                {
+                    "expression": "That's what makes you beautiful",
+                    "translation": "그게 널 아름답게 만들어",
+                    "usage": "특별한 이유를 말할 때"
+                },
+                {
+                    "expression": "Everyone else in the room can see it",
+                    "translation": "방 안의 모든 사람이 볼 수 있어",
+                    "usage": "명백한 사실을 강조할 때"
+                }
+            ],
+            "vocabulary": [
+                {
+                    "word": "insecure",
+                    "translation": "불안한",
+                    "partOfSpeech": "adjective",
+                    "example": "Don't be insecure about yourself"
+                },
+                {
+                    "word": "flip",
+                    "translation": "뒤집다",
+                    "partOfSpeech": "verb",
+                    "example": "She flips her hair"
+                },
+                {
+                    "word": "light up",
+                    "translation": "밝히다",
+                    "partOfSpeech": "phrasal verb",
+                    "example": "Your smile lights up the room"
+                }
+            ],
+            "audioPath": "Audio/chap_001_pop_basics/what_makes_you_beautiful.mp3",
+            "coverImagePath": "Covers/chap_001_pop_basics/step_008.jpg",
+            "duration": 199,
+            "bpm": 125,
+            "unlocked": false,
+            "completed": false,
+            "stars": 0,
+            "highScore": 0,
+            "estimatedPlayTime": 200
+        },
+        {
+            "id": "step_009",
+            "title": "Love Story - Taylor Swift",
+            "artist": "Taylor Swift",
+            "genre": "Pop",
+            "difficulty": "beginner",
+            "theme": "Storytelling",
+            "description": "과거 이야기를 전달하는 방법을 배웁니다",
+            "grammarPoints": [
+                "Past tense: We were both young",
+                "Imperatives: Marry me, Juliet",
+                "Quotations: He said, I said"
+            ],
+            "keyExpressions": [
+                {
+                    "expression": "We were both young when I first saw you",
+                    "translation": "처음 너를 봤을 때 우리 둘 다 어렸어",
+                    "usage": "과거를 회상할 때"
+                },
+                {
+                    "expression": "Romeo, take me somewhere we can be alone",
+                    "translation": "로미오, 우리 둘만 있을 수 있는 곳으로 데려가줘",
+                    "usage": "낭만적인 제안을 할 때"
+                },
+                {
+                    "expression": "It's a love story, baby just say yes",
+                    "translation": "사랑 이야기야, 그냥 예스라고 말해",
+                    "usage": "사랑을 확인할 때"
+                }
+            ],
+            "vocabulary": [
+                {
+                    "word": "scarlet",
+                    "translation": "진홍색",
+                    "partOfSpeech": "adjective",
+                    "example": "She wore a scarlet dress"
+                },
+                {
+                    "word": "sneak out",
+                    "translation": "몰래 나가다",
+                    "partOfSpeech": "phrasal verb",
+                    "example": "Let's sneak out tonight"
+                },
+                {
+                    "word": "propose",
+                    "translation": "청혼하다",
+                    "partOfSpeech": "verb",
+                    "example": "He proposed with a ring"
+                }
+            ],
+            "audioPath": "Audio/chap_001_pop_basics/love_story.mp3",
+            "coverImagePath": "Covers/chap_001_pop_basics/step_009.jpg",
+            "duration": 235,
+            "bpm": 119,
+            "unlocked": false,
+            "completed": false,
+            "stars": 0,
+            "highScore": 0,
+            "estimatedPlayTime": 240
+        },
+        {
+            "id": "step_010",
+            "title": "Happy - Pharrell Williams",
+            "artist": "Pharrell Williams",
+            "genre": "Pop",
+            "difficulty": "beginner",
+            "theme": "Expressing Happiness",
+            "description": "행복과 긍정적 감정을 표현하는 방법을 배웁니다",
+            "grammarPoints": [
+                "Because clause: Because I'm happy",
+                "Conditional: If you feel like",
+                "Repetition for emphasis: Clap along"
+            ],
+            "keyExpressions": [
+                {
+                    "expression": "Because I'm happy",
+                    "translation": "왜냐하면 나는 행복하니까",
+                    "usage": "이유를 설명할 때"
+                },
+                {
+                    "expression": "Clap along if you feel like happiness is the truth",
+                    "translation": "행복이 진리라고 느껴지면 박수쳐",
+                    "usage": "동참을 요청할 때"
+                },
+                {
+                    "expression": "Here come bad news",
+                    "translation": "나쁜 소식이 오네",
+                    "usage": "부정적인 상황을 말할 때"
+                },
+                {
+                    "expression": "Nothing can bring me down",
+                    "translation": "아무것도 나를 우울하게 만들 수 없어",
+                    "usage": "강한 긍정을 표현할 때"
+                }
+            ],
+            "vocabulary": [
+                {
+                    "word": "clap",
+                    "translation": "박수치다",
+                    "partOfSpeech": "verb",
+                    "example": "Clap your hands"
+                },
+                {
+                    "word": "feeling",
+                    "translation": "느낌",
+                    "partOfSpeech": "noun",
+                    "example": "I have a good feeling about this"
+                },
+                {
+                    "word": "bring down",
+                    "translation": "우울하게 하다",
+                    "partOfSpeech": "phrasal verb",
+                    "example": "Don't let them bring you down"
+                }
+            ],
+            "audioPath": "Audio/chap_001_pop_basics/happy.mp3",
+            "coverImagePath": "Covers/chap_001_pop_basics/step_010.jpg",
+            "duration": 232,
+            "bpm": 160,
+            "unlocked": false,
+            "completed": false,
+            "stars": 0,
+            "highScore": 0,
+            "estimatedPlayTime": 230
+        }
+    ]
+}

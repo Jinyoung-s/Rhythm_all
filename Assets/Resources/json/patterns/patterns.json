@@ -1,0 +1,911 @@
+{
+    "version": "1.0",
+    "lastUpdated": "2026-01-03",
+    "description": "Rhythm English 패턴 데이터베이스 - 모든 영어 학습 패턴 관리",
+    "totalPatterns": 20,
+    "categories": [
+        {
+            "id": "self_introduction",
+            "name": "Self Introduction",
+            "nameKo": "자기소개",
+            "level": "beginner",
+            "icon": "👋",
+            "description": "자기 자신을 소개하는 기본 패턴들"
+        },
+        {
+            "id": "requests",
+            "name": "Requests & Offers",
+            "nameKo": "요청과 제안",
+            "level": "beginner",
+            "icon": "🙏",
+            "description": "정중하게 요청하고 제안하는 패턴들"
+        },
+        {
+            "id": "questions",
+            "name": "Questions",
+            "nameKo": "질문",
+            "level": "beginner",
+            "icon": "❓",
+            "description": "다양한 의문사와 질문 패턴들"
+        },
+        {
+            "id": "tenses",
+            "name": "Tenses",
+            "nameKo": "시제",
+            "level": "elementary",
+            "icon": "⏰",
+            "description": "현재, 과거, 미래 시제 패턴들"
+        },
+        {
+            "id": "emotions",
+            "name": "Emotions & Feelings",
+            "nameKo": "감정과 느낌",
+            "level": "beginner",
+            "icon": "😊",
+            "description": "감정과 상태를 표현하는 패턴들"
+        }
+    ],
+    "patterns": [
+        {
+            "id": "i_am_job",
+            "code": "PAT_001",
+            "name": "I am + 직업/신분",
+            "nameEn": "I am + job/profession",
+            "level": "beginner",
+            "difficulty": 1,
+            "category": "self_introduction",
+            "icon": "💼",
+            "structure": "I am + (a/an) + [noun]",
+            "structureKo": "I am + (a/an) + [명사]",
+            "usage": "자신의 직업, 신분, 국적 등을 소개할 때 사용",
+            "examples": [
+                {
+                    "en": "I am a student.",
+                    "ko": "나는 학생이야.",
+                    "context": "학교나 처음 만난 사람에게",
+                    "formality": "neutral"
+                },
+                {
+                    "en": "I am a teacher.",
+                    "ko": "저는 선생님입니다.",
+                    "context": "직업 소개",
+                    "formality": "neutral"
+                },
+                {
+                    "en": "I am Korean.",
+                    "ko": "나는 한국인이야.",
+                    "context": "국적 소개",
+                    "formality": "neutral"
+                },
+                {
+                    "en": "I am your friend.",
+                    "ko": "나는 네 친구야.",
+                    "context": "관계 표현",
+                    "formality": "casual"
+                }
+            ],
+            "variations": [
+                {
+                    "form": "I'm a...",
+                    "note": "축약형 (더 자연스럽고 일상적)"
+                },
+                {
+                    "form": "I am an...",
+                    "note": "모음으로 시작하는 명사 앞에서"
+                }
+            ],
+            "relatedPatterns": [
+                "i_am_feeling",
+                "i_am_location",
+                "he_she_is_job"
+            ],
+            "commonMistakes": [
+                {
+                    "wrong": "I am student",
+                    "correct": "I am a student",
+                    "note": "관사 a/an 필수"
+                },
+                {
+                    "wrong": "I am a Korea",
+                    "correct": "I am Korean",
+                    "note": "국적은 형용사 형태"
+                }
+            ],
+            "relatedSongs": [
+                {
+                    "songId": "step_001",
+                    "title": "Good Morning Song",
+                    "chapter": "beg_chap_001",
+                    "occurrences": 3,
+                    "featured": false
+                },
+                {
+                    "songId": "step_054",
+                    "title": "This Is Me",
+                    "chapter": "beg_chap_005",
+                    "occurrences": 8,
+                    "featured": true
+                }
+            ],
+            "practiceUrl": "/practice/i_am_job",
+            "videoUrl": "/videos/pat_001_explanation"
+        },
+        {
+            "id": "i_am_feeling",
+            "code": "PAT_002",
+            "name": "I am + 감정",
+            "nameEn": "I am + feeling/emotion",
+            "level": "beginner",
+            "difficulty": 1,
+            "category": "emotions",
+            "icon": "😊",
+            "structure": "I am + [adjective describing emotion]",
+            "structureKo": "I am + [감정 형용사]",
+            "usage": "현재 감정 상태나 느낌을 표현할 때",
+            "examples": [
+                {
+                    "en": "I am happy.",
+                    "ko": "나는 행복해.",
+                    "context": "기분 좋을 때",
+                    "formality": "neutral"
+                },
+                {
+                    "en": "I am tired.",
+                    "ko": "나는 피곤해.",
+                    "context": "지쳤을 때",
+                    "formality": "neutral"
+                },
+                {
+                    "en": "I am excited.",
+                    "ko": "나는 신나.",
+                    "context": "설렐 때",
+                    "formality": "casual"
+                },
+                {
+                    "en": "I am sad.",
+                    "ko": "나는 슬퍼.",
+                    "context": "우울할 때",
+                    "formality": "neutral"
+                },
+                {
+                    "en": "I am so hungry.",
+                    "ko": "나 너무 배고파.",
+                    "context": "식사 시간",
+                    "formality": "casual"
+                }
+            ],
+            "variations": [
+                {
+                    "form": "I'm feeling...",
+                    "note": "좀 더 길게 표현할 때"
+                },
+                {
+                    "form": "I feel...",
+                    "note": "동사 feel 사용"
+                },
+                {
+                    "form": "I'm so...",
+                    "note": "강조할 때"
+                }
+            ],
+            "commonEmotions": [
+                "happy",
+                "sad",
+                "angry",
+                "excited",
+                "tired",
+                "hungry",
+                "thirsty",
+                "nervous",
+                "worried",
+                "scared",
+                "bored",
+                "surprised",
+                "confused",
+                "proud",
+                "grateful"
+            ],
+            "relatedPatterns": [
+                "i_am_job",
+                "how_are_you",
+                "i_feel_adjective"
+            ],
+            "relatedSongs": [
+                {
+                    "songId": "step_015",
+                    "title": "Happy Feelings",
+                    "chapter": "beg_chap_001",
+                    "occurrences": 12,
+                    "featured": true
+                },
+                {
+                    "songId": "step_156",
+                    "title": "Joy & Excitement",
+                    "chapter": "int_chap_031",
+                    "occurrences": 8,
+                    "featured": false
+                }
+            ]
+        },
+        {
+            "id": "can_i_request",
+            "code": "PAT_015",
+            "name": "Can I...? (허가 요청)",
+            "nameEn": "Can I...? (asking permission)",
+            "level": "beginner",
+            "difficulty": 2,
+            "category": "requests",
+            "icon": "🙋",
+            "structure": "Can I + [verb] + (object)?",
+            "structureKo": "Can I + [동사원형] + (목적어)?",
+            "usage": "허가를 구하거나 정중하게 무언가를 요청할 때",
+            "examples": [
+                {
+                    "en": "Can I have a coffee?",
+                    "ko": "커피 한 잔 주실 수 있나요?",
+                    "context": "카페에서 주문",
+                    "formality": "polite"
+                },
+                {
+                    "en": "Can I use the bathroom?",
+                    "ko": "화장실 써도 될까요?",
+                    "context": "공공장소에서",
+                    "formality": "polite"
+                },
+                {
+                    "en": "Can I sit here?",
+                    "ko": "여기 앉아도 돼요?",
+                    "context": "자리 물을 때",
+                    "formality": "polite"
+                },
+                {
+                    "en": "Can I ask you something?",
+                    "ko": "질문 하나 해도 될까요?",
+                    "context": "질문 전에",
+                    "formality": "polite"
+                },
+                {
+                    "en": "Can I try this on?",
+                    "ko": "이거 입어봐도 돼요?",
+                    "context": "옷 가게에서",
+                    "formality": "polite"
+                },
+                {
+                    "en": "Can I get a receipt?",
+                    "ko": "영수증 받을 수 있나요?",
+                    "context": "계산 후",
+                    "formality": "polite"
+                }
+            ],
+            "variations": [
+                {
+                    "form": "Could I...?",
+                    "note": "더 정중한 표현"
+                },
+                {
+                    "form": "May I...?",
+                    "note": "격식 있는 표현"
+                },
+                {
+                    "form": "Can I please...?",
+                    "note": "please 추가로 더 정중하게"
+                }
+            ],
+            "commonMistakes": [
+                {
+                    "wrong": "Can I to go?",
+                    "correct": "Can I go?",
+                    "note": "Can 뒤에는 동사원형 (to 없이)"
+                },
+                {
+                    "wrong": "Can I going?",
+                    "correct": "Can I go?",
+                    "note": "-ing 형태 X"
+                }
+            ],
+            "responsePatterns": [
+                {
+                    "en": "Sure!",
+                    "ko": "물론이죠!",
+                    "type": "positive"
+                },
+                {
+                    "en": "Of course!",
+                    "ko": "당연하죠!",
+                    "type": "positive"
+                },
+                {
+                    "en": "Go ahead",
+                    "ko": "하세요",
+                    "type": "positive"
+                },
+                {
+                    "en": "Sorry, you can't",
+                    "ko": "죄송하지만 안 돼요",
+                    "type": "negative"
+                },
+                {
+                    "en": "I'm afraid not",
+                    "ko": "죄송하지만 안 될 것 같아요",
+                    "type": "negative"
+                }
+            ],
+            "relatedPatterns": [
+                "can_you_request",
+                "could_you_request",
+                "would_you_like",
+                "may_i"
+            ],
+            "relatedSongs": [
+                {
+                    "songId": "step_002",
+                    "title": "Coffee Shop Talk",
+                    "chapter": "beg_chap_002",
+                    "occurrences": 6,
+                    "featured": true
+                },
+                {
+                    "songId": "step_016",
+                    "title": "At the Bakery",
+                    "chapter": "beg_chap_002",
+                    "occurrences": 4,
+                    "featured": false
+                },
+                {
+                    "songId": "step_019",
+                    "title": "Clothes Shopping",
+                    "chapter": "beg_chap_002",
+                    "occurrences": 5,
+                    "featured": false
+                }
+            ],
+            "situationalContexts": [
+                "ordering_food",
+                "shopping",
+                "asking_permission",
+                "daily_requests",
+                "restaurant",
+                "cafe"
+            ]
+        },
+        {
+            "id": "present_simple_i",
+            "code": "PAT_030",
+            "name": "I + 동사 (현재 단순)",
+            "nameEn": "Present Simple - I + verb",
+            "level": "beginner",
+            "difficulty": 2,
+            "category": "tenses",
+            "icon": "⏰",
+            "structure": "I + [verb] + (object) + (time/frequency)",
+            "structureKo": "I + [동사원형] + (목적어) + (시간/빈도)",
+            "usage": "습관적인 행동, 일상 활동, 일반적인 사실을 표현",
+            "examples": [
+                {
+                    "en": "I wake up at 7 every day.",
+                    "ko": "나는 매일 7시에 일어나.",
+                    "context": "일상 습관",
+                    "formality": "neutral"
+                },
+                {
+                    "en": "I eat breakfast at home.",
+                    "ko": "나는 집에서 아침을 먹어.",
+                    "context": "식사 습관",
+                    "formality": "neutral"
+                },
+                {
+                    "en": "I go to school by bus.",
+                    "ko": "나는 버스로 학교에 가.",
+                    "context": "통학 방법",
+                    "formality": "neutral"
+                },
+                {
+                    "en": "I like music.",
+                    "ko": "나는 음악을 좋아해.",
+                    "context": "취향 표현",
+                    "formality": "neutral"
+                },
+                {
+                    "en": "I work at a company.",
+                    "ko": "나는 회사에서 일해.",
+                    "context": "직업 활동",
+                    "formality": "neutral"
+                }
+            ],
+            "timeExpressions": [
+                "every day",
+                "always",
+                "usually",
+                "sometimes",
+                "often",
+                "rarely",
+                "never",
+                "on Mondays",
+                "at 7 o'clock",
+                "in the morning"
+            ],
+            "commonVerbs": [
+                "wake up",
+                "get up",
+                "eat",
+                "drink",
+                "go",
+                "come",
+                "work",
+                "study",
+                "play",
+                "watch",
+                "listen",
+                "read",
+                "sleep",
+                "like",
+                "love",
+                "hate",
+                "want",
+                "need"
+            ],
+            "relatedPatterns": [
+                "he_she_verb_s",
+                "present_continuous",
+                "i_dont_verb",
+                "do_you_verb"
+            ],
+            "relatedSongs": [
+                {
+                    "songId": "step_001",
+                    "title": "Good Morning Song",
+                    "chapter": "beg_chap_001",
+                    "occurrences": 15,
+                    "featured": true
+                },
+                {
+                    "songId": "step_056",
+                    "title": "Every Day Hustle",
+                    "chapter": "beg_chap_005",
+                    "occurrences": 12,
+                    "featured": false
+                },
+                {
+                    "songId": "step_061",
+                    "title": "My Daily Routine",
+                    "chapter": "elem_chap_006",
+                    "occurrences": 20,
+                    "featured": true
+                }
+            ]
+        },
+        {
+            "id": "present_continuous",
+            "code": "PAT_035",
+            "name": "I'm -ing (현재 진행)",
+            "nameEn": "Present Continuous - I'm + verb-ing",
+            "level": "elementary",
+            "difficulty": 3,
+            "category": "tenses",
+            "icon": "🏃",
+            "structure": "I am + [verb]-ing + (object)",
+            "structureKo": "I am + [동사-ing] + (목적어)",
+            "usage": "지금 이 순간 하고 있는 행동을 표현",
+            "examples": [
+                {
+                    "en": "I'm working right now.",
+                    "ko": "나 지금 일하는 중이야.",
+                    "context": "현재 진행 중인 일",
+                    "formality": "casual"
+                },
+                {
+                    "en": "I'm eating lunch.",
+                    "ko": "나 점심 먹는 중이야.",
+                    "context": "식사 중",
+                    "formality": "casual"
+                },
+                {
+                    "en": "I'm waiting for you.",
+                    "ko": "나 너 기다리는 중이야.",
+                    "context": "누군가를 기다림",
+                    "formality": "casual"
+                },
+                {
+                    "en": "I'm watching TV.",
+                    "ko": "나 TV 보는 중이야.",
+                    "context": "여가 활동",
+                    "formality": "casual"
+                }
+            ],
+            "formRules": {
+                "regular": {
+                    "rule": "verb + -ing",
+                    "examples": [
+                        "working",
+                        "eating",
+                        "playing"
+                    ]
+                },
+                "e_ending": {
+                    "rule": "remove e + -ing",
+                    "examples": [
+                        "making",
+                        "taking",
+                        "writing"
+                    ]
+                },
+                "cvc_doubling": {
+                    "rule": "double last consonant + -ing",
+                    "examples": [
+                        "running",
+                        "sitting",
+                        "getting"
+                    ]
+                }
+            },
+            "timeExpressions": [
+                "right now",
+                "at the moment",
+                "currently",
+                "now",
+                "today",
+                "this week"
+            ],
+            "relatedPatterns": [
+                "what_are_you_doing",
+                "he_she_is_ing",
+                "present_simple_i",
+                "are_you_ing"
+            ],
+            "relatedSongs": [
+                {
+                    "songId": "step_066",
+                    "title": "Right Now",
+                    "chapter": "elem_chap_006",
+                    "occurrences": 18,
+                    "featured": true
+                },
+                {
+                    "songId": "step_067",
+                    "title": "What Are You Doing?",
+                    "chapter": "elem_chap_006",
+                    "occurrences": 14,
+                    "featured": true
+                }
+            ]
+        },
+        {
+            "id": "would_you_like",
+            "code": "PAT_020",
+            "name": "Would you like...? (정중한 제안)",
+            "nameEn": "Would you like...? (polite offer)",
+            "level": "beginner",
+            "difficulty": 2,
+            "category": "requests",
+            "icon": "☕",
+            "structure": "Would you like + [noun / to + verb]?",
+            "structureKo": "Would you like + [명사 / to + 동사]?",
+            "usage": "상대방에게 정중하게 무언가를 제안하거나 권유할 때",
+            "examples": [
+                {
+                    "en": "Would you like some coffee?",
+                    "ko": "커피 드실래요?",
+                    "context": "음료 권유",
+                    "formality": "polite"
+                },
+                {
+                    "en": "Would you like to join us?",
+                    "ko": "우리랑 함께 하실래요?",
+                    "context": "초대",
+                    "formality": "polite"
+                },
+                {
+                    "en": "What size would you like?",
+                    "ko": "사이즈 어떤 걸로 하시겠어요?",
+                    "context": "주문 받을 때",
+                    "formality": "polite"
+                },
+                {
+                    "en": "Would you like anything else?",
+                    "ko": "다른 건 필요하신 게 있으세요?",
+                    "context": "서비스 제공",
+                    "formality": "polite"
+                }
+            ],
+            "responses": {
+                "positive": [
+                    "Yes, please",
+                    "I'd love to",
+                    "That sounds great",
+                    "Sure, thank you"
+                ],
+                "negative": [
+                    "No, thank you",
+                    "I'm okay, thanks",
+                    "Not right now, thanks",
+                    "Maybe later"
+                ]
+            },
+            "relatedPatterns": [
+                "would_like_to",
+                "can_i_request",
+                "do_you_want",
+                "id_like"
+            ],
+            "relatedSongs": [
+                {
+                    "songId": "step_002",
+                    "title": "Coffee Shop Talk",
+                    "chapter": "beg_chap_002",
+                    "occurrences": 5,
+                    "featured": true
+                },
+                {
+                    "songId": "step_023",
+                    "title": "Restaurant Order",
+                    "chapter": "beg_chap_002",
+                    "occurrences": 4,
+                    "featured": false
+                }
+            ]
+        },
+        {
+            "id": "i_like_noun",
+            "code": "PAT_008",
+            "name": "I like + 명사",
+            "nameEn": "I like + noun",
+            "level": "beginner",
+            "difficulty": 1,
+            "category": "emotions",
+            "icon": "❤️",
+            "structure": "I like + [noun]",
+            "structureKo": "I like + [명사]",
+            "usage": "좋아하는 것을 표현할 때",
+            "examples": [
+                {
+                    "en": "I like music.",
+                    "ko": "나는 음악을 좋아해.",
+                    "context": "취미",
+                    "formality": "neutral"
+                },
+                {
+                    "en": "I like pizza.",
+                    "ko": "나는 피자를 좋아해.",
+                    "context": "음식",
+                    "formality": "neutral"
+                },
+                {
+                    "en": "I like this place.",
+                    "ko": "나는 이 장소가 좋아.",
+                    "context": "장소",
+                    "formality": "neutral"
+                },
+                {
+                    "en": "I like you.",
+                    "ko": "나는 너를 좋아해.",
+                    "context": "사람",
+                    "formality": "casual"
+                }
+            ],
+            "intensifiers": [
+                "I really like...",
+                "I love...",
+                "I like... a lot",
+                "I kind of like...",
+                "I don't really like..."
+            ],
+            "relatedPatterns": [
+                "i_love_noun",
+                "i_dont_like",
+                "do_you_like",
+                "i_like_verb_ing",
+                "my_favorite_is"
+            ],
+            "relatedSongs": [
+                {
+                    "songId": "step_006",
+                    "title": "What I Like",
+                    "chapter": "beg_chap_001",
+                    "occurrences": 10,
+                    "featured": true
+                },
+                {
+                    "songId": "step_055",
+                    "title": "My Favorite Things",
+                    "chapter": "beg_chap_005",
+                    "occurrences": 8,
+                    "featured": false
+                }
+            ]
+        },
+        {
+            "id": "what_are_you_doing",
+            "code": "PAT_040",
+            "name": "What are you doing? (무엇을 하고 있니?)",
+            "nameEn": "What are you doing?",
+            "level": "beginner",
+            "difficulty": 2,
+            "category": "questions",
+            "icon": "🤔",
+            "structure": "What + are/is + [subject] + doing?",
+            "structureKo": "What + are/is + [주어] + doing?",
+            "usage": "지금 무엇을 하고 있는지 물을 때",
+            "examples": [
+                {
+                    "en": "What are you doing?",
+                    "ko": "너 뭐 하고 있어?",
+                    "context": "상대방의 현재 행동 물을 때",
+                    "formality": "casual"
+                },
+                {
+                    "en": "What is he doing?",
+                    "ko": "그는 뭐 하고 있어?",
+                    "context": "3인칭 행동 물을 때",
+                    "formality": "neutral"
+                },
+                {
+                    "en": "What are they doing there?",
+                    "ko": "그들은 거기서 뭐 하고 있어?",
+                    "context": "복수 주어",
+                    "formality": "neutral"
+                }
+            ],
+            "commonResponses": [
+                "I'm working.",
+                "I'm studying.",
+                "I'm eating.",
+                "Nothing much.",
+                "I'm just relaxing."
+            ],
+            "relatedPatterns": [
+                "present_continuous",
+                "what_do_you_do",
+                "where_are_you_going"
+            ],
+            "relatedSongs": [
+                {
+                    "songId": "step_067",
+                    "title": "What Are You Doing?",
+                    "chapter": "elem_chap_006",
+                    "occurrences": 10,
+                    "featured": true
+                }
+            ]
+        },
+        {
+            "id": "i_have_noun",
+            "code": "PAT_005",
+            "name": "I have + 명사",
+            "nameEn": "I have + noun",
+            "level": "beginner",
+            "difficulty": 1,
+            "category": "self_introduction",
+            "icon": "🎒",
+            "structure": "I have + (a/an/some) + [noun]",
+            "structureKo": "I have + (a/an/some) + [명사]",
+            "usage": "소유하고 있는 것을 표현할 때",
+            "examples": [
+                {
+                    "en": "I have a car.",
+                    "ko": "나는 차가 있어.",
+                    "context": "소유물",
+                    "formality": "neutral"
+                },
+                {
+                    "en": "I have a question.",
+                    "ko": "질문이 있어요.",
+                    "context": "질문 있을 때",
+                    "formality": "polite"
+                },
+                {
+                    "en": "I have two cats.",
+                    "ko": "나는 고양이 두 마리가 있어.",
+                    "context": "애완동물",
+                    "formality": "neutral"
+                },
+                {
+                    "en": "I have time",
+                    "ko": "나 시간 있어",
+                    "context": "시간 여유",
+                    "formality": "casual"
+                }
+            ],
+            "relatedPatterns": [
+                "i_dont_have",
+                "do_you_have",
+                "i_have_to"
+            ],
+            "relatedSongs": [
+                {
+                    "songId": "step_004",
+                    "title": "My Family",
+                    "chapter": "beg_chap_001",
+                    "occurrences": 6,
+                    "featured": false
+                },
+                {
+                    "songId": "step_005",
+                    "title": "My Pets",
+                    "chapter": "beg_chap_001",
+                    "occurrences": 8,
+                    "featured": true
+                }
+            ]
+        },
+        {
+            "id": "where_is",
+            "code": "PAT_046",
+            "name": "Where is...? (어디에 있어?)",
+            "nameEn": "Where is...?",
+            "level": "beginner",
+            "difficulty": 1,
+            "category": "questions",
+            "icon": "📍",
+            "structure": "Where + is/are + [noun/subject]?",
+            "structureKo": "Where + is/are + [명사/주어]?",
+            "usage": "위치를 물을 때",
+            "examples": [
+                {
+                    "en": "Where is the bathroom?",
+                    "ko": "화장실이 어디에 있어요?",
+                    "context": "공공장소",
+                    "formality": "polite"
+                },
+                {
+                    "en": "Where is my phone?",
+                    "ko": "내 폰 어디 있지?",
+                    "context": "물건 찾을 때",
+                    "formality": "casual"
+                },
+                {
+                    "en": "Where are you?",
+                    "ko": "너 어디야?",
+                    "context": "사람 위치",
+                    "formality": "casual"
+                }
+            ],
+            "relatedPatterns": [
+                "where_are_you_from",
+                "where_do_you_live",
+                "its_on_in_at"
+            ],
+            "relatedSongs": [
+                {
+                    "songId": "step_027",
+                    "title": "Asking Directions",
+                    "chapter": "beg_chap_002",
+                    "occurrences": 7,
+                    "featured": true
+                }
+            ]
+        }
+    ],
+    "learningPaths": [
+        {
+            "pathId": "beginner_essentials",
+            "name": "Beginner Essentials",
+            "nameKo": "초급 필수 패턴",
+            "description": "영어 학습의 기초가 되는 필수 패턴들",
+            "level": "beginner",
+            "estimatedHours": 10,
+            "patterns": [
+                "i_am_job",
+                "i_am_feeling",
+                "i_like_noun",
+                "i_have_noun",
+                "can_i_request",
+                "present_simple_i",
+                "what_are_you_doing",
+                "where_is"
+            ]
+        },
+        {
+            "pathId": "cafe_shopping",
+            "name": "Cafe & Shopping Survival",
+            "nameKo": "카페 & 쇼핑 생존 영어",
+            "description": "카페와 쇼핑에서 바로 쓸 수 있는 실전 패턴",
+            "level": "beginner",
+            "estimatedHours": 5,
+            "patterns": [
+                "can_i_request",
+                "would_you_like",
+                "i_like_noun"
+            ]
+        }
+    ]
+}

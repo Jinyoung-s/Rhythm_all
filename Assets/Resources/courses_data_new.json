@@ -1,0 +1,138 @@
+{
+    "Courses": [
+        {
+            "id": "foundation_course",
+            "name": "Foundation Course",
+            "description": "무료 기초 코스 - Pop, K-POP, Daily Rhythm으로 영어의 기초를 다집니다",
+            "chapters": [
+                {
+                    "id": "chap_001_pop_basics",
+                    "name": "Chapter 1: Pop Basics",
+                    "unlockedByDefault": true,
+                    "nextChapterIds": [
+                        "chap_002_kpop_essentials"
+                    ],
+                    "lessonCount": 10
+                },
+                {
+                    "id": "chap_002_kpop_essentials",
+                    "name": "Chapter 2: K-POP Essentials",
+                    "unlockedByDefault": true,
+                    "nextChapterIds": [
+                        "chap_003_daily_rhythm"
+                    ],
+                    "lessonCount": 10
+                },
+                {
+                    "id": "chap_003_daily_rhythm",
+                    "name": "Chapter 3: Daily Rhythm",
+                    "unlockedByDefault": true,
+                    "nextChapterIds": [
+                        "chap_004_rock_your_english"
+                    ],
+                    "lessonCount": 10
+                }
+            ]
+        },
+        {
+            "id": "intermediate_course",
+            "name": "Intermediate Course",
+            "description": "중급 코스 - Rock, R&B, Travel로 실용 영어를 마스터합니다 (각 챕터 800P)",
+            "chapters": [
+                {
+                    "id": "chap_004_rock_your_english",
+                    "name": "Chapter 4: Rock Your English",
+                    "unlockedByDefault": false,
+                    "nextChapterIds": [
+                        "chap_005_rnb_vibes"
+                    ],
+                    "lessonCount": 10
+                },
+                {
+                    "id": "chap_005_rnb_vibes",
+                    "name": "Chapter 5: R&B Vibes",
+                    "unlockedByDefault": false,
+                    "nextChapterIds": [
+                        "chap_006_travel_tunes"
+                    ],
+                    "lessonCount": 10
+                },
+                {
+                    "id": "chap_006_travel_tunes",
+                    "name": "Chapter 6: Travel Tunes",
+                    "unlockedByDefault": false,
+                    "nextChapterIds": [
+                        "chap_007_hiphop_flow"
+                    ],
+                    "lessonCount": 10
+                }
+            ]
+        },
+        {
+            "id": "advanced_course",
+            "name": "Advanced Course",
+            "description": "고급 코스 - Hip-Hop, Business, Indie로 전문 영어를 완성합니다 (각 챕터 1200P)",
+            "chapters": [
+                {
+                    "id": "chap_007_hiphop_flow",
+                    "name": "Chapter 7: Hip-Hop Flow",
+                    "unlockedByDefault": false,
+                    "nextChapterIds": [
+                        "chap_008_business_beat"
+                    ],
+                    "lessonCount": 10
+                },
+                {
+                    "id": "chap_008_business_beat",
+                    "name": "Chapter 8: Business Beat",
+                    "unlockedByDefault": false,
+                    "nextChapterIds": [
+                        "chap_009_indie_expressions"
+                    ],
+                    "lessonCount": 10
+                },
+                {
+                    "id": "chap_009_indie_expressions",
+                    "name": "Chapter 9: Indie Expressions",
+                    "unlockedByDefault": false,
+                    "nextChapterIds": [
+                        "chap_010_jazz_blues"
+                    ],
+                    "lessonCount": 10
+                }
+            ]
+        },
+        {
+            "id": "expert_course",
+            "name": "Expert Course",
+            "description": "전문가 코스 - Jazz, Musical, Freestyle로 원어민 수준에 도달합니다 (프리미엄 구독 전용)",
+            "chapters": [
+                {
+                    "id": "chap_010_jazz_blues",
+                    "name": "Chapter 10: Jazz & Blues Nuance",
+                    "unlockedByDefault": false,
+                    "nextChapterIds": [
+                        "chap_011_musical_stories"
+                    ],
+                    "lessonCount": 10
+                },
+                {
+                    "id": "chap_011_musical_stories",
+                    "name": "Chapter 11: Musical Stories",
+                    "unlockedByDefault": false,
+                    "nextChapterIds": [
+                        "chap_012_freestyle_mastery"
+                    ],
+                    "lessonCount": 10
+                },
+                {
+                    "id": "chap_012_freestyle_mastery",
+                    "name": "Chapter 12: Freestyle Mastery",
+                    "unlockedByDefault": false,
+                    "nextChapterIds": [],
+                    "lessonCount": 10
+                }
+            ]
+        }
+    ]
+}
